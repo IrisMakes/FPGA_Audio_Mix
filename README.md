@@ -1,4 +1,5 @@
 # FPGA_Audio_Mix
+## Created by Alexi Carlone and Iris Kaucher
 **Description:** this is a software only implementation of the audio mixer capable of taking stems and mixing them into a singular output. This will be the basis for our hardware implementation of the same algorithm.\
 **To run:** open software implementation Jupyter notebook. Run each cell in succession. Each individual stem will open an audio player so you can see the individual elements, as well as the final mix.\
 **Output example:**
