@@ -1,0 +1,6 @@
+{
+  "workspaceRoot": "C:\\Users\\lexie\\Documents\\fpga_project\\FPGA_Audio_Mix",
+  "mapping": {
+    "FPGA_Mix_Hardware\\hw_mixer.cpp": "FPGA_Mix_Hardware"
+  }
+}

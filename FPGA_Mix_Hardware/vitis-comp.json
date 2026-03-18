@@ -1,0 +1,11 @@
+{
+  "name": "FPGA_Mix_Hardware",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": [
+      "hls_config.cfg"
+    ],
+    "work_dir": "FPGA_Mix_Hardware"
+  }
+}

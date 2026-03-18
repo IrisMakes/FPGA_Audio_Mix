@@ -1,0 +1,14 @@
+[
+  {
+    "directory": "C:\\Users\\lexie\\Documents\\fpga_project\\FPGA_Audio_Mix\\FPGA_Mix_Hardware",
+    "arguments": [
+      "C:\\Xilinx\\Vitis_HLS\\2024.1\\vcxx\\libexec\\clang++.exe",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\Vitis_HLS\\2024.1\\common\\technology\\autopilot",
+      "",
+      "-c",
+      "C:\\Users\\lexie\\Documents\\fpga_project\\FPGA_Audio_Mix\\FPGA_Mix_Hardware\\hw_mixer.cpp"
+    ],
+    "file": "C:\\Users\\lexie\\Documents\\fpga_project\\FPGA_Audio_Mix\\FPGA_Mix_Hardware\\hw_mixer.cpp"
+  }
+]
