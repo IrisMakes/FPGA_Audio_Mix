@@ -4,6 +4,7 @@
 <pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<5, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
 <pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
 <pragma file=".var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/autopilot/etc/ap_common.h" line="530" pragmaType="inline" parentfunction="_ZN8ssdm_intILi5ELb0EEC2EDU5_" off="0" region="0" recursive="0"/>
+<pragma file="hw_mixer.cpp" line="31" pragmaType="loop_tripcount" parentfunction="mixer" min="200" max="20000" avg="10000"/>
 <pragma file="hw_mixer.cpp" line="17" pragmaType="interface" parentfunction="mixer" mode="axis" port="stream_in_0" register="1" register_mode="both" name="" depth="-1"/>
 <pragma file="hw_mixer.cpp" line="18" pragmaType="interface" parentfunction="mixer" mode="axis" port="stream_in_1" register="1" register_mode="both" name="" depth="-1"/>
 <pragma file="hw_mixer.cpp" line="19" pragmaType="interface" parentfunction="mixer" mode="axis" port="stream_in_2" register="1" register_mode="both" name="" depth="-1"/>

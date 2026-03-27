@@ -38,6 +38,9 @@
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="hw_mixer.cpp:28:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="mixer" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=recip_sqrt_lut complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="hw_mixer.cpp:31:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="mixer" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=200 max=20000 avg=10000" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
     <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="./hw_mixer.h:9:0" msg_body="Applying array_partition to '_ZL14recip_sqrt_lut': Complete partitioning on dimension 1.">
         <args Dim="1" Mode="Complete" UOName="_ZL14recip_sqrt_lut"/>
     </msg>

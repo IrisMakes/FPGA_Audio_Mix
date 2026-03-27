@@ -19,14 +19,14 @@
         </SummaryOfTimingAnalysis>
         <SummaryOfOverallLatency>
             <unit>clock cycles</unit>
-            <Best-caseLatency>undef</Best-caseLatency>
-            <Average-caseLatency>undef</Average-caseLatency>
-            <Worst-caseLatency>undef</Worst-caseLatency>
-            <Best-caseRealTimeLatency>undef</Best-caseRealTimeLatency>
-            <Average-caseRealTimeLatency>undef</Average-caseRealTimeLatency>
-            <Worst-caseRealTimeLatency>undef</Worst-caseRealTimeLatency>
-            <Interval-min>undef</Interval-min>
-            <Interval-max>undef</Interval-max>
+            <Best-caseLatency>208</Best-caseLatency>
+            <Average-caseLatency>10008</Average-caseLatency>
+            <Worst-caseLatency>20008</Worst-caseLatency>
+            <Best-caseRealTimeLatency>2.080 us</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>0.100 ms</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>0.200 ms</Worst-caseRealTimeLatency>
+            <Interval-min>209</Interval-min>
+            <Interval-max>20009</Interval-max>
             <PerformancePragma>-</PerformancePragma>
         </SummaryOfOverallLatency>
         <SummaryOfViolations>
@@ -1266,7 +1266,7 @@
                     <ModuleName>mixer_Pipeline_VITIS_LOOP_30_1</ModuleName>
                     <IsCompInst>true</IsCompInst>
                     <ID>255</ID>
-                    <BindInstances>icmp_ln65_fu_501_p2 mix_int_fu_559_p3 mix_int_1_fu_567_p2 mix_int_2_fu_573_p3 mix_int_3_fu_581_p2 mix_int_4_fu_587_p3 mix_int_5_fu_595_p2 mix_int_6_fu_601_p3 mix_int_7_fu_609_p2 mix_int_8_fu_615_p3 mix_int_9_fu_674_p2 mix_int_10_fu_679_p3 mix_int_11_fu_685_p2 mix_int_12_fu_691_p3 mix_int_13_fu_698_p2 mix_int_14_fu_704_p3 sparsemux_17_4_9_1_1_U2 mul_9ns_32s_40_1_1_U1 or_ln69_fu_623_p2 or_ln69_1_fu_629_p2 or_ln69_2_fu_635_p2 or_ln69_3_fu_641_p2 or_ln69_4_fu_647_p2 or_ln69_5_fu_653_p2 or_ln69_6_fu_659_p2</BindInstances>
+                    <BindInstances>icmp_ln65_fu_509_p2 mix_int_fu_567_p3 mix_int_1_fu_575_p2 mix_int_2_fu_581_p3 mix_int_3_fu_589_p2 mix_int_4_fu_595_p3 mix_int_5_fu_603_p2 mix_int_6_fu_609_p3 mix_int_7_fu_617_p2 mix_int_8_fu_623_p3 mix_int_9_fu_682_p2 mix_int_10_fu_687_p3 mix_int_11_fu_693_p2 mix_int_12_fu_699_p3 mix_int_13_fu_706_p2 mix_int_14_fu_712_p3 sparsemux_17_4_9_1_1_U2 mul_9ns_32s_40_1_1_U1 or_ln69_fu_631_p2 or_ln69_1_fu_637_p2 or_ln69_2_fu_643_p2 or_ln69_3_fu_649_p2 or_ln69_4_fu_655_p2 or_ln69_5_fu_661_p2 or_ln69_6_fu_667_p2</BindInstances>
                 </Instance>
             </InstancesList>
             <BindInstances>select_ln55_fu_459_p3 select_ln55_1_fu_467_p3 add_ln56_fu_475_p2 select_ln56_fu_481_p3 add_ln57_fu_493_p2 select_ln57_fu_499_p3 add_ln58_fu_507_p2 select_ln58_fu_513_p3 add_ln59_fu_521_p2 select_ln59_fu_527_p3 add_ln60_fu_535_p2 select_ln60_fu_541_p3 add_ln61_fu_553_p2 select_ln61_fu_559_p3 control_s_axi_U</BindInstances>
@@ -1285,13 +1285,13 @@
                     <EstimatedClockPeriod>6.388</EstimatedClockPeriod>
                 </SummaryOfTimingAnalysis>
                 <SummaryOfOverallLatency>
-                    <Best-caseLatency>undef</Best-caseLatency>
-                    <Average-caseLatency>undef</Average-caseLatency>
-                    <Worst-caseLatency>undef</Worst-caseLatency>
-                    <Best-caseRealTimeLatency>undef</Best-caseRealTimeLatency>
-                    <Average-caseRealTimeLatency>undef</Average-caseRealTimeLatency>
-                    <Worst-caseRealTimeLatency>undef</Worst-caseRealTimeLatency>
-                    <PipelineInitiationInterval>0</PipelineInitiationInterval>
+                    <Best-caseLatency>204</Best-caseLatency>
+                    <Average-caseLatency>10004</Average-caseLatency>
+                    <Worst-caseLatency>20004</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>2.040 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.100 ms</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.200 ms</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>201 ~ 20001</PipelineInitiationInterval>
                     <PipelineType>loop pipeline stpstp (delay=0 clock cycles(s))</PipelineType>
                     <PerformancePragma>-</PerformancePragma>
                 </SummaryOfOverallLatency>
@@ -1299,10 +1299,15 @@
                     <VITIS_LOOP_30_1>
                         <Name>VITIS_LOOP_30_1</Name>
                         <Slack>7.30</Slack>
-                        <TripCount>undef</TripCount>
+                        <TripCount>
+                            <range>
+                                <min>200</min>
+                                <max>20000</max>
+                            </range>
+                        </TripCount>
                         <isPerfectNested>0</isPerfectNested>
-                        <Latency>undef</Latency>
-                        <AbsoluteTimeLatency>undef</AbsoluteTimeLatency>
+                        <Latency>202 ~ 20002</Latency>
+                        <AbsoluteTimeLatency>2.020 us ~ 0.200 ms</AbsoluteTimeLatency>
                         <PipelineII>1</PipelineII>
                         <PipelineDepth>3</PipelineDepth>
                         <PipelineType>yes</PipelineType>
@@ -1344,31 +1349,31 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln65_fu_501_p2" SOURCE="hw_mixer.cpp:65" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln65" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_30_1" OPTYPE="select" PRAGMA="" RTLNAME="mix_int_fu_559_p3" SOURCE="hw_mixer.cpp:54" STORAGESUBTYPE="" URAM="0" VARIABLE="mix_int" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_30_1" OPTYPE="add" PRAGMA="" RTLNAME="mix_int_1_fu_567_p2" SOURCE="hw_mixer.cpp:55" STORAGESUBTYPE="" URAM="0" VARIABLE="mix_int_1" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_30_1" OPTYPE="select" PRAGMA="" RTLNAME="mix_int_2_fu_573_p3" SOURCE="hw_mixer.cpp:55" STORAGESUBTYPE="" URAM="0" VARIABLE="mix_int_2" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_30_1" OPTYPE="add" PRAGMA="" RTLNAME="mix_int_3_fu_581_p2" SOURCE="hw_mixer.cpp:56" STORAGESUBTYPE="" URAM="0" VARIABLE="mix_int_3" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_30_1" OPTYPE="select" PRAGMA="" RTLNAME="mix_int_4_fu_587_p3" SOURCE="hw_mixer.cpp:56" STORAGESUBTYPE="" URAM="0" VARIABLE="mix_int_4" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_30_1" OPTYPE="add" PRAGMA="" RTLNAME="mix_int_5_fu_595_p2" SOURCE="hw_mixer.cpp:57" STORAGESUBTYPE="" URAM="0" VARIABLE="mix_int_5" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_30_1" OPTYPE="select" PRAGMA="" RTLNAME="mix_int_6_fu_601_p3" SOURCE="hw_mixer.cpp:57" STORAGESUBTYPE="" URAM="0" VARIABLE="mix_int_6" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_30_1" OPTYPE="add" PRAGMA="" RTLNAME="mix_int_7_fu_609_p2" SOURCE="hw_mixer.cpp:58" STORAGESUBTYPE="" URAM="0" VARIABLE="mix_int_7" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_30_1" OPTYPE="select" PRAGMA="" RTLNAME="mix_int_8_fu_615_p3" SOURCE="hw_mixer.cpp:58" STORAGESUBTYPE="" URAM="0" VARIABLE="mix_int_8" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_30_1" OPTYPE="add" PRAGMA="" RTLNAME="mix_int_9_fu_674_p2" SOURCE="hw_mixer.cpp:59" STORAGESUBTYPE="" URAM="0" VARIABLE="mix_int_9" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_30_1" OPTYPE="select" PRAGMA="" RTLNAME="mix_int_10_fu_679_p3" SOURCE="hw_mixer.cpp:59" STORAGESUBTYPE="" URAM="0" VARIABLE="mix_int_10" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_30_1" OPTYPE="add" PRAGMA="" RTLNAME="mix_int_11_fu_685_p2" SOURCE="hw_mixer.cpp:60" STORAGESUBTYPE="" URAM="0" VARIABLE="mix_int_11" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_30_1" OPTYPE="select" PRAGMA="" RTLNAME="mix_int_12_fu_691_p3" SOURCE="hw_mixer.cpp:60" STORAGESUBTYPE="" URAM="0" VARIABLE="mix_int_12" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_30_1" OPTYPE="add" PRAGMA="" RTLNAME="mix_int_13_fu_698_p2" SOURCE="hw_mixer.cpp:61" STORAGESUBTYPE="" URAM="0" VARIABLE="mix_int_13" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_30_1" OPTYPE="select" PRAGMA="" RTLNAME="mix_int_14_fu_704_p3" SOURCE="hw_mixer.cpp:61" STORAGESUBTYPE="" URAM="0" VARIABLE="mix_int_14" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln65_fu_509_p2" SOURCE="hw_mixer.cpp:65" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln65" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_30_1" OPTYPE="select" PRAGMA="" RTLNAME="mix_int_fu_567_p3" SOURCE="hw_mixer.cpp:54" STORAGESUBTYPE="" URAM="0" VARIABLE="mix_int" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_30_1" OPTYPE="add" PRAGMA="" RTLNAME="mix_int_1_fu_575_p2" SOURCE="hw_mixer.cpp:55" STORAGESUBTYPE="" URAM="0" VARIABLE="mix_int_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_30_1" OPTYPE="select" PRAGMA="" RTLNAME="mix_int_2_fu_581_p3" SOURCE="hw_mixer.cpp:55" STORAGESUBTYPE="" URAM="0" VARIABLE="mix_int_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_30_1" OPTYPE="add" PRAGMA="" RTLNAME="mix_int_3_fu_589_p2" SOURCE="hw_mixer.cpp:56" STORAGESUBTYPE="" URAM="0" VARIABLE="mix_int_3" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_30_1" OPTYPE="select" PRAGMA="" RTLNAME="mix_int_4_fu_595_p3" SOURCE="hw_mixer.cpp:56" STORAGESUBTYPE="" URAM="0" VARIABLE="mix_int_4" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_30_1" OPTYPE="add" PRAGMA="" RTLNAME="mix_int_5_fu_603_p2" SOURCE="hw_mixer.cpp:57" STORAGESUBTYPE="" URAM="0" VARIABLE="mix_int_5" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_30_1" OPTYPE="select" PRAGMA="" RTLNAME="mix_int_6_fu_609_p3" SOURCE="hw_mixer.cpp:57" STORAGESUBTYPE="" URAM="0" VARIABLE="mix_int_6" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_30_1" OPTYPE="add" PRAGMA="" RTLNAME="mix_int_7_fu_617_p2" SOURCE="hw_mixer.cpp:58" STORAGESUBTYPE="" URAM="0" VARIABLE="mix_int_7" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_30_1" OPTYPE="select" PRAGMA="" RTLNAME="mix_int_8_fu_623_p3" SOURCE="hw_mixer.cpp:58" STORAGESUBTYPE="" URAM="0" VARIABLE="mix_int_8" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_30_1" OPTYPE="add" PRAGMA="" RTLNAME="mix_int_9_fu_682_p2" SOURCE="hw_mixer.cpp:59" STORAGESUBTYPE="" URAM="0" VARIABLE="mix_int_9" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_30_1" OPTYPE="select" PRAGMA="" RTLNAME="mix_int_10_fu_687_p3" SOURCE="hw_mixer.cpp:59" STORAGESUBTYPE="" URAM="0" VARIABLE="mix_int_10" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_30_1" OPTYPE="add" PRAGMA="" RTLNAME="mix_int_11_fu_693_p2" SOURCE="hw_mixer.cpp:60" STORAGESUBTYPE="" URAM="0" VARIABLE="mix_int_11" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_30_1" OPTYPE="select" PRAGMA="" RTLNAME="mix_int_12_fu_699_p3" SOURCE="hw_mixer.cpp:60" STORAGESUBTYPE="" URAM="0" VARIABLE="mix_int_12" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_30_1" OPTYPE="add" PRAGMA="" RTLNAME="mix_int_13_fu_706_p2" SOURCE="hw_mixer.cpp:61" STORAGESUBTYPE="" URAM="0" VARIABLE="mix_int_13" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_30_1" OPTYPE="select" PRAGMA="" RTLNAME="mix_int_14_fu_712_p3" SOURCE="hw_mixer.cpp:61" STORAGESUBTYPE="" URAM="0" VARIABLE="mix_int_14" VISIBLE="false"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sparsemux" DSP="0" ID="" IMPL="compactencoding_dontcare" LATENCY="0" LOOP="VITIS_LOOP_30_1" OPTYPE="sparsemux" PRAGMA="" RTLNAME="sparsemux_17_4_9_1_1_U2" SOURCE="hw_mixer.cpp:65" STORAGESUBTYPE="" URAM="0" VARIABLE="zext_ln65_cast" VISIBLE="false"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="2" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_30_1" OPTYPE="mul" PRAGMA="" RTLNAME="mul_9ns_32s_40_1_1_U1" SOURCE="hw_mixer.cpp:65" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln65" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_30_1" OPTYPE="or" PRAGMA="" RTLNAME="or_ln69_fu_623_p2" SOURCE="hw_mixer.cpp:69" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln69" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_30_1" OPTYPE="or" PRAGMA="" RTLNAME="or_ln69_1_fu_629_p2" SOURCE="hw_mixer.cpp:69" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln69_1" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_30_1" OPTYPE="or" PRAGMA="" RTLNAME="or_ln69_2_fu_635_p2" SOURCE="hw_mixer.cpp:69" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln69_2" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_30_1" OPTYPE="or" PRAGMA="" RTLNAME="or_ln69_3_fu_641_p2" SOURCE="hw_mixer.cpp:69" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln69_3" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_30_1" OPTYPE="or" PRAGMA="" RTLNAME="or_ln69_4_fu_647_p2" SOURCE="hw_mixer.cpp:69" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln69_4" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_30_1" OPTYPE="or" PRAGMA="" RTLNAME="or_ln69_5_fu_653_p2" SOURCE="hw_mixer.cpp:69" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln69_5" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_30_1" OPTYPE="or" PRAGMA="" RTLNAME="or_ln69_6_fu_659_p2" SOURCE="hw_mixer.cpp:69" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln69_6" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_30_1" OPTYPE="or" PRAGMA="" RTLNAME="or_ln69_fu_631_p2" SOURCE="hw_mixer.cpp:69" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln69" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_30_1" OPTYPE="or" PRAGMA="" RTLNAME="or_ln69_1_fu_637_p2" SOURCE="hw_mixer.cpp:69" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln69_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_30_1" OPTYPE="or" PRAGMA="" RTLNAME="or_ln69_2_fu_643_p2" SOURCE="hw_mixer.cpp:69" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln69_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_30_1" OPTYPE="or" PRAGMA="" RTLNAME="or_ln69_3_fu_649_p2" SOURCE="hw_mixer.cpp:69" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln69_3" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_30_1" OPTYPE="or" PRAGMA="" RTLNAME="or_ln69_4_fu_655_p2" SOURCE="hw_mixer.cpp:69" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln69_4" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_30_1" OPTYPE="or" PRAGMA="" RTLNAME="or_ln69_5_fu_661_p2" SOURCE="hw_mixer.cpp:69" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln69_5" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_30_1" OPTYPE="or" PRAGMA="" RTLNAME="or_ln69_6_fu_667_p2" SOURCE="hw_mixer.cpp:69" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln69_6" VISIBLE="false"/>
             </BindNodes>
         </Module>
         <Module>
@@ -1380,13 +1385,13 @@
                     <EstimatedClockPeriod>6.388</EstimatedClockPeriod>
                 </SummaryOfTimingAnalysis>
                 <SummaryOfOverallLatency>
-                    <Best-caseLatency>undef</Best-caseLatency>
-                    <Average-caseLatency>undef</Average-caseLatency>
-                    <Worst-caseLatency>undef</Worst-caseLatency>
-                    <Best-caseRealTimeLatency>undef</Best-caseRealTimeLatency>
-                    <Average-caseRealTimeLatency>undef</Average-caseRealTimeLatency>
-                    <Worst-caseRealTimeLatency>undef</Worst-caseRealTimeLatency>
-                    <PipelineInitiationInterval>undef</PipelineInitiationInterval>
+                    <Best-caseLatency>208</Best-caseLatency>
+                    <Average-caseLatency>10008</Average-caseLatency>
+                    <Worst-caseLatency>20008</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>2.080 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.100 ms</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.200 ms</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>209 ~ 20009</PipelineInitiationInterval>
                     <PipelineType>no</PipelineType>
                     <PerformancePragma>-</PerformancePragma>
                 </SummaryOfOverallLatency>
@@ -1834,6 +1839,7 @@
         <Pragma type="interface" location="hw_mixer.cpp:26" status="valid" parentFunction="mixer" variable="mix_out" isDirective="0" options="axis port=mix_out"/>
         <Pragma type="interface" location="hw_mixer.cpp:27" status="valid" parentFunction="mixer" variable="return" isDirective="0" options="s_axilite port=return"/>
         <Pragma type="array_partition" location="hw_mixer.cpp:28" status="valid" parentFunction="mixer" variable="recip_sqrt_lut" isDirective="0" options="variable=recip_sqrt_lut complete"/>
+        <Pragma type="loop_tripcount" location="hw_mixer.cpp:31" status="valid" parentFunction="mixer" variable="" isDirective="0" options="min=200 max=20000 avg=10000"/>
     </PragmaReport>
     <AutoPragmaReport>
         <AutoPragma type="pipeline" parentFunction="mixer" options="" pragmaLocId="hw_mixer.cpp:30:0" pragmaLocOpt="mixer/VITIS_LOOP_30_1" srcTcl="config_compile -pipeline_loops 64" srcIni="syn.compile.pipeline_loops=64" srcPragmaType="" srcPragmaLoc="syn.compile.pipeline_loops=64" srcPragmaSource="config" srcPragmaSourceDesc="syn.compile.pipeline_loops=64" srcIsDirective="0" srcIsSlxDirective="0" srcIsCsimDirective="0" directiveIni="syn.directive.pipeline=mixer/VITIS_LOOP_30_1 " loopName="VITIS_LOOP_30_1" loopLoc="hw_mixer.cpp:30:22"/>

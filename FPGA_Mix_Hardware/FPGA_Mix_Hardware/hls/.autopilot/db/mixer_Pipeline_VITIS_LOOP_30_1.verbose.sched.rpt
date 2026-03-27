@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'mixer_Pipeline_VITIS_LOOP_30_1'
 ================================================================
-* Date:           Fri Mar 27 16:53:04 2026
+* Date:           Fri Mar 27 17:43:12 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        FPGA_Mix_Hardware
@@ -29,7 +29,7 @@
     |  Latency (cycles) |  Latency (absolute) |  Interval |      Pipeline     |
     |   min   |   max   |    min   |    max   | min | max |        Type       |
     +---------+---------+----------+----------+-----+-----+-------------------+
-    |        ?|        ?|         ?|         ?|    0|    0|  loop pipeline stp|
+    |      204|    20004|  2.040 us|  0.200 ms|    0|    0|  loop pipeline stp|
     +---------+---------+----------+----------+-----+-----+-------------------+
 
     + Detail: 
@@ -37,12 +37,12 @@
         N/A
 
         * Loop: 
-        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
-        |                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
-        |     Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
-        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
-        |- VITIS_LOOP_30_1  |        ?|        ?|         3|          1|          1|     ?|       yes|
-        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        +-------------------+---------+---------+----------+-----------+-----------+-------------+----------+
+        |                   |  Latency (cycles) | Iteration|  Initiation Interval  |     Trip    |          |
+        |     Loop Name     |   min   |   max   |  Latency |  achieved |   target  |    Count    | Pipelined|
+        +-------------------+---------+---------+----------+-----------+-----------+-------------+----------+
+        |- VITIS_LOOP_30_1  |      202|    20002|         3|          1|          1|  200 ~ 20000|       yes|
+        +-------------------+---------+---------+----------+-----------+-----------+-------------+----------+
 
 ============================================================
 + Verbose Summary: Synthesis Manager
@@ -157,29 +157,30 @@ ST_1 : Operation 73 [1/1] (0.00ns)   --->   "%br_ln69 = br i1 %or_ln69_6, void %
 
 State 2 <SV = 1> <Delay = 4.39>
 ST_2 : Operation 74 [1/1] (0.00ns)   --->   "%specpipeline_ln41 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, i32 4294967295, void @empty_4" [hw_mixer.cpp:41]   --->   Operation 74 'specpipeline' 'specpipeline_ln41' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 75 [1/1] (0.00ns)   --->   "%specloopname_ln30 = specloopname void @_ssdm_op_SpecLoopName, void @empty_10" [hw_mixer.cpp:30]   --->   Operation 75 'specloopname' 'specloopname_ln30' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 76 [1/1] (0.00ns) (grouped into LUT with out node mix_int_9)   --->   "%s5_data = extractvalue i54 %empty_32" [hw_mixer.cpp:46]   --->   Operation 76 'extractvalue' 's5_data' <Predicate = (tmp_2)> <Delay = 0.00>
-ST_2 : Operation 77 [1/1] (0.00ns) (grouped into LUT with out node mix_int_11)   --->   "%s6_data = extractvalue i54 %empty_33" [hw_mixer.cpp:47]   --->   Operation 77 'extractvalue' 's6_data' <Predicate = (tmp_1)> <Delay = 0.00>
-ST_2 : Operation 78 [1/1] (0.00ns) (grouped into LUT with out node mix_int_13)   --->   "%s7_data = extractvalue i54 %empty_34" [hw_mixer.cpp:48]   --->   Operation 78 'extractvalue' 's7_data' <Predicate = (tmp)> <Delay = 0.00>
-ST_2 : Operation 79 [1/1] (1.01ns) (out node of the LUT)   --->   "%mix_int_9 = add i32 %s5_data, i32 %mix_int_8" [hw_mixer.cpp:59]   --->   Operation 79 'add' 'mix_int_9' <Predicate = (tmp_2)> <Delay = 1.01> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 80 [1/1] (0.44ns)   --->   "%mix_int_10 = select i1 %tmp_2, i32 %mix_int_9, i32 %mix_int_8" [hw_mixer.cpp:59]   --->   Operation 80 'select' 'mix_int_10' <Predicate = true> <Delay = 0.44> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.44> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_2 : Operation 81 [1/1] (1.01ns) (out node of the LUT)   --->   "%mix_int_11 = add i32 %s6_data, i32 %mix_int_10" [hw_mixer.cpp:60]   --->   Operation 81 'add' 'mix_int_11' <Predicate = (tmp_1)> <Delay = 1.01> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 82 [1/1] (0.44ns)   --->   "%mix_int_12 = select i1 %tmp_1, i32 %mix_int_11, i32 %mix_int_10" [hw_mixer.cpp:60]   --->   Operation 82 'select' 'mix_int_12' <Predicate = true> <Delay = 0.44> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.44> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_2 : Operation 83 [1/1] (1.01ns) (out node of the LUT)   --->   "%mix_int_13 = add i32 %s7_data, i32 %mix_int_12" [hw_mixer.cpp:61]   --->   Operation 83 'add' 'mix_int_13' <Predicate = (tmp)> <Delay = 1.01> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 84 [1/1] (0.44ns)   --->   "%mix_int_14 = select i1 %tmp, i32 %mix_int_13, i32 %mix_int_12" [hw_mixer.cpp:61]   --->   Operation 84 'select' 'mix_int_14' <Predicate = true> <Delay = 0.44> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.44> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_2 : Operation 85 [1/1] (0.42ns)   --->   "%br_ln65 = br void %cond.end" [hw_mixer.cpp:65]   --->   Operation 85 'br' 'br_ln65' <Predicate = (!icmp_ln65)> <Delay = 0.42>
+ST_2 : Operation 75 [1/1] (0.00ns)   --->   "%speclooptripcount_ln31 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 200, i64 20000, i64 10000" [hw_mixer.cpp:31]   --->   Operation 75 'speclooptripcount' 'speclooptripcount_ln31' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 76 [1/1] (0.00ns)   --->   "%specloopname_ln30 = specloopname void @_ssdm_op_SpecLoopName, void @empty_10" [hw_mixer.cpp:30]   --->   Operation 76 'specloopname' 'specloopname_ln30' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 77 [1/1] (0.00ns) (grouped into LUT with out node mix_int_9)   --->   "%s5_data = extractvalue i54 %empty_32" [hw_mixer.cpp:46]   --->   Operation 77 'extractvalue' 's5_data' <Predicate = (tmp_2)> <Delay = 0.00>
+ST_2 : Operation 78 [1/1] (0.00ns) (grouped into LUT with out node mix_int_11)   --->   "%s6_data = extractvalue i54 %empty_33" [hw_mixer.cpp:47]   --->   Operation 78 'extractvalue' 's6_data' <Predicate = (tmp_1)> <Delay = 0.00>
+ST_2 : Operation 79 [1/1] (0.00ns) (grouped into LUT with out node mix_int_13)   --->   "%s7_data = extractvalue i54 %empty_34" [hw_mixer.cpp:48]   --->   Operation 79 'extractvalue' 's7_data' <Predicate = (tmp)> <Delay = 0.00>
+ST_2 : Operation 80 [1/1] (1.01ns) (out node of the LUT)   --->   "%mix_int_9 = add i32 %s5_data, i32 %mix_int_8" [hw_mixer.cpp:59]   --->   Operation 80 'add' 'mix_int_9' <Predicate = (tmp_2)> <Delay = 1.01> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 81 [1/1] (0.44ns)   --->   "%mix_int_10 = select i1 %tmp_2, i32 %mix_int_9, i32 %mix_int_8" [hw_mixer.cpp:59]   --->   Operation 81 'select' 'mix_int_10' <Predicate = true> <Delay = 0.44> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.44> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 82 [1/1] (1.01ns) (out node of the LUT)   --->   "%mix_int_11 = add i32 %s6_data, i32 %mix_int_10" [hw_mixer.cpp:60]   --->   Operation 82 'add' 'mix_int_11' <Predicate = (tmp_1)> <Delay = 1.01> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 83 [1/1] (0.44ns)   --->   "%mix_int_12 = select i1 %tmp_1, i32 %mix_int_11, i32 %mix_int_10" [hw_mixer.cpp:60]   --->   Operation 83 'select' 'mix_int_12' <Predicate = true> <Delay = 0.44> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.44> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 84 [1/1] (1.01ns) (out node of the LUT)   --->   "%mix_int_13 = add i32 %s7_data, i32 %mix_int_12" [hw_mixer.cpp:61]   --->   Operation 84 'add' 'mix_int_13' <Predicate = (tmp)> <Delay = 1.01> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 85 [1/1] (0.44ns)   --->   "%mix_int_14 = select i1 %tmp, i32 %mix_int_13, i32 %mix_int_12" [hw_mixer.cpp:61]   --->   Operation 85 'select' 'mix_int_14' <Predicate = true> <Delay = 0.44> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.44> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 86 [1/1] (0.42ns)   --->   "%br_ln65 = br void %cond.end" [hw_mixer.cpp:65]   --->   Operation 86 'br' 'br_ln65' <Predicate = (!icmp_ln65)> <Delay = 0.42>
 
 State 3 <SV = 2> <Delay = 4.63>
-ST_3 : Operation 86 [1/1] (0.00ns)   --->   "%sext_ln65 = sext i32 %mix_int_14" [hw_mixer.cpp:65]   --->   Operation 86 'sext' 'sext_ln65' <Predicate = (!icmp_ln65)> <Delay = 0.00>
-ST_3 : Operation 87 [1/1] (0.72ns)   --->   "%zext_ln65_cast = sparsemux i9 @_ssdm_op_SparseMux.ap_auto.8i9.i9.i4, i4 1, i9 256, i4 2, i9 181, i4 3, i9 148, i4 4, i9 128, i4 5, i9 114, i4 6, i9 105, i4 7, i9 97, i4 8, i9 91, i9 0, i4 %active_14_read" [hw_mixer.cpp:65]   --->   Operation 87 'sparsemux' 'zext_ln65_cast' <Predicate = (!icmp_ln65)> <Delay = 0.72> <CoreInst = "BinarySparseMux_DontCare">   --->   Core 149 'BinarySparseMux_DontCare' <Latency = 0> <II = 1> <Delay = 0.72> <FuncUnit> <Opcode : 'sparsemux'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 88 [1/1] (0.00ns)   --->   "%zext_ln65 = zext i9 %zext_ln65_cast" [hw_mixer.cpp:65]   --->   Operation 88 'zext' 'zext_ln65' <Predicate = (!icmp_ln65)> <Delay = 0.00>
-ST_3 : Operation 89 [1/1] (3.42ns)   --->   "%mul_ln65 = mul i40 %zext_ln65, i40 %sext_ln65" [hw_mixer.cpp:65]   --->   Operation 89 'mul' 'mul_ln65' <Predicate = (!icmp_ln65)> <Delay = 3.42> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 3.42> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 90 [1/1] (0.00ns)   --->   "%trunc_ln = partselect i32 @_ssdm_op_PartSelect.i32.i40.i32.i32, i40 %mul_ln65, i32 8, i32 39" [hw_mixer.cpp:65]   --->   Operation 90 'partselect' 'trunc_ln' <Predicate = (!icmp_ln65)> <Delay = 0.00>
-ST_3 : Operation 91 [1/1] (0.00ns)   --->   "%out_pkt_data = phi i32 %trunc_ln, void %cond.true, i32 0, void %while.body" [hw_mixer.cpp:65]   --->   Operation 91 'phi' 'out_pkt_data' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 92 [1/1] ( I:0.49ns O:0.49ns )   --->   "%write_ln74 = write void @_ssdm_op_Write.axis.volatile.i32P0A.i4P0A.i4P0A.i2P0A.i1P0A.i5P0A.i6P0A, i32 %mix_out_V_data_V, i4 %mix_out_V_keep_V, i4 %mix_out_V_strb_V, i2 %mix_out_V_user_V, i1 %mix_out_V_last_V, i5 %mix_out_V_id_V, i6 %mix_out_V_dest_V, i32 %out_pkt_data, i4 15, i4 15, i2 0, i1 0, i5 0, i6 0" [hw_mixer.cpp:74]   --->   Operation 92 'write' 'write_ln74' <Predicate = (!or_ln69_6)> <Delay = 0.49> <CoreInst = "regslice">   --->   Core 147 'regslice' <Latency = 0> <II = 1> <Delay = 0.65> <Adapter> <Opcode : 'read' 'write'>
-ST_3 : Operation 93 [1/1] (0.00ns)   --->   "%br_ln30 = br void %while.body" [hw_mixer.cpp:30]   --->   Operation 93 'br' 'br_ln30' <Predicate = (!or_ln69_6)> <Delay = 0.00>
-ST_3 : Operation 94 [1/1] (0.00ns)   --->   "%write_ln65 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %out_pkt_data_out, i32 %out_pkt_data" [hw_mixer.cpp:65]   --->   Operation 94 'write' 'write_ln65' <Predicate = (or_ln69_6)> <Delay = 0.00>
-ST_3 : Operation 95 [1/1] (0.42ns)   --->   "%ret_ln0 = ret"   --->   Operation 95 'ret' 'ret_ln0' <Predicate = (or_ln69_6)> <Delay = 0.42>
+ST_3 : Operation 87 [1/1] (0.00ns)   --->   "%sext_ln65 = sext i32 %mix_int_14" [hw_mixer.cpp:65]   --->   Operation 87 'sext' 'sext_ln65' <Predicate = (!icmp_ln65)> <Delay = 0.00>
+ST_3 : Operation 88 [1/1] (0.72ns)   --->   "%zext_ln65_cast = sparsemux i9 @_ssdm_op_SparseMux.ap_auto.8i9.i9.i4, i4 1, i9 256, i4 2, i9 181, i4 3, i9 148, i4 4, i9 128, i4 5, i9 114, i4 6, i9 105, i4 7, i9 97, i4 8, i9 91, i9 0, i4 %active_14_read" [hw_mixer.cpp:65]   --->   Operation 88 'sparsemux' 'zext_ln65_cast' <Predicate = (!icmp_ln65)> <Delay = 0.72> <CoreInst = "BinarySparseMux_DontCare">   --->   Core 149 'BinarySparseMux_DontCare' <Latency = 0> <II = 1> <Delay = 0.72> <FuncUnit> <Opcode : 'sparsemux'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 89 [1/1] (0.00ns)   --->   "%zext_ln65 = zext i9 %zext_ln65_cast" [hw_mixer.cpp:65]   --->   Operation 89 'zext' 'zext_ln65' <Predicate = (!icmp_ln65)> <Delay = 0.00>
+ST_3 : Operation 90 [1/1] (3.42ns)   --->   "%mul_ln65 = mul i40 %zext_ln65, i40 %sext_ln65" [hw_mixer.cpp:65]   --->   Operation 90 'mul' 'mul_ln65' <Predicate = (!icmp_ln65)> <Delay = 3.42> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 3.42> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 91 [1/1] (0.00ns)   --->   "%trunc_ln = partselect i32 @_ssdm_op_PartSelect.i32.i40.i32.i32, i40 %mul_ln65, i32 8, i32 39" [hw_mixer.cpp:65]   --->   Operation 91 'partselect' 'trunc_ln' <Predicate = (!icmp_ln65)> <Delay = 0.00>
+ST_3 : Operation 92 [1/1] (0.00ns)   --->   "%out_pkt_data = phi i32 %trunc_ln, void %cond.true, i32 0, void %while.body" [hw_mixer.cpp:65]   --->   Operation 92 'phi' 'out_pkt_data' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 93 [1/1] ( I:0.49ns O:0.49ns )   --->   "%write_ln74 = write void @_ssdm_op_Write.axis.volatile.i32P0A.i4P0A.i4P0A.i2P0A.i1P0A.i5P0A.i6P0A, i32 %mix_out_V_data_V, i4 %mix_out_V_keep_V, i4 %mix_out_V_strb_V, i2 %mix_out_V_user_V, i1 %mix_out_V_last_V, i5 %mix_out_V_id_V, i6 %mix_out_V_dest_V, i32 %out_pkt_data, i4 15, i4 15, i2 0, i1 0, i5 0, i6 0" [hw_mixer.cpp:74]   --->   Operation 93 'write' 'write_ln74' <Predicate = (!or_ln69_6)> <Delay = 0.49> <CoreInst = "regslice">   --->   Core 147 'regslice' <Latency = 0> <II = 1> <Delay = 0.65> <Adapter> <Opcode : 'read' 'write'>
+ST_3 : Operation 94 [1/1] (0.00ns)   --->   "%br_ln30 = br void %while.body" [hw_mixer.cpp:30]   --->   Operation 94 'br' 'br_ln30' <Predicate = (!or_ln69_6)> <Delay = 0.00>
+ST_3 : Operation 95 [1/1] (0.00ns)   --->   "%write_ln65 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %out_pkt_data_out, i32 %out_pkt_data" [hw_mixer.cpp:65]   --->   Operation 95 'write' 'write_ln65' <Predicate = (or_ln69_6)> <Delay = 0.00>
+ST_3 : Operation 96 [1/1] (0.42ns)   --->   "%ret_ln0 = ret"   --->   Operation 96 'ret' 'ret_ln0' <Predicate = (or_ln69_6)> <Delay = 0.42>
 
 
 ============================================================
@@ -189,32 +190,32 @@ Target clock period: 10.000ns, clock uncertainty: 2.700ns.
 
  <State 1>: 6.388ns
 The critical path consists of the following:
-	axis read operation ('empty_27', hw_mixer.cpp:41) on port 'stream_in_0_V_data_V' (hw_mixer.cpp:41) [106]  (0.079 ns)
-	'select' operation 32 bit ('mix_int', hw_mixer.cpp:54) [130]  (0.449 ns)
-	'add' operation 32 bit ('mix_int', hw_mixer.cpp:55) [131]  (1.016 ns)
-	'select' operation 32 bit ('mix_int', hw_mixer.cpp:55) [132]  (0.449 ns)
-	'add' operation 32 bit ('mix_int', hw_mixer.cpp:56) [133]  (1.016 ns)
-	'select' operation 32 bit ('mix_int', hw_mixer.cpp:56) [134]  (0.449 ns)
-	'add' operation 32 bit ('mix_int', hw_mixer.cpp:57) [135]  (1.016 ns)
-	'select' operation 32 bit ('mix_int', hw_mixer.cpp:57) [136]  (0.449 ns)
-	'add' operation 32 bit ('mix_int', hw_mixer.cpp:58) [137]  (1.016 ns)
-	'select' operation 32 bit ('mix_int', hw_mixer.cpp:58) [138]  (0.449 ns)
+	axis read operation ('empty_27', hw_mixer.cpp:41) on port 'stream_in_0_V_data_V' (hw_mixer.cpp:41) [107]  (0.079 ns)
+	'select' operation 32 bit ('mix_int', hw_mixer.cpp:54) [131]  (0.449 ns)
+	'add' operation 32 bit ('mix_int', hw_mixer.cpp:55) [132]  (1.016 ns)
+	'select' operation 32 bit ('mix_int', hw_mixer.cpp:55) [133]  (0.449 ns)
+	'add' operation 32 bit ('mix_int', hw_mixer.cpp:56) [134]  (1.016 ns)
+	'select' operation 32 bit ('mix_int', hw_mixer.cpp:56) [135]  (0.449 ns)
+	'add' operation 32 bit ('mix_int', hw_mixer.cpp:57) [136]  (1.016 ns)
+	'select' operation 32 bit ('mix_int', hw_mixer.cpp:57) [137]  (0.449 ns)
+	'add' operation 32 bit ('mix_int', hw_mixer.cpp:58) [138]  (1.016 ns)
+	'select' operation 32 bit ('mix_int', hw_mixer.cpp:58) [139]  (0.449 ns)
 
  <State 2>: 4.395ns
 The critical path consists of the following:
-	'add' operation 32 bit ('mix_int', hw_mixer.cpp:59) [139]  (1.016 ns)
-	'select' operation 32 bit ('mix_int', hw_mixer.cpp:59) [140]  (0.449 ns)
-	'add' operation 32 bit ('mix_int', hw_mixer.cpp:60) [141]  (1.016 ns)
-	'select' operation 32 bit ('mix_int', hw_mixer.cpp:60) [142]  (0.449 ns)
-	'add' operation 32 bit ('mix_int', hw_mixer.cpp:61) [143]  (1.016 ns)
-	'select' operation 32 bit ('mix_int', hw_mixer.cpp:61) [144]  (0.449 ns)
+	'add' operation 32 bit ('mix_int', hw_mixer.cpp:59) [140]  (1.016 ns)
+	'select' operation 32 bit ('mix_int', hw_mixer.cpp:59) [141]  (0.449 ns)
+	'add' operation 32 bit ('mix_int', hw_mixer.cpp:60) [142]  (1.016 ns)
+	'select' operation 32 bit ('mix_int', hw_mixer.cpp:60) [143]  (0.449 ns)
+	'add' operation 32 bit ('mix_int', hw_mixer.cpp:61) [144]  (1.016 ns)
+	'select' operation 32 bit ('mix_int', hw_mixer.cpp:61) [145]  (0.449 ns)
 
  <State 3>: 4.638ns
 The critical path consists of the following:
-	'sparsemux' operation 9 bit ('zext_ln65_cast', hw_mixer.cpp:65) [148]  (0.721 ns)
-	'mul' operation 40 bit ('mul_ln65', hw_mixer.cpp:65) [150]  (3.420 ns)
-	'phi' operation 32 bit ('out_pkt.data', hw_mixer.cpp:65) with incoming values : ('trunc_ln', hw_mixer.cpp:65) [154]  (0.000 ns)
-	axis write operation ('write_ln74', hw_mixer.cpp:74) on port 'mix_out_V_data_V' (hw_mixer.cpp:74) [164]  (0.497 ns)
+	'sparsemux' operation 9 bit ('zext_ln65_cast', hw_mixer.cpp:65) [149]  (0.721 ns)
+	'mul' operation 40 bit ('mul_ln65', hw_mixer.cpp:65) [151]  (3.420 ns)
+	'phi' operation 32 bit ('out_pkt.data', hw_mixer.cpp:65) with incoming values : ('trunc_ln', hw_mixer.cpp:65) [155]  (0.000 ns)
+	axis write operation ('write_ln74', hw_mixer.cpp:74) on port 'mix_out_V_data_V' (hw_mixer.cpp:74) [165]  (0.497 ns)
 
 
 ============================================================

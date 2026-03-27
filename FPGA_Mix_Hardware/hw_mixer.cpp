@@ -28,7 +28,7 @@ void mixer(
     #pragma HLS ARRAY_PARTITION variable=recip_sqrt_lut complete
 
     while(1) {
-
+    #pragma HLS LOOP_TRIPCOUNT min=200 max=20000 avg=10000
     // Read all 8 streams
     audio_stream s0;
     audio_stream s1;

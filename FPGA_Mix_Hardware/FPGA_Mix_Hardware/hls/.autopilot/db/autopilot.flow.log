@@ -1,6 +1,6 @@
 Execute       source -notrace -encoding utf-8 /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/tps/tcl/tcl8.6/clock.tcl 
 Execute         source -encoding utf-8 /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/tps/tcl/tcl8/8.5/msgcat-1.6.1.tm 
-INFO-FLOW: Workspace /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls opened at Fri Mar 27 16:52:42 EDT 2026
+INFO-FLOW: Workspace /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls opened at Fri Mar 27 17:43:00 EDT 2026
 Execute       send_msg_by_id INFO @200-1505@%s%s default  vivado 
 INFO: [HLS 200-1505] Using default flow_target 'vivado'
 Execute       send_msg_by_id INFO @200-2174@%s%s component hls_config.cfg 
@@ -39,7 +39,7 @@ DBG:HLSDevice: Trying to load device library: /home/MakerIris/.var/app/com.githu
 DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vivado/data/parts/arch.xml
 DBG:HLSDevice: init success
 INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sfvc784-2-e'
-Command           create_platform done; 3.24 sec.
+Command           create_platform done; 1.21 sec.
 Execute           source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/common/xilinx.gen 
 Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/interface/plb46.gen 
 Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/interface/axi4.gen 
@@ -52,19 +52,18 @@ Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data
 Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/ip/xfft.gen 
 Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/ip/xfir.gen 
 Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/DSP48/dsp48.gen 
-Command           ap_source done; 0.13 sec.
 Execute           ap_part_info -name xczu3eg-sfvc784-2-e -data info 
 Execute           config_compile -quiet -complex-mul-dsp=0 
-Command         set_part done; 3.42 sec.
+Command         set_part done; 1.3 sec.
 Execute         send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from hls_config.cfg(5) 
 INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from hls_config.cfg(5)
 Execute         config_export -format=ip_catalog 
-Command       apply_ini done; 3.46 sec.
+Command       apply_ini done; 1.31 sec.
 Execute       write_component -config /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/hls_config.cfg 
 Execute         send_msg_by_id INFO @200-2176@%s /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/vitis-comp.json 
 INFO: [HLS 200-2176] Writing Vitis IDE component file /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/vitis-comp.json
-Command     open_solution done; 3.53 sec.
-Command   open_component done; 3.53 sec.
+Command     open_solution done; 1.33 sec.
+Command   open_component done; 1.33 sec.
 Execute   apply_ini /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/config.cmdline -iscmdline 
 Execute   ::AP::init_summary_file csynth 
 Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
@@ -74,7 +73,7 @@ Execute     ap_part_info -name xczu3eg-sfvc784-2-e -data info
 INFO-FLOW: run_clang hw_mixer.cpp.xilinx-performance-pragma-detector exec: /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/lnx64/tools/clang-16/bin/xilinx-performance-pragma-detector hw_mixer.cpp -- -fhls -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/autopilot -I /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -target fpga64-xilinx-linux-gnu -I /usr/include/x86_64-linux-gnu --gcc-toolchain=/home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/tps/lnx64/gcc-8.3.0 -hls-platform-db-name=/home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/common/platform.db -hls-platform-name=zynquplus_medium -device-resource-info=BRAM_432.000000_DSP_360.000000_FF_141120.000000_LUT_70560.000000_SLICE_8820.000000_URAM_0.000000 -device-name-info=xczu3eg-sfvc784-2-e > /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/hw_mixer.cpp.xilinx-performance-pragma-detector.out.log 2> /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/hw_mixer.cpp.xilinx-performance-pragma-detector.err.log
 INFO-FLOW: run_clang result=success num-err-msgs=0 num-stderr-lines=1
 Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -from_csynth_design=1 
-INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 5.43 seconds. CPU system time: 0.91 seconds. Elapsed time: 6.39 seconds; current allocated memory: 630.586 MB.
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 2.18 seconds. CPU system time: 0.35 seconds. Elapsed time: 2.43 seconds; current allocated memory: 630.605 MB.
 Execute       send_msg_by_id INFO @200-2191@%s%s C-Synthesis clang-16 
 INFO: [HLS 200-2191] C-Synthesis will use clang-16 as the compiler
 Execute       set_directive_top mixer -name=mixer 
@@ -86,18 +85,18 @@ INFO-FLOW: Running: GCC PP 39
 INFO-FLOW: Source preprocessing
 INFO-FLOW: run_clang hw_mixer.cpp.clang exec: /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/lnx64/tools/clang-16/bin/clang hw_mixer.cpp -foptimization-record-file=/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/hw_mixer.cpp.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll|inline -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info --gcc-toolchain=/home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/tps/lnx64/gcc-8.3.0 -fhls -fno-exceptions -insert-hls-directive=/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/all.directive.json -hls-directive-location -E -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Xclang -no-opaque-pointers -Xclang -fmerge-all-constants -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -Wno-error=dump-hls-pragmas -hls-clock-period=10 -fno-threadsafe-statics -fno-use-cxa-atexit -target fpga64-xilinx-linux-gnu -fno-threadsafe-statics -fno-use-cxa-atexit -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/autopilot -I /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -I /usr/include/x86_64-linux-gnu -o /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/hw_mixer.pp.0.cpp -hls-platform-db-name=/home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/common/platform.db -hls-platform-name=zynquplus_medium -device-resource-info=BRAM_432.000000_DSP_360.000000_FF_141120.000000_LUT_70560.000000_SLICE_8820.000000_URAM_0.000000 -device-name-info=xczu3eg-sfvc784-2-e > /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/hw_mixer.cpp.clang.out.log 2> /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/hw_mixer.cpp.clang.err.log
 INFO-FLOW: run_clang result=success num-err-msgs=0 num-stderr-lines=0
-INFO-FLOW: Done: GCC PP 39 time: 0.5 seconds 
+INFO-FLOW: Done: GCC PP 39 time: 0.2 seconds 
 INFO-FLOW: Source syntax check for synthesis
 INFO-FLOW: run_clang clang exec: /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/lnx64/tools/clang-16/bin/clang -foptimization-record-file=/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll|inline -mllvm -pass-remarks=reflow|pasta|unroll|inline -fsyntax-only -fhls -target fpga64-xilinx-linux-gnu /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/hw_mixer.pp.0.cpp -hls-platform-db-name=/home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/common/platform.db -hls-platform-name=zynquplus_medium -device-resource-info=BRAM_432.000000_DSP_360.000000_FF_141120.000000_LUT_70560.000000_SLICE_8820.000000_URAM_0.000000 -device-name-info=xczu3eg-sfvc784-2-e > /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/clang.out.log 2> /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/clang.err.log
 INFO-FLOW: run_clang result=success num-err-msgs=0 num-stderr-lines=0
 Execute       clang_tidy xilinx-systemc-detector -desc systemc-detector /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/hw_mixer.pp.0.cpp  -target fpga -directive=/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/.systemc_flag 
 INFO-FLOW: exec /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/lnx64/tools/clang-16/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/.systemc_flag -fix-errors /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/hw_mixer.pp.0.cpp -- - -target fpga -fhls -ferror-limit=0
-Command       clang_tidy done; 1.32 sec.
+Command       clang_tidy done; 0.44 sec.
 INFO-FLOW: Running: clang-tidy CDT preprocess 39
 Execute       clang_tidy xilinx-directive2pragma -desc directive2pragma /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/hw_mixer.pp.0.cpp  -target fpga -directive=/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/all.directive.json 
 INFO-FLOW: exec /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/lnx64/tools/clang-16/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/all.directive.json -fix-errors /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/hw_mixer.pp.0.cpp -- - -target fpga -fhls -ferror-limit=0
-Command       clang_tidy done; 1.35 sec.
-INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 1.3 seconds 
+Command       clang_tidy done; 0.69 sec.
+INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 0.7 seconds 
 INFO-FLOW: Calling xilinx-label-all-loops ... 
 INFO-FLOW: Calling xilinx-aggregate-on-hls-vector ... 
 Execute       clang_tidy -errorcheck -desc loop-label xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/hw_mixer.pp.0.cpp  -target fpga 
@@ -105,7 +104,7 @@ INFO-FLOW: run_clang loop-label exec: /home/MakerIris/.var/app/com.github.corna.
 Execute         source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/tps/tcl/tcllib2.0/yaml/yaml.tcl 
 Execute           source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/tps/tcl/tcllib2.0/cmdline/cmdline.tcl 
 INFO-FLOW: run_clang result=success num-err-msgs=0 num-stderr-lines=28
-Command       clang_tidy done; 1.77 sec.
+Command       clang_tidy done; 0.88 sec.
 INFO-FLOW: run_clang hw_mixer.pp.0.cpp.xilinx-dataflow-lawyer exec: /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/lnx64/tools/clang-16/bin/xilinx-dataflow-lawyer -export-fixes=/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/hw_mixer.pp.0.cpp.xilinx-dataflow-lawyer.diag.yml /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/hw_mixer.pp.0.cpp -- - -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/hw_mixer.pp.0.cpp.xilinx-dataflow-lawyer.out.log 2> /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/hw_mixer.pp.0.cpp.xilinx-dataflow-lawyer.err.log
 INFO-FLOW: run_clang result=success num-err-msgs=0 num-stderr-lines=0
 Execute       ap_part_info -name xczu3eg-sfvc784-2-e -data info 
@@ -115,7 +114,7 @@ INFO-FLOW: run_clang result=success num-err-msgs=0 num-stderr-lines=0
 INFO-FLOW: converting llvm 16.0.4 bc to downstrem bc
 INFO-FLOW: run_clang hw_mixer.bc.llvm-converter exec: /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/lnx64/tools/clang-16/bin/llvm-converter -opaque-pointers=0 /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/hw_mixer.pre.g.bc -o /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/hw_mixer.bc > /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/hw_mixer.bc.llvm-converter.out.log 2> /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/hw_mixer.bc.llvm-converter.err.log
 INFO-FLOW: run_clang result=success num-err-msgs=0 num-stderr-lines=0
-INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 6.83 seconds. CPU system time: 0.83 seconds. Elapsed time: 8.14 seconds; current allocated memory: 632.121 MB.
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 3.27 seconds. CPU system time: 0.38 seconds. Elapsed time: 3.68 seconds; current allocated memory: 632.121 MB.
 INFO-FLOW: Linking Debug ...
 INFO-FLOW: Linking dut bc code.
 Execute       run_link_or_opt -out /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/a.g.ld.0.bc -args /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/hw_mixer.bc 
@@ -126,18 +125,17 @@ INFO-FLOW: run_clang a.g.ld.1.lower.bc.opt exec: /home/MakerIris/.var/app/com.gi
 INFO-FLOW: run_clang result=success num-err-msgs=0 num-stderr-lines=0
 INFO-FLOW: Running: gen_design_size_report post-opt
 INFO-FLOW: Done: gen_design_size_report post-opt time: 0 seconds 
-Command       run_link_or_opt done; 0.13 sec.
 INFO-FLOW: Linking math bc lib
 Execute       run_link_or_opt -out /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/a.g.ld.2.m1.bc -args /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/a.g.ld.1.lower.bc -only-needed /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/lnx64/lib/libhlsm_39.bc /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/lnx64/lib/libhlsmc++_39.bc 
 INFO-FLOW: run_clang a.g.ld.2.m1.bc.llvm-link exec: /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/lnx64/tools/clang-3.9-csynth/bin/llvm-link /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/a.g.ld.1.lower.bc -only-needed /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/lnx64/lib/libhlsm_39.bc /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/lnx64/lib/libhlsmc++_39.bc -o /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/a.g.ld.2.m1.bc > /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.out.log 2> /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.err.log
 INFO-FLOW: run_clang result=success num-err-msgs=0 num-stderr-lines=0
-Command       run_link_or_opt done; 2.21 sec.
+Command       run_link_or_opt done; 0.91 sec.
 Execute       run_link_or_opt -opt -out /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/a.g.ld.3.fpc.bc -args /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=mixer -reflow-float-conversion 
 INFO-FLOW: run_clang a.g.ld.3.fpc.bc.opt exec: /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/lnx64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll|inline -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/a.g.ld.3.fpc.bc.opt.diag.yml /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=mixer -reflow-float-conversion -o /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/a.g.ld.3.fpc.bc > /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/a.g.ld.3.fpc.bc.opt.out.log 2> /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/a.g.ld.3.fpc.bc.opt.err.log
 INFO-FLOW: run_clang result=success num-err-msgs=0 num-stderr-lines=0
 INFO-FLOW: Running: gen_design_size_report post-opt
 INFO-FLOW: Done: gen_design_size_report post-opt time: 0 seconds 
-Command       run_link_or_opt done; 0.95 sec.
+Command       run_link_or_opt done; 0.39 sec.
 Execute       run_link_or_opt -out /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/a.g.ld.4.m2.bc -args /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/a.g.ld.3.fpc.bc -only-needed /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/lnx64/lib/libfloatconversion_39.bc 
 INFO-FLOW: run_clang a.g.ld.4.m2.bc.llvm-link exec: /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/lnx64/tools/clang-3.9-csynth/bin/llvm-link /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/a.g.ld.3.fpc.bc -only-needed /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/lnx64/lib/libfloatconversion_39.bc -o /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/a.g.ld.4.m2.bc > /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.out.log 2> /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.err.log
 INFO-FLOW: run_clang result=success num-err-msgs=0 num-stderr-lines=0
@@ -181,26 +179,26 @@ Execute       send_msg_by_id INFO @200-1995@%s%s%s 556 Performance (step 4) (/ho
 INFO: [HLS 200-1995] There were 556 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/syn/report/csynth_design_size.rpt:2)
 Execute       send_msg_by_id INFO @200-1995@%s%s%s 467 HW Transforms (step 1) (/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/syn/report/csynth_design_size.rpt:2) 
 INFO: [HLS 200-1995] There were 467 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details (/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/syn/report/csynth_design_size.rpt:2)
-Execute       send_msg_by_id INFO @200-1995@%s%s%s 256 HW Transforms (step 2) (/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/syn/report/csynth_design_size.rpt:2) 
-INFO: [HLS 200-1995] There were 256 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/syn/report/csynth_design_size.rpt:2)
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 257 HW Transforms (step 2) (/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/syn/report/csynth_design_size.rpt:2) 
+INFO: [HLS 200-1995] There were 257 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/syn/report/csynth_design_size.rpt:2)
 INFO: [HLS 214-248] Applying array_partition to '_ZL14recip_sqrt_lut': Complete partitioning on dimension 1. (./hw_mixer.h:9:0)
 INFO: [HLS 214-376] Pipelining loop< VITIS_LOOP_30_1> at hw_mixer.cpp:30:22 due to pipeline_loops threshold
 INFO-FLOW: run_clang result=success num-err-msgs=0 num-stderr-lines=19
 INFO-FLOW: DBG:PUTS: copy_raw_kernel_xml ap_link_39: kernel.xml not generated: /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/kernel.internal.xml
-INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 4.63 seconds. CPU system time: 0.76 seconds. Elapsed time: 8.67 seconds; current allocated memory: 633.773 MB.
-INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 633.773 MB.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1.94 seconds. CPU system time: 0.32 seconds. Elapsed time: 6.46 seconds; current allocated memory: 633.758 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 633.758 MB.
 Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
 Execute         cleanup_all_models 
 INFO: [HLS 200-10] Starting code transformations ...
 INFO-FLOW: Running Standard Transforms...
 Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -reassociate -gvn -reassociate -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top mixer -deadargelim -mem2reg -instcombine -dce -presyn-prepare -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -promote-dbg-pointer -norm-name /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/a.g.0.bc -o /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/a.g.1.bc -f -phase std-opt 
-INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 634.133 MB.
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 634.141 MB.
 INFO: [HLS 200-10] Checking synthesizability ...
 INFO-FLOW: Checking Synthesizability 1/2..
 Execute         transform -hls -syn-check -check-rec-only -scalarrepl -norm-name -dce -mem2reg -instcombine -directive-preproc -mem2reg -dse -dce -dce -pag -array-normalize -instcombine -dce -array-seg-normalize -instcombine -dce -data-pack -instcombine -dce -inst-simplify -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -directive-preproc -mem2reg -dse -dce -globaldce /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/a.g.1.bc -o /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/a.g.2.prechk.bc -f 
 INFO-FLOW: Checking Synthesizability 2/2..
 Execute         transform -syn-check /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/a.g.2.prechk.bc -o /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/a.g.2.bc -f -phase syn-check 
-INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 634.566 MB.
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 634.574 MB.
 INFO-FLOW: Compiler optimizing ...
 INFO-FLOW: Share syncheck's 1.bc for syn flow: copy /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/a.g.1.bc to /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/a.o.1.bc
 INFO-FLOW: Presyn 1...
@@ -208,15 +206,15 @@ Execute         transform -hls -tmp /home/MakerIris/Documents/FPGA_Audio_Mix/FPG
 INFO-FLOW: Presyn 2...
 Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin2 -bitwidthmin2 -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -barrier -norm-name /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/a.o.1.tmp.bc -o /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/a.o.2.bc -f -phase presyn 
 INFO: [XFORM 203-11] Balancing expressions in function 'mixer' (hw_mixer.cpp:5:22)...7 expression(s) balanced.
-INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.11 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.12 seconds; current allocated memory: 656.715 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.05 seconds; current allocated memory: 656.715 MB.
 Execute         transform -hls -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -aggr-aa -licm -loop-dep -loop-bound -licm -loop-simplify -loop-sink-hoist -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg-lite -loop-simplify -array-burst -promote-global-argument -dce -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -inst-simplify -cfgopt -simplifycfg-lite -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -deadargelim -dce -canonicalize-dataflow -dce -deadargelim -globaldce -mem2reg -bram-byte-enable -inst-simplify -inst-rectify -instcombine -adce -deadargelim -load-elim -read-loop-dep -loop-simplify -loop-rewind-sink-hoist -loop-outline -hls-dead-arg-elim -directive-preproc -bitwidthmin2 -bitwidthmin2 -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable-spec-prop -mul2addshift -deadargelim -inst-simplify -dce -mem2reg -instcombine -gvn -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg-lite -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -gvn -adce -deadargelim -float-op-raise -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg-lite -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg-lite -loop-simplify -mergereturn -inst-simplify -inst-rectify -globaldce -dce -load-elim -bitop-lower -float-op-raise -fma-raise -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -dyn-mem-reuse -dce -recurrence-min -dce -share-scalar-alloca -deadargelim -dce -check-stream -norm-name -legalize -inst-clarity -bitwidth -dce -validate-dataflow -dump-loop-dep-to-ir -check-all-ssdm -drop-inferred-ii -dump-complexity-metric /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/a.o.2.bc -o /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
 Execute           AP::auto_get_db
 INFO-FLOW: Building ssdm...
 Execute         transform -hls -cdfg-build /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/a.o.3.bc -o /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
-INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.12 seconds. CPU system time: 0 seconds. Elapsed time: 0.13 seconds; current allocated memory: 657.613 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 657.598 MB.
 INFO-FLOW: Finish building internal data model.
-Command       opt_and_import_c done; 0.32 sec.
-Command     elaborate done; 17.13 sec.
+Command       opt_and_import_c done; 0.14 sec.
+Command     elaborate done; 10.28 sec.
 Execute     ap_eval exec zip -j /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/dut.hcp $dbDir/a.o.3.bc $dbDir/${topname}.rtl_wrap.cfg.tcl $dbDir/apatb_${topname}.cpp $dbDir/apatb_${topname}_util.cpp $dbDir/apatb_${topname}_ir.ll $dbDir/mapper_${topname}.cpp $dbDir/top-io-fe.xml $dbDir/kernel.internal.xml $workdir/../hls.app 
 INFO: [HLS 200-10] Starting hardware synthesis ...
 INFO-FLOW: Synthesizing C/C++ design AP::SynTopModule=mixer
@@ -255,7 +253,7 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_30_1'.
 INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'VITIS_LOOP_30_1'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.09 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.13 seconds; current allocated memory: 658.699 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.05 seconds; current allocated memory: 658.680 MB.
 Execute     syn_report -verbosereport -o /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/mixer_Pipeline_VITIS_LOOP_30_1.verbose.sched.rpt 
 Execute       list_part -family xczu3eg-sfvc784-2-e 
 Execute         ap_family_info -name xczu3eg-sfvc784-2-e -data names 
@@ -269,7 +267,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.05 seconds; current allocated memory: 658.699 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 658.680 MB.
 Execute     syn_report -verbosereport -o /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/mixer_Pipeline_VITIS_LOOP_30_1.verbose.bind.rpt 
 Execute       list_part -family xczu3eg-sfvc784-2-e 
 Execute         ap_family_info -name xczu3eg-sfvc784-2-e -data names 
@@ -283,7 +281,7 @@ Execute     set_default_model mixer
 Execute     schedule -model mixer 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 658.699 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 658.680 MB.
 Execute     syn_report -verbosereport -o /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/mixer.verbose.sched.rpt 
 Execute       list_part -family xczu3eg-sfvc784-2-e 
 Execute         ap_family_info -name xczu3eg-sfvc784-2-e -data names 
@@ -297,7 +295,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 658.699 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 658.680 MB.
 Execute     syn_report -verbosereport -o /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/mixer.verbose.bind.rpt 
 Execute       list_part -family xczu3eg-sfvc784-2-e 
 Execute         ap_family_info -name xczu3eg-sfvc784-2-e -data names 
@@ -317,7 +315,7 @@ INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'mixer_Pipeline_VI
 INFO: [RTGEN 206-100] Generating core module 'mul_9ns_32s_40_1_1': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'sparsemux_17_4_9_1_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'mixer_Pipeline_VITIS_LOOP_30_1'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.1 seconds; current allocated memory: 658.941 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 658.973 MB.
 Execute     source /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/mixer.rtl_wrap.cfg.tcl 
 Execute     gen_rtl mixer_Pipeline_VITIS_LOOP_30_1 -style xilinx -f -lang vhdl -o /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/syn/vhdl/mixer_mixer_Pipeline_VITIS_LOOP_30_1 
 Execute     gen_rtl mixer_Pipeline_VITIS_LOOP_30_1 -style xilinx -f -lang vlog -o /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/syn/verilog/mixer_mixer_Pipeline_VITIS_LOOP_30_1 
@@ -408,8 +406,7 @@ INFO: [RTGEN 206-500] Setting interface mode on port 'mixer/mix_out_V_dest_V' to
 INFO: [RTGEN 206-500] Setting interface mode on function 'mixer' to 's_axilite & ap_ctrl_hs'.
 INFO: [RTGEN 206-100] Bundling port 'return' to AXI-Lite port control.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'mixer'.
-Command     create_rtl_model done; 0.12 sec.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.22 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.24 seconds; current allocated memory: 662.559 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 662.574 MB.
 Execute     source /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/mixer.rtl_wrap.cfg.tcl 
 Execute     gen_rtl mixer -istop -style xilinx -f -lang vhdl -o /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/syn/vhdl/mixer 
 Execute     gen_rtl mixer -istop -style xilinx -f -lang vlog -o /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/syn/verilog/mixer 
@@ -679,7 +676,6 @@ Execute       source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilin
 Execute       source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/ip/xfft.gen 
 Execute       source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/ip/xfir.gen 
 Execute       source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/DSP48/dsp48.gen 
-Command     ap_source done; 0.12 sec.
 INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
 INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::generate_ip_cores gen_sim_model='1' gen_fp_models='0' gen_for_export='0' dstSCDir='' dstVhdlDir='/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/vhdl' dstVlogDir='/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/vlog' tclDir='/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db' modelList='mixer_mul_9ns_32s_40_1_1
 mixer_sparsemux_17_4_9_1_1
@@ -759,7 +755,7 @@ Execute     source /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FP
 Execute     source /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/mixer_Pipeline_VITIS_LOOP_30_1.compgen.tcl 
 Execute     source /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/mixer.compgen.tcl 
 Execute       source ./control.slave.tcl 
-INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.4 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.44 seconds; current allocated memory: 666.758 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.19 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.21 seconds; current allocated memory: 666.844 MB.
 INFO-FLOW: DBG:PROC: ::HLSREPORTS::create_csynth_xml bind_info_var='bind_info' RtlSubPrefix='mixer_' outfile=''
 INFO-FLOW: Running: create_csynth_xml read xml data
 INFO-FLOW: Done: create_csynth_xml read xml data time: 0 seconds 
@@ -774,7 +770,7 @@ INFO-FLOW: create_csynth_xml: csynth_xml_module_hier max_depth=3
 INFO-FLOW: Running: create_csynth_xml gen bind_report_dict
 INFO-FLOW: Done: create_csynth_xml gen bind_report_dict time: 0 seconds 
 INFO-FLOW: Running: create_csynth_xml config info
-INFO-FLOW: Done: create_csynth_xml config info time: 0.2 seconds 
+INFO-FLOW: Done: create_csynth_xml config info time: 0.1 seconds 
 INFO-FLOW: Running: create_csynth_xml write xml
 INFO-FLOW: Done: create_csynth_xml write xml time: 0 seconds 
 INFO-FLOW: DBG:PUTS:      create_csynth_xml wrote csynth_xml=/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/syn/report/csynth.xml
@@ -866,9 +862,9 @@ Execute     source /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FP
 Execute     sc_get_clocks mixer 
 Execute     source /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/global.setting.tcl 
 Execute     source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/tps/tcl/tcllib2.0/fileutil/fileutil.tcl 
-INFO-FLOW: Done: generate_json time: 0.3 seconds 
+INFO-FLOW: Done: generate_json time: 0.2 seconds 
 INFO-FLOW: Running: add_csynth_report_sections
-INFO-FLOW: DBG:PROC: ::HLSREPORTS::add_csynth_report_sections bind_info_dict='adapter_nodes {{BINDTYPE adapter ID {} IMPL {} LATENCY {} OPTYPE {} PRAGMA {} RTLNAME control_s_axi_U SOURCE {} VARIABLE {} LOOP {} BUNDLEDNAME control DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE s_axilite STORAGESIZE {} STORAGEUSAGE interface DISPNAME {bind_adapter }}} cache_nodes {} report_dict {TOPINST mixer MODULE2INSTS {mixer mixer mixer_Pipeline_VITIS_LOOP_30_1 grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255} INST2MODULE {mixer mixer grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255 mixer_Pipeline_VITIS_LOOP_30_1} INSTDATA {mixer {DEPTH 1 CHILDREN grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255} grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255 {DEPTH 2 CHILDREN {}}} MODULEDATA {mixer_Pipeline_VITIS_LOOP_30_1 {BINDINFO {{BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln65_fu_501_p2 SOURCE hw_mixer.cpp:65 VARIABLE icmp_ln65 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL auto_sel LATENCY 0 OPTYPE select PRAGMA {} RTLNAME mix_int_fu_559_p3 SOURCE hw_mixer.cpp:54 VARIABLE mix_int LOOP VITIS_LOOP_30_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op select} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME mix_int_1_fu_567_p2 SOURCE hw_mixer.cpp:55 VARIABLE mix_int_1 LOOP VITIS_LOOP_30_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto_sel LATENCY 0 OPTYPE select PRAGMA {} RTLNAME mix_int_2_fu_573_p3 SOURCE hw_mixer.cpp:55 VARIABLE mix_int_2 LOOP VITIS_LOOP_30_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op select} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME mix_int_3_fu_581_p2 SOURCE hw_mixer.cpp:56 VARIABLE mix_int_3 LOOP VITIS_LOOP_30_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto_sel LATENCY 0 OPTYPE select PRAGMA {} RTLNAME mix_int_4_fu_587_p3 SOURCE hw_mixer.cpp:56 VARIABLE mix_int_4 LOOP VITIS_LOOP_30_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op select} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME mix_int_5_fu_595_p2 SOURCE hw_mixer.cpp:57 VARIABLE mix_int_5 LOOP VITIS_LOOP_30_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto_sel LATENCY 0 OPTYPE select PRAGMA {} RTLNAME mix_int_6_fu_601_p3 SOURCE hw_mixer.cpp:57 VARIABLE mix_int_6 LOOP VITIS_LOOP_30_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op select} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME mix_int_7_fu_609_p2 SOURCE hw_mixer.cpp:58 VARIABLE mix_int_7 LOOP VITIS_LOOP_30_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto_sel LATENCY 0 OPTYPE select PRAGMA {} RTLNAME mix_int_8_fu_615_p3 SOURCE hw_mixer.cpp:58 VARIABLE mix_int_8 LOOP VITIS_LOOP_30_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op select} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME mix_int_9_fu_674_p2 SOURCE hw_mixer.cpp:59 VARIABLE mix_int_9 LOOP VITIS_LOOP_30_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto_sel LATENCY 0 OPTYPE select PRAGMA {} RTLNAME mix_int_10_fu_679_p3 SOURCE hw_mixer.cpp:59 VARIABLE mix_int_10 LOOP VITIS_LOOP_30_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op select} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME mix_int_11_fu_685_p2 SOURCE hw_mixer.cpp:60 VARIABLE mix_int_11 LOOP VITIS_LOOP_30_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto_sel LATENCY 0 OPTYPE select PRAGMA {} RTLNAME mix_int_12_fu_691_p3 SOURCE hw_mixer.cpp:60 VARIABLE mix_int_12 LOOP VITIS_LOOP_30_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op select} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME mix_int_13_fu_698_p2 SOURCE hw_mixer.cpp:61 VARIABLE mix_int_13 LOOP VITIS_LOOP_30_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto_sel LATENCY 0 OPTYPE select PRAGMA {} RTLNAME mix_int_14_fu_704_p3 SOURCE hw_mixer.cpp:61 VARIABLE mix_int_14 LOOP VITIS_LOOP_30_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op select} VISIBLE false} {BINDTYPE op ID {} IMPL compactencoding_dontcare LATENCY 0 OPTYPE sparsemux PRAGMA {} RTLNAME sparsemux_17_4_9_1_1_U2 SOURCE hw_mixer.cpp:65 VARIABLE zext_ln65_cast LOOP VITIS_LOOP_30_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sparsemux} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE mul PRAGMA {} RTLNAME mul_9ns_32s_40_1_1_U1 SOURCE hw_mixer.cpp:65 VARIABLE mul_ln65 LOOP VITIS_LOOP_30_1 BUNDLEDNAME {} DSP 2 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE or PRAGMA {} RTLNAME or_ln69_fu_623_p2 SOURCE hw_mixer.cpp:69 VARIABLE or_ln69 LOOP VITIS_LOOP_30_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op or} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE or PRAGMA {} RTLNAME or_ln69_1_fu_629_p2 SOURCE hw_mixer.cpp:69 VARIABLE or_ln69_1 LOOP VITIS_LOOP_30_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op or} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE or PRAGMA {} RTLNAME or_ln69_2_fu_635_p2 SOURCE hw_mixer.cpp:69 VARIABLE or_ln69_2 LOOP VITIS_LOOP_30_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op or} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE or PRAGMA {} RTLNAME or_ln69_3_fu_641_p2 SOURCE hw_mixer.cpp:69 VARIABLE or_ln69_3 LOOP VITIS_LOOP_30_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op or} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE or PRAGMA {} RTLNAME or_ln69_4_fu_647_p2 SOURCE hw_mixer.cpp:69 VARIABLE or_ln69_4 LOOP VITIS_LOOP_30_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op or} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE or PRAGMA {} RTLNAME or_ln69_5_fu_653_p2 SOURCE hw_mixer.cpp:69 VARIABLE or_ln69_5 LOOP VITIS_LOOP_30_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op or} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE or PRAGMA {} RTLNAME or_ln69_6_fu_659_p2 SOURCE hw_mixer.cpp:69 VARIABLE or_ln69_6 LOOP VITIS_LOOP_30_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op or} VISIBLE false}} AREA {DSP 2 BRAM 0 URAM 0}} mixer {BINDINFO {{BINDTYPE op ID {} IMPL auto_sel LATENCY 0 OPTYPE select PRAGMA {} RTLNAME select_ln55_fu_459_p3 SOURCE hw_mixer.cpp:55 VARIABLE select_ln55 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op select} VISIBLE false} {BINDTYPE op ID {} IMPL auto_sel LATENCY 0 OPTYPE select PRAGMA {} RTLNAME select_ln55_1_fu_467_p3 SOURCE hw_mixer.cpp:55 VARIABLE select_ln55_1 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op select} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln56_fu_475_p2 SOURCE hw_mixer.cpp:56 VARIABLE add_ln56 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto_sel LATENCY 0 OPTYPE select PRAGMA {} RTLNAME select_ln56_fu_481_p3 SOURCE hw_mixer.cpp:56 VARIABLE select_ln56 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op select} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln57_fu_493_p2 SOURCE hw_mixer.cpp:57 VARIABLE add_ln57 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto_sel LATENCY 0 OPTYPE select PRAGMA {} RTLNAME select_ln57_fu_499_p3 SOURCE hw_mixer.cpp:57 VARIABLE select_ln57 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op select} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln58_fu_507_p2 SOURCE hw_mixer.cpp:58 VARIABLE add_ln58 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto_sel LATENCY 0 OPTYPE select PRAGMA {} RTLNAME select_ln58_fu_513_p3 SOURCE hw_mixer.cpp:58 VARIABLE select_ln58 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op select} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln59_fu_521_p2 SOURCE hw_mixer.cpp:59 VARIABLE add_ln59 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto_sel LATENCY 0 OPTYPE select PRAGMA {} RTLNAME select_ln59_fu_527_p3 SOURCE hw_mixer.cpp:59 VARIABLE select_ln59 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op select} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln60_fu_535_p2 SOURCE hw_mixer.cpp:60 VARIABLE add_ln60 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto_sel LATENCY 0 OPTYPE select PRAGMA {} RTLNAME select_ln60_fu_541_p3 SOURCE hw_mixer.cpp:60 VARIABLE select_ln60 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op select} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln61_fu_553_p2 SOURCE hw_mixer.cpp:61 VARIABLE add_ln61 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto_sel LATENCY 0 OPTYPE select PRAGMA {} RTLNAME select_ln61_fu_559_p3 SOURCE hw_mixer.cpp:61 VARIABLE select_ln61 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op select} VISIBLE false}} AREA {DSP 2 BRAM 0 URAM 0}}}}'
+INFO-FLOW: DBG:PROC: ::HLSREPORTS::add_csynth_report_sections bind_info_dict='adapter_nodes {{BINDTYPE adapter ID {} IMPL {} LATENCY {} OPTYPE {} PRAGMA {} RTLNAME control_s_axi_U SOURCE {} VARIABLE {} LOOP {} BUNDLEDNAME control DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE s_axilite STORAGESIZE {} STORAGEUSAGE interface DISPNAME {bind_adapter }}} cache_nodes {} report_dict {TOPINST mixer MODULE2INSTS {mixer mixer mixer_Pipeline_VITIS_LOOP_30_1 grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255} INST2MODULE {mixer mixer grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255 mixer_Pipeline_VITIS_LOOP_30_1} INSTDATA {mixer {DEPTH 1 CHILDREN grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255} grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255 {DEPTH 2 CHILDREN {}}} MODULEDATA {mixer_Pipeline_VITIS_LOOP_30_1 {BINDINFO {{BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln65_fu_509_p2 SOURCE hw_mixer.cpp:65 VARIABLE icmp_ln65 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL auto_sel LATENCY 0 OPTYPE select PRAGMA {} RTLNAME mix_int_fu_567_p3 SOURCE hw_mixer.cpp:54 VARIABLE mix_int LOOP VITIS_LOOP_30_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op select} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME mix_int_1_fu_575_p2 SOURCE hw_mixer.cpp:55 VARIABLE mix_int_1 LOOP VITIS_LOOP_30_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto_sel LATENCY 0 OPTYPE select PRAGMA {} RTLNAME mix_int_2_fu_581_p3 SOURCE hw_mixer.cpp:55 VARIABLE mix_int_2 LOOP VITIS_LOOP_30_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op select} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME mix_int_3_fu_589_p2 SOURCE hw_mixer.cpp:56 VARIABLE mix_int_3 LOOP VITIS_LOOP_30_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto_sel LATENCY 0 OPTYPE select PRAGMA {} RTLNAME mix_int_4_fu_595_p3 SOURCE hw_mixer.cpp:56 VARIABLE mix_int_4 LOOP VITIS_LOOP_30_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op select} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME mix_int_5_fu_603_p2 SOURCE hw_mixer.cpp:57 VARIABLE mix_int_5 LOOP VITIS_LOOP_30_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto_sel LATENCY 0 OPTYPE select PRAGMA {} RTLNAME mix_int_6_fu_609_p3 SOURCE hw_mixer.cpp:57 VARIABLE mix_int_6 LOOP VITIS_LOOP_30_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op select} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME mix_int_7_fu_617_p2 SOURCE hw_mixer.cpp:58 VARIABLE mix_int_7 LOOP VITIS_LOOP_30_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto_sel LATENCY 0 OPTYPE select PRAGMA {} RTLNAME mix_int_8_fu_623_p3 SOURCE hw_mixer.cpp:58 VARIABLE mix_int_8 LOOP VITIS_LOOP_30_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op select} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME mix_int_9_fu_682_p2 SOURCE hw_mixer.cpp:59 VARIABLE mix_int_9 LOOP VITIS_LOOP_30_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto_sel LATENCY 0 OPTYPE select PRAGMA {} RTLNAME mix_int_10_fu_687_p3 SOURCE hw_mixer.cpp:59 VARIABLE mix_int_10 LOOP VITIS_LOOP_30_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op select} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME mix_int_11_fu_693_p2 SOURCE hw_mixer.cpp:60 VARIABLE mix_int_11 LOOP VITIS_LOOP_30_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto_sel LATENCY 0 OPTYPE select PRAGMA {} RTLNAME mix_int_12_fu_699_p3 SOURCE hw_mixer.cpp:60 VARIABLE mix_int_12 LOOP VITIS_LOOP_30_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op select} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME mix_int_13_fu_706_p2 SOURCE hw_mixer.cpp:61 VARIABLE mix_int_13 LOOP VITIS_LOOP_30_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto_sel LATENCY 0 OPTYPE select PRAGMA {} RTLNAME mix_int_14_fu_712_p3 SOURCE hw_mixer.cpp:61 VARIABLE mix_int_14 LOOP VITIS_LOOP_30_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op select} VISIBLE false} {BINDTYPE op ID {} IMPL compactencoding_dontcare LATENCY 0 OPTYPE sparsemux PRAGMA {} RTLNAME sparsemux_17_4_9_1_1_U2 SOURCE hw_mixer.cpp:65 VARIABLE zext_ln65_cast LOOP VITIS_LOOP_30_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sparsemux} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE mul PRAGMA {} RTLNAME mul_9ns_32s_40_1_1_U1 SOURCE hw_mixer.cpp:65 VARIABLE mul_ln65 LOOP VITIS_LOOP_30_1 BUNDLEDNAME {} DSP 2 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE or PRAGMA {} RTLNAME or_ln69_fu_631_p2 SOURCE hw_mixer.cpp:69 VARIABLE or_ln69 LOOP VITIS_LOOP_30_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op or} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE or PRAGMA {} RTLNAME or_ln69_1_fu_637_p2 SOURCE hw_mixer.cpp:69 VARIABLE or_ln69_1 LOOP VITIS_LOOP_30_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op or} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE or PRAGMA {} RTLNAME or_ln69_2_fu_643_p2 SOURCE hw_mixer.cpp:69 VARIABLE or_ln69_2 LOOP VITIS_LOOP_30_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op or} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE or PRAGMA {} RTLNAME or_ln69_3_fu_649_p2 SOURCE hw_mixer.cpp:69 VARIABLE or_ln69_3 LOOP VITIS_LOOP_30_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op or} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE or PRAGMA {} RTLNAME or_ln69_4_fu_655_p2 SOURCE hw_mixer.cpp:69 VARIABLE or_ln69_4 LOOP VITIS_LOOP_30_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op or} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE or PRAGMA {} RTLNAME or_ln69_5_fu_661_p2 SOURCE hw_mixer.cpp:69 VARIABLE or_ln69_5 LOOP VITIS_LOOP_30_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op or} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE or PRAGMA {} RTLNAME or_ln69_6_fu_667_p2 SOURCE hw_mixer.cpp:69 VARIABLE or_ln69_6 LOOP VITIS_LOOP_30_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op or} VISIBLE false}} AREA {DSP 2 BRAM 0 URAM 0}} mixer {BINDINFO {{BINDTYPE op ID {} IMPL auto_sel LATENCY 0 OPTYPE select PRAGMA {} RTLNAME select_ln55_fu_459_p3 SOURCE hw_mixer.cpp:55 VARIABLE select_ln55 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op select} VISIBLE false} {BINDTYPE op ID {} IMPL auto_sel LATENCY 0 OPTYPE select PRAGMA {} RTLNAME select_ln55_1_fu_467_p3 SOURCE hw_mixer.cpp:55 VARIABLE select_ln55_1 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op select} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln56_fu_475_p2 SOURCE hw_mixer.cpp:56 VARIABLE add_ln56 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto_sel LATENCY 0 OPTYPE select PRAGMA {} RTLNAME select_ln56_fu_481_p3 SOURCE hw_mixer.cpp:56 VARIABLE select_ln56 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op select} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln57_fu_493_p2 SOURCE hw_mixer.cpp:57 VARIABLE add_ln57 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto_sel LATENCY 0 OPTYPE select PRAGMA {} RTLNAME select_ln57_fu_499_p3 SOURCE hw_mixer.cpp:57 VARIABLE select_ln57 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op select} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln58_fu_507_p2 SOURCE hw_mixer.cpp:58 VARIABLE add_ln58 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto_sel LATENCY 0 OPTYPE select PRAGMA {} RTLNAME select_ln58_fu_513_p3 SOURCE hw_mixer.cpp:58 VARIABLE select_ln58 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op select} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln59_fu_521_p2 SOURCE hw_mixer.cpp:59 VARIABLE add_ln59 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto_sel LATENCY 0 OPTYPE select PRAGMA {} RTLNAME select_ln59_fu_527_p3 SOURCE hw_mixer.cpp:59 VARIABLE select_ln59 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op select} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln60_fu_535_p2 SOURCE hw_mixer.cpp:60 VARIABLE add_ln60 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto_sel LATENCY 0 OPTYPE select PRAGMA {} RTLNAME select_ln60_fu_541_p3 SOURCE hw_mixer.cpp:60 VARIABLE select_ln60 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op select} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln61_fu_553_p2 SOURCE hw_mixer.cpp:61 VARIABLE add_ln61 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto_sel LATENCY 0 OPTYPE select PRAGMA {} RTLNAME select_ln61_fu_559_p3 SOURCE hw_mixer.cpp:61 VARIABLE select_ln61 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op select} VISIBLE false}} AREA {DSP 2 BRAM 0 URAM 0}}}}'
 INFO-FLOW: DBG:PUTS:      update_csynth_reports json2rpt_hw_sw_interfaces
 INFO-FLOW: Running: gen_csynth_sec_pragma
 INFO-FLOW: Done: gen_csynth_sec_pragma time: 0 seconds 
@@ -876,1087 +872,15 @@ Execute     send_msg_by_id INFO @200-2225@%s /home/MakerIris/Documents/FPGA_Audi
 INFO: [HLS 200-2225] Wrote inferred directives to file /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/syn/inferred_directives.ini
 INFO-FLOW: DBG:PUTS:      update_csynth_reports wrote xml
 INFO-FLOW: DBG:PUTS:      update_csynth_reports appended to csynth rpt file
-INFO-FLOW: Done: add_csynth_report_sections time: 0.2 seconds 
-INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.64 seconds. CPU system time: 0.06 seconds. Elapsed time: 0.71 seconds; current allocated memory: 672.469 MB.
+INFO-FLOW: Done: add_csynth_report_sections time: 0.1 seconds 
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.31 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.33 seconds; current allocated memory: 672.473 MB.
 INFO: [VHDL 208-304] Generating VHDL RTL for mixer.
 INFO: [VLOG 209-307] Generating Verilog RTL for mixer.
 Execute     syn_report -model mixer -printsummary 
 INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
 INFO: [HLS 200-789] **** Estimated Fmax: 156.54 MHz
 Execute     AP::msg_collection_file -close 
-Command   csynth_design done; 20.4 sec.
-Execute   close_project 
-Execute     close_solution 
-Execute       cleanup_all 
-Execute       cleanup_all 
-Execute       source -notrace -encoding utf-8 /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/tps/tcl/tcl8.6/clock.tcl 
-Execute         source -encoding utf-8 /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/tps/tcl/tcl8/8.5/msgcat-1.6.1.tm 
-INFO-FLOW: Workspace /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls opened at Fri Mar 27 16:55:17 EDT 2026
-Execute       send_msg_by_id INFO @200-1505@%s%s default  vivado 
-INFO: [HLS 200-1505] Using default flow_target 'vivado'
-Execute       send_msg_by_id INFO @200-2174@%s%s component hls_config.cfg 
-INFO: [HLS 200-2174] Applying component config ini file hls_config.cfg
-Execute       apply_ini hls_config.cfg 
-Execute         send_msg_by_id WARNING @200-2001@%s%s hw_mixer_tb.cpp see [hls] from hls_config.cfg(8) 
-WARNING: [HLS 200-2001] file not found 'hw_mixer_tb.cpp' see [hls] from hls_config.cfg(8)
-Execute         send_msg_by_id INFO @200-1465@%s 'syn.file=hw_mixer.cpp' from hls_config.cfg(10) 
-INFO: [HLS 200-1465] Applying config ini 'syn.file=hw_mixer.cpp' from hls_config.cfg(10)
-Execute         add_files /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/hw_mixer.cpp 
-INFO: [HLS 200-10] Adding design file '/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/hw_mixer.cpp' to the project
-Execute         send_msg_by_id INFO @200-1465@%s 'syn.file=hw_mixer.h' from hls_config.cfg(11) 
-INFO: [HLS 200-1465] Applying config ini 'syn.file=hw_mixer.h' from hls_config.cfg(11)
-Execute         add_files /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/hw_mixer.h 
-INFO: [HLS 200-10] Adding design file '/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/hw_mixer.h' to the project
-Execute         send_msg_by_id INFO @200-1465@%s 'tb.file=hw_mixer_tb.cpp' from hls_config.cfg(8) 
-INFO: [HLS 200-1465] Applying config ini 'tb.file=hw_mixer_tb.cpp' from hls_config.cfg(8)
-Execute         add_files -tb hw_mixer_tb.cpp 
-WARNING: [HLS 200-40] Cannot find test bench file 'hw_mixer_tb.cpp'
-Execute         send_msg_by_id INFO @200-1465@%s 'tb.file=mixer_tb.cpp' from hls_config.cfg(9) 
-INFO: [HLS 200-1465] Applying config ini 'tb.file=mixer_tb.cpp' from hls_config.cfg(9)
-Execute         add_files -tb /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/mixer_tb.cpp 
-INFO: [HLS 200-10] Adding test bench file '/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/mixer_tb.cpp' to the project
-Execute         send_msg_by_id INFO @200-1465@%s 'syn.top=mixer' from hls_config.cfg(7) 
-INFO: [HLS 200-1465] Applying config ini 'syn.top=mixer' from hls_config.cfg(7)
-Execute         set_top mixer 
-Execute         send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from hls_config.cfg(4) 
-INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from hls_config.cfg(4)
-Execute         send_msg_by_id INFO @200-1505@%s%s  vivado 
-INFO: [HLS 200-1505] Using flow_target 'vivado'
-Execute         send_msg_by_id INFO @200-1465@%s 'part=xczu3eg-sfvc784-2-e' from hls_config.cfg(1) 
-INFO: [HLS 200-1465] Applying config ini 'part=xczu3eg-sfvc784-2-e' from hls_config.cfg(1)
-Execute         set_part xczu3eg-sfvc784-2-e 
-Execute           create_platform xczu3eg-sfvc784-2-e -board  
-DBG:HLSDevice: Trying to load device library: /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/lib/lnx64.o/libxv_hlsvwrap.so
-DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vivado/data/parts/arch.xml
-DBG:HLSDevice: init success
-INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sfvc784-2-e'
-Command           create_platform done; 2.3 sec.
-Execute           source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/common/xilinx.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/interface/plb46.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/interface/axi4.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute               source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/interface/saxilite.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/ip/dds_compiler.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/ip/util.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/ip/xfft.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/ip/xfir.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/DSP48/dsp48.gen 
-Command           ap_source done; 0.11 sec.
-Execute           ap_part_info -name xczu3eg-sfvc784-2-e -data info 
-Execute           config_compile -quiet -complex-mul-dsp=0 
-Command         set_part done; 2.46 sec.
-Execute         send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from hls_config.cfg(5) 
-INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from hls_config.cfg(5)
-Execute         config_export -format=ip_catalog 
-Command       apply_ini done; 2.48 sec.
-Execute       write_component -config /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/hls_config.cfg 
-Execute         send_msg_by_id INFO @200-2176@%s /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/vitis-comp.json 
-INFO: [HLS 200-2176] Writing Vitis IDE component file /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/vitis-comp.json
-Command     open_solution done; 2.53 sec.
-Command   open_component done; 2.53 sec.
-Execute   apply_ini /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/config.cmdline -iscmdline 
-Execute   ::AP::init_summary_file csim 
-Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
-Execute   csim_design 
-Execute     source /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/global.setting.tcl 
-INFO: [SIM 211-2] *************** CSIM start ***************
-Execute     send_msg_by_id INFO @200-2191@%s%s C-Simulation clang-16 
-INFO: [HLS 200-2191] C-Simulation will use clang-16 as the compiler
-Execute     send_msg_by_id INFO @200-2036@%s debug 
-INFO: [HLS 200-2036] Building debug C Simulation binaries
-Execute     ap_part_info -name xczu3eg-sfvc784-2-e -data info 
-INFO-FLOW: AESL_CSIM::c_sim errorInfo:
-
-    while executing
-"::AESL_CSIM::c_sim "$argn" "
-ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
-INFO: [SIM 211-3] *************** CSIM finish ***************
-INFO-FLOW: AESL_CSIM::csim_cmd_wrap errorInfo:
-4
-    while executing
-"::AESL_CSIM::csim_cmd_wrap $args"
-INFO-FLOW: Caught error in csim_design: CSIM Failed
-    while executing
-"ap_internal_csim_design "
-Command   csim_design done; error code: 2; 2.35 sec.
-Execute   close_project 
-Execute     close_solution 
-Execute       cleanup_all 
-Execute       cleanup_all 
-Execute       source -notrace -encoding utf-8 /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/tps/tcl/tcl8.6/clock.tcl 
-Execute         source -encoding utf-8 /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/tps/tcl/tcl8/8.5/msgcat-1.6.1.tm 
-INFO-FLOW: Workspace /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls opened at Fri Mar 27 16:56:01 EDT 2026
-Execute       send_msg_by_id INFO @200-1505@%s%s default  vivado 
-INFO: [HLS 200-1505] Using default flow_target 'vivado'
-Execute       send_msg_by_id INFO @200-2174@%s%s component hls_config.cfg 
-INFO: [HLS 200-2174] Applying component config ini file hls_config.cfg
-Execute       apply_ini hls_config.cfg 
-Execute         send_msg_by_id WARNING @200-2001@%s%s hw_mixer_tb.cpp see [hls] from hls_config.cfg(8) 
-WARNING: [HLS 200-2001] file not found 'hw_mixer_tb.cpp' see [hls] from hls_config.cfg(8)
-Execute         send_msg_by_id INFO @200-1465@%s 'syn.file=hw_mixer.cpp' from hls_config.cfg(10) 
-INFO: [HLS 200-1465] Applying config ini 'syn.file=hw_mixer.cpp' from hls_config.cfg(10)
-Execute         add_files /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/hw_mixer.cpp 
-INFO: [HLS 200-10] Adding design file '/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/hw_mixer.cpp' to the project
-Execute         send_msg_by_id INFO @200-1465@%s 'syn.file=hw_mixer.h' from hls_config.cfg(11) 
-INFO: [HLS 200-1465] Applying config ini 'syn.file=hw_mixer.h' from hls_config.cfg(11)
-Execute         add_files /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/hw_mixer.h 
-INFO: [HLS 200-10] Adding design file '/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/hw_mixer.h' to the project
-Execute         send_msg_by_id INFO @200-1465@%s 'tb.file=hw_mixer_tb.cpp' from hls_config.cfg(8) 
-INFO: [HLS 200-1465] Applying config ini 'tb.file=hw_mixer_tb.cpp' from hls_config.cfg(8)
-Execute         add_files -tb hw_mixer_tb.cpp 
-WARNING: [HLS 200-40] Cannot find test bench file 'hw_mixer_tb.cpp'
-Execute         send_msg_by_id INFO @200-1465@%s 'tb.file=mixer_tb.cpp' from hls_config.cfg(9) 
-INFO: [HLS 200-1465] Applying config ini 'tb.file=mixer_tb.cpp' from hls_config.cfg(9)
-Execute         add_files -tb /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/mixer_tb.cpp 
-INFO: [HLS 200-10] Adding test bench file '/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/mixer_tb.cpp' to the project
-Execute         send_msg_by_id INFO @200-1465@%s 'syn.top=mixer' from hls_config.cfg(7) 
-INFO: [HLS 200-1465] Applying config ini 'syn.top=mixer' from hls_config.cfg(7)
-Execute         set_top mixer 
-Execute         send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from hls_config.cfg(4) 
-INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from hls_config.cfg(4)
-Execute         send_msg_by_id INFO @200-1505@%s%s  vivado 
-INFO: [HLS 200-1505] Using flow_target 'vivado'
-Execute         send_msg_by_id INFO @200-1465@%s 'part=xczu3eg-sfvc784-2-e' from hls_config.cfg(1) 
-INFO: [HLS 200-1465] Applying config ini 'part=xczu3eg-sfvc784-2-e' from hls_config.cfg(1)
-Execute         set_part xczu3eg-sfvc784-2-e 
-Execute           create_platform xczu3eg-sfvc784-2-e -board  
-DBG:HLSDevice: Trying to load device library: /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/lib/lnx64.o/libxv_hlsvwrap.so
-DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vivado/data/parts/arch.xml
-DBG:HLSDevice: init success
-INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sfvc784-2-e'
-Command           create_platform done; 2.14 sec.
-Execute           source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/common/xilinx.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/interface/plb46.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/interface/axi4.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute               source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/interface/saxilite.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/ip/dds_compiler.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/ip/util.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/ip/xfft.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/ip/xfir.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/DSP48/dsp48.gen 
-Command           ap_source done; 0.11 sec.
-Execute           ap_part_info -name xczu3eg-sfvc784-2-e -data info 
-Execute           config_compile -quiet -complex-mul-dsp=0 
-Command         set_part done; 2.31 sec.
-Execute         send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from hls_config.cfg(5) 
-INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from hls_config.cfg(5)
-Execute         config_export -format=ip_catalog 
-Command       apply_ini done; 2.33 sec.
-Execute       write_component -config /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/hls_config.cfg 
-Execute         send_msg_by_id INFO @200-2176@%s /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/vitis-comp.json 
-INFO: [HLS 200-2176] Writing Vitis IDE component file /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/vitis-comp.json
-Command     open_solution done; 2.37 sec.
-Command   open_component done; 2.38 sec.
-Execute   apply_ini /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/config.cmdline -iscmdline 
-Execute   ::AP::init_summary_file csim 
-Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
-Execute   csim_design 
-Execute     source /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/global.setting.tcl 
-INFO: [SIM 211-2] *************** CSIM start ***************
-Execute     send_msg_by_id INFO @200-2191@%s%s C-Simulation clang-16 
-INFO: [HLS 200-2191] C-Simulation will use clang-16 as the compiler
-Execute     source csim/.lst_opt.tcl 
-Execute     send_msg_by_id INFO @200-2036@%s debug 
-INFO: [HLS 200-2036] Building debug C Simulation binaries
-Execute     ap_part_info -name xczu3eg-sfvc784-2-e -data info 
-Execute     source run_sim.tcl 
-Command     ap_source done; error code: 1; 0.28 sec.
-INFO-FLOW: AESL_CSIM::c_sim errorInfo:
-
-    while executing
-"::AESL_CSIM::c_sim "$argn" "
-ERROR: [SIM 211-100] CSim failed with errors.
-INFO: [SIM 211-3] *************** CSIM finish ***************
-INFO-FLOW: AESL_CSIM::csim_cmd_wrap errorInfo:
-4
-    while executing
-"::AESL_CSIM::csim_cmd_wrap $args"
-INFO-FLOW: Caught error in csim_design: CSIM Failed
-    while executing
-"ap_internal_csim_design "
-Command   csim_design done; error code: 2; 4.76 sec.
-Execute   close_project 
-Execute     close_solution 
-Execute       cleanup_all 
-Execute       cleanup_all 
-Execute       source -notrace -encoding utf-8 /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/tps/tcl/tcl8.6/clock.tcl 
-Execute         source -encoding utf-8 /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/tps/tcl/tcl8/8.5/msgcat-1.6.1.tm 
-INFO-FLOW: Workspace /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls opened at Fri Mar 27 16:56:50 EDT 2026
-Execute       send_msg_by_id INFO @200-1505@%s%s default  vivado 
-INFO: [HLS 200-1505] Using default flow_target 'vivado'
-Execute       send_msg_by_id INFO @200-2174@%s%s component hls_config.cfg 
-INFO: [HLS 200-2174] Applying component config ini file hls_config.cfg
-Execute       apply_ini hls_config.cfg 
-Execute         send_msg_by_id WARNING @200-2001@%s%s hw_mixer_tb.cpp see [hls] from hls_config.cfg(8) 
-WARNING: [HLS 200-2001] file not found 'hw_mixer_tb.cpp' see [hls] from hls_config.cfg(8)
-Execute         send_msg_by_id INFO @200-1465@%s 'syn.file=hw_mixer.cpp' from hls_config.cfg(10) 
-INFO: [HLS 200-1465] Applying config ini 'syn.file=hw_mixer.cpp' from hls_config.cfg(10)
-Execute         add_files /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/hw_mixer.cpp 
-INFO: [HLS 200-10] Adding design file '/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/hw_mixer.cpp' to the project
-Execute         send_msg_by_id INFO @200-1465@%s 'syn.file=hw_mixer.h' from hls_config.cfg(11) 
-INFO: [HLS 200-1465] Applying config ini 'syn.file=hw_mixer.h' from hls_config.cfg(11)
-Execute         add_files /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/hw_mixer.h 
-INFO: [HLS 200-10] Adding design file '/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/hw_mixer.h' to the project
-Execute         send_msg_by_id INFO @200-1465@%s 'tb.file=hw_mixer_tb.cpp' from hls_config.cfg(8) 
-INFO: [HLS 200-1465] Applying config ini 'tb.file=hw_mixer_tb.cpp' from hls_config.cfg(8)
-Execute         add_files -tb hw_mixer_tb.cpp 
-WARNING: [HLS 200-40] Cannot find test bench file 'hw_mixer_tb.cpp'
-Execute         send_msg_by_id INFO @200-1465@%s 'tb.file=mixer_tb.cpp' from hls_config.cfg(9) 
-INFO: [HLS 200-1465] Applying config ini 'tb.file=mixer_tb.cpp' from hls_config.cfg(9)
-Execute         add_files -tb /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/mixer_tb.cpp 
-INFO: [HLS 200-10] Adding test bench file '/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/mixer_tb.cpp' to the project
-Execute         send_msg_by_id INFO @200-1465@%s 'syn.top=mixer' from hls_config.cfg(7) 
-INFO: [HLS 200-1465] Applying config ini 'syn.top=mixer' from hls_config.cfg(7)
-Execute         set_top mixer 
-Execute         send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from hls_config.cfg(4) 
-INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from hls_config.cfg(4)
-Execute         send_msg_by_id INFO @200-1505@%s%s  vivado 
-INFO: [HLS 200-1505] Using flow_target 'vivado'
-Execute         send_msg_by_id INFO @200-1465@%s 'part=xczu3eg-sfvc784-2-e' from hls_config.cfg(1) 
-INFO: [HLS 200-1465] Applying config ini 'part=xczu3eg-sfvc784-2-e' from hls_config.cfg(1)
-Execute         set_part xczu3eg-sfvc784-2-e 
-Execute           create_platform xczu3eg-sfvc784-2-e -board  
-DBG:HLSDevice: Trying to load device library: /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/lib/lnx64.o/libxv_hlsvwrap.so
-DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vivado/data/parts/arch.xml
-DBG:HLSDevice: init success
-INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sfvc784-2-e'
-Command           create_platform done; 2.17 sec.
-Execute           source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/common/xilinx.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/interface/plb46.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/interface/axi4.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute               source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/interface/saxilite.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/ip/dds_compiler.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/ip/util.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/ip/xfft.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/ip/xfir.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/DSP48/dsp48.gen 
-Command           ap_source done; 0.11 sec.
-Execute           ap_part_info -name xczu3eg-sfvc784-2-e -data info 
-Execute           config_compile -quiet -complex-mul-dsp=0 
-Command         set_part done; 2.33 sec.
-Execute         send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from hls_config.cfg(5) 
-INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from hls_config.cfg(5)
-Execute         config_export -format=ip_catalog 
-Command       apply_ini done; 2.35 sec.
-Execute       write_component -config /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/hls_config.cfg 
-Execute         send_msg_by_id INFO @200-2176@%s /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/vitis-comp.json 
-INFO: [HLS 200-2176] Writing Vitis IDE component file /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/vitis-comp.json
-Command     open_solution done; 2.39 sec.
-Command   open_component done; 2.39 sec.
-Execute   apply_ini /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/config.cmdline -iscmdline 
-Execute   ::AP::init_summary_file csim 
-Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
-Execute   csim_design 
-Execute     source /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/global.setting.tcl 
-INFO: [SIM 211-2] *************** CSIM start ***************
-Execute     send_msg_by_id INFO @200-2191@%s%s C-Simulation clang-16 
-INFO: [HLS 200-2191] C-Simulation will use clang-16 as the compiler
-Execute     source csim/.lst_opt.tcl 
-Execute     send_msg_by_id INFO @200-2036@%s debug 
-INFO: [HLS 200-2036] Building debug C Simulation binaries
-Execute     ap_part_info -name xczu3eg-sfvc784-2-e -data info 
-Execute     source run_sim.tcl 
-Command     ap_source done; error code: 1; 0.24 sec.
-INFO-FLOW: AESL_CSIM::c_sim errorInfo:
-
-    while executing
-"::AESL_CSIM::c_sim "$argn" "
-ERROR: [SIM 211-100] CSim failed with errors.
-INFO: [SIM 211-3] *************** CSIM finish ***************
-INFO-FLOW: AESL_CSIM::csim_cmd_wrap errorInfo:
-4
-    while executing
-"::AESL_CSIM::csim_cmd_wrap $args"
-INFO-FLOW: Caught error in csim_design: CSIM Failed
-    while executing
-"ap_internal_csim_design "
-Command   csim_design done; error code: 2; 2.49 sec.
-Execute   close_project 
-Execute     close_solution 
-Execute       cleanup_all 
-Execute       cleanup_all 
-Execute       source -notrace -encoding utf-8 /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/tps/tcl/tcl8.6/clock.tcl 
-Execute         source -encoding utf-8 /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/tps/tcl/tcl8/8.5/msgcat-1.6.1.tm 
-INFO-FLOW: Workspace /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls opened at Fri Mar 27 16:58:24 EDT 2026
-Execute       send_msg_by_id INFO @200-1505@%s%s default  vivado 
-INFO: [HLS 200-1505] Using default flow_target 'vivado'
-Execute       send_msg_by_id INFO @200-2174@%s%s component hls_config.cfg 
-INFO: [HLS 200-2174] Applying component config ini file hls_config.cfg
-Execute       apply_ini hls_config.cfg 
-Execute         send_msg_by_id WARNING @200-2001@%s%s hw_mixer_tb.cpp see [hls] from hls_config.cfg(8) 
-WARNING: [HLS 200-2001] file not found 'hw_mixer_tb.cpp' see [hls] from hls_config.cfg(8)
-Execute         send_msg_by_id INFO @200-1465@%s 'syn.file=hw_mixer.cpp' from hls_config.cfg(10) 
-INFO: [HLS 200-1465] Applying config ini 'syn.file=hw_mixer.cpp' from hls_config.cfg(10)
-Execute         add_files /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/hw_mixer.cpp 
-INFO: [HLS 200-10] Adding design file '/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/hw_mixer.cpp' to the project
-Execute         send_msg_by_id INFO @200-1465@%s 'syn.file=hw_mixer.h' from hls_config.cfg(11) 
-INFO: [HLS 200-1465] Applying config ini 'syn.file=hw_mixer.h' from hls_config.cfg(11)
-Execute         add_files /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/hw_mixer.h 
-INFO: [HLS 200-10] Adding design file '/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/hw_mixer.h' to the project
-Execute         send_msg_by_id INFO @200-1465@%s 'tb.file=hw_mixer_tb.cpp' from hls_config.cfg(8) 
-INFO: [HLS 200-1465] Applying config ini 'tb.file=hw_mixer_tb.cpp' from hls_config.cfg(8)
-Execute         add_files -tb hw_mixer_tb.cpp 
-WARNING: [HLS 200-40] Cannot find test bench file 'hw_mixer_tb.cpp'
-Execute         send_msg_by_id INFO @200-1465@%s 'tb.file=mixer_tb.cpp' from hls_config.cfg(9) 
-INFO: [HLS 200-1465] Applying config ini 'tb.file=mixer_tb.cpp' from hls_config.cfg(9)
-Execute         add_files -tb /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/mixer_tb.cpp 
-INFO: [HLS 200-10] Adding test bench file '/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/mixer_tb.cpp' to the project
-Execute         send_msg_by_id INFO @200-1465@%s 'syn.top=mixer' from hls_config.cfg(7) 
-INFO: [HLS 200-1465] Applying config ini 'syn.top=mixer' from hls_config.cfg(7)
-Execute         set_top mixer 
-Execute         send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from hls_config.cfg(4) 
-INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from hls_config.cfg(4)
-Execute         send_msg_by_id INFO @200-1505@%s%s  vivado 
-INFO: [HLS 200-1505] Using flow_target 'vivado'
-Execute         send_msg_by_id INFO @200-1465@%s 'part=xczu3eg-sfvc784-2-e' from hls_config.cfg(1) 
-INFO: [HLS 200-1465] Applying config ini 'part=xczu3eg-sfvc784-2-e' from hls_config.cfg(1)
-Execute         set_part xczu3eg-sfvc784-2-e 
-Execute           create_platform xczu3eg-sfvc784-2-e -board  
-DBG:HLSDevice: Trying to load device library: /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/lib/lnx64.o/libxv_hlsvwrap.so
-DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vivado/data/parts/arch.xml
-DBG:HLSDevice: init success
-INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sfvc784-2-e'
-Command           create_platform done; 2.15 sec.
-Execute           source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/common/xilinx.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/interface/plb46.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/interface/axi4.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute               source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/interface/saxilite.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/ip/dds_compiler.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/ip/util.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/ip/xfft.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/ip/xfir.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/DSP48/dsp48.gen 
-Execute           ap_part_info -name xczu3eg-sfvc784-2-e -data info 
-Execute           config_compile -quiet -complex-mul-dsp=0 
-Command         set_part done; 2.29 sec.
-Execute         send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from hls_config.cfg(5) 
-INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from hls_config.cfg(5)
-Execute         config_export -format=ip_catalog 
-Command       apply_ini done; 2.31 sec.
-Execute       write_component -config /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/hls_config.cfg 
-Execute         send_msg_by_id INFO @200-2176@%s /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/vitis-comp.json 
-INFO: [HLS 200-2176] Writing Vitis IDE component file /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/vitis-comp.json
-Command     open_solution done; 2.36 sec.
-Command   open_component done; 2.36 sec.
-Execute   apply_ini /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/config.cmdline -iscmdline 
-Execute   ::AP::init_summary_file csim 
-Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
-Execute   csim_design 
-Execute     source /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/global.setting.tcl 
-INFO: [SIM 211-2] *************** CSIM start ***************
-Execute     send_msg_by_id INFO @200-2191@%s%s C-Simulation clang-16 
-INFO: [HLS 200-2191] C-Simulation will use clang-16 as the compiler
-Execute     source csim/.lst_opt.tcl 
-Execute     send_msg_by_id INFO @200-2036@%s debug 
-INFO: [HLS 200-2036] Building debug C Simulation binaries
-Execute     ap_part_info -name xczu3eg-sfvc784-2-e -data info 
-Execute     source run_sim.tcl 
-Command     ap_source done; error code: 1; 0.26 sec.
-INFO-FLOW: AESL_CSIM::c_sim errorInfo:
-
-    while executing
-"::AESL_CSIM::c_sim "$argn" "
-ERROR: [SIM 211-100] CSim failed with errors.
-INFO: [SIM 211-3] *************** CSIM finish ***************
-INFO-FLOW: AESL_CSIM::csim_cmd_wrap errorInfo:
-4
-    while executing
-"::AESL_CSIM::csim_cmd_wrap $args"
-INFO-FLOW: Caught error in csim_design: CSIM Failed
-    while executing
-"ap_internal_csim_design "
-Command   csim_design done; error code: 2; 2.59 sec.
-Execute   close_project 
-Execute     close_solution 
-Execute       cleanup_all 
-Execute       cleanup_all 
-Execute       source -notrace -encoding utf-8 /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/tps/tcl/tcl8.6/clock.tcl 
-Execute         source -encoding utf-8 /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/tps/tcl/tcl8/8.5/msgcat-1.6.1.tm 
-INFO-FLOW: Workspace /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls opened at Fri Mar 27 16:58:44 EDT 2026
-Execute       send_msg_by_id INFO @200-1505@%s%s default  vivado 
-INFO: [HLS 200-1505] Using default flow_target 'vivado'
-Execute       send_msg_by_id INFO @200-2174@%s%s component hls_config.cfg 
-INFO: [HLS 200-2174] Applying component config ini file hls_config.cfg
-Execute       apply_ini hls_config.cfg 
-Execute         send_msg_by_id WARNING @200-2001@%s%s hw_mixer_tb.cpp see [hls] from hls_config.cfg(8) 
-WARNING: [HLS 200-2001] file not found 'hw_mixer_tb.cpp' see [hls] from hls_config.cfg(8)
-Execute         send_msg_by_id INFO @200-1465@%s 'syn.file=hw_mixer.cpp' from hls_config.cfg(10) 
-INFO: [HLS 200-1465] Applying config ini 'syn.file=hw_mixer.cpp' from hls_config.cfg(10)
-Execute         add_files /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/hw_mixer.cpp 
-INFO: [HLS 200-10] Adding design file '/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/hw_mixer.cpp' to the project
-Execute         send_msg_by_id INFO @200-1465@%s 'syn.file=hw_mixer.h' from hls_config.cfg(11) 
-INFO: [HLS 200-1465] Applying config ini 'syn.file=hw_mixer.h' from hls_config.cfg(11)
-Execute         add_files /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/hw_mixer.h 
-INFO: [HLS 200-10] Adding design file '/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/hw_mixer.h' to the project
-Execute         send_msg_by_id INFO @200-1465@%s 'tb.file=hw_mixer_tb.cpp' from hls_config.cfg(8) 
-INFO: [HLS 200-1465] Applying config ini 'tb.file=hw_mixer_tb.cpp' from hls_config.cfg(8)
-Execute         add_files -tb hw_mixer_tb.cpp 
-WARNING: [HLS 200-40] Cannot find test bench file 'hw_mixer_tb.cpp'
-Execute         send_msg_by_id INFO @200-1465@%s 'tb.file=mixer_tb.cpp' from hls_config.cfg(9) 
-INFO: [HLS 200-1465] Applying config ini 'tb.file=mixer_tb.cpp' from hls_config.cfg(9)
-Execute         add_files -tb /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/mixer_tb.cpp 
-INFO: [HLS 200-10] Adding test bench file '/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/mixer_tb.cpp' to the project
-Execute         send_msg_by_id INFO @200-1465@%s 'syn.top=mixer' from hls_config.cfg(7) 
-INFO: [HLS 200-1465] Applying config ini 'syn.top=mixer' from hls_config.cfg(7)
-Execute         set_top mixer 
-Execute         send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from hls_config.cfg(4) 
-INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from hls_config.cfg(4)
-Execute         send_msg_by_id INFO @200-1505@%s%s  vivado 
-INFO: [HLS 200-1505] Using flow_target 'vivado'
-Execute         send_msg_by_id INFO @200-1465@%s 'part=xczu3eg-sfvc784-2-e' from hls_config.cfg(1) 
-INFO: [HLS 200-1465] Applying config ini 'part=xczu3eg-sfvc784-2-e' from hls_config.cfg(1)
-Execute         set_part xczu3eg-sfvc784-2-e 
-Execute           create_platform xczu3eg-sfvc784-2-e -board  
-DBG:HLSDevice: Trying to load device library: /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/lib/lnx64.o/libxv_hlsvwrap.so
-DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vivado/data/parts/arch.xml
-DBG:HLSDevice: init success
-INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sfvc784-2-e'
-Command           create_platform done; 2.24 sec.
-Execute           source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/common/xilinx.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/interface/plb46.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/interface/axi4.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute               source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/interface/saxilite.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/ip/dds_compiler.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/ip/util.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/ip/xfft.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/ip/xfir.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/DSP48/dsp48.gen 
-Command           ap_source done; 0.11 sec.
-Execute           ap_part_info -name xczu3eg-sfvc784-2-e -data info 
-Execute           config_compile -quiet -complex-mul-dsp=0 
-Command         set_part done; 2.4 sec.
-Execute         send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from hls_config.cfg(5) 
-INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from hls_config.cfg(5)
-Execute         config_export -format=ip_catalog 
-Command       apply_ini done; 2.42 sec.
-Execute       send_msg_by_id INFO @200-2174@%s%s component FPGA_Mix_Hardware/hls-debug.cfg 
-INFO: [HLS 200-2174] Applying component config ini file FPGA_Mix_Hardware/hls-debug.cfg
-Execute       apply_ini FPGA_Mix_Hardware/hls-debug.cfg 
-Execute         send_msg_by_id INFO @200-1465@%s 'csim.O=0' from FPGA_Mix_Hardware/hls-debug.cfg(3) 
-INFO: [HLS 200-1465] Applying config ini 'csim.O=0' from FPGA_Mix_Hardware/hls-debug.cfg(3)
-Execute         config_csim -O=0 
-INFO: [HLS 200-1907] Replacing 'config_csim -O=0' with 'config_sim -O=0' in current solution file
-Execute         send_msg_by_id INFO @200-1465@%s 'csim.clean=1' from FPGA_Mix_Hardware/hls-debug.cfg(4) 
-INFO: [HLS 200-1465] Applying config ini 'csim.clean=1' from FPGA_Mix_Hardware/hls-debug.cfg(4)
-Execute         config_csim -clean=1 
-INFO: [HLS 200-1907] Replacing 'config_csim -O=0' with 'config_sim -O=0' in current solution file
-Execute         send_msg_by_id INFO @200-1465@%s 'csim.setup=1' from FPGA_Mix_Hardware/hls-debug.cfg(2) 
-INFO: [HLS 200-1465] Applying config ini 'csim.setup=1' from FPGA_Mix_Hardware/hls-debug.cfg(2)
-Execute         config_csim -setup=1 
-INFO: [HLS 200-1907] Replacing 'config_csim -O=0' with 'config_sim -O=0' in current solution file
-Execute       write_component -config /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls-debug.cfg -config /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/hls_config.cfg 
-Execute         send_msg_by_id INFO @200-2176@%s /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/vitis-comp.json 
-INFO: [HLS 200-2176] Writing Vitis IDE component file /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/vitis-comp.json
-Command     open_solution done; 2.46 sec.
-Command   open_component done; 2.47 sec.
-Execute   apply_ini /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/config.cmdline -iscmdline 
-Execute   ::AP::init_summary_file csim 
-Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
-Execute   csim_design 
-Execute     source /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/global.setting.tcl 
-INFO: [SIM 211-2] *************** CSIM start ***************
-Execute     send_msg_by_id INFO @200-2191@%s%s C-Simulation clang-16 
-INFO: [HLS 200-2191] C-Simulation will use clang-16 as the compiler
-Execute     source csim/.lst_opt.tcl 
-Execute     send_msg_by_id INFO @200-2036@%s debug 
-INFO: [HLS 200-2036] Building debug C Simulation binaries
-Execute     ap_part_info -name xczu3eg-sfvc784-2-e -data info 
-Execute     send_msg_by_id INFO @200-2035@ 
-INFO: [HLS 200-2035] Skipping execution of C Simulation due to 'setup' option
-INFO: [SIM 211-1] CSim file generation done with 0 errors.
-INFO: [SIM 211-3] *************** CSIM finish ***************
-Command   csim_design done; 4.31 sec.
-Execute   close_project 
-Execute     close_solution 
-Execute       cleanup_all 
-Execute       cleanup_all 
-Execute       source -notrace -encoding utf-8 /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/tps/tcl/tcl8.6/clock.tcl 
-Execute         source -encoding utf-8 /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/tps/tcl/tcl8/8.5/msgcat-1.6.1.tm 
-INFO-FLOW: Workspace /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls opened at Fri Mar 27 16:59:21 EDT 2026
-Execute       send_msg_by_id INFO @200-1505@%s%s default  vivado 
-INFO: [HLS 200-1505] Using default flow_target 'vivado'
-Execute       send_msg_by_id INFO @200-2174@%s%s component hls_config.cfg 
-INFO: [HLS 200-2174] Applying component config ini file hls_config.cfg
-Execute       apply_ini hls_config.cfg 
-Execute         send_msg_by_id WARNING @200-2001@%s%s hw_mixer_tb.cpp see [hls] from hls_config.cfg(8) 
-WARNING: [HLS 200-2001] file not found 'hw_mixer_tb.cpp' see [hls] from hls_config.cfg(8)
-Execute         send_msg_by_id INFO @200-1465@%s 'syn.file=hw_mixer.cpp' from hls_config.cfg(10) 
-INFO: [HLS 200-1465] Applying config ini 'syn.file=hw_mixer.cpp' from hls_config.cfg(10)
-Execute         add_files /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/hw_mixer.cpp 
-INFO: [HLS 200-10] Adding design file '/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/hw_mixer.cpp' to the project
-Execute         send_msg_by_id INFO @200-1465@%s 'syn.file=hw_mixer.h' from hls_config.cfg(11) 
-INFO: [HLS 200-1465] Applying config ini 'syn.file=hw_mixer.h' from hls_config.cfg(11)
-Execute         add_files /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/hw_mixer.h 
-INFO: [HLS 200-10] Adding design file '/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/hw_mixer.h' to the project
-Execute         send_msg_by_id INFO @200-1465@%s 'tb.file=hw_mixer_tb.cpp' from hls_config.cfg(8) 
-INFO: [HLS 200-1465] Applying config ini 'tb.file=hw_mixer_tb.cpp' from hls_config.cfg(8)
-Execute         add_files -tb hw_mixer_tb.cpp 
-WARNING: [HLS 200-40] Cannot find test bench file 'hw_mixer_tb.cpp'
-Execute         send_msg_by_id INFO @200-1465@%s 'tb.file=mixer_tb.cpp' from hls_config.cfg(9) 
-INFO: [HLS 200-1465] Applying config ini 'tb.file=mixer_tb.cpp' from hls_config.cfg(9)
-Execute         add_files -tb /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/mixer_tb.cpp 
-INFO: [HLS 200-10] Adding test bench file '/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/mixer_tb.cpp' to the project
-Execute         send_msg_by_id INFO @200-1465@%s 'syn.top=mixer' from hls_config.cfg(7) 
-INFO: [HLS 200-1465] Applying config ini 'syn.top=mixer' from hls_config.cfg(7)
-Execute         set_top mixer 
-Execute         send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from hls_config.cfg(4) 
-INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from hls_config.cfg(4)
-Execute         send_msg_by_id INFO @200-1505@%s%s  vivado 
-INFO: [HLS 200-1505] Using flow_target 'vivado'
-Execute         send_msg_by_id INFO @200-1465@%s 'part=xczu3eg-sfvc784-2-e' from hls_config.cfg(1) 
-INFO: [HLS 200-1465] Applying config ini 'part=xczu3eg-sfvc784-2-e' from hls_config.cfg(1)
-Execute         set_part xczu3eg-sfvc784-2-e 
-Execute           create_platform xczu3eg-sfvc784-2-e -board  
-DBG:HLSDevice: Trying to load device library: /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/lib/lnx64.o/libxv_hlsvwrap.so
-DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vivado/data/parts/arch.xml
-DBG:HLSDevice: init success
-INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sfvc784-2-e'
-Command           create_platform done; 2.2 sec.
-Execute           source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/common/xilinx.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/interface/plb46.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/interface/axi4.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute               source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/interface/saxilite.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/ip/dds_compiler.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/ip/util.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/ip/xfft.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/ip/xfir.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/DSP48/dsp48.gen 
-Command           ap_source done; 0.11 sec.
-Execute           ap_part_info -name xczu3eg-sfvc784-2-e -data info 
-Execute           config_compile -quiet -complex-mul-dsp=0 
-Command         set_part done; 2.37 sec.
-Execute         send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from hls_config.cfg(5) 
-INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from hls_config.cfg(5)
-Execute         config_export -format=ip_catalog 
-Command       apply_ini done; 2.4 sec.
-Execute       write_component -config /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/hls_config.cfg 
-Execute         send_msg_by_id INFO @200-2176@%s /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/vitis-comp.json 
-INFO: [HLS 200-2176] Writing Vitis IDE component file /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/vitis-comp.json
-Command     open_solution done; 2.43 sec.
-Command   open_component done; 2.44 sec.
-Execute   apply_ini /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/config.cmdline -iscmdline 
-Execute   ::AP::init_summary_file csim 
-Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
-Execute   csim_design 
-Execute     source /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/global.setting.tcl 
-INFO: [SIM 211-2] *************** CSIM start ***************
-Execute     send_msg_by_id INFO @200-2191@%s%s C-Simulation clang-16 
-INFO: [HLS 200-2191] C-Simulation will use clang-16 as the compiler
-Execute     source csim/.lst_opt.tcl 
-Execute     send_msg_by_id INFO @200-2036@%s debug 
-INFO: [HLS 200-2036] Building debug C Simulation binaries
-Execute     ap_part_info -name xczu3eg-sfvc784-2-e -data info 
-Execute     source run_sim.tcl 
-Command     ap_source done; error code: 1; 0.28 sec.
-INFO-FLOW: AESL_CSIM::c_sim errorInfo:
-
-    while executing
-"::AESL_CSIM::c_sim "$argn" "
-ERROR: [SIM 211-100] CSim failed with errors.
-INFO: [SIM 211-3] *************** CSIM finish ***************
-INFO-FLOW: AESL_CSIM::csim_cmd_wrap errorInfo:
-4
-    while executing
-"::AESL_CSIM::csim_cmd_wrap $args"
-INFO-FLOW: Caught error in csim_design: CSIM Failed
-    while executing
-"ap_internal_csim_design "
-Command   csim_design done; error code: 2; 4.55 sec.
-Execute   close_project 
-Execute     close_solution 
-Execute       cleanup_all 
-Execute       cleanup_all 
-Execute       source -notrace -encoding utf-8 /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/tps/tcl/tcl8.6/clock.tcl 
-Execute         source -encoding utf-8 /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/tps/tcl/tcl8/8.5/msgcat-1.6.1.tm 
-INFO-FLOW: Workspace /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls opened at Fri Mar 27 17:03:03 EDT 2026
-Execute       send_msg_by_id INFO @200-1505@%s%s default  vivado 
-INFO: [HLS 200-1505] Using default flow_target 'vivado'
-Execute       send_msg_by_id INFO @200-2174@%s%s component hls_config.cfg 
-INFO: [HLS 200-2174] Applying component config ini file hls_config.cfg
-Execute       apply_ini hls_config.cfg 
-Execute         send_msg_by_id WARNING @200-2001@%s%s hw_mixer_tb.cpp see [hls] from hls_config.cfg(8) 
-WARNING: [HLS 200-2001] file not found 'hw_mixer_tb.cpp' see [hls] from hls_config.cfg(8)
-Execute         send_msg_by_id INFO @200-1465@%s 'syn.file=hw_mixer.cpp' from hls_config.cfg(10) 
-INFO: [HLS 200-1465] Applying config ini 'syn.file=hw_mixer.cpp' from hls_config.cfg(10)
-Execute         add_files /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/hw_mixer.cpp 
-INFO: [HLS 200-10] Adding design file '/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/hw_mixer.cpp' to the project
-Execute         send_msg_by_id INFO @200-1465@%s 'syn.file=hw_mixer.h' from hls_config.cfg(11) 
-INFO: [HLS 200-1465] Applying config ini 'syn.file=hw_mixer.h' from hls_config.cfg(11)
-Execute         add_files /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/hw_mixer.h 
-INFO: [HLS 200-10] Adding design file '/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/hw_mixer.h' to the project
-Execute         send_msg_by_id INFO @200-1465@%s 'tb.file=hw_mixer_tb.cpp' from hls_config.cfg(8) 
-INFO: [HLS 200-1465] Applying config ini 'tb.file=hw_mixer_tb.cpp' from hls_config.cfg(8)
-Execute         add_files -tb hw_mixer_tb.cpp 
-WARNING: [HLS 200-40] Cannot find test bench file 'hw_mixer_tb.cpp'
-Execute         send_msg_by_id INFO @200-1465@%s 'tb.file=mixer_tb.cpp' from hls_config.cfg(9) 
-INFO: [HLS 200-1465] Applying config ini 'tb.file=mixer_tb.cpp' from hls_config.cfg(9)
-Execute         add_files -tb /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/mixer_tb.cpp 
-INFO: [HLS 200-10] Adding test bench file '/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/mixer_tb.cpp' to the project
-Execute         send_msg_by_id INFO @200-1465@%s 'syn.top=mixer' from hls_config.cfg(7) 
-INFO: [HLS 200-1465] Applying config ini 'syn.top=mixer' from hls_config.cfg(7)
-Execute         set_top mixer 
-Execute         send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from hls_config.cfg(4) 
-INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from hls_config.cfg(4)
-Execute         send_msg_by_id INFO @200-1505@%s%s  vivado 
-INFO: [HLS 200-1505] Using flow_target 'vivado'
-Execute         send_msg_by_id INFO @200-1465@%s 'part=xczu3eg-sfvc784-2-e' from hls_config.cfg(1) 
-INFO: [HLS 200-1465] Applying config ini 'part=xczu3eg-sfvc784-2-e' from hls_config.cfg(1)
-Execute         set_part xczu3eg-sfvc784-2-e 
-Execute           create_platform xczu3eg-sfvc784-2-e -board  
-DBG:HLSDevice: Trying to load device library: /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/lib/lnx64.o/libxv_hlsvwrap.so
-DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vivado/data/parts/arch.xml
-DBG:HLSDevice: init success
-INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sfvc784-2-e'
-Command           create_platform done; 2.19 sec.
-Execute           source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/common/xilinx.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/interface/plb46.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/interface/axi4.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute               source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/interface/saxilite.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/ip/dds_compiler.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/ip/util.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/ip/xfft.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/ip/xfir.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/DSP48/dsp48.gen 
-Command           ap_source done; 0.11 sec.
-Execute           ap_part_info -name xczu3eg-sfvc784-2-e -data info 
-Execute           config_compile -quiet -complex-mul-dsp=0 
-Command         set_part done; 2.36 sec.
-Execute         send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from hls_config.cfg(5) 
-INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from hls_config.cfg(5)
-Execute         config_export -format=ip_catalog 
-Command       apply_ini done; 2.38 sec.
-Execute       write_component -config /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/hls_config.cfg 
-Execute         send_msg_by_id INFO @200-2176@%s /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/vitis-comp.json 
-INFO: [HLS 200-2176] Writing Vitis IDE component file /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/vitis-comp.json
-Command     open_solution done; 2.42 sec.
-Command   open_component done; 2.43 sec.
-Execute   apply_ini /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/config.cmdline -iscmdline 
-Execute   ::AP::init_summary_file csim 
-Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
-Execute   csim_design 
-Execute     source /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/global.setting.tcl 
-INFO: [SIM 211-2] *************** CSIM start ***************
-Execute     send_msg_by_id INFO @200-2191@%s%s C-Simulation clang-16 
-INFO: [HLS 200-2191] C-Simulation will use clang-16 as the compiler
-Execute     source csim/.lst_opt.tcl 
-Execute     send_msg_by_id INFO @200-2036@%s debug 
-INFO: [HLS 200-2036] Building debug C Simulation binaries
-Execute     ap_part_info -name xczu3eg-sfvc784-2-e -data info 
-Execute     source run_sim.tcl 
-Command     ap_source done; error code: 1; 1.39 sec.
-INFO-FLOW: AESL_CSIM::c_sim errorInfo:
-
-    while executing
-"::AESL_CSIM::c_sim "$argn" "
-ERROR: [SIM 211-100] CSim failed with errors.
-INFO: [SIM 211-3] *************** CSIM finish ***************
-INFO-FLOW: AESL_CSIM::csim_cmd_wrap errorInfo:
-4
-    while executing
-"::AESL_CSIM::csim_cmd_wrap $args"
-INFO-FLOW: Caught error in csim_design: CSIM Failed
-    while executing
-"ap_internal_csim_design "
-Command   csim_design done; error code: 2; 3.8 sec.
-Execute   close_project 
-Execute     close_solution 
-Execute       cleanup_all 
-Execute       cleanup_all 
-Execute       source -notrace -encoding utf-8 /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/tps/tcl/tcl8.6/clock.tcl 
-Execute         source -encoding utf-8 /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/tps/tcl/tcl8/8.5/msgcat-1.6.1.tm 
-INFO-FLOW: Workspace /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls opened at Fri Mar 27 17:09:48 EDT 2026
-Execute       send_msg_by_id INFO @200-1505@%s%s default  vivado 
-INFO: [HLS 200-1505] Using default flow_target 'vivado'
-Execute       send_msg_by_id INFO @200-2174@%s%s component hls_config.cfg 
-INFO: [HLS 200-2174] Applying component config ini file hls_config.cfg
-Execute       apply_ini hls_config.cfg 
-Execute         send_msg_by_id WARNING @200-2001@%s%s hw_mixer_tb.cpp see [hls] from hls_config.cfg(8) 
-WARNING: [HLS 200-2001] file not found 'hw_mixer_tb.cpp' see [hls] from hls_config.cfg(8)
-Execute         send_msg_by_id INFO @200-1465@%s 'syn.file=hw_mixer.cpp' from hls_config.cfg(10) 
-INFO: [HLS 200-1465] Applying config ini 'syn.file=hw_mixer.cpp' from hls_config.cfg(10)
-Execute         add_files /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/hw_mixer.cpp 
-INFO: [HLS 200-10] Adding design file '/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/hw_mixer.cpp' to the project
-Execute         send_msg_by_id INFO @200-1465@%s 'syn.file=hw_mixer.h' from hls_config.cfg(11) 
-INFO: [HLS 200-1465] Applying config ini 'syn.file=hw_mixer.h' from hls_config.cfg(11)
-Execute         add_files /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/hw_mixer.h 
-INFO: [HLS 200-10] Adding design file '/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/hw_mixer.h' to the project
-Execute         send_msg_by_id INFO @200-1465@%s 'tb.file=hw_mixer_tb.cpp' from hls_config.cfg(8) 
-INFO: [HLS 200-1465] Applying config ini 'tb.file=hw_mixer_tb.cpp' from hls_config.cfg(8)
-Execute         add_files -tb hw_mixer_tb.cpp 
-WARNING: [HLS 200-40] Cannot find test bench file 'hw_mixer_tb.cpp'
-Execute         send_msg_by_id INFO @200-1465@%s 'tb.file=mixer_tb.cpp' from hls_config.cfg(9) 
-INFO: [HLS 200-1465] Applying config ini 'tb.file=mixer_tb.cpp' from hls_config.cfg(9)
-Execute         add_files -tb /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/mixer_tb.cpp 
-INFO: [HLS 200-10] Adding test bench file '/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/mixer_tb.cpp' to the project
-Execute         send_msg_by_id INFO @200-1465@%s 'syn.top=mixer' from hls_config.cfg(7) 
-INFO: [HLS 200-1465] Applying config ini 'syn.top=mixer' from hls_config.cfg(7)
-Execute         set_top mixer 
-Execute         send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from hls_config.cfg(4) 
-INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from hls_config.cfg(4)
-Execute         send_msg_by_id INFO @200-1505@%s%s  vivado 
-INFO: [HLS 200-1505] Using flow_target 'vivado'
-Execute         send_msg_by_id INFO @200-1465@%s 'part=xczu3eg-sfvc784-2-e' from hls_config.cfg(1) 
-INFO: [HLS 200-1465] Applying config ini 'part=xczu3eg-sfvc784-2-e' from hls_config.cfg(1)
-Execute         set_part xczu3eg-sfvc784-2-e 
-Execute           create_platform xczu3eg-sfvc784-2-e -board  
-DBG:HLSDevice: Trying to load device library: /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/lib/lnx64.o/libxv_hlsvwrap.so
-DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vivado/data/parts/arch.xml
-DBG:HLSDevice: init success
-INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sfvc784-2-e'
-Command           create_platform done; 2.22 sec.
-Execute           source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/common/xilinx.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/interface/plb46.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/interface/axi4.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute               source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/interface/saxilite.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/ip/dds_compiler.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/ip/util.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/ip/xfft.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/ip/xfir.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/DSP48/dsp48.gen 
-Execute           ap_part_info -name xczu3eg-sfvc784-2-e -data info 
-Execute           config_compile -quiet -complex-mul-dsp=0 
-Command         set_part done; 2.38 sec.
-Execute         send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from hls_config.cfg(5) 
-INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from hls_config.cfg(5)
-Execute         config_export -format=ip_catalog 
-Command       apply_ini done; 2.4 sec.
-Execute       write_component -config /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/hls_config.cfg 
-Execute         send_msg_by_id INFO @200-2176@%s /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/vitis-comp.json 
-INFO: [HLS 200-2176] Writing Vitis IDE component file /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/vitis-comp.json
-Command     open_solution done; 2.45 sec.
-Command   open_component done; 2.46 sec.
-Execute   apply_ini /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/config.cmdline -iscmdline 
-Execute   ::AP::init_summary_file csim 
-Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
-Execute   csim_design 
-Execute     source /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/global.setting.tcl 
-INFO: [SIM 211-2] *************** CSIM start ***************
-Execute     send_msg_by_id INFO @200-2191@%s%s C-Simulation clang-16 
-INFO: [HLS 200-2191] C-Simulation will use clang-16 as the compiler
-Execute     source csim/.lst_opt.tcl 
-Execute     send_msg_by_id INFO @200-2036@%s debug 
-INFO: [HLS 200-2036] Building debug C Simulation binaries
-Execute     ap_part_info -name xczu3eg-sfvc784-2-e -data info 
-INFO-FLOW: AESL_CSIM::c_sim errorInfo:
-
-    while executing
-"::AESL_CSIM::c_sim "$argn" "
-ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
-INFO: [SIM 211-3] *************** CSIM finish ***************
-INFO-FLOW: AESL_CSIM::csim_cmd_wrap errorInfo:
-4
-    while executing
-"::AESL_CSIM::csim_cmd_wrap $args"
-INFO-FLOW: Caught error in csim_design: CSIM Failed
-    while executing
-"ap_internal_csim_design "
-Command   csim_design done; error code: 2; 1.91 sec.
-Execute   close_project 
-Execute     close_solution 
-Execute       cleanup_all 
-Execute       cleanup_all 
-Execute       source -notrace -encoding utf-8 /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/tps/tcl/tcl8.6/clock.tcl 
-Execute         source -encoding utf-8 /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/tps/tcl/tcl8/8.5/msgcat-1.6.1.tm 
-INFO-FLOW: Workspace /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls opened at Fri Mar 27 17:17:26 EDT 2026
-Execute       send_msg_by_id INFO @200-1505@%s%s default  vivado 
-INFO: [HLS 200-1505] Using default flow_target 'vivado'
-Execute       send_msg_by_id INFO @200-2174@%s%s component hls_config.cfg 
-INFO: [HLS 200-2174] Applying component config ini file hls_config.cfg
-Execute       apply_ini hls_config.cfg 
-Execute         send_msg_by_id WARNING @200-2001@%s%s hw_mixer_tb.cpp see [hls] from hls_config.cfg(8) 
-WARNING: [HLS 200-2001] file not found 'hw_mixer_tb.cpp' see [hls] from hls_config.cfg(8)
-Execute         send_msg_by_id INFO @200-1465@%s 'syn.file=hw_mixer.cpp' from hls_config.cfg(10) 
-INFO: [HLS 200-1465] Applying config ini 'syn.file=hw_mixer.cpp' from hls_config.cfg(10)
-Execute         add_files /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/hw_mixer.cpp 
-INFO: [HLS 200-10] Adding design file '/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/hw_mixer.cpp' to the project
-Execute         send_msg_by_id INFO @200-1465@%s 'syn.file=hw_mixer.h' from hls_config.cfg(11) 
-INFO: [HLS 200-1465] Applying config ini 'syn.file=hw_mixer.h' from hls_config.cfg(11)
-Execute         add_files /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/hw_mixer.h 
-INFO: [HLS 200-10] Adding design file '/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/hw_mixer.h' to the project
-Execute         send_msg_by_id INFO @200-1465@%s 'tb.file=hw_mixer_tb.cpp' from hls_config.cfg(8) 
-INFO: [HLS 200-1465] Applying config ini 'tb.file=hw_mixer_tb.cpp' from hls_config.cfg(8)
-Execute         add_files -tb hw_mixer_tb.cpp 
-WARNING: [HLS 200-40] Cannot find test bench file 'hw_mixer_tb.cpp'
-Execute         send_msg_by_id INFO @200-1465@%s 'tb.file=mixer_tb.cpp' from hls_config.cfg(9) 
-INFO: [HLS 200-1465] Applying config ini 'tb.file=mixer_tb.cpp' from hls_config.cfg(9)
-Execute         add_files -tb /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/mixer_tb.cpp 
-INFO: [HLS 200-10] Adding test bench file '/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/mixer_tb.cpp' to the project
-Execute         send_msg_by_id INFO @200-1465@%s 'syn.top=mixer' from hls_config.cfg(7) 
-INFO: [HLS 200-1465] Applying config ini 'syn.top=mixer' from hls_config.cfg(7)
-Execute         set_top mixer 
-Execute         send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from hls_config.cfg(4) 
-INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from hls_config.cfg(4)
-Execute         send_msg_by_id INFO @200-1505@%s%s  vivado 
-INFO: [HLS 200-1505] Using flow_target 'vivado'
-Execute         send_msg_by_id INFO @200-1465@%s 'part=xczu3eg-sfvc784-2-e' from hls_config.cfg(1) 
-INFO: [HLS 200-1465] Applying config ini 'part=xczu3eg-sfvc784-2-e' from hls_config.cfg(1)
-Execute         set_part xczu3eg-sfvc784-2-e 
-Execute           create_platform xczu3eg-sfvc784-2-e -board  
-DBG:HLSDevice: Trying to load device library: /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/lib/lnx64.o/libxv_hlsvwrap.so
-DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vivado/data/parts/arch.xml
-DBG:HLSDevice: init success
-INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sfvc784-2-e'
-Command           create_platform done; 2.3 sec.
-Execute           source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/common/xilinx.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/interface/plb46.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/interface/axi4.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute               source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/interface/saxilite.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/ip/dds_compiler.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/ip/util.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/ip/xfft.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/ip/xfir.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/DSP48/dsp48.gen 
-Command           ap_source done; 0.11 sec.
-Execute           ap_part_info -name xczu3eg-sfvc784-2-e -data info 
-Execute           config_compile -quiet -complex-mul-dsp=0 
-Command         set_part done; 2.47 sec.
-Execute         send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from hls_config.cfg(5) 
-INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from hls_config.cfg(5)
-Execute         config_export -format=ip_catalog 
-Command       apply_ini done; 2.5 sec.
-Execute       write_component -config /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/hls_config.cfg 
-Execute         send_msg_by_id INFO @200-2176@%s /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/vitis-comp.json 
-INFO: [HLS 200-2176] Writing Vitis IDE component file /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/vitis-comp.json
-Command     open_solution done; 2.54 sec.
-Command   open_component done; 2.54 sec.
-Execute   apply_ini /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/config.cmdline -iscmdline 
-Execute   ::AP::init_summary_file csim 
-Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
-Execute   csim_design 
-Execute     source /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/global.setting.tcl 
-INFO: [SIM 211-2] *************** CSIM start ***************
-Execute     send_msg_by_id INFO @200-2191@%s%s C-Simulation clang-16 
-INFO: [HLS 200-2191] C-Simulation will use clang-16 as the compiler
-Execute     source csim/.lst_opt.tcl 
-Execute     send_msg_by_id INFO @200-2036@%s debug 
-INFO: [HLS 200-2036] Building debug C Simulation binaries
-Execute     ap_part_info -name xczu3eg-sfvc784-2-e -data info 
-Execute     source run_sim.tcl 
-Command     ap_source done; error code: 1; 1.27 sec.
-INFO-FLOW: AESL_CSIM::c_sim errorInfo:
-
-    while executing
-"::AESL_CSIM::c_sim "$argn" "
-ERROR: [SIM 211-100] CSim failed with errors.
-INFO: [SIM 211-3] *************** CSIM finish ***************
-INFO-FLOW: AESL_CSIM::csim_cmd_wrap errorInfo:
-4
-    while executing
-"::AESL_CSIM::csim_cmd_wrap $args"
-INFO-FLOW: Caught error in csim_design: CSIM Failed
-    while executing
-"ap_internal_csim_design "
-Command   csim_design done; error code: 2; 3.88 sec.
-Execute   close_project 
-Execute     close_solution 
-Execute       cleanup_all 
-Execute       cleanup_all 
-Execute       source -notrace -encoding utf-8 /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/tps/tcl/tcl8.6/clock.tcl 
-Execute         source -encoding utf-8 /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/tps/tcl/tcl8/8.5/msgcat-1.6.1.tm 
-INFO-FLOW: Workspace /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls opened at Fri Mar 27 17:22:50 EDT 2026
-Execute       send_msg_by_id INFO @200-1505@%s%s default  vivado 
-INFO: [HLS 200-1505] Using default flow_target 'vivado'
-Execute       send_msg_by_id INFO @200-2174@%s%s component hls_config.cfg 
-INFO: [HLS 200-2174] Applying component config ini file hls_config.cfg
-Execute       apply_ini hls_config.cfg 
-Execute         send_msg_by_id WARNING @200-2001@%s%s hw_mixer_tb.cpp see [hls] from hls_config.cfg(8) 
-WARNING: [HLS 200-2001] file not found 'hw_mixer_tb.cpp' see [hls] from hls_config.cfg(8)
-Execute         send_msg_by_id INFO @200-1465@%s 'syn.file=hw_mixer.cpp' from hls_config.cfg(10) 
-INFO: [HLS 200-1465] Applying config ini 'syn.file=hw_mixer.cpp' from hls_config.cfg(10)
-Execute         add_files /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/hw_mixer.cpp 
-INFO: [HLS 200-10] Adding design file '/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/hw_mixer.cpp' to the project
-Execute         send_msg_by_id INFO @200-1465@%s 'syn.file=hw_mixer.h' from hls_config.cfg(11) 
-INFO: [HLS 200-1465] Applying config ini 'syn.file=hw_mixer.h' from hls_config.cfg(11)
-Execute         add_files /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/hw_mixer.h 
-INFO: [HLS 200-10] Adding design file '/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/hw_mixer.h' to the project
-Execute         send_msg_by_id INFO @200-1465@%s 'tb.file=hw_mixer_tb.cpp' from hls_config.cfg(8) 
-INFO: [HLS 200-1465] Applying config ini 'tb.file=hw_mixer_tb.cpp' from hls_config.cfg(8)
-Execute         add_files -tb hw_mixer_tb.cpp 
-WARNING: [HLS 200-40] Cannot find test bench file 'hw_mixer_tb.cpp'
-Execute         send_msg_by_id INFO @200-1465@%s 'tb.file=mixer_tb.cpp' from hls_config.cfg(9) 
-INFO: [HLS 200-1465] Applying config ini 'tb.file=mixer_tb.cpp' from hls_config.cfg(9)
-Execute         add_files -tb /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/mixer_tb.cpp 
-INFO: [HLS 200-10] Adding test bench file '/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/mixer_tb.cpp' to the project
-Execute         send_msg_by_id INFO @200-1465@%s 'syn.top=mixer' from hls_config.cfg(7) 
-INFO: [HLS 200-1465] Applying config ini 'syn.top=mixer' from hls_config.cfg(7)
-Execute         set_top mixer 
-Execute         send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from hls_config.cfg(4) 
-INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from hls_config.cfg(4)
-Execute         send_msg_by_id INFO @200-1505@%s%s  vivado 
-INFO: [HLS 200-1505] Using flow_target 'vivado'
-Execute         send_msg_by_id INFO @200-1465@%s 'part=xczu3eg-sfvc784-2-e' from hls_config.cfg(1) 
-INFO: [HLS 200-1465] Applying config ini 'part=xczu3eg-sfvc784-2-e' from hls_config.cfg(1)
-Execute         set_part xczu3eg-sfvc784-2-e 
-Execute           create_platform xczu3eg-sfvc784-2-e -board  
-DBG:HLSDevice: Trying to load device library: /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/lib/lnx64.o/libxv_hlsvwrap.so
-DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vivado/data/parts/arch.xml
-DBG:HLSDevice: init success
-INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sfvc784-2-e'
-Command           create_platform done; 2.18 sec.
-Execute           source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/common/xilinx.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/interface/plb46.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/interface/axi4.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute               source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/interface/saxilite.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/ip/dds_compiler.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/ip/util.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/ip/xfft.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/ip/xfir.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/DSP48/dsp48.gen 
-Execute           ap_part_info -name xczu3eg-sfvc784-2-e -data info 
-Execute           config_compile -quiet -complex-mul-dsp=0 
-Command         set_part done; 2.34 sec.
-Execute         send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from hls_config.cfg(5) 
-INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from hls_config.cfg(5)
-Execute         config_export -format=ip_catalog 
-Command       apply_ini done; 2.36 sec.
-Execute       write_component -config /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/hls_config.cfg 
-Execute         send_msg_by_id INFO @200-2176@%s /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/vitis-comp.json 
-INFO: [HLS 200-2176] Writing Vitis IDE component file /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/vitis-comp.json
-Command     open_solution done; 2.4 sec.
-Command   open_component done; 2.41 sec.
-Execute   apply_ini /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/config.cmdline -iscmdline 
-Execute   ::AP::init_summary_file csim 
-Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
-Execute   csim_design 
-Execute     source /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/global.setting.tcl 
-INFO: [SIM 211-2] *************** CSIM start ***************
-Execute     send_msg_by_id INFO @200-2191@%s%s C-Simulation clang-16 
-INFO: [HLS 200-2191] C-Simulation will use clang-16 as the compiler
-Execute     source csim/.lst_opt.tcl 
-Execute     send_msg_by_id INFO @200-2036@%s debug 
-INFO: [HLS 200-2036] Building debug C Simulation binaries
-Execute     ap_part_info -name xczu3eg-sfvc784-2-e -data info 
-Execute     source run_sim.tcl 
-Command     ap_source done; error code: 1; 1.26 sec.
-INFO-FLOW: AESL_CSIM::c_sim errorInfo:
-
-    while executing
-"::AESL_CSIM::c_sim "$argn" "
-ERROR: [SIM 211-100] CSim failed with errors.
-INFO: [SIM 211-3] *************** CSIM finish ***************
-INFO-FLOW: AESL_CSIM::csim_cmd_wrap errorInfo:
-4
-    while executing
-"::AESL_CSIM::csim_cmd_wrap $args"
-INFO-FLOW: Caught error in csim_design: CSIM Failed
-    while executing
-"ap_internal_csim_design "
-Command   csim_design done; error code: 2; 3.5 sec.
-Execute   close_project 
-Execute     close_solution 
-Execute       cleanup_all 
-Execute       cleanup_all 
-Execute       source -notrace -encoding utf-8 /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/tps/tcl/tcl8.6/clock.tcl 
-Execute         source -encoding utf-8 /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/tps/tcl/tcl8/8.5/msgcat-1.6.1.tm 
-INFO-FLOW: Workspace /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls opened at Fri Mar 27 17:30:17 EDT 2026
-Execute       send_msg_by_id INFO @200-1505@%s%s default  vivado 
-INFO: [HLS 200-1505] Using default flow_target 'vivado'
-Execute       send_msg_by_id INFO @200-2174@%s%s component hls_config.cfg 
-INFO: [HLS 200-2174] Applying component config ini file hls_config.cfg
-Execute       apply_ini hls_config.cfg 
-Execute         send_msg_by_id WARNING @200-2001@%s%s hw_mixer_tb.cpp see [hls] from hls_config.cfg(8) 
-WARNING: [HLS 200-2001] file not found 'hw_mixer_tb.cpp' see [hls] from hls_config.cfg(8)
-Execute         send_msg_by_id INFO @200-1465@%s 'syn.file=hw_mixer.cpp' from hls_config.cfg(10) 
-INFO: [HLS 200-1465] Applying config ini 'syn.file=hw_mixer.cpp' from hls_config.cfg(10)
-Execute         add_files /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/hw_mixer.cpp 
-INFO: [HLS 200-10] Adding design file '/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/hw_mixer.cpp' to the project
-Execute         send_msg_by_id INFO @200-1465@%s 'syn.file=hw_mixer.h' from hls_config.cfg(11) 
-INFO: [HLS 200-1465] Applying config ini 'syn.file=hw_mixer.h' from hls_config.cfg(11)
-Execute         add_files /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/hw_mixer.h 
-INFO: [HLS 200-10] Adding design file '/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/hw_mixer.h' to the project
-Execute         send_msg_by_id INFO @200-1465@%s 'tb.file=hw_mixer_tb.cpp' from hls_config.cfg(8) 
-INFO: [HLS 200-1465] Applying config ini 'tb.file=hw_mixer_tb.cpp' from hls_config.cfg(8)
-Execute         add_files -tb hw_mixer_tb.cpp 
-WARNING: [HLS 200-40] Cannot find test bench file 'hw_mixer_tb.cpp'
-Execute         send_msg_by_id INFO @200-1465@%s 'tb.file=mixer_tb.cpp' from hls_config.cfg(9) 
-INFO: [HLS 200-1465] Applying config ini 'tb.file=mixer_tb.cpp' from hls_config.cfg(9)
-Execute         add_files -tb /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/mixer_tb.cpp 
-INFO: [HLS 200-10] Adding test bench file '/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/mixer_tb.cpp' to the project
-Execute         send_msg_by_id INFO @200-1465@%s 'syn.top=mixer' from hls_config.cfg(7) 
-INFO: [HLS 200-1465] Applying config ini 'syn.top=mixer' from hls_config.cfg(7)
-Execute         set_top mixer 
-Execute         send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from hls_config.cfg(4) 
-INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from hls_config.cfg(4)
-Execute         send_msg_by_id INFO @200-1505@%s%s  vivado 
-INFO: [HLS 200-1505] Using flow_target 'vivado'
-Execute         send_msg_by_id INFO @200-1465@%s 'part=xczu3eg-sfvc784-2-e' from hls_config.cfg(1) 
-INFO: [HLS 200-1465] Applying config ini 'part=xczu3eg-sfvc784-2-e' from hls_config.cfg(1)
-Execute         set_part xczu3eg-sfvc784-2-e 
-Execute           create_platform xczu3eg-sfvc784-2-e -board  
-DBG:HLSDevice: Trying to load device library: /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/lib/lnx64.o/libxv_hlsvwrap.so
-DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vivado/data/parts/arch.xml
-DBG:HLSDevice: init success
-INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sfvc784-2-e'
-Command           create_platform done; 1.15 sec.
-Execute           source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/common/xilinx.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/interface/plb46.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/interface/axi4.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute               source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/interface/saxilite.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/ip/dds_compiler.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/ip/util.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/ip/xfft.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/ip/xfir.gen 
-Execute             source /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/xilinx/DSP48/dsp48.gen 
-Execute           ap_part_info -name xczu3eg-sfvc784-2-e -data info 
-Execute           config_compile -quiet -complex-mul-dsp=0 
-Command         set_part done; 1.23 sec.
-Execute         send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from hls_config.cfg(5) 
-INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from hls_config.cfg(5)
-Execute         config_export -format=ip_catalog 
-Command       apply_ini done; 1.26 sec.
-Execute       write_component -config /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/hls_config.cfg 
-Execute         send_msg_by_id INFO @200-2176@%s /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/vitis-comp.json 
-INFO: [HLS 200-2176] Writing Vitis IDE component file /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/vitis-comp.json
-Command     open_solution done; 1.27 sec.
-Command   open_component done; 1.28 sec.
-Execute   apply_ini /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/config.cmdline -iscmdline 
-Execute   ::AP::init_summary_file csim 
-Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
-Execute   csim_design 
-Execute     source /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/global.setting.tcl 
-INFO: [SIM 211-2] *************** CSIM start ***************
-Execute     send_msg_by_id INFO @200-2191@%s%s C-Simulation clang-16 
-INFO: [HLS 200-2191] C-Simulation will use clang-16 as the compiler
-Execute     source csim/.lst_opt.tcl 
-Execute     send_msg_by_id INFO @200-2036@%s debug 
-INFO: [HLS 200-2036] Building debug C Simulation binaries
-Execute     ap_part_info -name xczu3eg-sfvc784-2-e -data info 
-Execute     source run_sim.tcl 
-INFO: [SIM 211-1] CSim done with 0 errors.
-INFO: [SIM 211-3] *************** CSIM finish ***************
-Command   csim_design done; 1.19 sec.
+Command   csynth_design done; 11.65 sec.
 Execute   close_project 
 Execute     close_solution 
 Execute       cleanup_all 

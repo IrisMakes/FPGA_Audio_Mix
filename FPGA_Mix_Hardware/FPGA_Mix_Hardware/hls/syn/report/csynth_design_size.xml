@@ -25,14 +25,14 @@
             <column name="">, , </column>
             <column name="HW Transforms">, , After hardware transfomations</column>
             <column name="">(1) lowering,   467, initial conversion to HW specific instructions</column>
-            <column name="">(2) optimizations,   256, high level synthesis optimizations</column>
+            <column name="">(2) optimizations,   257, high level synthesis optimizations</column>
         </table>
     </item>
     <item name="Instructions per Function for each Compilation Phase">
         <hiertable>
             <header size="7" col0="Function" col1="Location" col2="Compile/Link" col3="Unroll/Inline" col4="Array/Struct" col5="Performance" col6="HW Transforms"/>
             <rows>
-                <row id="0" col0="mixer" col1="hw_mixer.cpp:5" col2="4166" col3="575" col4="816" col5="556" col6="256"/>
+                <row id="0" col0="mixer" col1="hw_mixer.cpp:5" col2="4166" col3="575" col4="816" col5="556" col6="257"/>
             </rows>
             <notes/>
         </hiertable>

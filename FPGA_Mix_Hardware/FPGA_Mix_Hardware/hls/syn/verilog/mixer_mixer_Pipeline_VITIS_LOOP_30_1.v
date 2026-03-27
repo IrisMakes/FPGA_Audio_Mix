@@ -230,10 +230,10 @@ reg    ap_idle_pp0;
 reg    ap_block_pp0_stage0_subdone_grp1_done_reg;
 reg    ap_block_pp0_stage0_subdone_grp1;
 reg    ap_block_pp0_stage0_subdone;
-reg   [0:0] or_ln69_6_reg_830;
-reg   [0:0] or_ln69_6_reg_830_pp0_iter1_reg;
+reg   [0:0] or_ln69_6_reg_838;
+reg   [0:0] or_ln69_6_reg_838_pp0_iter1_reg;
 reg    ap_block_state3_pp0_stage0_iter2_grp1;
-wire   [0:0] or_ln69_6_fu_659_p2;
+wire   [0:0] or_ln69_6_fu_667_p2;
 reg    ap_condition_exit_pp0_iter0_stage0;
 wire    ap_loop_exit_ready;
 reg    ap_ready_int;
@@ -248,48 +248,48 @@ reg    stream_in_4_TDATA_blk_n;
 reg    stream_in_5_TDATA_blk_n;
 reg    stream_in_6_TDATA_blk_n;
 reg    stream_in_7_TDATA_blk_n;
-reg   [31:0] out_pkt_data_reg_484;
+reg   [31:0] out_pkt_data_reg_492;
 reg    ap_block_pp0_stage0_11001_grp1;
-wire   [0:0] icmp_ln65_fu_501_p2;
-reg   [0:0] icmp_ln65_reg_805;
-reg   [31:0] empty_32_reg_809_0;
+wire   [0:0] icmp_ln65_fu_509_p2;
+reg   [0:0] icmp_ln65_reg_813;
+reg   [31:0] empty_32_reg_817_0;
 reg    ap_block_pp0_stage0_11001;
-reg   [31:0] empty_33_reg_814_0;
-reg   [31:0] empty_34_reg_819_0;
-wire   [31:0] mix_int_8_fu_615_p3;
-reg   [31:0] mix_int_8_reg_824;
-wire   [31:0] mix_int_14_fu_704_p3;
-reg  signed [31:0] mix_int_14_reg_834;
-reg   [31:0] ap_phi_mux_out_pkt_data_phi_fu_488_p4;
-reg   [31:0] ap_phi_reg_pp0_iter2_out_pkt_data_reg_484;
-wire   [31:0] ap_phi_reg_pp0_iter0_out_pkt_data_reg_484;
-reg   [31:0] ap_phi_reg_pp0_iter1_out_pkt_data_reg_484;
+reg   [31:0] empty_33_reg_822_0;
+reg   [31:0] empty_34_reg_827_0;
+wire   [31:0] mix_int_8_fu_623_p3;
+reg   [31:0] mix_int_8_reg_832;
+wire   [31:0] mix_int_14_fu_712_p3;
+reg  signed [31:0] mix_int_14_reg_842;
+reg   [31:0] ap_phi_mux_out_pkt_data_phi_fu_496_p4;
+reg   [31:0] ap_phi_reg_pp0_iter2_out_pkt_data_reg_492;
+wire   [31:0] ap_phi_reg_pp0_iter0_out_pkt_data_reg_492;
+reg   [31:0] ap_phi_reg_pp0_iter1_out_pkt_data_reg_492;
 reg    ap_block_pp0_stage0_01001_grp1;
 reg    ap_loop_exit_ready_pp0_iter1_reg;
 reg    ap_loop_exit_ready_pp0_iter2_reg;
-wire   [8:0] mul_ln65_fu_497_p0;
-wire   [31:0] mix_int_fu_559_p3;
-wire   [31:0] mix_int_1_fu_567_p2;
-wire   [31:0] mix_int_2_fu_573_p3;
-wire   [31:0] mix_int_3_fu_581_p2;
-wire   [31:0] mix_int_4_fu_587_p3;
-wire   [31:0] mix_int_5_fu_595_p2;
-wire   [31:0] mix_int_6_fu_601_p3;
-wire   [31:0] mix_int_7_fu_609_p2;
-wire   [0:0] or_ln69_1_fu_629_p2;
-wire   [0:0] or_ln69_fu_623_p2;
-wire   [0:0] or_ln69_4_fu_647_p2;
-wire   [0:0] or_ln69_3_fu_641_p2;
-wire   [0:0] or_ln69_5_fu_653_p2;
-wire   [0:0] or_ln69_2_fu_635_p2;
-wire   [31:0] mix_int_9_fu_674_p2;
-wire   [31:0] mix_int_10_fu_679_p3;
-wire   [31:0] mix_int_11_fu_685_p2;
-wire   [31:0] mix_int_12_fu_691_p3;
-wire   [31:0] mix_int_13_fu_698_p2;
-wire   [8:0] zext_ln65_cast_fu_715_p17;
-wire   [8:0] zext_ln65_cast_fu_715_p19;
-wire   [39:0] mul_ln65_fu_497_p2;
+wire   [8:0] mul_ln65_fu_505_p0;
+wire   [31:0] mix_int_fu_567_p3;
+wire   [31:0] mix_int_1_fu_575_p2;
+wire   [31:0] mix_int_2_fu_581_p3;
+wire   [31:0] mix_int_3_fu_589_p2;
+wire   [31:0] mix_int_4_fu_595_p3;
+wire   [31:0] mix_int_5_fu_603_p2;
+wire   [31:0] mix_int_6_fu_609_p3;
+wire   [31:0] mix_int_7_fu_617_p2;
+wire   [0:0] or_ln69_1_fu_637_p2;
+wire   [0:0] or_ln69_fu_631_p2;
+wire   [0:0] or_ln69_4_fu_655_p2;
+wire   [0:0] or_ln69_3_fu_649_p2;
+wire   [0:0] or_ln69_5_fu_661_p2;
+wire   [0:0] or_ln69_2_fu_643_p2;
+wire   [31:0] mix_int_9_fu_682_p2;
+wire   [31:0] mix_int_10_fu_687_p3;
+wire   [31:0] mix_int_11_fu_693_p2;
+wire   [31:0] mix_int_12_fu_699_p3;
+wire   [31:0] mix_int_13_fu_706_p2;
+wire   [8:0] zext_ln65_cast_fu_723_p17;
+wire   [8:0] zext_ln65_cast_fu_723_p19;
+wire   [39:0] mul_ln65_fu_505_p2;
 reg    ap_done_reg;
 wire    ap_continue_int;
 reg    ap_done_int;
@@ -299,16 +299,16 @@ wire    ap_start_int;
 wire    ap_ready_sig;
 wire    ap_done_sig;
 wire    ap_loop_init;
-wire   [39:0] mul_ln65_fu_497_p00;
+wire   [39:0] mul_ln65_fu_505_p00;
 reg    ap_condition_283;
-wire   [3:0] zext_ln65_cast_fu_715_p1;
-wire   [3:0] zext_ln65_cast_fu_715_p3;
-wire   [3:0] zext_ln65_cast_fu_715_p5;
-wire   [3:0] zext_ln65_cast_fu_715_p7;
-wire   [3:0] zext_ln65_cast_fu_715_p9;
-wire   [3:0] zext_ln65_cast_fu_715_p11;
-wire   [3:0] zext_ln65_cast_fu_715_p13;
-wire  signed [3:0] zext_ln65_cast_fu_715_p15;
+wire   [3:0] zext_ln65_cast_fu_723_p1;
+wire   [3:0] zext_ln65_cast_fu_723_p3;
+wire   [3:0] zext_ln65_cast_fu_723_p5;
+wire   [3:0] zext_ln65_cast_fu_723_p7;
+wire   [3:0] zext_ln65_cast_fu_723_p9;
+wire   [3:0] zext_ln65_cast_fu_723_p11;
+wire   [3:0] zext_ln65_cast_fu_723_p13;
+wire  signed [3:0] zext_ln65_cast_fu_723_p15;
 wire    ap_ce_reg;
 
 // power-on initialization
@@ -327,9 +327,9 @@ mixer_mul_9ns_32s_40_1_1 #(
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 40 ))
 mul_9ns_32s_40_1_1_U1(
-    .din0(mul_ln65_fu_497_p0),
-    .din1(mix_int_14_reg_834),
-    .dout(mul_ln65_fu_497_p2)
+    .din0(mul_ln65_fu_505_p0),
+    .din1(mix_int_14_reg_842),
+    .dout(mul_ln65_fu_505_p2)
 );
 
 (* dissolve_hierarchy = "yes" *) mixer_sparsemux_17_4_9_1_1 #(
@@ -363,9 +363,9 @@ sparsemux_17_4_9_1_1_U2(
     .din5(9'd105),
     .din6(9'd97),
     .din7(9'd91),
-    .def(zext_ln65_cast_fu_715_p17),
+    .def(zext_ln65_cast_fu_723_p17),
     .sel(active_14),
-    .dout(zext_ln65_cast_fu_715_p19)
+    .dout(zext_ln65_cast_fu_723_p19)
 );
 
 mixer_flow_control_loop_pipe_sequential_init flow_control_loop_pipe_sequential_init_U(
@@ -445,49 +445,49 @@ end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_condition_283)) begin
-        if ((icmp_ln65_fu_501_p2 == 1'd1)) begin
-            ap_phi_reg_pp0_iter1_out_pkt_data_reg_484 <= 32'd0;
+        if ((icmp_ln65_fu_509_p2 == 1'd1)) begin
+            ap_phi_reg_pp0_iter1_out_pkt_data_reg_492 <= 32'd0;
         end else if ((1'b1 == 1'b1)) begin
-            ap_phi_reg_pp0_iter1_out_pkt_data_reg_484 <= ap_phi_reg_pp0_iter0_out_pkt_data_reg_484;
+            ap_phi_reg_pp0_iter1_out_pkt_data_reg_492 <= ap_phi_reg_pp0_iter0_out_pkt_data_reg_492;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((1'b0 == ap_block_pp0_stage0_subdone_grp1_done_reg) & (1'b0 == ap_block_pp0_stage0_11001_grp1) & (ap_enable_reg_pp0_iter2 == 1'b1) & (icmp_ln65_reg_805 == 1'd0))) begin
-        out_pkt_data_reg_484 <= {{mul_ln65_fu_497_p2[39:8]}};
-    end else if ((((1'b0 == ap_block_pp0_stage0_subdone_grp1_done_reg) & (1'b0 == ap_block_pp0_stage0_11001_grp1) & (ap_enable_reg_pp0_iter2 == 1'b1)) | (~(or_ln69_6_reg_830_pp0_iter1_reg == 1'd1) & (1'b0 == ap_block_pp0_stage0_subdone_grp1_done_reg) & (1'b0 == ap_block_pp0_stage0_11001_grp1) & (ap_enable_reg_pp0_iter2 == 1'b1)))) begin
-        out_pkt_data_reg_484 <= ap_phi_reg_pp0_iter2_out_pkt_data_reg_484;
+    if (((1'b0 == ap_block_pp0_stage0_subdone_grp1_done_reg) & (1'b0 == ap_block_pp0_stage0_11001_grp1) & (ap_enable_reg_pp0_iter2 == 1'b1) & (icmp_ln65_reg_813 == 1'd0))) begin
+        out_pkt_data_reg_492 <= {{mul_ln65_fu_505_p2[39:8]}};
+    end else if ((((1'b0 == ap_block_pp0_stage0_subdone_grp1_done_reg) & (1'b0 == ap_block_pp0_stage0_11001_grp1) & (ap_enable_reg_pp0_iter2 == 1'b1)) | (~(or_ln69_6_reg_838_pp0_iter1_reg == 1'd1) & (1'b0 == ap_block_pp0_stage0_subdone_grp1_done_reg) & (1'b0 == ap_block_pp0_stage0_11001_grp1) & (ap_enable_reg_pp0_iter2 == 1'b1)))) begin
+        out_pkt_data_reg_492 <= ap_phi_reg_pp0_iter2_out_pkt_data_reg_492;
     end
 end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         ap_loop_exit_ready_pp0_iter1_reg <= ap_loop_exit_ready;
-        empty_32_reg_809_0 <= stream_in_5_TDATA;
-        empty_33_reg_814_0 <= stream_in_6_TDATA;
-        empty_34_reg_819_0 <= stream_in_7_TDATA;
-        mix_int_8_reg_824 <= mix_int_8_fu_615_p3;
-        or_ln69_6_reg_830 <= or_ln69_6_fu_659_p2;
-        or_ln69_6_reg_830_pp0_iter1_reg <= or_ln69_6_reg_830;
+        empty_32_reg_817_0 <= stream_in_5_TDATA;
+        empty_33_reg_822_0 <= stream_in_6_TDATA;
+        empty_34_reg_827_0 <= stream_in_7_TDATA;
+        mix_int_8_reg_832 <= mix_int_8_fu_623_p3;
+        or_ln69_6_reg_838 <= or_ln69_6_fu_667_p2;
+        or_ln69_6_reg_838_pp0_iter1_reg <= or_ln69_6_reg_838;
     end
 end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_subdone_grp1_done_reg) & (1'b0 == ap_block_pp0_stage0_11001_grp1) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        ap_phi_reg_pp0_iter2_out_pkt_data_reg_484 <= ap_phi_reg_pp0_iter1_out_pkt_data_reg_484;
+        ap_phi_reg_pp0_iter2_out_pkt_data_reg_492 <= ap_phi_reg_pp0_iter1_out_pkt_data_reg_492;
     end
 end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_subdone_grp1_done_reg) & (1'b0 == ap_block_pp0_stage0_11001_grp1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        icmp_ln65_reg_805 <= icmp_ln65_fu_501_p2;
-        mix_int_14_reg_834 <= mix_int_14_fu_704_p3;
+        icmp_ln65_reg_813 <= icmp_ln65_fu_509_p2;
+        mix_int_14_reg_842 <= mix_int_14_fu_712_p3;
     end
 end
 
 always @ (*) begin
-    if (((or_ln69_6_fu_659_p2 == 1'd1) & (1'b0 == ap_block_pp0_stage0_subdone) & (ap_start_int == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+    if (((or_ln69_6_fu_667_p2 == 1'd1) & (1'b0 == ap_block_pp0_stage0_subdone) & (ap_start_int == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         ap_condition_exit_pp0_iter0_stage0 = 1'b1;
     end else begin
         ap_condition_exit_pp0_iter0_stage0 = 1'b0;
@@ -519,10 +519,10 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((icmp_ln65_reg_805 == 1'd0)) begin
-        ap_phi_mux_out_pkt_data_phi_fu_488_p4 = {{mul_ln65_fu_497_p2[39:8]}};
+    if ((icmp_ln65_reg_813 == 1'd0)) begin
+        ap_phi_mux_out_pkt_data_phi_fu_496_p4 = {{mul_ln65_fu_505_p2[39:8]}};
     end else begin
-        ap_phi_mux_out_pkt_data_phi_fu_488_p4 = ap_phi_reg_pp0_iter2_out_pkt_data_reg_484;
+        ap_phi_mux_out_pkt_data_phi_fu_496_p4 = ap_phi_reg_pp0_iter2_out_pkt_data_reg_492;
     end
 end
 
@@ -535,7 +535,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((or_ln69_6_reg_830_pp0_iter1_reg == 1'd0) & (1'b0 == ap_block_pp0_stage0_subdone_grp1_done_reg) & (1'b0 == ap_block_pp0_stage0_grp1) & (ap_enable_reg_pp0_iter2 == 1'b1))) begin
+    if (((or_ln69_6_reg_838_pp0_iter1_reg == 1'd0) & (1'b0 == ap_block_pp0_stage0_subdone_grp1_done_reg) & (1'b0 == ap_block_pp0_stage0_grp1) & (ap_enable_reg_pp0_iter2 == 1'b1))) begin
         mix_out_TDATA_blk_n = mix_out_TREADY;
     end else begin
         mix_out_TDATA_blk_n = 1'b1;
@@ -543,7 +543,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((or_ln69_6_reg_830_pp0_iter1_reg == 1'd0) & (1'b0 == ap_block_pp0_stage0_subdone_grp1_done_reg) & (1'b0 == ap_block_pp0_stage0_11001_grp1) & (ap_enable_reg_pp0_iter2 == 1'b1))) begin
+    if (((or_ln69_6_reg_838_pp0_iter1_reg == 1'd0) & (1'b0 == ap_block_pp0_stage0_subdone_grp1_done_reg) & (1'b0 == ap_block_pp0_stage0_11001_grp1) & (ap_enable_reg_pp0_iter2 == 1'b1))) begin
         mix_out_TVALID = 1'b1;
     end else begin
         mix_out_TVALID = 1'b0;
@@ -551,7 +551,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((or_ln69_6_reg_830_pp0_iter1_reg == 1'd1) & (1'b0 == ap_block_pp0_stage0_subdone_grp1_done_reg) & (1'b0 == ap_block_pp0_stage0_11001_grp1) & (ap_loop_exit_ready_pp0_iter2_reg == 1'b1))) begin
+    if (((or_ln69_6_reg_838_pp0_iter1_reg == 1'd1) & (1'b0 == ap_block_pp0_stage0_subdone_grp1_done_reg) & (1'b0 == ap_block_pp0_stage0_11001_grp1) & (ap_loop_exit_ready_pp0_iter2_reg == 1'b1))) begin
         out_pkt_data_out_ap_vld = 1'b1;
     end else begin
         out_pkt_data_out_ap_vld = 1'b0;
@@ -724,7 +724,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    ap_block_state3_pp0_stage0_iter2_grp1 = ((or_ln69_6_reg_830_pp0_iter1_reg == 1'd0) & (mix_out_TREADY == 1'b0));
+    ap_block_state3_pp0_stage0_iter2_grp1 = ((or_ln69_6_reg_838_pp0_iter1_reg == 1'd0) & (mix_out_TREADY == 1'b0));
 end
 
 always @ (*) begin
@@ -739,43 +739,43 @@ assign ap_enable_reg_pp0_iter0 = ap_start_int;
 
 assign ap_loop_exit_ready = ap_condition_exit_pp0_iter0_stage0;
 
-assign ap_phi_reg_pp0_iter0_out_pkt_data_reg_484 = 'bx;
+assign ap_phi_reg_pp0_iter0_out_pkt_data_reg_492 = 'bx;
 
 assign ap_ready = ap_ready_sig;
 
-assign icmp_ln65_fu_501_p2 = ((active_14 == 4'd0) ? 1'b1 : 1'b0);
+assign icmp_ln65_fu_509_p2 = ((active_14 == 4'd0) ? 1'b1 : 1'b0);
 
-assign mix_int_10_fu_679_p3 = ((empty_21[0:0] == 1'b1) ? mix_int_9_fu_674_p2 : mix_int_8_reg_824);
+assign mix_int_10_fu_687_p3 = ((empty_21[0:0] == 1'b1) ? mix_int_9_fu_682_p2 : mix_int_8_reg_832);
 
-assign mix_int_11_fu_685_p2 = (empty_33_reg_814_0 + mix_int_10_fu_679_p3);
+assign mix_int_11_fu_693_p2 = (empty_33_reg_822_0 + mix_int_10_fu_687_p3);
 
-assign mix_int_12_fu_691_p3 = ((empty_22[0:0] == 1'b1) ? mix_int_11_fu_685_p2 : mix_int_10_fu_679_p3);
+assign mix_int_12_fu_699_p3 = ((empty_22[0:0] == 1'b1) ? mix_int_11_fu_693_p2 : mix_int_10_fu_687_p3);
 
-assign mix_int_13_fu_698_p2 = (empty_34_reg_819_0 + mix_int_12_fu_691_p3);
+assign mix_int_13_fu_706_p2 = (empty_34_reg_827_0 + mix_int_12_fu_699_p3);
 
-assign mix_int_14_fu_704_p3 = ((empty[0:0] == 1'b1) ? mix_int_13_fu_698_p2 : mix_int_12_fu_691_p3);
+assign mix_int_14_fu_712_p3 = ((empty[0:0] == 1'b1) ? mix_int_13_fu_706_p2 : mix_int_12_fu_699_p3);
 
-assign mix_int_1_fu_567_p2 = (stream_in_1_TDATA + mix_int_fu_559_p3);
+assign mix_int_1_fu_575_p2 = (stream_in_1_TDATA + mix_int_fu_567_p3);
 
-assign mix_int_2_fu_573_p3 = ((empty_17[0:0] == 1'b1) ? mix_int_1_fu_567_p2 : mix_int_fu_559_p3);
+assign mix_int_2_fu_581_p3 = ((empty_17[0:0] == 1'b1) ? mix_int_1_fu_575_p2 : mix_int_fu_567_p3);
 
-assign mix_int_3_fu_581_p2 = (stream_in_2_TDATA + mix_int_2_fu_573_p3);
+assign mix_int_3_fu_589_p2 = (stream_in_2_TDATA + mix_int_2_fu_581_p3);
 
-assign mix_int_4_fu_587_p3 = ((empty_18[0:0] == 1'b1) ? mix_int_3_fu_581_p2 : mix_int_2_fu_573_p3);
+assign mix_int_4_fu_595_p3 = ((empty_18[0:0] == 1'b1) ? mix_int_3_fu_589_p2 : mix_int_2_fu_581_p3);
 
-assign mix_int_5_fu_595_p2 = (stream_in_3_TDATA + mix_int_4_fu_587_p3);
+assign mix_int_5_fu_603_p2 = (stream_in_3_TDATA + mix_int_4_fu_595_p3);
 
-assign mix_int_6_fu_601_p3 = ((empty_19[0:0] == 1'b1) ? mix_int_5_fu_595_p2 : mix_int_4_fu_587_p3);
+assign mix_int_6_fu_609_p3 = ((empty_19[0:0] == 1'b1) ? mix_int_5_fu_603_p2 : mix_int_4_fu_595_p3);
 
-assign mix_int_7_fu_609_p2 = (stream_in_4_TDATA + mix_int_6_fu_601_p3);
+assign mix_int_7_fu_617_p2 = (stream_in_4_TDATA + mix_int_6_fu_609_p3);
 
-assign mix_int_8_fu_615_p3 = ((empty_20[0:0] == 1'b1) ? mix_int_7_fu_609_p2 : mix_int_6_fu_601_p3);
+assign mix_int_8_fu_623_p3 = ((empty_20[0:0] == 1'b1) ? mix_int_7_fu_617_p2 : mix_int_6_fu_609_p3);
 
-assign mix_int_9_fu_674_p2 = (empty_32_reg_809_0 + mix_int_8_reg_824);
+assign mix_int_9_fu_682_p2 = (empty_32_reg_817_0 + mix_int_8_reg_832);
 
-assign mix_int_fu_559_p3 = ((empty_16[0:0] == 1'b1) ? stream_in_0_TDATA : 32'd0);
+assign mix_int_fu_567_p3 = ((empty_16[0:0] == 1'b1) ? stream_in_0_TDATA : 32'd0);
 
-assign mix_out_TDATA = ap_phi_mux_out_pkt_data_phi_fu_488_p4;
+assign mix_out_TDATA = ap_phi_mux_out_pkt_data_phi_fu_496_p4;
 
 assign mix_out_TDEST = 6'd0;
 
@@ -789,26 +789,26 @@ assign mix_out_TSTRB = 4'd15;
 
 assign mix_out_TUSER = 2'd0;
 
-assign mul_ln65_fu_497_p0 = mul_ln65_fu_497_p00;
+assign mul_ln65_fu_505_p0 = mul_ln65_fu_505_p00;
 
-assign mul_ln65_fu_497_p00 = zext_ln65_cast_fu_715_p19;
+assign mul_ln65_fu_505_p00 = zext_ln65_cast_fu_723_p19;
 
-assign or_ln69_1_fu_629_p2 = (stream_in_5_TLAST | stream_in_4_TLAST);
+assign or_ln69_1_fu_637_p2 = (stream_in_5_TLAST | stream_in_4_TLAST);
 
-assign or_ln69_2_fu_635_p2 = (or_ln69_fu_623_p2 | or_ln69_1_fu_629_p2);
+assign or_ln69_2_fu_643_p2 = (or_ln69_fu_631_p2 | or_ln69_1_fu_637_p2);
 
-assign or_ln69_3_fu_641_p2 = (stream_in_1_TLAST | stream_in_0_TLAST);
+assign or_ln69_3_fu_649_p2 = (stream_in_1_TLAST | stream_in_0_TLAST);
 
-assign or_ln69_4_fu_647_p2 = (stream_in_3_TLAST | stream_in_2_TLAST);
+assign or_ln69_4_fu_655_p2 = (stream_in_3_TLAST | stream_in_2_TLAST);
 
-assign or_ln69_5_fu_653_p2 = (or_ln69_4_fu_647_p2 | or_ln69_3_fu_641_p2);
+assign or_ln69_5_fu_661_p2 = (or_ln69_4_fu_655_p2 | or_ln69_3_fu_649_p2);
 
-assign or_ln69_6_fu_659_p2 = (or_ln69_5_fu_653_p2 | or_ln69_2_fu_635_p2);
+assign or_ln69_6_fu_667_p2 = (or_ln69_5_fu_661_p2 | or_ln69_2_fu_643_p2);
 
-assign or_ln69_fu_623_p2 = (stream_in_7_TLAST | stream_in_6_TLAST);
+assign or_ln69_fu_631_p2 = (stream_in_7_TLAST | stream_in_6_TLAST);
 
-assign out_pkt_data_out = out_pkt_data_reg_484;
+assign out_pkt_data_out = out_pkt_data_reg_492;
 
-assign zext_ln65_cast_fu_715_p17 = 'bx;
+assign zext_ln65_cast_fu_723_p17 = 'bx;
 
 endmodule //mixer_mixer_Pipeline_VITIS_LOOP_30_1

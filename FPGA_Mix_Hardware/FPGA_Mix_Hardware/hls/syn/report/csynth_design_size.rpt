@@ -29,14 +29,14 @@
 |               |                            |              |                                                                                        |
 | HW Transforms |                            |              | After hardware transfomations                                                          |
 |               | (1) lowering               |   467        | initial conversion to HW specific instructions                                         |
-|               | (2) optimizations          |   256        | high level synthesis optimizations                                                     |
+|               | (2) optimizations          |   257        | high level synthesis optimizations                                                     |
 +---------------+----------------------------+--------------+----------------------------------------------------------------------------------------+
 
 * Instructions per Function for each Compilation Phase
 +----------+----------------+--------------+---------------+--------------+-------------+---------------+
 | Function | Location       | Compile/Link | Unroll/Inline | Array/Struct | Performance | HW Transforms |
 +----------+----------------+--------------+---------------+--------------+-------------+---------------+
-|   mixer  | hw_mixer.cpp:5 | 4,166        | 575           | 816          | 556         | 256           |
+|   mixer  | hw_mixer.cpp:5 | 4,166        | 575           | 816          | 556         | 257           |
 +----------+----------------+--------------+---------------+--------------+-------------+---------------+
 
 * Design Size Message Settings

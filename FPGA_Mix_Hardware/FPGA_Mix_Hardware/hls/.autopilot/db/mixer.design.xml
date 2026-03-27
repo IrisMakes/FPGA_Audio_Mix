@@ -27,13 +27,13 @@
 <EstimatedClockPeriod>6.388</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>undef</Best-caseLatency>
-<Average-caseLatency>undef</Average-caseLatency>
-<Worst-caseLatency>undef</Worst-caseLatency>
-<Best-caseRealTimeLatency>undef</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>undef</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>undef</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>0</PipelineInitiationInterval>
+<Best-caseLatency>204</Best-caseLatency>
+<Average-caseLatency>10004</Average-caseLatency>
+<Worst-caseLatency>20004</Worst-caseLatency>
+<Best-caseRealTimeLatency>2.040 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>0.100 ms</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>0.200 ms</Worst-caseRealTimeLatency>
+<PipelineInitiationInterval>201 ~ 20001</PipelineInitiationInterval>
 <PipelineType>loop pipeline stpstp (delay=0 clock cycles(s))</PipelineType>
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
@@ -41,10 +41,15 @@
 <VITIS_LOOP_30_1>
 <Name>VITIS_LOOP_30_1</Name>
 <Slack>7.30</Slack>
-<TripCount>undef</TripCount>
+<TripCount>
+<range>
+<min>200</min>
+<max>20000</max>
+</range>
+</TripCount>
 <isPerfectNested>0</isPerfectNested>
-<Latency>undef</Latency>
-<AbsoluteTimeLatency>undef</AbsoluteTimeLatency>
+<Latency>202 ~ 20002</Latency>
+<AbsoluteTimeLatency>2.020 us ~ 0.200 ms</AbsoluteTimeLatency>
 <PipelineII>1</PipelineII>
 <PipelineDepth>3</PipelineDepth>
 <PipelineType>yes</PipelineType>
@@ -1176,13 +1181,13 @@
 <EstimatedClockPeriod>6.388</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>undef</Best-caseLatency>
-<Average-caseLatency>undef</Average-caseLatency>
-<Worst-caseLatency>undef</Worst-caseLatency>
-<Best-caseRealTimeLatency>undef</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>undef</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>undef</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>undef</PipelineInitiationInterval>
+<Best-caseLatency>208</Best-caseLatency>
+<Average-caseLatency>10008</Average-caseLatency>
+<Worst-caseLatency>20008</Worst-caseLatency>
+<Best-caseRealTimeLatency>2.080 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>0.100 ms</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>0.200 ms</Worst-caseRealTimeLatency>
+<PipelineInitiationInterval>209 ~ 20009</PipelineInitiationInterval>
 <PipelineType>no</PipelineType>
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>

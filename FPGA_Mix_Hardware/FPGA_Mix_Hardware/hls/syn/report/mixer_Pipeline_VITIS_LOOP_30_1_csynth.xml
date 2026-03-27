@@ -22,23 +22,38 @@
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>undef</Best-caseLatency>
-<Average-caseLatency>undef</Average-caseLatency>
-<Worst-caseLatency>undef</Worst-caseLatency>
-<Best-caseRealTimeLatency>undef</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>undef</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>undef</Worst-caseRealTimeLatency>
-<Interval-min>0</Interval-min>
-<Interval-max>0</Interval-max>
+<Best-caseLatency>204</Best-caseLatency>
+<Average-caseLatency>10004</Average-caseLatency>
+<Worst-caseLatency>20004</Worst-caseLatency>
+<Best-caseRealTimeLatency>2.040 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>0.100 ms</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>0.200 ms</Worst-caseRealTimeLatency>
+<Interval-min>201</Interval-min>
+<Interval-max>20001</Interval-max>
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <VITIS_LOOP_30_1>
 <Slack>7.30</Slack>
-<TripCount>undef</TripCount>
+<TripCount>
+<range>
+<min>200</min>
+<max>20000</max>
+</range>
+</TripCount>
 <isPerfectNested>0</isPerfectNested>
-<Latency>undef</Latency>
-<AbsoluteTimeLatency>undef</AbsoluteTimeLatency>
+<Latency>
+<range>
+<min>202</min>
+<max>20002</max>
+</range>
+</Latency>
+<AbsoluteTimeLatency>
+<range>
+<min>2020</min>
+<max>200020</max>
+</range>
+</AbsoluteTimeLatency>
 <PipelineII>1</PipelineII>
 <PipelineDepth>3</PipelineDepth>
 <PerformancePragma>-</PerformancePragma>

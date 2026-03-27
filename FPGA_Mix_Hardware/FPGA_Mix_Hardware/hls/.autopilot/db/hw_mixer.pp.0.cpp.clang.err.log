@@ -37,4 +37,7 @@ hw_mixer.cpp:27:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ P
 hw_mixer.cpp:28:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=mixer_XLX_SEP_ PragmaOptions=variable=recip_sqrt_lut complete_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS ARRAY_PARTITION variable=recip_sqrt_lut complete
 ^
-13 warnings generated.
+hw_mixer.cpp:31:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=mixer_XLX_SEP_ PragmaOptions=min=200 max=20000 avg=10000_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=200 max=20000 avg=10000
+^
+14 warnings generated.

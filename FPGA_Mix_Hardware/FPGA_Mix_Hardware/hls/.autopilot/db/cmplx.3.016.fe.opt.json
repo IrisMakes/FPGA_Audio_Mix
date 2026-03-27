@@ -6,7 +6,7 @@
     "def_use_depth": 19,
     "file": "hw_mixer.cpp",
     "fileloc": 5,
-    "instructions": 256,
+    "instructions": 257,
     "loads": {
       "L": 16
     },
@@ -15,6 +15,6 @@
     "stores": {
       "L": 14
     },
-    "total_instructions": 256
+    "total_instructions": 257
   }
 }

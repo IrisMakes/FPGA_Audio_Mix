@@ -56361,7 +56361,7 @@ __attribute__((sdx_kernel("mixer", 0))) void mixer(
 #pragma HLS ARRAY_PARTITION variable=recip_sqrt_lut complete
 
     VITIS_LOOP_30_1: while(1) {
-
+#pragma HLS LOOP_TRIPCOUNT min=200 max=20000 avg=10000
 
     audio_stream s0;
     audio_stream s1;

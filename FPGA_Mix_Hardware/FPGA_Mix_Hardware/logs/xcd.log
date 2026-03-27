@@ -440,3 +440,36 @@ Fri Mar 27 17:30:20 2026: SERVER: destructor for server bound to port 36447
 Fri Mar 27 17:30:20 2026: XCD main fifo: Good unlink of /tmp/xcdmaind0c77b11-76fd-4720-9b35-cf3eb58f4eda
 Fri Mar 27 17:30:20 2026: Server exiting with status 0.
 Fri Mar 27 17:30:20 2026: Closing log file.
+Fri Mar 27 17:42:57 2026: Running xcd server. This server was built by gradle.
+Fri Mar 27 17:42:57 2026: Server was asked to start on port: '46685'
+Fri Mar 27 17:42:57 2026: Server is using token UUID: '4c686563-e4f6-44b3-8859-aa8d1ba8e7be'
+Fri Mar 27 17:42:57 2026: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+Fri Mar 27 17:42:57 2026: Attempting to start server on port '46685'
+Fri Mar 27 17:42:57 2026: XCD main fifo: created main fifo '/tmp/xcdmain4c686563-e4f6-44b3-8859-aa8d1ba8e7be', fd read = 13
+Fri Mar 27 17:42:57 2026: Running Dispatch Server
+Fri Mar 27 17:42:57 2026: Version 2.2.0
+Fri Mar 27 17:42:58 2026: Dispatch Server: Accepted socket connection from client
+Fri Mar 27 17:42:58 2026: Starting Socket connection
+Fri Mar 27 17:42:58 2026: EXCHANGE_TOKEN received, server token: 4c686563-e4f6-44b3-8859-aa8d1ba8e7be, passed token: 4c686563-e4f6-44b3-8859-aa8d1ba8e7be
+Fri Mar 27 17:42:58 2026: DISPATCH_HANDLER: Adding handler from function makeHandler in library libxv_system_diagram
+Fri Mar 27 17:42:58 2026: SESSION_MGR: creating session with session uuid: 'e0fa8116-8773-4daa-9c5b-f245dfed0420' and name 'v++_compile_FPGA_Mix_Hardware'
+Fri Mar 27 17:42:58 2026: KERNEL_SVC: creating session with uuid: 'e0fa8116-8773-4daa-9c5b-f245dfed0420' and name 'v++_compile_FPGA_Mix_Hardware'
+Fri Mar 27 17:42:58 2026: GUIDANCE_SMGR: creating guidance session with uuid: 'e0fa8116-8773-4daa-9c5b-f245dfed0420' and name 'v++_compile_FPGA_Mix_Hardware'
+Fri Mar 27 17:42:58 2026: SYSTEM_DIAGRAM: creating session with uuid: 'e0fa8116-8773-4daa-9c5b-f245dfed0420' and name 'v++_compile_FPGA_Mix_Hardware'
+Fri Mar 27 17:43:01 2026: Dispatch Server: Accepted socket connection from client
+Fri Mar 27 17:43:01 2026: Starting Socket connection
+Fri Mar 27 17:43:13 2026: SESSION_MGR: closing session for UUID 'e0fa8116-8773-4daa-9c5b-f245dfed0420' with name 'v++_compile_FPGA_Mix_Hardware'
+Fri Mar 27 17:43:13 2026: KERNEL_SVC: closing session for UUID 'e0fa8116-8773-4daa-9c5b-f245dfed0420' with name 'v++_compile_FPGA_Mix_Hardware'
+Fri Mar 27 17:43:13 2026: GUIDANCE_SMGR: closing session for UUID 'e0fa8116-8773-4daa-9c5b-f245dfed0420' with name 'v++_compile_FPGA_Mix_Hardware'
+Fri Mar 27 17:43:13 2026: SYSTEM_DIAGRAM: closing session for UUID 'e0fa8116-8773-4daa-9c5b-f245dfed0420' with name 'v++_compile_FPGA_Mix_Hardware'
+Fri Mar 27 17:43:13 2026: STOP_SERVER received, server token: 4c686563-e4f6-44b3-8859-aa8d1ba8e7be, passed token: 4c686563-e4f6-44b3-8859-aa8d1ba8e7be
+Fri Mar 27 17:43:13 2026: Socket received request to stop server.
+Fri Mar 27 17:43:13 2026: Dispatch Server: do_await_stop
+Fri Mar 27 17:43:13 2026: Dispatch Server: stopping mainFifo_
+Fri Mar 27 17:43:13 2026: XCD main fifo: Stopping
+Fri Mar 27 17:43:13 2026: XCD main fifo: do_read error code: Operation canceled
+Fri Mar 27 17:43:13 2026: XCD main fifo: bytes_transferred: 0
+Fri Mar 27 17:43:13 2026: SERVER: destructor for server bound to port 46685
+Fri Mar 27 17:43:13 2026: XCD main fifo: Good unlink of /tmp/xcdmain4c686563-e4f6-44b3-8859-aa8d1ba8e7be
+Fri Mar 27 17:43:13 2026: Server exiting with status 0.
+Fri Mar 27 17:43:13 2026: Closing log file.
