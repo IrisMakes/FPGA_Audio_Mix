@@ -1,14 +1,39 @@
 [
   {
-    "directory": "C:\\Users\\lexie\\Documents\\fpga_project\\FPGA_Audio_Mix\\FPGA_Mix_Hardware",
+    "directory": "C:\\Users\\irisk\\Documents\\FPGA_Audio_Mix\\FPGA_Mix_Hardware",
     "arguments": [
-      "C:\\Xilinx\\Vitis_HLS\\2024.1\\vcxx\\libexec\\clang++.exe",
+      "C:\\AMDDesignTools\\2025.2\\Vitis\\win64\\tools\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\AMDDesignTools\\2025.2\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
       "-fhls",
-      "-hls-syn-headers-dir=C:\\Xilinx\\Vitis_HLS\\2024.1\\common\\technology\\autopilot",
-      "",
+      "-hls-syn-headers-dir=C:\\AMDDesignTools\\2025.2\\Vitis\\common\\technology\\autopilot",
+      "-fhlstoplevel=mixer",
       "-c",
-      "C:\\Users\\lexie\\Documents\\fpga_project\\FPGA_Audio_Mix\\FPGA_Mix_Hardware\\hw_mixer.cpp"
+      "C:\\Users\\irisk\\Documents\\FPGA_Audio_Mix\\FPGA_Mix_Hardware\\hw_mixer.cpp"
     ],
-    "file": "C:\\Users\\lexie\\Documents\\fpga_project\\FPGA_Audio_Mix\\FPGA_Mix_Hardware\\hw_mixer.cpp"
+    "file": "C:\\Users\\irisk\\Documents\\FPGA_Audio_Mix\\FPGA_Mix_Hardware\\hw_mixer.cpp"
+  },
+  {
+    "directory": "C:\\Users\\irisk\\Documents\\FPGA_Audio_Mix\\FPGA_Mix_Hardware",
+    "arguments": [
+      "C:\\AMDDesignTools\\2025.2\\Vitis\\win64\\tools\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\AMDDesignTools\\2025.2\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=C:\\AMDDesignTools\\2025.2\\Vitis\\include",
+      "-c",
+      "hw_mixer_tb.cpp"
+    ],
+    "file": "hw_mixer_tb.cpp"
+  },
+  {
+    "directory": "C:\\Users\\irisk\\Documents\\FPGA_Audio_Mix\\FPGA_Mix_Hardware",
+    "arguments": [
+      "C:\\AMDDesignTools\\2025.2\\Vitis\\win64\\tools\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\AMDDesignTools\\2025.2\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=C:\\AMDDesignTools\\2025.2\\Vitis\\include",
+      "-c",
+      "C:\\Users\\irisk\\Documents\\FPGA_Audio_Mix\\FPGA_Mix_Hardware\\mixer_tb.cpp"
+    ],
+    "file": "C:\\Users\\irisk\\Documents\\FPGA_Audio_Mix\\FPGA_Mix_Hardware\\mixer_tb.cpp"
   }
 ]

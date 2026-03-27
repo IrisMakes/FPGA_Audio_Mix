@@ -1,0 +1,387 @@
+2026-03-12 17:44:02 [debug] : --------------------------------------------------------------------------------- 
+2026-03-12 17:44:02 [debug] : C:\Users\irisk\Documents\FPGA_Audio_Mix\FPGA_Mix_Hardware 
+2026-03-12 17:44:02 [debug] : --------------------------------------------------------------------------------- 
+2026-03-12 17:44:02 [debug] : [Logger] Previous user logs are stored in the file - C:\Users\irisk\.Xilinx\Vitis\2025.2\logs\ide.log 
+2026-03-12 17:44:02 [debug] : [Logger] Previous debug logs are stored in the file - C:\Users\irisk\.Xilinx\Vitis\2025.2\.wsdata\ide_verbose.log 
+2026-03-12 17:44:02 [debug] : Event posted using notification server in backend. {"0":{"wrappers_":{},"arrayIndexOffset_":-1,"array":["548522c4-3eda-4598-872b-a49b50d14561",null,53,null,null,null,null,"list-reports"],"pivot_":1.7976931348623157e+308,"convertedPrimitiveFields_":{}}}
+2026-03-12 17:44:02 [debug] : RIGEL SERVER 17:44:02 INFO  : updated workspace path: C:\Users\irisk\Documents\FPGA_Audio_Mix\FPGA_Mix_Hardware 
+2026-03-12 17:44:02 [debug] : RIGEL SERVER 17:44:02 INFO  : Marking the target connection as default Local 
+2026-03-12 17:44:02 [debug] : RIGEL SERVER 17:44:02 INFO  : Marking the target connection as default Linux Agent 
+2026-03-12 17:44:02 [debug] : RIGEL SERVER 17:44:02 INFO  : Marking the target connection as default XRTServer 
+2026-03-12 17:44:02 [debug] : RIGEL SERVER 17:44:02 INFO  : Marking the target connection as default LinuxEmulation 
+2026-03-12 17:44:02 [debug] : RIGEL SERVER 17:44:02 INFO  : Marking the target connection as default QEMU 
+2026-03-12 17:44:02 [debug] : RIGEL SERVER 17:44:02 INFO  : created .gitignore file for the project C:\Users\irisk\Documents\FPGA_Audio_Mix\FPGA_Mix_Hardware 
+2026-03-12 17:44:02 [debug] : [hosted-plugin: 46348] PLUGIN_HOST(46348) starting instance 
+2026-03-12 17:44:02 [debug] : Linked preference "workbench.colorCustomizations" not found. 
+2026-03-12 17:44:02 [debug] : Frontend f.onStart took longer than the expected maximum 100 milliseconds: 369.7 ms [Finished 1.971 s after frontend start] 
+2026-03-12 17:44:02 [debug] : Frontend c.onStart: 0.1 ms [Finished 1.971 s after frontend start] 
+2026-03-12 17:44:02 [debug] : Frontend y.onStart: 1.6 ms [Finished 1.973 s after frontend start] 
+2026-03-12 17:44:02 [debug] : Frontend w.onStart: 0.1 ms [Finished 1.974 s after frontend start] 
+2026-03-12 17:44:02 [debug] : Frontend B.onStart: 0.2 ms [Finished 1.974 s after frontend start] 
+2026-03-12 17:44:02 [debug] : Frontend u.onStart: 0.5 ms [Finished 1.988 s after frontend start] 
+2026-03-12 17:44:02 [debug] : Frontend l.onStart: 0.7 ms [Finished 1.989 s after frontend start] 
+2026-03-12 17:44:02 [debug] : Frontend l.onStart: 0.2 ms [Finished 1.990 s after frontend start] 
+2026-03-12 17:44:02 [debug] : Frontend l.onStart: 0.2 ms [Finished 1.990 s after frontend start] 
+2026-03-12 17:44:02 [debug] : Frontend p.onStart: 8.2 ms [Finished 1.998 s after frontend start] 
+2026-03-12 17:44:02 [debug] : Frontend d.onStart: 0.2 ms [Finished 1.999 s after frontend start] 
+2026-03-12 17:44:02 [debug] : Frontend u.onStart: 0.0 ms [Finished 1.999 s after frontend start] 
+2026-03-12 17:44:02 [debug] : Frontend E.onStart: 0.6 ms [Finished 2.000 s after frontend start] 
+2026-03-12 17:44:02 [debug] : Frontend d.onStart: 0.1 ms [Finished 2.000 s after frontend start] 
+2026-03-12 17:44:02 [debug] : Frontend u.onStart: 0.2 ms [Finished 2.001 s after frontend start] 
+2026-03-12 17:44:02 [debug] : Frontend c.onStart: 0.2 ms [Finished 2.001 s after frontend start] 
+2026-03-12 17:44:02 [debug] : Frontend c.onStart: 0.1 ms [Finished 2.001 s after frontend start] 
+2026-03-12 17:44:02 [debug] : Frontend l.onStart: 0.1 ms [Finished 2.001 s after frontend start] 
+2026-03-12 17:44:02 [debug] : Frontend l.onStart: 0.1 ms [Finished 2.002 s after frontend start] 
+2026-03-12 17:44:02 [debug] : Vercel AI: Creating or updating model vercel/openai/gpt-4.1 
+2026-03-12 17:44:02 [debug] : Vercel AI: Creating or updating model vercel/openai/gpt-4.1-nano 
+2026-03-12 17:44:02 [debug] : Vercel AI: Creating or updating model vercel/openai/gpt-4.1-mini 
+2026-03-12 17:44:02 [debug] : Vercel AI: Creating or updating model vercel/openai/gpt-4-turbo 
+2026-03-12 17:44:02 [debug] : Vercel AI: Creating or updating model vercel/openai/gpt-4o 
+2026-03-12 17:44:02 [debug] : Vercel AI: Creating or updating model vercel/openai/gpt-4o-mini 
+2026-03-12 17:44:02 [debug] : Vercel AI: Creating or updating model vercel/anthropic/claude-3-7-sonnet-20250219 
+2026-03-12 17:44:02 [debug] : Vercel AI: Creating or updating model vercel/anthropic/claude-3-5-haiku-20241022 
+2026-03-12 17:44:02 [debug] : Vercel AI: Creating or updating model vercel/anthropic/claude-3-opus-20240229 
+2026-03-12 17:44:02 [debug] : Frontend l.onStart: 0.2 ms [Finished 2.002 s after frontend start] 
+2026-03-12 17:44:02 [debug] : Start frontend contributions: 680.7 ms [Finished 2.002 s after frontend start] 
+2026-03-12 17:44:02 [debug] : Changed application state from 'init' to 'started_contributions'. 
+2026-03-12 17:44:02 [debug] : Changed application state from 'started_contributions' to 'attached_shell'. 
+2026-03-12 17:44:02 [debug] : >>> Restoring the layout state... 
+2026-03-12 17:44:02 [debug] : [Application Examples Provider]  updating the embedded templates on workspace event. 
+2026-03-12 17:44:02 [debug] : [Repository Server] Executing method:getEmbeddedExampleTemplateTree with connection:(object). {"0":"request:","1":{"wrappers_":null,"arrayIndexOffset_":-1,"array":[],"pivot_":1.7976931348623157e+308,"convertedPrimitiveFields_":{}}}
+2026-03-12 17:44:02 [debug] : [Application Examples Provider] refresh requested. 
+2026-03-12 17:44:02 [debug] : Received event from notification service: ON_DID_UPDATE_WORKSPACE. 
+2026-03-12 17:44:02 [debug] : [Logger Client] log levelchanged to  {"0":"Info"}
+2026-03-12 17:44:02 [debug] : [Logger UI]  Update Log Level  called 
+2026-03-12 17:44:02 [debug] : [Application Examples Provider] common calling method requested. 
+2026-03-12 17:44:02 [debug] : [Application Examples Provider] Repositories model update requested. 
+2026-03-12 17:44:02 [debug] : [Application Examples Provider] Repositories model update completed. 
+2026-03-12 17:44:02 [debug] : [Application Examples Provider] Templates model update requested. 
+2026-03-12 17:44:02 [debug] : [Repository Service] Executing method:getEmbeddedExampleTemplateTree from frontend. {"0":"request:"}
+2026-03-12 17:44:02 [debug] : Received event from notification service: ON_START_ANALYSIS_PROGRESS. 
+2026-03-12 17:44:02 [debug] : Received event from notification service: ON_DID_REFRESH_WORKSPACE_SUMMARIES. 
+2026-03-12 17:44:02 [debug] : Event posted using notification server in backend. {"0":{"wrappers_":{},"arrayIndexOffset_":-1,"array":["e36a2e87-ed2e-43bf-8cae-bbb9402540f4",null,54,null,null,null,null,"list-reports"],"pivot_":1.7976931348623157e+308,"convertedPrimitiveFields_":{}}}
+2026-03-12 17:44:02 [debug] : [ProjectCache] fetching projects for project-cache 
+2026-03-12 17:44:02 [debug] : No label for action menu node: No command "workspace:addFolder" exists. 
+2026-03-12 17:44:02 [debug] : Received event from notification service: ON_STOP_ANALYSIS_PROGRESS. 
+2026-03-12 17:44:02 [debug] : [ProjectDecorator] tree decoration updated 
+2026-03-12 17:44:02 [debug] : [ProjectCache] Project location updated to undefined 
+2026-03-12 17:44:02 [debug] : [ProjectDecorator] tree decoration updated 
+2026-03-12 17:44:02 [debug] : [Logger UI]  Update Log Level success {"0":{"success":true,"error":""}}
+2026-03-12 17:44:03 [debug] : MonacoEditorModel.fireDidChangeContent - enter - {
+  "changes": [
+    {
+      "range": {
+        "startLineNumber": 2,
+        "startColumn": 47,
+        "endLineNumber": 2,
+        "endColumn": 52
+      },
+      "rangeLength": 5,
+      "text": "false",
+      "rangeOffset": 49,
+      "forceMoveMarkers": false
+    }
+  ],
+  "eol": "\r\n",
+  "isEolChange": false,
+  "versionId": 2,
+  "isUndoing": false,
+  "isRedoing": false,
+  "isFlush": false
+} {"0":"user-storage:/user/settings.json"}
+2026-03-12 17:44:03 [debug] : MonacoEditorModel.markAsDirty - enter {"0":"user-storage:/user/settings.json"}
+2026-03-12 17:44:03 [debug] : MonacoEditorModel.cancelSync {"0":"user-storage:/user/settings.json"}
+2026-03-12 17:44:03 [debug] : MonacoEditorModel.markAsDirty - exit {"0":"user-storage:/user/settings.json"}
+2026-03-12 17:44:03 [debug] : MonacoEditorModel.fireDidChangeContent - exit {"0":"user-storage:/user/settings.json"}
+2026-03-12 17:44:03 [debug] : MonacoEditorModel.cancelSave {"0":"user-storage:/user/settings.json"}
+2026-03-12 17:44:03 [debug] : MonacoEditorModel.fireDidChangeContent - enter - {
+  "changes": [
+    {
+      "range": {
+        "startLineNumber": 3,
+        "startColumn": 29,
+        "endLineNumber": 3,
+        "endColumn": 37
+      },
+      "rangeLength": 8,
+      "text": "\"custom\"",
+      "rangeOffset": 85,
+      "forceMoveMarkers": false
+    }
+  ],
+  "eol": "\r\n",
+  "isEolChange": false,
+  "versionId": 3,
+  "isUndoing": false,
+  "isRedoing": false,
+  "isFlush": false
+} {"0":"user-storage:/user/settings.json"}
+2026-03-12 17:44:03 [debug] : MonacoEditorModel.markAsDirty - enter {"0":"user-storage:/user/settings.json"}
+2026-03-12 17:44:03 [debug] : MonacoEditorModel.cancelSync {"0":"user-storage:/user/settings.json"}
+2026-03-12 17:44:03 [debug] : MonacoEditorModel.markAsDirty - exit {"0":"user-storage:/user/settings.json"}
+2026-03-12 17:44:03 [debug] : MonacoEditorModel.fireDidChangeContent - exit {"0":"user-storage:/user/settings.json"}
+2026-03-12 17:44:03 [debug] : MonacoEditorModel.cancelSave {"0":"user-storage:/user/settings.json"}
+2026-03-12 17:44:03 [debug] : MonacoEditorModel.cancelSave {"0":"user-storage:/user/settings.json"}
+2026-03-12 17:44:03 [debug] : <<< Nothing to restore. 
+2026-03-12 17:44:03 [debug] : Frontend A.initializeLayout: 11.5 ms [Finished 2.102 s after frontend start] 
+2026-03-12 17:44:03 [debug] : Frontend v.initializeLayout: 3.9 ms [Finished 2.106 s after frontend start] 
+2026-03-12 17:44:03 [debug] : Frontend f.initializeLayout: 3.0 ms [Finished 2.109 s after frontend start] 
+2026-03-12 17:44:03 [debug] : Frontend Object.initializeLayout: 0.0 ms [Finished 2.109 s after frontend start] 
+2026-03-12 17:44:03 [debug] : Frontend $.initializeLayout: 3.1 ms [Finished 2.112 s after frontend start] 
+2026-03-12 17:44:03 [debug] : Frontend w.initializeLayout: 5.7 ms [Finished 2.118 s after frontend start] 
+2026-03-12 17:44:03 [debug] : Frontend _.initializeLayout: 3.4 ms [Finished 2.122 s after frontend start] 
+2026-03-12 17:44:03 [debug] : Frontend c.initializeLayout: 4.8 ms [Finished 2.127 s after frontend start] 
+2026-03-12 17:44:03 [debug] : Frontend E.initializeLayout: 10.6 ms [Finished 2.138 s after frontend start] 
+2026-03-12 17:44:03 [debug] : [Repository Examples UI] in on initialize layout method. 
+2026-03-12 17:44:03 [debug] : Frontend R.initializeLayout: 4.5 ms [Finished 2.143 s after frontend start] 
+2026-03-12 17:44:03 [debug] : Frontend u.initializeLayout: 2.8 ms [Finished 2.146 s after frontend start] 
+2026-03-12 17:44:03 [debug] : Frontend h.initializeLayout: 0.0 ms [Finished 2.146 s after frontend start] 
+2026-03-12 17:44:03 [debug] : Frontend D.initializeLayout: 10.8 ms [Finished 2.156 s after frontend start] 
+2026-03-12 17:44:03 [debug] : No label for action menu node: No command "workspace:addFolder" exists. 
+2026-03-12 17:44:03 [debug] : Failed to parse markers data: {"0":"SyntaxError: Unexpected end of JSON input\n    at JSON.parse (<anonymous>)\n    at _.setMarkersFromWorkspace (file:///C:/AMDDesignTools/2025.2/Vitis/ide/electron-app/win64/resources/app/lib/frontend/bundle.js:2:7825359)"}
+2026-03-12 17:44:03 [debug] : Frontend H.initializeLayout took longer than the expected maximum 100 milliseconds: 119.6 ms [Finished 2.276 s after frontend start] 
+2026-03-12 17:44:03 [debug] : [Library Api Contribution] in on initialize layout method. 
+2026-03-12 17:44:03 [debug] : Frontend g.initializeLayout: 5.8 ms [Finished 2.282 s after frontend start] 
+2026-03-12 17:44:03 [debug] : MonacoEditorModel.cancelSync {"0":"user-storage:/user/settings.json"}
+2026-03-12 17:44:03 [debug] : MonacoEditorModel.cancelSave {"0":"user-storage:/user/settings.json"}
+2026-03-12 17:44:03 [debug] : Initialize the workbench layout: 324.3 ms [Finished 2.338 s after frontend start] 
+2026-03-12 17:44:03 [debug] : Changed application state from 'attached_shell' to 'initialized_layout'. 
+2026-03-12 17:44:03 [debug] : Frontend d.onDidInitializeLayout: 0.1 ms [Finished 2.338 s after frontend start] 
+2026-03-12 17:44:03 [debug] : [708ef3b1-6e14-4606-8ef6-d0f0cba9b28a] Loading plugin contributions 
+2026-03-12 17:44:03 [debug] : [708ef3b1-6e14-4606-8ef6-d0f0cba9b28a][eclipse-cdt.serial-monitor]: Loaded contributions. 
+2026-03-12 17:44:03 [debug] : [708ef3b1-6e14-4606-8ef6-d0f0cba9b28a][vscode.json-language-features]: Loaded contributions. 
+2026-03-12 17:44:03 [debug] : [708ef3b1-6e14-4606-8ef6-d0f0cba9b28a][pkief.material-icon-theme]: Loaded contributions. 
+2026-03-12 17:44:03 [debug] : [708ef3b1-6e14-4606-8ef6-d0f0cba9b28a][vscode.git-base]: Loaded contributions. 
+2026-03-12 17:44:03 [debug] : [708ef3b1-6e14-4606-8ef6-d0f0cba9b28a][eamodio.gitlens]: Loaded contributions. 
+2026-03-12 17:44:03 [debug] : [708ef3b1-6e14-4606-8ef6-d0f0cba9b28a][amd.tcf-debug]: Loaded contributions. 
+2026-03-12 17:44:03 [debug] : [708ef3b1-6e14-4606-8ef6-d0f0cba9b28a][twxs.cmake]: Loaded contributions. 
+2026-03-12 17:44:03 [debug] : [708ef3b1-6e14-4606-8ef6-d0f0cba9b28a][amd.vitis-config]: Loaded contributions. 
+2026-03-12 17:44:03 [debug] : [708ef3b1-6e14-4606-8ef6-d0f0cba9b28a][amd.vitis-hls-l1-library]: Loaded contributions. 
+2026-03-12 17:44:03 [debug] : [708ef3b1-6e14-4606-8ef6-d0f0cba9b28a][amd.vitis-hls-pragma]: Loaded contributions. 
+2026-03-12 17:44:03 [debug] : [708ef3b1-6e14-4606-8ef6-d0f0cba9b28a][amd.vitis-hls-verilog-vhdl-support]: Loaded contributions. 
+2026-03-12 17:44:03 [debug] : [708ef3b1-6e14-4606-8ef6-d0f0cba9b28a][amd.vitis-output]: Loaded contributions. 
+2026-03-12 17:44:03 [debug] : [708ef3b1-6e14-4606-8ef6-d0f0cba9b28a][vscode.cpp]: Loaded contributions. 
+2026-03-12 17:44:03 [debug] : [708ef3b1-6e14-4606-8ef6-d0f0cba9b28a][vscode.json]: Loaded contributions. 
+2026-03-12 17:44:03 [debug] : [708ef3b1-6e14-4606-8ef6-d0f0cba9b28a][llvm-vs-code-extensions.vscode-clangd]: Loaded contributions. 
+2026-03-12 17:44:03 [debug] : [708ef3b1-6e14-4606-8ef6-d0f0cba9b28a][webfreak.debug]: Loaded contributions. 
+2026-03-12 17:44:03 [debug] : [708ef3b1-6e14-4606-8ef6-d0f0cba9b28a][vscode.git]: Loaded contributions. 
+2026-03-12 17:44:03 [debug] : [708ef3b1-6e14-4606-8ef6-d0f0cba9b28a][vscode.make]: Loaded contributions. 
+2026-03-12 17:44:03 [debug] : [708ef3b1-6e14-4606-8ef6-d0f0cba9b28a] Load contributions of 18 plugins: 319.8 ms [Finished 2.661 s after frontend start] 
+2026-03-12 17:44:03 [debug] : Frontend c.onDidInitializeLayout: 10.9 ms [Finished 2.672 s after frontend start] 
+2026-03-12 17:44:03 [debug] : Frontend n.onDidInitializeLayout: 3.4 ms [Finished 2.678 s after frontend start] 
+2026-03-12 17:44:03 [debug] : Frontend T.onDidInitializeLayout: 10.9 ms [Finished 2.690 s after frontend start] 
+2026-03-12 17:44:03 [debug] : Frontend p.onDidInitializeLayout: 3.9 ms [Finished 2.700 s after frontend start] 
+2026-03-12 17:44:03 [debug] : Frontend h.onDidInitializeLayout: 0.1 ms [Finished 2.701 s after frontend start] 
+2026-03-12 17:44:03 [debug] : 'cpp' language is remapped from 'source.cpp.embedded.macro' to 'source.cpp' scope 
+2026-03-12 17:44:03 [debug] : a registered grammar configuration for 'cpp' language is overridden 
+2026-03-12 17:44:03 [debug] : No label for action menu node: No command "workspace:addFolder" exists. 
+2026-03-12 17:44:03 [debug] : No label for action menu node: No command "workspace:addFolder" exists. 
+2026-03-12 17:44:03 [debug] : MonacoEditorModel.fireDidChangeContent - enter - {
+  "changes": [
+    {
+      "range": {
+        "startLineNumber": 4,
+        "startColumn": 29,
+        "endLineNumber": 14,
+        "endColumn": 6
+      },
+      "rangeLength": 310,
+      "text": "{\r\n        \"**/.git/objects/**\": true,\r\n        \"**/.git/subtree-cache/**\": true,\r\n        \"**/_build/**\": true,\r\n        \"**/build/**\": true,\r\n        \"**/export/**\": true,\r\n        \"**/hls/impl/**\": true,\r\n        \"**/hls/syth/**\": true,\r\n        \"**/hls/syn/**\": true,\r\n        \"**/hls/csim/**\": true\r\n    }",
+      "rangeOffset": 124,
+      "forceMoveMarkers": false
+    }
+  ],
+  "eol": "\r\n",
+  "isEolChange": false,
+  "versionId": 2,
+  "isUndoing": false,
+  "isRedoing": false,
+  "isFlush": false
+} {"0":"user-storage:/user/settings.json"}
+2026-03-12 17:44:03 [debug] : MonacoEditorModel.markAsDirty - enter {"0":"user-storage:/user/settings.json"}
+2026-03-12 17:44:03 [debug] : MonacoEditorModel.cancelSync {"0":"user-storage:/user/settings.json"}
+2026-03-12 17:44:03 [debug] : MonacoEditorModel.markAsDirty - exit {"0":"user-storage:/user/settings.json"}
+2026-03-12 17:44:03 [debug] : MonacoEditorModel.fireDidChangeContent - exit {"0":"user-storage:/user/settings.json"}
+2026-03-12 17:44:03 [debug] : MonacoEditorModel.cancelSave {"0":"user-storage:/user/settings.json"}
+2026-03-12 17:44:03 [debug] : MonacoEditorModel.cancelSave {"0":"user-storage:/user/settings.json"}
+2026-03-12 17:44:03 [debug] : getTasks(): about to return task information for 0 tasks 
+2026-03-12 17:44:04 [debug] : MonacoEditorModel.cancelSync {"0":"user-storage:/user/settings.json"}
+2026-03-12 17:44:04 [debug] : MonacoEditorModel.cancelSave {"0":"user-storage:/user/settings.json"}
+2026-03-12 17:44:04 [debug] : PLUGIN_HOST(46348): PluginManagerExtImpl/init() 
+2026-03-12 17:44:04 [debug] : PLUGIN_HOST(46348): initializing(serial-monitor@1.0.2 with C:\AMDDesignTools\2025.2\Vitis\ide\electron-app\win64\resources\app\lib\backend\plugin-vscode-init) 
+2026-03-12 17:44:04 [debug] : PLUGIN_HOST(46348): initializing(json-language-features@1.88.1 with C:\AMDDesignTools\2025.2\Vitis\ide\electron-app\win64\resources\app\lib\backend\plugin-vscode-init) 
+2026-03-12 17:44:04 [debug] : PLUGIN_HOST(46348): initializing(material-icon-theme@5.15.0 with C:\AMDDesignTools\2025.2\Vitis\ide\electron-app\win64\resources\app\lib\backend\plugin-vscode-init) 
+2026-03-12 17:44:04 [debug] : PLUGIN_HOST(46348): initializing(git-base@1.95.3 with C:\AMDDesignTools\2025.2\Vitis\ide\electron-app\win64\resources\app\lib\backend\plugin-vscode-init) 
+2026-03-12 17:44:04 [debug] : PLUGIN_HOST(46348): initializing(gitlens@11.7.0 with C:\AMDDesignTools\2025.2\Vitis\ide\electron-app\win64\resources\app\lib\backend\plugin-vscode-init) 
+2026-03-12 17:44:04 [debug] : PLUGIN_HOST(46348): initializing(tcf-debug@0.0.1 with C:\AMDDesignTools\2025.2\Vitis\ide\electron-app\win64\resources\app\lib\backend\plugin-vscode-init) 
+2026-03-12 17:44:04 [debug] : PLUGIN_HOST(46348): initializing(cmake@0.0.17 with C:\AMDDesignTools\2025.2\Vitis\ide\electron-app\win64\resources\app\lib\backend\plugin-vscode-init) 
+2026-03-12 17:44:04 [debug] : PLUGIN_HOST(46348): initializing(vitis-config@0.0.1 with C:\AMDDesignTools\2025.2\Vitis\ide\electron-app\win64\resources\app\lib\backend\plugin-vscode-init) 
+2026-03-12 17:44:04 [debug] : Debugger contribution has been registered: tcf-debug 
+2026-03-12 17:44:04 [debug] : PLUGIN_HOST(46348): initializing(vitis-hls-l1-library@0.0.1 with C:\AMDDesignTools\2025.2\Vitis\ide\electron-app\win64\resources\app\lib\backend\plugin-vscode-init) 
+2026-03-12 17:44:04 [debug] : PLUGIN_HOST(46348): initializing(vitis-hls-pragma@0.6.0 with C:\AMDDesignTools\2025.2\Vitis\ide\electron-app\win64\resources\app\lib\backend\plugin-vscode-init) 
+2026-03-12 17:44:04 [debug] : PLUGIN_HOST(46348): initializing(vitis-hls-verilog-vhdl-support@0.0.1 with C:\AMDDesignTools\2025.2\Vitis\ide\electron-app\win64\resources\app\lib\backend\plugin-vscode-init) 
+2026-03-12 17:44:04 [debug] : PLUGIN_HOST(46348): initializing(vitis-output@0.0.1 with C:\AMDDesignTools\2025.2\Vitis\ide\electron-app\win64\resources\app\lib\backend\plugin-vscode-init) 
+2026-03-12 17:44:04 [debug] : PLUGIN_HOST(46348): initializing(cpp@1.88.1 with C:\AMDDesignTools\2025.2\Vitis\ide\electron-app\win64\resources\app\lib\backend\plugin-vscode-init) 
+2026-03-12 17:44:04 [debug] : PLUGIN_HOST(46348): initializing(json@1.88.1 with C:\AMDDesignTools\2025.2\Vitis\ide\electron-app\win64\resources\app\lib\backend\plugin-vscode-init) 
+2026-03-12 17:44:04 [debug] : PLUGIN_HOST(46348): initializing(vscode-clangd@0.1.33 with C:\AMDDesignTools\2025.2\Vitis\ide\electron-app\win64\resources\app\lib\backend\plugin-vscode-init) 
+2026-03-12 17:44:04 [debug] : PLUGIN_HOST(46348): initializing(debug@0.27.0 with C:\AMDDesignTools\2025.2\Vitis\ide\electron-app\win64\resources\app\lib\backend\plugin-vscode-init) 
+2026-03-12 17:44:04 [debug] : Debugger contribution has been registered: gdb 
+2026-03-12 17:44:04 [debug] : Debugger contribution has been registered: lldb-mi 
+2026-03-12 17:44:04 [debug] : Debugger contribution has been registered: mago-mi 
+2026-03-12 17:44:04 [debug] : PLUGIN_HOST(46348): initializing(git@1.95.3 with C:\AMDDesignTools\2025.2\Vitis\ide\electron-app\win64\resources\app\lib\backend\plugin-vscode-init) 
+2026-03-12 17:44:04 [debug] : PLUGIN_HOST(46348): initializing(make@1.88.1 with C:\AMDDesignTools\2025.2\Vitis\ide\electron-app\win64\resources\app\lib\backend\plugin-vscode-init) 
+2026-03-12 17:44:04 [debug] : Unsupported activation events: oncommand:gitlens.copyCurrentBranch, please open an issue: https://github.com/eclipse-theia/theia/issues/new 
+2026-03-12 17:44:04 [debug] : Unsupported activation events: onEditSession:file, please open an issue: https://github.com/eclipse-theia/theia/issues/new 
+2026-03-12 17:44:04 [debug] : RIGEL SERVER 17:44:04 INFO  : [INFO]: Initializing repositories 
+2026-03-12 17:44:04 [debug] : RIGEL SERVER 17:44:04 INFO  : [INFO]: Successfully set the EmbeddedSW path, refer .repo.yaml for more details. 
+2026-03-12 17:44:04 [debug] : RIGEL SERVER 17:44:04 INFO  : Successfully created repository data at C:\Users\irisk\AppData\Local\Temp\rigel_lopper_irisk16511883963576156956 
+2026-03-12 17:44:04 [debug] : RIGEL SERVER 17:44:04 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\irisk\AppData\Local\Temp\rigel_lopper_irisk13375513023237179515 -r C:\Users\irisk\AppData\Local\Temp\rigel_lopper_irisk16511883963576156956\.repo.yaml 
+2026-03-12 17:44:04 [debug] : PLUGIN_HOST(46348): PluginManagerExtImpl/loadPlugin(C:\AMDDesignTools\2025.2\Vitis\ide\electron-app\win64\resources\app\plugins\vitis-output-0.0.1\extension\lib\extension.js) 
+2026-03-12 17:44:04 [debug] : PLUGIN_HOST(46348): PluginManagerExtImpl/loadPlugin(C:\AMDDesignTools\2025.2\Vitis\ide\electron-app\win64\resources\app\plugins\vscode-builtin-json-language-features\extension\client\dist\node\jsonClientMain) 
+2026-03-12 17:44:04 [debug] : PLUGIN_HOST(46348): PluginManagerExtImpl/loadPlugin(C:\AMDDesignTools\2025.2\Vitis\ide\electron-app\win64\resources\app\plugins\vscode.git-base\extension\dist\extension.js) 
+2026-03-12 17:44:04 [debug] : Calling activation function on plugin amd.vitis-output 
+2026-03-12 17:44:04 [debug] : Calling activation function on plugin Git Base (built-in) 
+2026-03-12 17:44:04 [debug] : PLUGIN_HOST(46348): PluginManagerExtImpl/loadPlugin(C:\AMDDesignTools\2025.2\Vitis\ide\electron-app\win64\resources\app\plugins\vscode.git\extension\dist\main) 
+2026-03-12 17:44:04 [debug] : Calling activation function on plugin Git (built-in) 
+2026-03-12 17:44:04 [debug] : [708ef3b1-6e14-4606-8ef6-d0f0cba9b28a] Starting plugins. 
+2026-03-12 17:44:04 [debug] : [708ef3b1-6e14-4606-8ef6-d0f0cba9b28a][eclipse-cdt.serial-monitor]: Started plugin. 
+2026-03-12 17:44:04 [debug] : [708ef3b1-6e14-4606-8ef6-d0f0cba9b28a][vscode.json-language-features]: Started plugin. 
+2026-03-12 17:44:04 [debug] : [708ef3b1-6e14-4606-8ef6-d0f0cba9b28a][pkief.material-icon-theme]: Started plugin. 
+2026-03-12 17:44:04 [debug] : [708ef3b1-6e14-4606-8ef6-d0f0cba9b28a][vscode.git-base]: Started plugin. 
+2026-03-12 17:44:04 [debug] : [708ef3b1-6e14-4606-8ef6-d0f0cba9b28a][eamodio.gitlens]: Started plugin. 
+2026-03-12 17:44:04 [debug] : [708ef3b1-6e14-4606-8ef6-d0f0cba9b28a][amd.tcf-debug]: Started plugin. 
+2026-03-12 17:44:04 [debug] : [708ef3b1-6e14-4606-8ef6-d0f0cba9b28a][twxs.cmake]: Started plugin. 
+2026-03-12 17:44:04 [debug] : [708ef3b1-6e14-4606-8ef6-d0f0cba9b28a][amd.vitis-config]: Started plugin. 
+2026-03-12 17:44:04 [debug] : [708ef3b1-6e14-4606-8ef6-d0f0cba9b28a][amd.vitis-hls-l1-library]: Started plugin. 
+2026-03-12 17:44:04 [debug] : [708ef3b1-6e14-4606-8ef6-d0f0cba9b28a][amd.vitis-hls-pragma]: Started plugin. 
+2026-03-12 17:44:04 [debug] : [708ef3b1-6e14-4606-8ef6-d0f0cba9b28a][amd.vitis-hls-verilog-vhdl-support]: Started plugin. 
+2026-03-12 17:44:04 [debug] : [708ef3b1-6e14-4606-8ef6-d0f0cba9b28a][amd.vitis-output]: Started plugin. 
+2026-03-12 17:44:04 [debug] : [708ef3b1-6e14-4606-8ef6-d0f0cba9b28a][vscode.cpp]: Started plugin. 
+2026-03-12 17:44:04 [debug] : [708ef3b1-6e14-4606-8ef6-d0f0cba9b28a][vscode.json]: Started plugin. 
+2026-03-12 17:44:04 [debug] : [708ef3b1-6e14-4606-8ef6-d0f0cba9b28a][llvm-vs-code-extensions.vscode-clangd]: Started plugin. 
+2026-03-12 17:44:04 [debug] : [708ef3b1-6e14-4606-8ef6-d0f0cba9b28a][webfreak.debug]: Started plugin. 
+2026-03-12 17:44:04 [debug] : [708ef3b1-6e14-4606-8ef6-d0f0cba9b28a][vscode.git]: Started plugin. 
+2026-03-12 17:44:04 [debug] : [708ef3b1-6e14-4606-8ef6-d0f0cba9b28a][vscode.make]: Started plugin. 
+2026-03-12 17:44:04 [debug] : Calling activation function on plugin JSON Language Features (built-in) 
+2026-03-12 17:44:04 [debug] : Frontend H.onDidInitializeLayout took longer than the expected maximum 100 milliseconds: 938.1 ms [Finished 3.639 s after frontend start] 
+2026-03-12 17:44:04 [debug] : Frontend P.onDidInitializeLayout: 0.0 ms [Finished 3.639 s after frontend start] 
+2026-03-12 17:44:04 [debug] : Frontend D.onDidInitializeLayout: 0.8 ms [Finished 3.640 s after frontend start] 
+2026-03-12 17:44:04 [debug] : Frontend R.onDidInitializeLayout: 0.1 ms [Finished 3.640 s after frontend start] 
+2026-03-12 17:44:04 [debug] : Frontend v.onDidInitializeLayout: 0.0 ms [Finished 3.640 s after frontend start] 
+2026-03-12 17:44:04 [debug] : Frontend h.onDidInitializeLayout: 0.1 ms [Finished 3.642 s after frontend start] 
+2026-03-12 17:44:04 [debug] : RIGEL SERVER 17:44:04 INFO  : Embedded Template List generated successfully 
+2026-03-12 17:44:04 [debug] : RIGEL SERVER 17:44:04 INFO  : cmd.exe, /C, empyro.bat repo -st   C:\AMDDesignTools\2025.2\Vitis\data\embeddedsw 
+2026-03-12 17:44:04 [debug] : [Application Examples Provider] Templates model update completed. 
+2026-03-12 17:44:04 [debug] : [Application Examples Provider] common calling method completed. 
+2026-03-12 17:44:04 [debug] : [Application Examples Provider] refresh completed. 
+2026-03-12 17:44:04 [debug] : PLUGIN_HOST(46348): PluginManagerExtImpl/loadPlugin(C:\AMDDesignTools\2025.2\Vitis\ide\electron-app\win64\resources\app\plugins\eamodio-gitlens\extension\dist\gitlens) 
+2026-03-12 17:44:04 [debug] : PLUGIN_HOST(46348): PluginManagerExtImpl/loadPlugin(C:\AMDDesignTools\2025.2\Vitis\ide\electron-app\win64\resources\app\plugins\vscode-material-icon-theme\extension\dist\extension\desktop\extension.cjs) 
+2026-03-12 17:44:04 [debug] : PLUGIN_HOST(46348): PluginManagerExtImpl/loadPlugin(C:\AMDDesignTools\2025.2\Vitis\ide\electron-app\win64\resources\app\plugins\eclipse-cdt.serial-monitor\extension\dist\desktop\extension.js) 
+2026-03-12 17:44:04 [debug] : Calling activation function on plugin Web and Desktop Serial Monitor 
+2026-03-12 17:44:04 [debug] : [INFO] 2026-03-12T21:44:04.697Z - Translations initialized. 
+2026-03-12 17:44:04 [debug] : [INFO] 2026-03-12T21:44:04.699Z - Extension activated! 
+2026-03-12 17:44:04 [debug] : Calling activation function on plugin Material Icon Theme 
+2026-03-12 17:44:04 [debug] : Calling activation function on plugin GitLens — Git supercharged 
+2026-03-12 17:44:04 [debug] : [708ef3b1-6e14-4606-8ef6-d0f0cba9b28a] Start of 18 plugins: 1108.5 ms [Finished 3.833 s after frontend start] 
+2026-03-12 17:44:04 [debug] : No label for action menu node: No command "workspace:addFolder" exists. 
+2026-03-12 17:44:05 [debug] : Frontend application start: 3009.8 ms [Finished 73.938 s after backend start] 
+2026-03-12 17:44:05 [debug] : Replace loading indicator with ready workbench UI (animation): 807.0 ms [Finished 4.449 s after frontend start] 
+2026-03-12 17:44:05 [debug] : Changed application state from 'initialized_layout' to 'ready'. 
+2026-03-12 17:44:06 [debug] : RIGEL SERVER 17:44:06 INFO  : [INFO]: Initializing repositories 
+2026-03-12 17:44:06 [debug] : RIGEL SERVER 17:44:06 INFO  : [INFO]: Successfully set the EmbeddedSW path, refer .repo.yaml for more details.
+17:44:06 INFO  : Successfully created repository data at C:\Users\irisk\Documents\FPGA_Audio_Mix\FPGA_Mix_Hardware/_ide\.wsdata 
+2026-03-12 17:44:06 [debug] : RIGEL SERVER 17:44:06 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\irisk\AppData\Local\Temp\rigel_lopper_irisk15561680741100206050 -r C:\Users\irisk\Documents\FPGA_Audio_Mix\FPGA_Mix_Hardware\_ide\.wsdata\.repo.yaml 
+2026-03-12 17:44:06 [debug] : RIGEL SERVER 17:44:06 INFO  : Embedded Template List generated successfully 
+2026-03-12 17:44:06 [debug] : [Application Examples Provider] Templates model update completed. 
+2026-03-12 17:44:06 [debug] : [Application Examples Provider] common calling method completed. 
+2026-03-12 17:44:06 [debug] : [Application Examples Provider] refresh completed. 
+2026-03-12 19:14:41 [debug] : socket closed 
+2026-03-12 19:14:41 [debug] : closing connection for 1 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/localization-server'. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/os'. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/commands'. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/logger'. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/messageService'. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/rigel-utils'. 
+2026-03-12 19:14:41 [debug] : [Rigel Utils Server] Disposing objects in backend. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/ChannelCloseService'. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/remote-filesystem'. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/envs'. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/startup-workspace'. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/rigel-workspace'. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/workspace'. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/keyboard'. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/stopwatch'. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/application'. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/i18n'. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/quickInput'. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/project'. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/component'. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/feature-registry'. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/debugger'. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/debug'. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/shell-terminal'. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/quickPick'. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/task'. 
+2026-03-12 19:14:41 [debug] : a client has disconnected - removed from list: 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/search'. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/hostedPlugin'. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/plugin-ext'. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/plugin-paths'. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/vsx-environment'. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/request-service'. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/cli-preferences'. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/server'. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/repository'. 
+2026-03-12 19:14:41 [debug] : [Repository Server] Disposing objects in backend. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/program_flash'. 
+2026-03-12 19:14:41 [debug] : [Program Flash Server] Disposing objects in backend. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/build'. 
+2026-03-12 19:14:41 [debug] : [Build Server] Disposing objects in backend. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/notification'. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path 'services/rigel-backend-helper'. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/aie'. 
+2026-03-12 19:14:41 [debug] : [AIE Server] Disposing objects in backend. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/analysis'. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/recent-summaries'. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/rigel_explorer'. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/linker-script'. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/rigel-logger'. 
+2026-03-12 19:14:41 [debug] : [Logger Server] Disposing objects in backend. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/platform'. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/vitis-hls'. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/device'. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/mini-browser-service'. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/flow_navigator'. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/hls/common/data/info'. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/hls/common/file/service'. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/hls/report'. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/hls/dataflow/info'. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/hls/l1library/service'. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/hls/directive'. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/hls_flow'. 
+2026-03-12 19:14:41 [debug] : [Hls Flow Server] Disposing objects in backend. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/search-in-workspace'. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/open-ai/language-model-manager'. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/mcpservermanager'. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/languageModelRegistryDelegatePath'. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/languageModelDelegatePath'. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/rigel-ai/language-model-manager'. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/anthropic/language-model-manager'. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/google/language-model-manager'. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/huggingface/language-model-manager'. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/llamafilemanager'. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/ollama/language-model-manager'. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/vercel-ai/language-model-manager'. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/config-file'. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/elf-reader'. 
+2026-03-12 19:14:41 [debug] : [Elf Reader Server] Disposing objects in backend. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/project-utils'. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/bootgen'. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/cdo-utils'. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/report-model'. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/hls/wave/open'. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/scanoss/service'. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/hls-config'. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/keyStore'. 
+2026-03-12 19:14:41 [debug] : Closing channel on service path '/services/languagePackService'. 

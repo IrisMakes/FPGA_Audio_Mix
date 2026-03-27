@@ -1,0 +1,87 @@
+<ENTRY>
+{
+ "thisFile": "C:/Users\\irisk\\Documents\\FPGA_Audio_Mix\\FPGA_Mix_Hardware\\FPGA_Mix_Hardware\\FPGA_Mix_Hardware.hlscompile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "03/27/26 14:22:27",
+ "timestampMillis": "1774635747175",
+ "buildStep": {
+  "cmdId": "1ddd1481-c7be-4150-9fc0-fe18433a2710",
+  "name": "v++",
+  "logFile": "C:/Users\\irisk\\Documents\\FPGA_Audio_Mix\\FPGA_Mix_Hardware\\FPGA_Mix_Hardware\\logs\\FPGA_Mix_Hardware.steps.log",
+  "commandLine": "C:/AMDDesignTools/2025.2/Vitis/bin/unwrapped/win64.o/v++.exe  -c --mode hls --config C:\\Users\\irisk\\Documents\\FPGA_Audio_Mix\\FPGA_Mix_Hardware\\hls_config.cfg --work_dir FPGA_Mix_Hardware ",
+  "args": [
+   "-c",
+   "--mode",
+   "hls",
+   "--config",
+   "C:\\Users\\irisk\\Documents\\FPGA_Audio_Mix\\FPGA_Mix_Hardware\\hls_config.cfg",
+   "--work_dir",
+   "FPGA_Mix_Hardware"
+  ],
+  "iniFiles": [
+   {
+    "path": "C:/Users\\irisk\\Documents\\FPGA_Audio_Mix\\FPGA_Mix_Hardware\\hls_config.cfg",
+    "content": "part=xczu3eg-sfvc784-2-e\n\n[hls]\nflow_target=vivado\npackage.output.format=ip_catalog\npackage.output.syn=false\nsyn.file=hw_mixer.cpp\nsyn.top=mixer\ntb.file=hw_mixer_tb.cpp"
+   }
+  ],
+  "cwd": "C:\\Users\\irisk\\Documents\\FPGA_Audio_Mix\\FPGA_Mix_Hardware"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "03/27/26 14:22:27",
+ "timestampMillis": "1774635747175",
+ "status": {
+  "cmdId": "1ddd1481-c7be-4150-9fc0-fe18433a2710",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "03/27/26 14:22:30",
+ "timestampMillis": "1774635750272",
+ "status": {
+  "cmdId": "1ddd1481-c7be-4150-9fc0-fe18433a2710",
+  "state": "CS_FAILED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "03/27/26 14:22:30",
+ "timestampMillis": "1774635750295",
+ "report": {
+  "path": "C:/Users\\irisk\\Documents\\FPGA_Audio_Mix\\FPGA_Mix_Hardware\\FPGA_Mix_Hardware\\reports\\v++_compile_FPGA_Mix_Hardware_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "03/27/26 14:22:30",
+ "timestampMillis": "1774635750295",
+ "report": {
+  "path": "C:/Users\\irisk\\Documents\\FPGA_Audio_Mix\\FPGA_Mix_Hardware\\FPGA_Mix_Hardware\\reports\\.db\\v++_compile_FPGA_Mix_Hardware_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

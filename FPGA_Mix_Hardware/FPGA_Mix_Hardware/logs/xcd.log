@@ -1,0 +1,46 @@
+03/27/26 14:18:34: Running xcd server. This server was built by gradle.
+03/27/26 14:18:34: Server was asked to start on port: '62121'
+03/27/26 14:18:34: Server is using token UUID: '537e284e-f29c-4f64-bfb6-26c826b43e4c'
+03/27/26 14:18:34: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+03/27/26 14:18:34: Attempting to start server on port '62121'
+03/27/26 14:18:34: Running Dispatch Server
+03/27/26 14:18:34: Version 2.2.0
+03/27/26 14:18:36: Dispatch Server: Accepted socket connection from client
+03/27/26 14:18:36: Starting Socket connection
+03/27/26 14:18:36: EXCHANGE_TOKEN received, server token: 537e284e-f29c-4f64-bfb6-26c826b43e4c, passed token: 537e284e-f29c-4f64-bfb6-26c826b43e4c
+03/27/26 14:18:37: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+03/27/26 14:18:37: SESSION_MGR: creating session with session uuid: 'fc95ca47-4c06-4f8a-b473-5e03cbbdee4c' and name 'v++_compile_FPGA_Mix_Hardware'
+03/27/26 14:18:37: KERNEL_SVC: creating session with uuid: 'fc95ca47-4c06-4f8a-b473-5e03cbbdee4c' and name 'v++_compile_FPGA_Mix_Hardware'
+03/27/26 14:18:37: GUIDANCE_SMGR: creating guidance session with uuid: 'fc95ca47-4c06-4f8a-b473-5e03cbbdee4c' and name 'v++_compile_FPGA_Mix_Hardware'
+03/27/26 14:18:37: SYSTEM_DIAGRAM: creating session with uuid: 'fc95ca47-4c06-4f8a-b473-5e03cbbdee4c' and name 'v++_compile_FPGA_Mix_Hardware'
+03/27/26 14:18:44: SESSION_MGR: closing session for UUID 'fc95ca47-4c06-4f8a-b473-5e03cbbdee4c' with name 'v++_compile_FPGA_Mix_Hardware'
+03/27/26 14:18:44: KERNEL_SVC: closing session for UUID 'fc95ca47-4c06-4f8a-b473-5e03cbbdee4c' with name 'v++_compile_FPGA_Mix_Hardware'
+03/27/26 14:18:44: GUIDANCE_SMGR: closing session for UUID 'fc95ca47-4c06-4f8a-b473-5e03cbbdee4c' with name 'v++_compile_FPGA_Mix_Hardware'
+03/27/26 14:18:44: SYSTEM_DIAGRAM: closing session for UUID 'fc95ca47-4c06-4f8a-b473-5e03cbbdee4c' with name 'v++_compile_FPGA_Mix_Hardware'
+03/27/26 14:18:44: STOP_SERVER received, server token: 537e284e-f29c-4f64-bfb6-26c826b43e4c, passed token: 537e284e-f29c-4f64-bfb6-26c826b43e4c
+03/27/26 14:18:44: Socket received request to stop server.
+03/27/26 14:18:44: Dispatch Server: do_await_stop
+03/27/26 14:18:44: SERVER: destructor for server bound to port 62121
+03/27/26 14:22:24: Running xcd server. This server was built by gradle.
+03/27/26 14:22:24: Server was asked to start on port: '52169'
+03/27/26 14:22:24: Server is using token UUID: '8bc47cce-7ece-4699-8522-a92c1a8c5419'
+03/27/26 14:22:24: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+03/27/26 14:22:24: Attempting to start server on port '52169'
+03/27/26 14:22:24: Running Dispatch Server
+03/27/26 14:22:24: Version 2.2.0
+03/27/26 14:22:27: Dispatch Server: Accepted socket connection from client
+03/27/26 14:22:27: Starting Socket connection
+03/27/26 14:22:27: EXCHANGE_TOKEN received, server token: 8bc47cce-7ece-4699-8522-a92c1a8c5419, passed token: 8bc47cce-7ece-4699-8522-a92c1a8c5419
+03/27/26 14:22:27: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+03/27/26 14:22:27: SESSION_MGR: creating session with session uuid: 'e5685180-d938-41ef-a6f7-d82c8c02d4ed' and name 'v++_compile_FPGA_Mix_Hardware'
+03/27/26 14:22:27: KERNEL_SVC: creating session with uuid: 'e5685180-d938-41ef-a6f7-d82c8c02d4ed' and name 'v++_compile_FPGA_Mix_Hardware'
+03/27/26 14:22:27: GUIDANCE_SMGR: creating guidance session with uuid: 'e5685180-d938-41ef-a6f7-d82c8c02d4ed' and name 'v++_compile_FPGA_Mix_Hardware'
+03/27/26 14:22:27: SYSTEM_DIAGRAM: creating session with uuid: 'e5685180-d938-41ef-a6f7-d82c8c02d4ed' and name 'v++_compile_FPGA_Mix_Hardware'
+03/27/26 14:22:30: SESSION_MGR: closing session for UUID 'e5685180-d938-41ef-a6f7-d82c8c02d4ed' with name 'v++_compile_FPGA_Mix_Hardware'
+03/27/26 14:22:30: KERNEL_SVC: closing session for UUID 'e5685180-d938-41ef-a6f7-d82c8c02d4ed' with name 'v++_compile_FPGA_Mix_Hardware'
+03/27/26 14:22:30: GUIDANCE_SMGR: closing session for UUID 'e5685180-d938-41ef-a6f7-d82c8c02d4ed' with name 'v++_compile_FPGA_Mix_Hardware'
+03/27/26 14:22:30: SYSTEM_DIAGRAM: closing session for UUID 'e5685180-d938-41ef-a6f7-d82c8c02d4ed' with name 'v++_compile_FPGA_Mix_Hardware'
+03/27/26 14:22:30: STOP_SERVER received, server token: 8bc47cce-7ece-4699-8522-a92c1a8c5419, passed token: 8bc47cce-7ece-4699-8522-a92c1a8c5419
+03/27/26 14:22:30: Socket received request to stop server.
+03/27/26 14:22:30: Dispatch Server: do_await_stop
+03/27/26 14:22:30: SERVER: destructor for server bound to port 52169

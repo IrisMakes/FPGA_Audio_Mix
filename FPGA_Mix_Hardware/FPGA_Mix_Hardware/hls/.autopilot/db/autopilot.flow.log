@@ -1,0 +1,581 @@
+Execute       source -notrace -encoding utf-8 C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcl8.6/clock.tcl 
+Execute         source -encoding utf-8 C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcl8/8.5/msgcat-1.6.1.tm 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/0compatibility/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/amazon-s3/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/asn/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/base32/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/base64/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/bee/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/bench/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/bibtex/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/cache/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/clay/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/clock/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/cmdline/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/comm/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/control/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/coroutine/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/counter/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/crc/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/cron/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/csv/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/debug/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/defer/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/dicttool/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/dns/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/docstrip/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/doctools/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/doctools2base/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/doctools2idx/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/doctools2toc/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/dtplite/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/fileutil/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/ftp/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/ftpd/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/fumagic/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/generator/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/gpx/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/grammar_aycock/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/grammar_fa/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/grammar_me/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/grammar_peg/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/hook/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/html/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/htmlparse/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/http/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/httpd/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/httpwget/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/ident/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/imap4/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/inifile/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/interp/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/irc/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/javascript/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/jpeg/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/json/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/lambda/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/lazyset/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/ldap/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/log/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/map/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/mapproj/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/markdown/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/math/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/md4/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/md5/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/md5crypt/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/mime/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/mkdoc/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/multiplexer/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/namespacex/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/ncgi/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/nettool/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/nmea/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/nns/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/nntp/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/ntp/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/oauth/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/oodialect/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/oometa/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/ooutil/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/otp/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/page/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/pluginmgr/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/png/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/pop3/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/pop3d/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/practcl/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/processman/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/profiler/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/pt/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/rcs/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/report/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/rest/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/ripemd/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/sasl/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/sha1/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/simulation/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/smtpd/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/snit/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/soundex/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/stooop/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/string/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/stringprep/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/struct/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/tar/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/tepam/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/term/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/textutil/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/tie/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/tiff/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/tool/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/transfer/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/treeql/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/try/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/udpcluster/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/uev/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/units/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/uri/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/uuid/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/valtype/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/virtchannel_base/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/virtchannel_core/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/virtchannel_transform/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/websocket/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/wip/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/yaml/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/zip/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/0compatibility/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/amazon-s3/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/asn/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/base32/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/base64/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/bee/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/bench/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/bibtex/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/cache/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/clay/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/clock/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/cmdline/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/comm/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/control/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/coroutine/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/counter/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/crc/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/cron/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/csv/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/debug/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/defer/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/dicttool/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/dns/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/docstrip/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/doctools/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/doctools2base/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/doctools2idx/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/doctools2toc/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/dtplite/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/fileutil/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/ftp/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/ftpd/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/fumagic/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/generator/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/gpx/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/grammar_aycock/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/grammar_fa/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/grammar_me/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/grammar_peg/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/hook/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/html/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/htmlparse/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/http/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/httpd/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/httpwget/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/ident/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/imap4/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/inifile/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/interp/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/irc/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/javascript/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/jpeg/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/json/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/lambda/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/lazyset/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/ldap/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/log/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/map/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/mapproj/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/markdown/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/math/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/md4/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/md5/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/md5crypt/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/mime/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/mkdoc/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/multiplexer/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/namespacex/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/ncgi/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/nettool/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/nmea/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/nns/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/nntp/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/ntp/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/oauth/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/oodialect/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/oometa/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/ooutil/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/otp/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/page/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/pluginmgr/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/png/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/pop3/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/pop3d/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/practcl/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/processman/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/profiler/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/pt/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/rcs/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/report/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/rest/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/ripemd/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/sasl/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/sha1/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/simulation/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/smtpd/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/snit/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/soundex/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/stooop/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/string/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/stringprep/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/struct/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/tar/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/tepam/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/term/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/textutil/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/tie/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/tiff/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/tool/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/transfer/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/treeql/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/try/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/udpcluster/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/uev/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/units/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/uri/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/uuid/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/valtype/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/virtchannel_base/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/virtchannel_core/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/virtchannel_transform/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/websocket/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/wip/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/yaml/pkgIndex.tcl 
+Execute             source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/zip/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tdom/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tk8.6/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcl8.6/opt0.4/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcl8.6/pkgs/win/thread2.8.7/pkgIndex.tcl 
+Command         ap_source done; 0.162 sec.
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/0compatibility/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/amazon-s3/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/asn/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/base32/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/base64/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/bee/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/bench/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/bibtex/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/cache/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/clay/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/clock/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/cmdline/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/comm/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/control/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/coroutine/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/counter/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/crc/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/cron/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/csv/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/debug/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/defer/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/dicttool/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/dns/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/docstrip/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/doctools/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/doctools2base/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/doctools2idx/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/doctools2toc/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/dtplite/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/fileutil/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/ftp/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/ftpd/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/fumagic/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/generator/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/gpx/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/grammar_aycock/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/grammar_fa/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/grammar_me/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/grammar_peg/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/hook/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/html/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/htmlparse/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/http/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/httpd/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/httpwget/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/ident/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/imap4/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/inifile/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/interp/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/irc/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/javascript/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/jpeg/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/json/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/lambda/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/lazyset/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/ldap/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/log/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/map/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/mapproj/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/markdown/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/math/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/md4/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/md5/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/md5crypt/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/mime/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/mkdoc/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/multiplexer/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/namespacex/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/ncgi/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/nettool/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/nmea/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/nns/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/nntp/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/ntp/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/oauth/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/oodialect/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/oometa/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/ooutil/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/otp/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/page/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/pluginmgr/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/png/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/pop3/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/pop3d/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/practcl/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/processman/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/profiler/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/pt/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/rcs/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/report/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/rest/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/ripemd/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/sasl/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/sha1/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/simulation/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/smtpd/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/snit/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/soundex/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/stooop/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/string/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/stringprep/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/struct/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/tar/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/tepam/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/term/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/textutil/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/tie/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/tiff/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/tool/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/transfer/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/treeql/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/try/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/udpcluster/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/uev/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/units/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/uri/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/uuid/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/valtype/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/virtchannel_base/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/virtchannel_core/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/virtchannel_transform/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/websocket/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/wip/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/yaml/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/zip/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/0compatibility/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/amazon-s3/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/asn/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/base32/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/base64/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/bee/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/bench/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/bibtex/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/cache/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/clay/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/clock/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/cmdline/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/comm/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/control/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/coroutine/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/counter/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/crc/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/cron/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/csv/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/debug/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/defer/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/dicttool/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/dns/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/docstrip/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/doctools/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/doctools2base/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/doctools2idx/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/doctools2toc/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/dtplite/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/fileutil/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/ftp/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/ftpd/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/fumagic/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/generator/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/gpx/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/grammar_aycock/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/grammar_fa/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/grammar_me/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/grammar_peg/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/hook/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/html/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/htmlparse/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/http/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/httpd/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/httpwget/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/ident/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/imap4/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/inifile/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/interp/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/irc/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/javascript/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/jpeg/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/json/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/lambda/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/lazyset/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/ldap/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/log/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/map/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/mapproj/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/markdown/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/math/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/md4/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/md5/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/md5crypt/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/mime/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/mkdoc/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/multiplexer/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/namespacex/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/ncgi/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/nettool/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/nmea/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/nns/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/nntp/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/ntp/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/oauth/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/oodialect/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/oometa/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/ooutil/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/otp/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/page/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/pluginmgr/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/png/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/pop3/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/pop3d/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/practcl/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/processman/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/profiler/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/pt/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/rcs/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/report/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/rest/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/ripemd/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/sasl/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/sha1/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/simulation/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/smtpd/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/snit/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/soundex/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/stooop/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/string/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/stringprep/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/struct/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/tar/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/tepam/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/term/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/textutil/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/tie/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/tiff/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/tool/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/transfer/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/treeql/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/try/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/udpcluster/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/uev/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/units/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/uri/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/uuid/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/valtype/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/virtchannel_base/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/virtchannel_core/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/virtchannel_transform/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/websocket/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/wip/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/yaml/pkgIndex.tcl 
+Execute           source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcllib2.0/zip/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tdom/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tk8.6/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcl8.6/opt0.4/pkgIndex.tcl 
+Execute         source C:/AMDDesignTools/2025.2/Vitis/tps/tcl/tcl8.6/pkgs/win/thread2.8.7/pkgIndex.tcl 
+Command       ap_source done; 0.329 sec.
+INFO-FLOW: Workspace C:/Users/irisk/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls opened at Fri Mar 27 14:22:29 -0400 2026
+Execute       send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute       send_msg_by_id INFO @200-2174@%s%s component hls_config.cfg 
+INFO: [HLS 200-2174] Applying component config ini file hls_config.cfg
+Execute       apply_ini hls_config.cfg 
+Execute         send_msg_by_id WARNING @200-2001@%s%s hw_mixer_tb.cpp see [hls] from hls_config.cfg(9) 
+WARNING: [HLS 200-2001] file not found 'hw_mixer_tb.cpp' see [hls] from hls_config.cfg(9)
+Execute         send_msg_by_id INFO @200-1465@%s 'syn.file=hw_mixer.cpp' from hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying config ini 'syn.file=hw_mixer.cpp' from hls_config.cfg(7)
+Execute         add_files C:/Users/irisk/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/hw_mixer.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/Users/irisk/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/hw_mixer.cpp' to the project
+Execute         send_msg_by_id INFO @200-1465@%s 'tb.file=hw_mixer_tb.cpp' from hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying config ini 'tb.file=hw_mixer_tb.cpp' from hls_config.cfg(9)
+Execute         add_files -tb hw_mixer_tb.cpp 
+WARNING: [HLS 200-40] Cannot find test bench file 'hw_mixer_tb.cpp'
+Execute         send_msg_by_id INFO @200-1465@%s 'syn.top=mixer' from hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying config ini 'syn.top=mixer' from hls_config.cfg(8)
+Execute         set_top mixer 
+Execute         send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from hls_config.cfg(4)
+Execute         send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute         send_msg_by_id INFO @200-1465@%s 'part=xczu3eg-sfvc784-2-e' from hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying config ini 'part=xczu3eg-sfvc784-2-e' from hls_config.cfg(1)
+Execute         set_part xczu3eg-sfvc784-2-e 
+Execute           create_platform xczu3eg-sfvc784-2-e -board  
+DBG:HLSDevice: Trying to load device library: C:/AMDDesignTools/2025.2/Vitis\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/AMDDesignTools/2025.2/Vivado/data/parts/arch.xml
+DBG:HLSDevice: init success
+ERROR: [HLS 200-1023] Part 'xczu3eg-sfvc784-2-e' is not installed.
+Command           create_platform done; error code: 1; 0.482 sec.
+INFO-FLOW: Caught error in set_part: command 'create_platform' returned error code
+    while executing
+"create_platform $value -board $board"
+    (procedure "ap_internal_set_part" line 28)
+    invoked from within
+"ap_internal_set_part "
+Command         set_part done; error code: 2; 0.483 sec.
+Execute         send_msg_by_id ERROR @200-1912@%s 'part=xczu3eg-sfvc784-2-e' from hls_config.cfg(1): command 'create_platform' returned error code 
+ERROR: [HLS 200-1912] Problem with config ini entry 'part=xczu3eg-sfvc784-2-e' from hls_config.cfg(1): command 'create_platform' returned error code
+INFO-FLOW: Caught error in apply_ini: problem with 'part=xczu3eg-sfvc784-2-e' from hls_config.cfg(1): command 'create_platform' returned error code
+    while executing
+"error "problem with $errmsg""
+    (procedure "run_single_ini_cmd" line 47)
+    invoked from within
+"run_single_ini_cmd $cmd $ini $verbosity $origcwd $show_ini $hide_stack"
+    ("foreach" body line 3)
+    invoked from within
+"foreach cmdinfo $cmd_ini_list {
+            lassign $cmdinfo cmd ini
+            run_single_ini_cmd $cmd $ini $verbosity $origcwd $show_ini $hide_stac..."
+    (procedure "::HLS_INI::apply_inilist" line 21)
+    invoked from within
+"::HLS_INI::apply_inilist "apply_ini" $inilist $apply_searchdirs $verbosity"
+    (procedure "ap_internal_apply_ini" line 59)
+    invoked from within
+"ap_internal_apply_ini "
+Command       apply_ini done; error code: 2; 0.506 sec.
+INFO-FLOW: Caught error in open_solution: problem with 'part=xczu3eg-sfvc784-2-e' from hls_config.cfg(1): command 'create_platform' returned error code
+    while executing
+"ap_internal_open_solution "
+Command     open_solution done; error code: 2; 0.86 sec.
+Execute     close_project 
+Execute       close_solution 
+Execute         cleanup_all 
+Execute         cleanup_all 

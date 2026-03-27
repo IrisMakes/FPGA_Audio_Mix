@@ -1,0 +1,8 @@
+{
+  "workspaceRoot": "C:\\Users\\irisk\\Documents\\FPGA_Audio_Mix",
+  "mapping": {
+    "hw_mixer_tb.cpp": "FPGA_Mix_Hardware",
+    "FPGA_Mix_Hardware\\mixer_tb.cpp": "FPGA_Mix_Hardware",
+    "FPGA_Mix_Hardware\\hw_mixer.cpp": "FPGA_Mix_Hardware"
+  }
+}

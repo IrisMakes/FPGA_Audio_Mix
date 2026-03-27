@@ -1,0 +1,3 @@
+relativeroot=C:/Users/irisk/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware
+original_argv=-c --mode hls --config C:\Users\irisk\Documents\FPGA_Audio_Mix\FPGA_Mix_Hardware\hls_config.cfg --work_dir FPGA_Mix_Hardware 
+

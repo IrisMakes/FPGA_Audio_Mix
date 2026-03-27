@@ -1,0 +1,42 @@
+13:47:46 INFO  : updated workspace path: C:\Users\irisk\Documents\FPGA_Audio_Mix
+13:47:46 INFO  : Marking the target connection as default Local
+13:47:46 INFO  : Marking the target connection as default Linux Agent
+13:47:46 INFO  : Marking the target connection as default XRTServer
+13:47:46 INFO  : Marking the target connection as default LinuxEmulation
+13:47:46 INFO  : Marking the target connection as default QEMU
+13:47:46 INFO  : created .gitignore file for the project C:\Users\irisk\Documents\FPGA_Audio_Mix
+13:47:46 INFO  : cmd.exe, /C, empyro.bat repo -st   C:\AMDDesignTools\2025.2\Vitis\data\embeddedsw
+13:47:48 INFO  : [INFO]: Initializing repositories
+13:47:48 INFO  : [INFO]: Successfully set the EmbeddedSW path, refer .repo.yaml for more details.
+13:47:48 INFO  : Successfully created repository data at C:\Users\irisk\Documents\FPGA_Audio_Mix/_ide\.wsdata
+13:47:48 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\irisk\AppData\Local\Temp\rigel_lopper_irisk15962432220922893599 -r C:\Users\irisk\Documents\FPGA_Audio_Mix\_ide\.wsdata\.repo.yaml
+13:47:48 INFO  : Embedded Template List generated successfully
+14:06:13 INFO  : updated workspace path: C:\Users\irisk\Documents\FPGA_Audio_Mix
+14:06:13 INFO  : created .gitignore file for the project C:\Users\irisk\Documents\FPGA_Audio_Mix
+14:06:14 INFO  : [INFO]: Initializing repositories
+14:06:14 INFO  : [INFO]: Successfully set the EmbeddedSW path, refer .repo.yaml for more details.
+14:06:14 INFO  : Successfully created repository data at C:\Users\irisk\AppData\Local\Temp\rigel_lopper_irisk8036005160911807682
+14:06:14 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\irisk\AppData\Local\Temp\rigel_lopper_irisk6290944772218195350 -r C:\Users\irisk\AppData\Local\Temp\rigel_lopper_irisk8036005160911807682\.repo.yaml
+14:06:15 INFO  : Embedded Template List generated successfully
+14:06:15 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\irisk\AppData\Local\Temp\rigel_lopper_irisk3714291703315031953 -r C:\Users\irisk\Documents\FPGA_Audio_Mix\_ide\.wsdata\.repo.yaml
+14:06:15 INFO  : Embedded Template List generated successfully
+14:06:37 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\irisk\AppData\Local\Temp\rigel_lopper_irisk16908465735703408922 -r C:\Users\irisk\Documents\FPGA_Audio_Mix\_ide\.wsdata\.repo.yaml
+14:06:37 INFO  : Embedded Template List generated successfully
+14:21:13 INFO  : connection terminated
+14:21:13 INFO  : connection terminated
+14:21:13 INFO  : scheduling shutdown timer for 2 seconds ...
+14:21:15 INFO  : Terminating Vitis C++ Server
+14:21:15 INFO  : Vitis C++ Server terminated
+14:22:17 INFO  : updated workspace path: C:\Users\irisk\Documents\FPGA_Audio_Mix
+14:22:18 INFO  : created .gitignore file for the project C:\Users\irisk\Documents\FPGA_Audio_Mix
+14:22:18 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\irisk\AppData\Local\Temp\rigel_lopper_irisk12744242454111245798 -r C:\Users\irisk\Documents\FPGA_Audio_Mix\_ide\.wsdata\.repo.yaml
+14:22:18 INFO  : Embedded Template List generated successfully
+14:23:21 INFO  : connection terminated
+14:23:21 INFO  : connection terminated
+14:23:21 INFO  : scheduling shutdown timer for 2 seconds ...
+14:23:23 INFO  : Terminating Vitis C++ Server
+14:23:23 INFO  : Vitis C++ Server terminated
+14:26:17 INFO  : updated workspace path: C:\Users\irisk\Documents\FPGA_Audio_Mix
+14:26:17 INFO  : created .gitignore file for the project C:\Users\irisk\Documents\FPGA_Audio_Mix
+14:26:17 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\irisk\AppData\Local\Temp\rigel_lopper_irisk13130282895179568213 -r C:\Users\irisk\Documents\FPGA_Audio_Mix\_ide\.wsdata\.repo.yaml
+14:26:18 INFO  : Embedded Template List generated successfully

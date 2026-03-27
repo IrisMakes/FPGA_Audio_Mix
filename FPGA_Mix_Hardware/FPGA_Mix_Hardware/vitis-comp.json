@@ -1,0 +1,9 @@
+{
+  "name": "FPGA_Mix_Hardware",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": ["..\/hls_config.cfg"],
+    "work_dir": "C:\/Users\/irisk\/Documents\/FPGA_Audio_Mix\/FPGA_Mix_Hardware\/FPGA_Mix_Hardware"
+  }
+}

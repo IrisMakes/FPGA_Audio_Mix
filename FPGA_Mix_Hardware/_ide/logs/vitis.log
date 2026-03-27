@@ -1,0 +1,26 @@
+17:44:02 INFO  : updated workspace path: C:\Users\irisk\Documents\FPGA_Audio_Mix\FPGA_Mix_Hardware
+17:44:02 INFO  : Marking the target connection as default Local
+17:44:02 INFO  : Marking the target connection as default Linux Agent
+17:44:02 INFO  : Marking the target connection as default XRTServer
+17:44:02 INFO  : Marking the target connection as default LinuxEmulation
+17:44:02 INFO  : Marking the target connection as default QEMU
+17:44:02 INFO  : created .gitignore file for the project C:\Users\irisk\Documents\FPGA_Audio_Mix\FPGA_Mix_Hardware
+17:44:04 INFO  : [INFO]: Initializing repositories
+17:44:04 INFO  : [INFO]: Successfully set the EmbeddedSW path, refer .repo.yaml for more details.
+17:44:04 INFO  : Successfully created repository data at C:\Users\irisk\AppData\Local\Temp\rigel_lopper_irisk16511883963576156956
+17:44:04 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\irisk\AppData\Local\Temp\rigel_lopper_irisk13375513023237179515 -r C:\Users\irisk\AppData\Local\Temp\rigel_lopper_irisk16511883963576156956\.repo.yaml
+17:44:04 INFO  : Embedded Template List generated successfully
+17:44:04 INFO  : cmd.exe, /C, empyro.bat repo -st   C:\AMDDesignTools\2025.2\Vitis\data\embeddedsw
+17:44:06 INFO  : [INFO]: Initializing repositories
+17:44:06 INFO  : [INFO]: Successfully set the EmbeddedSW path, refer .repo.yaml for more details.
+17:44:06 INFO  : Successfully created repository data at C:\Users\irisk\Documents\FPGA_Audio_Mix\FPGA_Mix_Hardware/_ide\.wsdata
+17:44:06 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\irisk\AppData\Local\Temp\rigel_lopper_irisk15561680741100206050 -r C:\Users\irisk\Documents\FPGA_Audio_Mix\FPGA_Mix_Hardware\_ide\.wsdata\.repo.yaml
+17:44:06 INFO  : Embedded Template List generated successfully
+19:14:41 INFO  : connection terminated
+19:14:41 INFO  : connection terminated
+19:14:41 INFO  : scheduling shutdown timer for 2 seconds ...
+19:14:41 INFO  : scheduling shutdown timer for 2 seconds ...
+19:14:43 INFO  : Terminating Vitis C++ Server
+19:14:43 INFO  : Terminating Vitis C++ Server
+19:14:43 INFO  : Vitis C++ Server terminated
+19:14:43 INFO  : Vitis C++ Server terminated
