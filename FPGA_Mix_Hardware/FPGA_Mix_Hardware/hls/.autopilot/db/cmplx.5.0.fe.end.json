@@ -1,0 +1,32 @@
+{
+    "0": {
+        "name": "mixer",
+        "file": "hw_mixer.cpp",
+        "fileloc": "5",
+        "instructions": "116",
+        "total_instructions": "206",
+        "calls": "1",
+        "basicblocks": "1",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "15",
+        "loads": {
+            "L": "1"
+        }
+    },
+    "1": {
+        "name": "mixer_Pipeline_VITIS_LOOP_30_1",
+        "file": "hw_mixer.cpp",
+        "fileloc": "30",
+        "instructions": "90",
+        "total_instructions": "90",
+        "calls": "",
+        "basicblocks": "6",
+        "memory_accesses": "9",
+        "control_depth": "3",
+        "def_use_depth": "2",
+        "loops": {
+            "L": "1"
+        }
+    }
+}

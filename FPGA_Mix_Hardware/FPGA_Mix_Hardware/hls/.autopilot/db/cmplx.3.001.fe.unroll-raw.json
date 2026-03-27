@@ -1,0 +1,21 @@
+{
+  "0": {
+    "basicblocks": 35,
+    "calls": "",
+    "control_depth": 12,
+    "def_use_depth": 19,
+    "file": "hw_mixer.cpp",
+    "fileloc": 5,
+    "instructions": 1090,
+    "loads": {
+      "G": 1,
+      "L": 86
+    },
+    "memory_accesses": 189,
+    "name": "mixer",
+    "stores": {
+      "L": 75
+    },
+    "total_instructions": 1209
+  }
+}

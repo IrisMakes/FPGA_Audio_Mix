@@ -1,0 +1,212 @@
+
+
+================================================================
+== Synthesis Summary Report of 'mixer'
+================================================================
++ General Information: 
+    * Date:           Fri Mar 27 16:53:05 2026
+    * Version:        2025.2 (Build 6295257 on Nov 14 2025)
+    * Project:        FPGA_Mix_Hardware
+    * Solution:       hls (Vivado IP Flow Target)
+    * Product family: zynquplus
+    * Target device:  xczu3eg-sfvc784-2-e
+    
+
+* Performance & Resource Estimates: 
++-----------------------------------+------+---------------+----------+---------+------+----------+---------+-----+------+------+---------+-----------+-----------+-----+
+|              Modules              | Issue|               | Iteration|         | Trip |          |    Latency    |      |      |         |           |           |     |
+|              & Loops              | Type | Violation Type|  Latency | Interval| Count| Pipelined| (cycles)| (ns)| Slack| BRAM |   DSP   |     FF    |    LUT    | URAM|
++-----------------------------------+------+---------------+----------+---------+------+----------+---------+-----+------+------+---------+-----------+-----------+-----+
+|+ mixer                            |     -|              -|         -|        -|     -|        no|        -|    -|  0.91|     -|  2 (~0%)|  374 (~0%)|  1108 (1%)|    -|
+| + mixer_Pipeline_VITIS_LOOP_30_1  |     -|              -|         -|        -|     -|       yes|        -|    -|  0.91|     -|  2 (~0%)|  266 (~0%)|   756 (1%)|    -|
+|  o VITIS_LOOP_30_1                |     -|              -|         3|        1|     -|       yes|        -|    -|  7.30|     -|        -|          -|          -|    -|
++-----------------------------------+------+---------------+----------+---------+------+----------+---------+-----+------+------+---------+-----------+-----------+-----+
+    Name Prefix: '+' for module, 'o' for loop, '*' for dataflow
+
+
+================================================================
+== HW Interfaces
+================================================================
+* S_AXILITE Interfaces
++---------------+------------+---------------+
+| Interface     | Data Width | Address Width |
++---------------+------------+---------------+
+| s_axi_control | 32         | 4             |
++---------------+------------+---------------+
+
+* S_AXILITE Registers
++---------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| Interface     | Register | Offset | Width | Access | Description                      | Bit Fields                                                           |
++---------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| s_axi_control | CTRL     | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT |
+| s_axi_control | GIER     | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                             |
+| s_axi_control | IP_IER   | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN                                        |
+| s_axi_control | IP_ISR   | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                        |
++---------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+
+* AXIS
++-------------+-----------+---------------+-------+-------+-----+-------+-------+--------+-------+-------+--------+
+| Interface   | Direction | Register Mode | TDATA | TDEST | TID | TKEEP | TLAST | TREADY | TSTRB | TUSER | TVALID |
++-------------+-----------+---------------+-------+-------+-----+-------+-------+--------+-------+-------+--------+
+| mix_out     | out       | both          | 32    | 6     | 5   | 4     | 1     | 1      | 4     | 2     | 1      |
+| stream_in_0 | in        | both          | 32    | 6     | 5   | 4     | 1     | 1      | 4     | 2     | 1      |
+| stream_in_1 | in        | both          | 32    | 6     | 5   | 4     | 1     | 1      | 4     | 2     | 1      |
+| stream_in_2 | in        | both          | 32    | 6     | 5   | 4     | 1     | 1      | 4     | 2     | 1      |
+| stream_in_3 | in        | both          | 32    | 6     | 5   | 4     | 1     | 1      | 4     | 2     | 1      |
+| stream_in_4 | in        | both          | 32    | 6     | 5   | 4     | 1     | 1      | 4     | 2     | 1      |
+| stream_in_5 | in        | both          | 32    | 6     | 5   | 4     | 1     | 1      | 4     | 2     | 1      |
+| stream_in_6 | in        | both          | 32    | 6     | 5   | 4     | 1     | 1      | 4     | 2     | 1      |
+| stream_in_7 | in        | both          | 32    | 6     | 5   | 4     | 1     | 1      | 4     | 2     | 1      |
++-------------+-----------+---------------+-------+-------+-----+-------+-------+--------+-------+-------+--------+
+
+* Other Ports
++----------+---------+-----------+----------+
+| Port     | Mode    | Direction | Bitwidth |
++----------+---------+-----------+----------+
+| switches | ap_none | in        | 8        |
++----------+---------+-----------+----------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++-------------+-----------+------------------------------------------------------------------------------+
+| Argument    | Direction | Datatype                                                                     |
++-------------+-----------+------------------------------------------------------------------------------+
+| stream_in_0 | in        | stream<hls::axis<ap_uint<32>, 2UL, 5UL, 6UL, (unsigned char)'8', false>, 0>& |
+| stream_in_1 | in        | stream<hls::axis<ap_uint<32>, 2UL, 5UL, 6UL, (unsigned char)'8', false>, 0>& |
+| stream_in_2 | in        | stream<hls::axis<ap_uint<32>, 2UL, 5UL, 6UL, (unsigned char)'8', false>, 0>& |
+| stream_in_3 | in        | stream<hls::axis<ap_uint<32>, 2UL, 5UL, 6UL, (unsigned char)'8', false>, 0>& |
+| stream_in_4 | in        | stream<hls::axis<ap_uint<32>, 2UL, 5UL, 6UL, (unsigned char)'8', false>, 0>& |
+| stream_in_5 | in        | stream<hls::axis<ap_uint<32>, 2UL, 5UL, 6UL, (unsigned char)'8', false>, 0>& |
+| stream_in_6 | in        | stream<hls::axis<ap_uint<32>, 2UL, 5UL, 6UL, (unsigned char)'8', false>, 0>& |
+| stream_in_7 | in        | stream<hls::axis<ap_uint<32>, 2UL, 5UL, 6UL, (unsigned char)'8', false>, 0>& |
+| switches    | in        | ap_uint<8>                                                                   |
+| mix_out     | out       | stream<hls::axis<ap_uint<32>, 2UL, 5UL, 6UL, (unsigned char)'8', false>, 0>& |
++-------------+-----------+------------------------------------------------------------------------------+
+
+* SW-to-HW Mapping
++-------------+--------------+-----------+
+| Argument    | HW Interface | HW Type   |
++-------------+--------------+-----------+
+| stream_in_0 | stream_in_0  | interface |
+| stream_in_1 | stream_in_1  | interface |
+| stream_in_2 | stream_in_2  | interface |
+| stream_in_3 | stream_in_3  | interface |
+| stream_in_4 | stream_in_4  | interface |
+| stream_in_5 | stream_in_5  | interface |
+| stream_in_6 | stream_in_6  | interface |
+| stream_in_7 | stream_in_7  | interface |
+| switches    | switches     | port      |
+| mix_out     | mix_out      | interface |
++-------------+--------------+-----------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+ Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
+
+
+================================================================
+== Bind Op Report
+================================================================
++-----------------------------------+-----+--------+----------------+-----------+--------------------------+---------+
+| Name                              | DSP | Pragma | Variable       | Op        | Impl                     | Latency |
++-----------------------------------+-----+--------+----------------+-----------+--------------------------+---------+
+| + mixer                           | 2   |        |                |           |                          |         |
+|   select_ln55_fu_459_p3           |     |        | select_ln55    | select    | auto_sel                 | 0       |
+|   select_ln55_1_fu_467_p3         |     |        | select_ln55_1  | select    | auto_sel                 | 0       |
+|   add_ln56_fu_475_p2              |     |        | add_ln56       | add       | fabric                   | 0       |
+|   select_ln56_fu_481_p3           |     |        | select_ln56    | select    | auto_sel                 | 0       |
+|   add_ln57_fu_493_p2              |     |        | add_ln57       | add       | fabric                   | 0       |
+|   select_ln57_fu_499_p3           |     |        | select_ln57    | select    | auto_sel                 | 0       |
+|   add_ln58_fu_507_p2              |     |        | add_ln58       | add       | fabric                   | 0       |
+|   select_ln58_fu_513_p3           |     |        | select_ln58    | select    | auto_sel                 | 0       |
+|   add_ln59_fu_521_p2              |     |        | add_ln59       | add       | fabric                   | 0       |
+|   select_ln59_fu_527_p3           |     |        | select_ln59    | select    | auto_sel                 | 0       |
+|   add_ln60_fu_535_p2              |     |        | add_ln60       | add       | fabric                   | 0       |
+|   select_ln60_fu_541_p3           |     |        | select_ln60    | select    | auto_sel                 | 0       |
+|   add_ln61_fu_553_p2              |     |        | add_ln61       | add       | fabric                   | 0       |
+|   select_ln61_fu_559_p3           |     |        | select_ln61    | select    | auto_sel                 | 0       |
+|  + mixer_Pipeline_VITIS_LOOP_30_1 | 2   |        |                |           |                          |         |
+|    icmp_ln65_fu_501_p2            |     |        | icmp_ln65      | seteq     | auto                     | 0       |
+|    mix_int_fu_559_p3              |     |        | mix_int        | select    | auto_sel                 | 0       |
+|    mix_int_1_fu_567_p2            |     |        | mix_int_1      | add       | fabric                   | 0       |
+|    mix_int_2_fu_573_p3            |     |        | mix_int_2      | select    | auto_sel                 | 0       |
+|    mix_int_3_fu_581_p2            |     |        | mix_int_3      | add       | fabric                   | 0       |
+|    mix_int_4_fu_587_p3            |     |        | mix_int_4      | select    | auto_sel                 | 0       |
+|    mix_int_5_fu_595_p2            |     |        | mix_int_5      | add       | fabric                   | 0       |
+|    mix_int_6_fu_601_p3            |     |        | mix_int_6      | select    | auto_sel                 | 0       |
+|    mix_int_7_fu_609_p2            |     |        | mix_int_7      | add       | fabric                   | 0       |
+|    mix_int_8_fu_615_p3            |     |        | mix_int_8      | select    | auto_sel                 | 0       |
+|    mix_int_9_fu_674_p2            |     |        | mix_int_9      | add       | fabric                   | 0       |
+|    mix_int_10_fu_679_p3           |     |        | mix_int_10     | select    | auto_sel                 | 0       |
+|    mix_int_11_fu_685_p2           |     |        | mix_int_11     | add       | fabric                   | 0       |
+|    mix_int_12_fu_691_p3           |     |        | mix_int_12     | select    | auto_sel                 | 0       |
+|    mix_int_13_fu_698_p2           |     |        | mix_int_13     | add       | fabric                   | 0       |
+|    mix_int_14_fu_704_p3           |     |        | mix_int_14     | select    | auto_sel                 | 0       |
+|    sparsemux_17_4_9_1_1_U2        |     |        | zext_ln65_cast | sparsemux | compactencoding_dontcare | 0       |
+|    mul_9ns_32s_40_1_1_U1          | 2   |        | mul_ln65       | mul       | auto                     | 0       |
+|    or_ln69_fu_623_p2              |     |        | or_ln69        | or        | auto                     | 0       |
+|    or_ln69_1_fu_629_p2            |     |        | or_ln69_1      | or        | auto                     | 0       |
+|    or_ln69_2_fu_635_p2            |     |        | or_ln69_2      | or        | auto                     | 0       |
+|    or_ln69_3_fu_641_p2            |     |        | or_ln69_3      | or        | auto                     | 0       |
+|    or_ln69_4_fu_647_p2            |     |        | or_ln69_4      | or        | auto                     | 0       |
+|    or_ln69_5_fu_653_p2            |     |        | or_ln69_5      | or        | auto                     | 0       |
+|    or_ln69_6_fu_659_p2            |     |        | or_ln69_6      | or        | auto                     | 0       |
++-----------------------------------+-----+--------+----------------+-----------+--------------------------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
++-------------------+-----------+-----------+------+------+--------+----------+------+---------+------------------+
+| Name              | Usage     | Type      | BRAM | URAM | Pragma | Variable | Impl | Latency | Bitwidth, Depth, |
+|                   |           |           |      |      |        |          |      |         | Banks            |
++-------------------+-----------+-----------+------+------+--------+----------+------+---------+------------------+
+| + mixer           |           |           | 0    | 0    |        |          |      |         |                  |
+|   control_s_axi_U | interface | s_axilite |      |      |        |          |      |         |                  |
++-------------------+-----------+-----------+------+------+--------+----------+------+---------+------------------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Inferred Pragmas
++----------+---------+----------------------------------------------------------------------+-------------------------------+
+| Type     | Options | Location                                                             | Inferred From                 |
++----------+---------+----------------------------------------------------------------------+-------------------------------+
+| PIPELINE |         | loop VITIS_LOOP_30_1 (hw_mixer.cpp:30:22) in mixer (hw_mixer.cpp:30) | syn.compile.pipeline_loops=64 |
++----------+---------+----------------------------------------------------------------------+-------------------------------+
+
+* Valid Pragma Syntax
++-----------------+----------------------------------+----------------------------+
+| Type            | Options                          | Location                   |
++-----------------+----------------------------------+----------------------------+
+| INTERFACE       | axis port=stream_in_0            | in mixer (hw_mixer.cpp:17) |
+| INTERFACE       | axis port=stream_in_1            | in mixer (hw_mixer.cpp:18) |
+| INTERFACE       | axis port=stream_in_2            | in mixer (hw_mixer.cpp:19) |
+| INTERFACE       | axis port=stream_in_3            | in mixer (hw_mixer.cpp:20) |
+| INTERFACE       | axis port=stream_in_4            | in mixer (hw_mixer.cpp:21) |
+| INTERFACE       | axis port=stream_in_5            | in mixer (hw_mixer.cpp:22) |
+| INTERFACE       | axis port=stream_in_6            | in mixer (hw_mixer.cpp:23) |
+| INTERFACE       | axis port=stream_in_7            | in mixer (hw_mixer.cpp:24) |
+| INTERFACE       | ap_none port=switches            | in mixer (hw_mixer.cpp:25) |
+| INTERFACE       | axis port=mix_out                | in mixer (hw_mixer.cpp:26) |
+| INTERFACE       | s_axilite port=return            | in mixer (hw_mixer.cpp:27) |
+| ARRAY_PARTITION | variable=recip_sqrt_lut complete | in mixer (hw_mixer.cpp:28) |
++-----------------+----------------------------------+----------------------------+
+
+

@@ -1,12 +1,29 @@
-# 2026-03-27T14:26:17.658104100
+# 2026-03-27T16:51:58.793845649
 import vitis
 
 client = vitis.create_client()
 client.set_workspace(path="FPGA_Audio_Mix")
 
-cfg = client.get_config_file(path="C:\Users\irisk\Documents\FPGA_Audio_Mix\FPGA_Mix_Hardware\hls_config.cfg")
+comp = client.get_component(name="FPGA_Mix_Hardware")
+comp.run(operation="SYNTHESIS")
 
-cfg.set_values(key="tb.file", values=["hw_mixer_tb.cpp", "mixer_tb.cpp"])
+comp.run(operation="C_SIMULATION")
 
-cfg.set_values(key="syn.file", values=["hw_mixer.cpp", "hw_mixer.h"])
+comp.run(operation="C_SIMULATION")
+
+comp.run(operation="C_SIMULATION")
+
+comp.run(operation="C_SIMULATION")
+
+comp.run(operation="C_SIMULATION")
+
+comp.run(operation="C_SIMULATION")
+
+comp.run(operation="C_SIMULATION")
+
+comp.run(operation="C_SIMULATION")
+
+comp.run(operation="C_SIMULATION")
+
+comp.run(operation="C_SIMULATION")
 

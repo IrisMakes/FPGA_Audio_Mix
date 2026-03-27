@@ -1,0 +1,157 @@
+<ENTRY>
+{
+ "thisFile": "/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/FPGA_Mix_Hardware.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Fri Mar 27 17:30:16 2026",
+ "timestampMillis": "1774647016208",
+ "buildStep": {
+  "cmdId": "103fff5b-9725-4a64-a142-c62dfec52435",
+  "name": "vitis-run",
+  "logFile": "/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/logs/FPGA_Mix_Hardware.steps.log",
+  "commandLine": "/home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/bin/unwrapped/lnx64.o/vitis-run  --mode hls --csim --config /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/hls_config.cfg --work_dir FPGA_Mix_Hardware ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/hls_config.cfg",
+   "--work_dir",
+   "FPGA_Mix_Hardware"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Mar 27 17:30:16 2026",
+ "timestampMillis": "1774647016208",
+ "status": {
+  "cmdId": "103fff5b-9725-4a64-a142-c62dfec52435",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Fri Mar 27 17:30:18 2026",
+ "timestampMillis": "1774647018964",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "mixer",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/hw_mixer.cpp",
+     "/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/hw_mixer.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Fri Mar 27 17:30:18 2026",
+ "timestampMillis": "1774647018965",
+ "buildStep": {
+  "cmdId": "d33887b0-ec54-4e5c-8211-d9b4d17c91e9",
+  "name": "",
+  "logFile": "/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Mar 27 17:30:18 2026",
+ "timestampMillis": "1774647018965",
+ "status": {
+  "cmdId": "d33887b0-ec54-4e5c-8211-d9b4d17c91e9",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Mar 27 17:30:20 2026",
+ "timestampMillis": "1774647020155",
+ "status": {
+  "cmdId": "d33887b0-ec54-4e5c-8211-d9b4d17c91e9",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Mar 27 17:30:20 2026",
+ "timestampMillis": "1774647020263",
+ "status": {
+  "cmdId": "103fff5b-9725-4a64-a142-c62dfec52435",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Mar 27 17:30:20 2026",
+ "timestampMillis": "1774647020263",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Mar 27 17:30:20 2026",
+ "timestampMillis": "1774647020264",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

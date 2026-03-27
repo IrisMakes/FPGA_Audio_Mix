@@ -1,0 +1,88 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_mixer_ir
+Args:            
+  - Callee:          'mixer(hls::stream<hls::axis<ap_uint<32>, 2ul, 5ul, 6ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<32>, 2ul, 5ul, 6ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<32>, 2ul, 5ul, 6ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<32>, 2ul, 5ul, 6ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<32>, 2ul, 5ul, 6ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<32>, 2ul, 5ul, 6ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<32>, 2ul, 5ul, 6ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<32>, 2ul, 5ul, 6ul, (unsigned char)56, false>, 0>&, ap_uint<8>, hls::stream<hls::axis<ap_uint<32>, 2ul, 5ul, 6ul, (unsigned char)56, false>, 0>&)'
+    DebugLoc:        { File: hw_mixer.cpp, Line: 16, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_mixer_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ./hw_mixer.h, Line: 9, Column: 0 }
+Function:        _Z5mixerRN3hls6streamINS_4axisI7ap_uintILi32EELm2ELm5ELm6ELh56ELb0EEELi0EEES6_S6_S6_S6_S6_S6_S6_S2_ILi8EES6_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZL14recip_sqrt_lut
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: hw_mixer.cpp, Line: 30, Column: 22 }
+Function:        _Z5mixerRN3hls6streamINS_4axisI7ap_uintILi32EELm2ELm5ELm6ELh56ELb0EEELi0EEES6_S6_S6_S6_S6_S6_S6_S2_ILi8EES6_
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        VITIS_LOOP_30_1
+  - String:          ' '
+  - LoopLoc:         'hw_mixer.cpp:30:22'
+  - String:          ' '
+  - Function:        'mixer(hls::stream<hls::axis<ap_uint<32>, 2ul, 5ul, 6ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<32>, 2ul, 5ul, 6ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<32>, 2ul, 5ul, 6ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<32>, 2ul, 5ul, 6ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<32>, 2ul, 5ul, 6ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<32>, 2ul, 5ul, 6ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<32>, 2ul, 5ul, 6ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<32>, 2ul, 5ul, 6ul, (unsigned char)56, false>, 0>&, ap_uint<8>, hls::stream<hls::axis<ap_uint<32>, 2ul, 5ul, 6ul, (unsigned char)56, false>, 0>&)'
+    DebugLoc:        { File: hw_mixer.cpp, Line: 16, Column: 0 }
+  - String:          ' '
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: hw_mixer.cpp, Line: 30, Column: 22 }
+Function:        _Z5mixerRN3hls6streamINS_4axisI7ap_uintILi32EELm2ELm5ELm6ELh56ELb0EEELi0EEES6_S6_S6_S6_S6_S6_S6_S2_ILi8EES6_
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        VITIS_LOOP_30_1
+  - String:          '''('
+  - LoopLoc:         'hw_mixer.cpp:30:22'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !HLSReportInfo
+Pass:            reflow-auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'Pipelining loop< '
+  - LoopName:        VITIS_LOOP_30_1
+  - String:          '> at '
+  - LoopLoc:         'hw_mixer.cpp:30:22'
+  - String:          ' due to pipeline_loops threshold'
+...
+--- !Passed
+Pass:            reflow-auto-loop-pipeline
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: hw_mixer.cpp, Line: 30, Column: 22 }
+Function:        _Z5mixerRN3hls6streamINS_4axisI7ap_uintILi32EELm2ELm5ELm6ELh56ELb0EEELi0EEES6_S6_S6_S6_S6_S6_S6_S2_ILi8EES6_
+Args:            
+  - PragmaType:      pipeline
+  - String:          ' '
+  - PragmaOptions:   ' '
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  mixer
+  - String:          ' '
+  - PragmaInferReason: config_compile -pipeline_loops 64
+  - LoopName:        VITIS_LOOP_30_1
+  - String:          ' '
+  - LoopLoc:         'hw_mixer.cpp:30:22'
+    DebugLoc:        { File: hw_mixer.cpp, Line: 30, Column: 22 }
+  - String:          ' '
+...

@@ -1,0 +1,20 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "FPGA_Mix_Hardware",
+      "type": "gdb",
+      "request": "launch",
+      "target": "${workspaceFolder}/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/csim/build/csim.exe",
+      "cwd": "${workspaceFolder}/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/csim/build",
+      "gdbpath": "/home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/lnx64/tools/gdb/gdb-15.2/bin/gdb",
+      "debugger_args": [
+        "--init-command=/home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/lnx64/tools/gdb/gdb-15.2/bin/gdbinit"
+      ],
+      "valuesFormatting": "prettyPrinters",
+      "env": {
+        "LD_LIBRARY_PATH": "/home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/lnx64/tools/fpo_v7_1:/home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/lnx64/tools/fft_v9_1:/home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/lnx64/tools/fir_v7_0:/home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/lnx64/tools/dds_v6_0:/home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib:/home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/lib/lnx64.o/Default:${env:LD_LIBRARY_PATH}"
+      }
+    }
+  ]
+}

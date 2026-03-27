@@ -1,0 +1,279 @@
+
+
+================================================================
+== Vitis HLS Report for 'mixer'
+================================================================
+* Date:           Fri Mar 27 16:53:05 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 14 2025)
+* Project:        FPGA_Mix_Hardware
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu3eg-sfvc784-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.388 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        +-------------------------------------------+--------------------------------+---------+---------+----------+----------+-----+-----+-------------------+
+        |                                           |                                |  Latency (cycles) |  Latency (absolute) |  Interval |      Pipeline     |
+        |                  Instance                 |             Module             |   min   |   max   |    min   |    max   | min | max |        Type       |
+        +-------------------------------------------+--------------------------------+---------+---------+----------+----------+-----+-----+-------------------+
+        |grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255  |mixer_Pipeline_VITIS_LOOP_30_1  |        ?|        ?|         ?|         ?|    0|    0|  loop pipeline stp|
+        +-------------------------------------------+--------------------------------+---------+---------+----------+----------+-----+-----+-------------------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|     88|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        0|    2|     302|    794|    0|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       0|    224|    -|
+|Register         |        -|    -|      72|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    2|     374|   1106|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      432|  360|  141120|  70560|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|   ~0|      ~0|      1|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +-------------------------------------------+--------------------------------+---------+----+-----+-----+-----+
+    |                  Instance                 |             Module             | BRAM_18K| DSP|  FF | LUT | URAM|
+    +-------------------------------------------+--------------------------------+---------+----+-----+-----+-----+
+    |control_s_axi_U                            |control_s_axi                   |        0|   0|   36|   40|    0|
+    |grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255  |mixer_Pipeline_VITIS_LOOP_30_1  |        0|   2|  266|  754|    0|
+    +-------------------------------------------+--------------------------------+---------+----+-----+-----+-----+
+    |Total                                      |                                |        0|   2|  302|  794|    0|
+    +-------------------------------------------+--------------------------------+---------+----+-----+-----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------------------------------------------+----------+----+---+----+------------+------------+
+    |                       Variable Name                      | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------------------------------------+----------+----+---+----+------------+------------+
+    |add_ln56_fu_475_p2                                        |         +|   0|  0|   9|           2|           1|
+    |add_ln57_fu_493_p2                                        |         +|   0|  0|  10|           3|           1|
+    |add_ln58_fu_507_p2                                        |         +|   0|  0|  10|           3|           1|
+    |add_ln59_fu_521_p2                                        |         +|   0|  0|  10|           3|           1|
+    |add_ln60_fu_535_p2                                        |         +|   0|  0|  10|           3|           1|
+    |add_ln61_fu_553_p2                                        |         +|   0|  0|  12|           4|           1|
+    |grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_mix_out_TREADY  |       and|   0|  0|   2|           1|           1|
+    |ap_block_state5                                           |        or|   0|  0|   2|           1|           1|
+    |select_ln55_1_fu_467_p3                                   |    select|   0|  0|   2|           1|           2|
+    |select_ln55_fu_459_p3                                     |    select|   0|  0|   3|           1|           3|
+    |select_ln56_fu_481_p3                                     |    select|   0|  0|   2|           1|           2|
+    |select_ln57_fu_499_p3                                     |    select|   0|  0|   3|           1|           3|
+    |select_ln58_fu_513_p3                                     |    select|   0|  0|   3|           1|           3|
+    |select_ln59_fu_527_p3                                     |    select|   0|  0|   3|           1|           3|
+    |select_ln60_fu_541_p3                                     |    select|   0|  0|   3|           1|           3|
+    |select_ln61_fu_559_p3                                     |    select|   0|  0|   4|           1|           4|
+    +----------------------------------------------------------+----------+----+---+----+------------+------------+
+    |Total                                                     |          |   0|  0|  88|          28|          31|
+    +----------------------------------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +---------------------------------+----+-----------+-----+-----------+
+    |               Name              | LUT| Input Size| Bits| Total Bits|
+    +---------------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                        |  31|          6|    1|          6|
+    |mix_out_TDATA_blk_n              |   9|          2|    1|          2|
+    |mix_out_TDATA_int_regslice       |  14|          3|   32|         96|
+    |mix_out_TDEST_int_regslice       |  14|          3|    6|         18|
+    |mix_out_TID_int_regslice         |  14|          3|    5|         15|
+    |mix_out_TKEEP_int_regslice       |  14|          3|    4|         12|
+    |mix_out_TLAST_int_regslice       |  14|          3|    1|          3|
+    |mix_out_TSTRB_int_regslice       |  14|          3|    4|         12|
+    |mix_out_TUSER_int_regslice       |  14|          3|    2|          6|
+    |mix_out_TVALID_int_regslice      |  14|          3|    1|          3|
+    |stream_in_0_TREADY_int_regslice  |   9|          2|    1|          2|
+    |stream_in_1_TREADY_int_regslice  |   9|          2|    1|          2|
+    |stream_in_2_TREADY_int_regslice  |   9|          2|    1|          2|
+    |stream_in_3_TREADY_int_regslice  |   9|          2|    1|          2|
+    |stream_in_4_TREADY_int_regslice  |   9|          2|    1|          2|
+    |stream_in_5_TREADY_int_regslice  |   9|          2|    1|          2|
+    |stream_in_6_TREADY_int_regslice  |   9|          2|    1|          2|
+    |stream_in_7_TREADY_int_regslice  |   9|          2|    1|          2|
+    +---------------------------------+----+-----------+-----+-----------+
+    |Total                            | 224|         48|   65|        189|
+    +---------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +--------------------------------------------------------+----+----+-----+-----------+
+    |                          Name                          | FF | LUT| Bits| Const Bits|
+    +--------------------------------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                                               |   5|   0|    5|          0|
+    |grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_ap_start_reg  |   1|   0|    1|          0|
+    |mix_out_TDATA_reg                                       |  32|   0|   32|          0|
+    |mix_out_TDEST_reg                                       |   6|   0|    6|          0|
+    |mix_out_TID_reg                                         |   5|   0|    5|          0|
+    |mix_out_TKEEP_reg                                       |   4|   0|    4|          0|
+    |mix_out_TLAST_reg                                       |   1|   0|    1|          0|
+    |mix_out_TSTRB_reg                                       |   4|   0|    4|          0|
+    |mix_out_TUSER_reg                                       |   2|   0|    2|          0|
+    |select_ln61_reg_617                                     |   4|   0|    4|          0|
+    |tmp_10_reg_597                                          |   1|   0|    1|          0|
+    |tmp_11_reg_602                                          |   1|   0|    1|          0|
+    |tmp_12_reg_607                                          |   1|   0|    1|          0|
+    |tmp_13_reg_612                                          |   1|   0|    1|          0|
+    |tmp_8_reg_587                                           |   1|   0|    1|          0|
+    |tmp_9_reg_592                                           |   1|   0|    1|          0|
+    |tmp_reg_582                                             |   1|   0|    1|          0|
+    |trunc_ln54_reg_577                                      |   1|   0|    1|          0|
+    +--------------------------------------------------------+----+----+-----+-----------+
+    |Total                                                   |  72|   0|   72|          0|
+    +--------------------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------------+-----+-----+------------+----------------------+--------------+
+|       RTL Ports       | Dir | Bits|  Protocol  |     Source Object    |    C Type    |
++-----------------------+-----+-----+------------+----------------------+--------------+
+|s_axi_control_AWVALID  |   in|    1|       s_axi|               control|   return void|
+|s_axi_control_AWREADY  |  out|    1|       s_axi|               control|   return void|
+|s_axi_control_AWADDR   |   in|    4|       s_axi|               control|   return void|
+|s_axi_control_WVALID   |   in|    1|       s_axi|               control|   return void|
+|s_axi_control_WREADY   |  out|    1|       s_axi|               control|   return void|
+|s_axi_control_WDATA    |   in|   32|       s_axi|               control|   return void|
+|s_axi_control_WSTRB    |   in|    4|       s_axi|               control|   return void|
+|s_axi_control_ARVALID  |   in|    1|       s_axi|               control|   return void|
+|s_axi_control_ARREADY  |  out|    1|       s_axi|               control|   return void|
+|s_axi_control_ARADDR   |   in|    4|       s_axi|               control|   return void|
+|s_axi_control_RVALID   |  out|    1|       s_axi|               control|   return void|
+|s_axi_control_RREADY   |   in|    1|       s_axi|               control|   return void|
+|s_axi_control_RDATA    |  out|   32|       s_axi|               control|   return void|
+|s_axi_control_RRESP    |  out|    2|       s_axi|               control|   return void|
+|s_axi_control_BVALID   |  out|    1|       s_axi|               control|   return void|
+|s_axi_control_BREADY   |   in|    1|       s_axi|               control|   return void|
+|s_axi_control_BRESP    |  out|    2|       s_axi|               control|   return void|
+|ap_clk                 |   in|    1|  ap_ctrl_hs|                 mixer|  return value|
+|ap_rst_n               |   in|    1|  ap_ctrl_hs|                 mixer|  return value|
+|interrupt              |  out|    1|  ap_ctrl_hs|                 mixer|  return value|
+|stream_in_0_TDATA      |   in|   32|        axis|  stream_in_0_V_data_V|       pointer|
+|stream_in_0_TVALID     |   in|    1|        axis|  stream_in_0_V_dest_V|       pointer|
+|stream_in_0_TREADY     |  out|    1|        axis|  stream_in_0_V_dest_V|       pointer|
+|stream_in_0_TDEST      |   in|    6|        axis|  stream_in_0_V_dest_V|       pointer|
+|stream_in_0_TKEEP      |   in|    4|        axis|  stream_in_0_V_keep_V|       pointer|
+|stream_in_0_TSTRB      |   in|    4|        axis|  stream_in_0_V_strb_V|       pointer|
+|stream_in_0_TUSER      |   in|    2|        axis|  stream_in_0_V_user_V|       pointer|
+|stream_in_0_TLAST      |   in|    1|        axis|  stream_in_0_V_last_V|       pointer|
+|stream_in_0_TID        |   in|    5|        axis|    stream_in_0_V_id_V|       pointer|
+|stream_in_1_TDATA      |   in|   32|        axis|  stream_in_1_V_data_V|       pointer|
+|stream_in_1_TVALID     |   in|    1|        axis|  stream_in_1_V_dest_V|       pointer|
+|stream_in_1_TREADY     |  out|    1|        axis|  stream_in_1_V_dest_V|       pointer|
+|stream_in_1_TDEST      |   in|    6|        axis|  stream_in_1_V_dest_V|       pointer|
+|stream_in_1_TKEEP      |   in|    4|        axis|  stream_in_1_V_keep_V|       pointer|
+|stream_in_1_TSTRB      |   in|    4|        axis|  stream_in_1_V_strb_V|       pointer|
+|stream_in_1_TUSER      |   in|    2|        axis|  stream_in_1_V_user_V|       pointer|
+|stream_in_1_TLAST      |   in|    1|        axis|  stream_in_1_V_last_V|       pointer|
+|stream_in_1_TID        |   in|    5|        axis|    stream_in_1_V_id_V|       pointer|
+|stream_in_2_TDATA      |   in|   32|        axis|  stream_in_2_V_data_V|       pointer|
+|stream_in_2_TVALID     |   in|    1|        axis|  stream_in_2_V_dest_V|       pointer|
+|stream_in_2_TREADY     |  out|    1|        axis|  stream_in_2_V_dest_V|       pointer|
+|stream_in_2_TDEST      |   in|    6|        axis|  stream_in_2_V_dest_V|       pointer|
+|stream_in_2_TKEEP      |   in|    4|        axis|  stream_in_2_V_keep_V|       pointer|
+|stream_in_2_TSTRB      |   in|    4|        axis|  stream_in_2_V_strb_V|       pointer|
+|stream_in_2_TUSER      |   in|    2|        axis|  stream_in_2_V_user_V|       pointer|
+|stream_in_2_TLAST      |   in|    1|        axis|  stream_in_2_V_last_V|       pointer|
+|stream_in_2_TID        |   in|    5|        axis|    stream_in_2_V_id_V|       pointer|
+|stream_in_3_TDATA      |   in|   32|        axis|  stream_in_3_V_data_V|       pointer|
+|stream_in_3_TVALID     |   in|    1|        axis|  stream_in_3_V_dest_V|       pointer|
+|stream_in_3_TREADY     |  out|    1|        axis|  stream_in_3_V_dest_V|       pointer|
+|stream_in_3_TDEST      |   in|    6|        axis|  stream_in_3_V_dest_V|       pointer|
+|stream_in_3_TKEEP      |   in|    4|        axis|  stream_in_3_V_keep_V|       pointer|
+|stream_in_3_TSTRB      |   in|    4|        axis|  stream_in_3_V_strb_V|       pointer|
+|stream_in_3_TUSER      |   in|    2|        axis|  stream_in_3_V_user_V|       pointer|
+|stream_in_3_TLAST      |   in|    1|        axis|  stream_in_3_V_last_V|       pointer|
+|stream_in_3_TID        |   in|    5|        axis|    stream_in_3_V_id_V|       pointer|
+|stream_in_4_TDATA      |   in|   32|        axis|  stream_in_4_V_data_V|       pointer|
+|stream_in_4_TVALID     |   in|    1|        axis|  stream_in_4_V_dest_V|       pointer|
+|stream_in_4_TREADY     |  out|    1|        axis|  stream_in_4_V_dest_V|       pointer|
+|stream_in_4_TDEST      |   in|    6|        axis|  stream_in_4_V_dest_V|       pointer|
+|stream_in_4_TKEEP      |   in|    4|        axis|  stream_in_4_V_keep_V|       pointer|
+|stream_in_4_TSTRB      |   in|    4|        axis|  stream_in_4_V_strb_V|       pointer|
+|stream_in_4_TUSER      |   in|    2|        axis|  stream_in_4_V_user_V|       pointer|
+|stream_in_4_TLAST      |   in|    1|        axis|  stream_in_4_V_last_V|       pointer|
+|stream_in_4_TID        |   in|    5|        axis|    stream_in_4_V_id_V|       pointer|
+|stream_in_5_TDATA      |   in|   32|        axis|  stream_in_5_V_data_V|       pointer|
+|stream_in_5_TVALID     |   in|    1|        axis|  stream_in_5_V_dest_V|       pointer|
+|stream_in_5_TREADY     |  out|    1|        axis|  stream_in_5_V_dest_V|       pointer|
+|stream_in_5_TDEST      |   in|    6|        axis|  stream_in_5_V_dest_V|       pointer|
+|stream_in_5_TKEEP      |   in|    4|        axis|  stream_in_5_V_keep_V|       pointer|
+|stream_in_5_TSTRB      |   in|    4|        axis|  stream_in_5_V_strb_V|       pointer|
+|stream_in_5_TUSER      |   in|    2|        axis|  stream_in_5_V_user_V|       pointer|
+|stream_in_5_TLAST      |   in|    1|        axis|  stream_in_5_V_last_V|       pointer|
+|stream_in_5_TID        |   in|    5|        axis|    stream_in_5_V_id_V|       pointer|
+|stream_in_6_TDATA      |   in|   32|        axis|  stream_in_6_V_data_V|       pointer|
+|stream_in_6_TVALID     |   in|    1|        axis|  stream_in_6_V_dest_V|       pointer|
+|stream_in_6_TREADY     |  out|    1|        axis|  stream_in_6_V_dest_V|       pointer|
+|stream_in_6_TDEST      |   in|    6|        axis|  stream_in_6_V_dest_V|       pointer|
+|stream_in_6_TKEEP      |   in|    4|        axis|  stream_in_6_V_keep_V|       pointer|
+|stream_in_6_TSTRB      |   in|    4|        axis|  stream_in_6_V_strb_V|       pointer|
+|stream_in_6_TUSER      |   in|    2|        axis|  stream_in_6_V_user_V|       pointer|
+|stream_in_6_TLAST      |   in|    1|        axis|  stream_in_6_V_last_V|       pointer|
+|stream_in_6_TID        |   in|    5|        axis|    stream_in_6_V_id_V|       pointer|
+|stream_in_7_TDATA      |   in|   32|        axis|  stream_in_7_V_data_V|       pointer|
+|stream_in_7_TVALID     |   in|    1|        axis|  stream_in_7_V_dest_V|       pointer|
+|stream_in_7_TREADY     |  out|    1|        axis|  stream_in_7_V_dest_V|       pointer|
+|stream_in_7_TDEST      |   in|    6|        axis|  stream_in_7_V_dest_V|       pointer|
+|stream_in_7_TKEEP      |   in|    4|        axis|  stream_in_7_V_keep_V|       pointer|
+|stream_in_7_TSTRB      |   in|    4|        axis|  stream_in_7_V_strb_V|       pointer|
+|stream_in_7_TUSER      |   in|    2|        axis|  stream_in_7_V_user_V|       pointer|
+|stream_in_7_TLAST      |   in|    1|        axis|  stream_in_7_V_last_V|       pointer|
+|stream_in_7_TID        |   in|    5|        axis|    stream_in_7_V_id_V|       pointer|
+|switches               |   in|    8|     ap_none|              switches|        scalar|
+|mix_out_TDATA          |  out|   32|        axis|      mix_out_V_data_V|       pointer|
+|mix_out_TVALID         |  out|    1|        axis|      mix_out_V_dest_V|       pointer|
+|mix_out_TREADY         |   in|    1|        axis|      mix_out_V_dest_V|       pointer|
+|mix_out_TDEST          |  out|    6|        axis|      mix_out_V_dest_V|       pointer|
+|mix_out_TKEEP          |  out|    4|        axis|      mix_out_V_keep_V|       pointer|
+|mix_out_TSTRB          |  out|    4|        axis|      mix_out_V_strb_V|       pointer|
+|mix_out_TUSER          |  out|    2|        axis|      mix_out_V_user_V|       pointer|
+|mix_out_TLAST          |  out|    1|        axis|      mix_out_V_last_V|       pointer|
+|mix_out_TID            |  out|    5|        axis|        mix_out_V_id_V|       pointer|
++-----------------------+-----+-----+------------+----------------------+--------------+
+

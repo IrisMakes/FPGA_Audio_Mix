@@ -40,3 +40,23 @@
 14:26:17 INFO  : created .gitignore file for the project C:\Users\irisk\Documents\FPGA_Audio_Mix
 14:26:17 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\irisk\AppData\Local\Temp\rigel_lopper_irisk13130282895179568213 -r C:\Users\irisk\Documents\FPGA_Audio_Mix\_ide\.wsdata\.repo.yaml
 14:26:18 INFO  : Embedded Template List generated successfully
+16:51:58 INFO  : updated workspace path: /home/MakerIris/Documents/FPGA_Audio_Mix
+16:51:58 INFO  : created .gitignore file for the project /home/MakerIris/Documents/FPGA_Audio_Mix
+16:51:58 INFO  : Marking the target connection as default Local
+16:51:58 INFO  : Marking the target connection as default Linux Agent
+16:51:58 INFO  : Marking the target connection as default XRTServer
+16:51:58 INFO  : Marking the target connection as default LinuxEmulation
+16:51:58 INFO  : Marking the target connection as default QEMU
+16:51:59 INFO  : [INFO]: Initializing repositories
+16:51:59 INFO  : [INFO]: Successfully set the EmbeddedSW path, refer .repo.yaml for more details.
+16:51:59 INFO  : Successfully created repository data at /tmp/rigel_lopper_MakerIris3649980582582416803
+16:51:59 INFO  : bash, -c, empyro get_template_data -d /tmp/rigel_lopper_MakerIris6956914400152600251 -r /tmp/rigel_lopper_MakerIris3649980582582416803/.repo.yaml
+16:51:59 INFO  : Embedded Template List generated successfully
+16:51:59 INFO  : bash, -c, empyro repo -st   /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/data/embeddedsw
+16:52:01 INFO  : [INFO]: Initializing repositories
+16:52:01 INFO  : [INFO]: Successfully set the EmbeddedSW path, refer .repo.yaml for more details.
+16:52:01 INFO  : Successfully created repository data at /home/MakerIris/Documents/FPGA_Audio_Mix/_ide/.wsdata
+16:52:01 INFO  : bash, -c, empyro get_template_data -d /tmp/rigel_lopper_MakerIris3317190895433306186 -r /home/MakerIris/Documents/FPGA_Audio_Mix/_ide/.wsdata/.repo.yaml
+16:52:02 INFO  : Embedded Template List generated successfully
+16:59:37 ERROR : Invalid project location 'null'.
+17:02:52 ERROR : Invalid project location 'null'.

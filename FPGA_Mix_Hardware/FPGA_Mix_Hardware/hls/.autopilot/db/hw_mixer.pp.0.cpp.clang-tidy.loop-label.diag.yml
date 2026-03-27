@@ -1,0 +1,64 @@
+---
+MainSourceFile:  '/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/hw_mixer.pp.0.cpp'
+Diagnostics:
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_676_1:  '
+      FilePath:        '/home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/autopilot/etc/ap_int_ref.h'
+      FileOffset:      676
+      Replacements:
+        - FilePath:        '/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/hw_mixer.pp.0.cpp'
+          Offset:          283462
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_676_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_690_1:  '
+      FilePath:        '/home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/autopilot/etc/ap_int_ref.h'
+      FileOffset:      690
+      Replacements:
+        - FilePath:        '/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/hw_mixer.pp.0.cpp'
+          Offset:          283933
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_690_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_704_1:  '
+      FilePath:        '/home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/autopilot/etc/ap_int_ref.h'
+      FileOffset:      704
+      Replacements:
+        - FilePath:        '/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/hw_mixer.pp.0.cpp'
+          Offset:          284405
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_704_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_1251_1:  '
+      FilePath:        '/home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/autopilot/etc/ap_fixed_base.h'
+      FileOffset:      1251
+      Replacements:
+        - FilePath:        '/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/hw_mixer.pp.0.cpp'
+          Offset:          634276
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_1251_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_30_1:  '
+      FilePath:        hw_mixer.cpp
+      FileOffset:      30
+      Replacements:
+        - FilePath:        '/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/hw_mixer.pp.0.cpp'
+          Offset:          2460939
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_30_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware'
+...

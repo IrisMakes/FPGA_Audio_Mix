@@ -1,6 +1,6 @@
 <ENTRY>
 {
- "thisFile": "C:/Users\\irisk\\Documents\\FPGA_Audio_Mix\\FPGA_Mix_Hardware\\FPGA_Mix_Hardware\\FPGA_Mix_Hardware.hlscompile_summary",
+ "thisFile": "/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/FPGA_Mix_Hardware.hlscompile_summary",
  "connectId": "",
  "serverToken": "",
  "timestamp": "0"
@@ -9,61 +9,220 @@
 <ENTRY>
 {
  "type": "ET_CmdStep",
- "dateTimestamp": "03/27/26 14:22:27",
- "timestampMillis": "1774635747175",
+ "dateTimestamp": "Fri Mar 27 16:52:38 2026",
+ "timestampMillis": "1774644758968",
  "buildStep": {
-  "cmdId": "1ddd1481-c7be-4150-9fc0-fe18433a2710",
+  "cmdId": "ef56b795-9572-4cef-a04e-417f4ae79b6d",
   "name": "v++",
-  "logFile": "C:/Users\\irisk\\Documents\\FPGA_Audio_Mix\\FPGA_Mix_Hardware\\FPGA_Mix_Hardware\\logs\\FPGA_Mix_Hardware.steps.log",
-  "commandLine": "C:/AMDDesignTools/2025.2/Vitis/bin/unwrapped/win64.o/v++.exe  -c --mode hls --config C:\\Users\\irisk\\Documents\\FPGA_Audio_Mix\\FPGA_Mix_Hardware\\hls_config.cfg --work_dir FPGA_Mix_Hardware ",
+  "logFile": "/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/logs/FPGA_Mix_Hardware.steps.log",
+  "commandLine": "/home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/bin/unwrapped/lnx64.o/v++  -c --mode hls --config /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/hls_config.cfg --work_dir FPGA_Mix_Hardware ",
   "args": [
    "-c",
    "--mode",
    "hls",
    "--config",
-   "C:\\Users\\irisk\\Documents\\FPGA_Audio_Mix\\FPGA_Mix_Hardware\\hls_config.cfg",
+   "/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/hls_config.cfg",
    "--work_dir",
    "FPGA_Mix_Hardware"
   ],
   "iniFiles": [
    {
-    "path": "C:/Users\\irisk\\Documents\\FPGA_Audio_Mix\\FPGA_Mix_Hardware\\hls_config.cfg",
-    "content": "part=xczu3eg-sfvc784-2-e\n\n[hls]\nflow_target=vivado\npackage.output.format=ip_catalog\npackage.output.syn=false\nsyn.file=hw_mixer.cpp\nsyn.top=mixer\ntb.file=hw_mixer_tb.cpp"
+    "path": "/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/hls_config.cfg",
+    "content": "part=xczu3eg-sfvc784-2-e\n\n[hls]\nflow_target=vivado\npackage.output.format=ip_catalog\npackage.output.syn=false\nsyn.top=mixer\ntb.file=hw_mixer_tb.cpp\ntb.file=mixer_tb.cpp\nsyn.file=hw_mixer.cpp\nsyn.file=hw_mixer.h"
    }
   ],
-  "cwd": "C:\\Users\\irisk\\Documents\\FPGA_Audio_Mix\\FPGA_Mix_Hardware"
+  "cwd": "/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware"
  }
 }
 </ENTRY>
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "03/27/26 14:22:27",
- "timestampMillis": "1774635747175",
+ "dateTimestamp": "Fri Mar 27 16:52:38 2026",
+ "timestampMillis": "1774644758968",
  "status": {
-  "cmdId": "1ddd1481-c7be-4150-9fc0-fe18433a2710",
+  "cmdId": "ef56b795-9572-4cef-a04e-417f4ae79b6d",
   "state": "CS_RUNNING"
  }
 }
 </ENTRY>
 <ENTRY>
 {
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Fri Mar 27 16:52:45 2026",
+ "timestampMillis": "1774644765799",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "mixer",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/hw_mixer.cpp",
+     "/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/hw_mixer.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Fri Mar 27 16:52:45 2026",
+ "timestampMillis": "1774644765800",
+ "buildStep": {
+  "cmdId": "d3cc6a12-3123-44f2-b112-0b1115ce9e1e",
+  "name": "",
+  "logFile": "/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
  "type": "ET_Status",
- "dateTimestamp": "03/27/26 14:22:30",
- "timestampMillis": "1774635750272",
+ "dateTimestamp": "Fri Mar 27 16:52:45 2026",
+ "timestampMillis": "1774644765800",
  "status": {
-  "cmdId": "1ddd1481-c7be-4150-9fc0-fe18433a2710",
-  "state": "CS_FAILED"
+  "cmdId": "d3cc6a12-3123-44f2-b112-0b1115ce9e1e",
+  "state": "CS_RUNNING"
  }
 }
 </ENTRY>
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "03/27/26 14:22:30",
- "timestampMillis": "1774635750295",
+ "dateTimestamp": "Fri Mar 27 16:52:45 2026",
+ "timestampMillis": "1774644765800",
  "report": {
-  "path": "C:/Users\\irisk\\Documents\\FPGA_Audio_Mix\\FPGA_Mix_Hardware\\FPGA_Mix_Hardware\\reports\\v++_compile_FPGA_Mix_Hardware_guidance.html",
+  "path": "/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/hls_data.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Mar 27 16:52:45 2026",
+ "timestampMillis": "1774644765801",
+ "report": {
+  "path": "/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/syn/report/csynth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Mar 27 16:52:45 2026",
+ "timestampMillis": "1774644765801",
+ "report": {
+  "path": "/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/syn/report/csynth.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Mar 27 16:53:06 2026",
+ "timestampMillis": "1774644786202",
+ "report": {
+  "path": "/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Mar 27 16:53:06 2026",
+ "timestampMillis": "1774644786203",
+ "report": {
+  "path": "/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Mar 27 16:53:06 2026",
+ "timestampMillis": "1774644786204",
+ "report": {
+  "path": "/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_SCHEDULE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Mar 27 16:53:06 2026",
+ "timestampMillis": "1774644786204",
+ "status": {
+  "cmdId": "d3cc6a12-3123-44f2-b112-0b1115ce9e1e",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Mar 27 16:53:06 2026",
+ "timestampMillis": "1774644786452",
+ "status": {
+  "cmdId": "ef56b795-9572-4cef-a04e-417f4ae79b6d",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Mar 27 16:53:06 2026",
+ "timestampMillis": "1774644786480",
+ "report": {
+  "path": "/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/reports/v++_compile_FPGA_Mix_Hardware_guidance.html",
   "name": "",
   "fileType": "HTML",
   "reportType": "GLOBAL_RULECHECK_GUIDANCE",
@@ -74,10 +233,10 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "03/27/26 14:22:30",
- "timestampMillis": "1774635750295",
+ "dateTimestamp": "Fri Mar 27 16:53:06 2026",
+ "timestampMillis": "1774644786480",
  "report": {
-  "path": "C:/Users\\irisk\\Documents\\FPGA_Audio_Mix\\FPGA_Mix_Hardware\\FPGA_Mix_Hardware\\reports\\.db\\v++_compile_FPGA_Mix_Hardware_guidance.pb3",
+  "path": "/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/reports/.db/v++_compile_FPGA_Mix_Hardware_guidance.pb3",
   "name": "",
   "fileType": "BINARY_PROTOBUF",
   "reportType": "GLOBAL_RULECHECK_GUIDANCE",

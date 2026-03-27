@@ -1,0 +1,7 @@
+INFO: [SIM 2] *************** CSIM start ***************
+   Compiling ../../../../mixer_tb.cpp in debug mode
+   Generating csim.exe
+TEST PASSED
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 2000
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************
