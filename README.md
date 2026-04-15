@@ -9,3 +9,10 @@
 https://github.com/user-attachments/assets/7eb9918b-79d1-4845-af80-5e04f790ed08
 
 Stems obtained from Jamie Paige under Creative Commons BY-NC-SA license: https://jamies.page/stems 
+
+Plan for rest of semester: Our main goal for the semester is to get a successfully mixed audio output. Beyond that we want to impement some of the algorithms listed in our original proposal to increase the quality of our mix such as: 
+  - 𝐼𝑓 𝑀𝑖𝑥 > 𝑇, 𝐿𝑖𝑚𝑖𝑡𝑒𝑑 = 𝑇, 𝐸𝑙𝑠𝑒 𝐿𝑖𝑚𝑖𝑡𝑒𝑑 = 𝑀𝑖𝑥 -> to ensure the volume remains similar regardless of number of tracks in a mix
+  - 𝑂𝑢𝑡𝑝𝑢𝑡 = ((𝐿𝑖𝑚𝑖𝑡𝑒𝑑 − 𝑇ℎ𝑟𝑒𝑠ℎ𝑜𝑙𝑑) / 𝑅𝑎𝑡𝑖𝑜) + 𝑇ℎ𝑟𝑒𝑠ℎ𝑜𝑙𝑑 -> compresser to attenuate the final mix signal if it exceeds a given threshold
+  - 𝑁𝑜𝑟𝑚𝑎𝑙𝑖𝑧𝑒𝑑 𝑏𝑢𝑓𝑓𝑒𝑟 = 𝑏𝑢𝑓𝑓𝑒𝑟 * (1 / 𝑚𝑎𝑥(𝑏𝑢𝑓𝑓𝑒𝑟)) -> processing done in python before mix to ensure tracks have peaks of equal volume
+
+AI Disclosure: We made some minimal use of AI in this project, all AI use was for the purposes of debugging code.
