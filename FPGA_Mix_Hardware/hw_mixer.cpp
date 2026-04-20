@@ -49,8 +49,8 @@ void mixer(
         {
             mix_int = (mix_int * (int)recip_sqrt_lut[active]) >> 8;
         }
-        out_pkt.data(31, 16) = (ap_int<16>)mix_int;
-        out_pkt.data(15, 0) = 0;
+        out_pkt.data(15, 0) = (ap_int<16>)mix_int;
+        out_pkt.data(31, 16) = 0;
         out_pkt.last = sample.last;
         out_pkt.id = 0;
         mix_out.write(out_pkt);

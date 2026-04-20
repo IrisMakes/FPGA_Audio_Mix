@@ -14,7 +14,7 @@ static const short recip_sqrt_lut[9] = {
 void mixer(
     hls::stream<audio_stream>& stream_in,
     ap_uint<8> switches,
-    hls::stream<audio_stream>& mix_out
+    hls::stream<audio_out>& mix_out
 );
 
 #endif
