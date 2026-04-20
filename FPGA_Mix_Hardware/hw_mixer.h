@@ -2,11 +2,12 @@
 #define HW_MIXER_H
 
 #include "ap_axi_sdata.h"
+#include "hls_stream.h"
 
 typedef ap_axis<128, 0, 0, 0> audio_stream;
 typedef ap_axis<32, 0, 1, 0> audio_out;
 
-// 256/sqrt(0-8) this is used so we can later use multiplication intead of division and shift the bits by 8
+// 256/sqrt(0-8) this is used so we can later use multiplication instead of division and shift the bits by 8
 static const short recip_sqrt_lut[9] = {
     0, 256, 181, 148, 128, 114, 105, 97, 91
 };
