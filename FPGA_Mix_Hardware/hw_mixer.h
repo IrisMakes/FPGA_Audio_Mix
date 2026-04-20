@@ -3,8 +3,8 @@
 
 #include "ap_axi_sdata.h"
 
-typedef ap_axis<128, 1, 1, 1> audio_stream;
-typedef ap_axis<32, 1, 1, 1> audio_out;
+typedef ap_axis<128, 0, 0, 0> audio_stream;
+typedef ap_axis<32, 0, 1, 0> audio_out;
 
 // 256/sqrt(0-8) this is used so we can later use multiplication intead of division and shift the bits by 8
 static const short recip_sqrt_lut[9] = {
