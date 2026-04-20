@@ -20,6 +20,8 @@ void mixer(
 
     while(1)
     {
+        mix_int = 0;
+        active = 0;
         sample = stream_in.read();
         ap_int<16> s0 = sample.data(15,0);
         ap_int<16> s1 = sample.data(31,16);
