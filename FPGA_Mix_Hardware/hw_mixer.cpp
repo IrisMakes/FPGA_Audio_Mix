@@ -26,7 +26,7 @@ void mixer(
 
     while(1)
     {
-        #pragma HLS PIPELINE
+        //#pragma HLS PIPELINE
         mix_int = 0;
         active = 0;
         sample = stream_in.read();
@@ -54,6 +54,8 @@ void mixer(
             mix_int = (mix_int * (int)recip_sqrt_lut[active]) >> 8;
         }
 
+        
+
         // compressor: soft-knee gain LUT + attack/release smoothing
         int mag = (mix_int < 0) ? -mix_int : mix_int;
         int idx = mag >> COMP_MAG_SHIFT;
@@ -77,7 +79,6 @@ void mixer(
         out_pkt.data(15, 0)  = (ap_int<16>)mix_int;
         out_pkt.data(31, 16) = 0;
         out_pkt.last = sample.last;
-        out_pkt.id   = 0;
         mix_out.write(out_pkt);
 
         if(out_pkt.last)
