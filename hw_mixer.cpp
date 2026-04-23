@@ -1,10 +1,23 @@
 #include "ap_axi_sdata.h"
+#include "ap_fixed.h"
 #include "hls_stream.h"
 #include "hw_mixer.h"
-#include "comp_lut.h"
+#include "comp_lut.h"   // gain_t + comp_gain_lut now ap_fixed
 
-#define ATTACK_COEFF   74       // ~10ms  at 44.1kHz, Q15
-#define RELEASE_COEFF   5       // ~150ms at 44.1kHz, Q15
+// --- fixed-point types ---
+typedef ap_fixed<18, 2> coeff_t;   // same shape as gain_t
+typedef ap_int<32>      sample_t;  // wide signed accumulator for stem sums
+
+// attack/release time constants at 44.1kHz, written as decimals
+static const coeff_t ATTACK_COEFF  = 0.00226;   // ~10ms
+static const coeff_t RELEASE_COEFF = 0.000151;  // ~150ms
+
+// sqrt LUT: 1/sqrt(n) for n = 0..8, stored as gain_t
+static const gain_t recip_sqrt_lut_fx[9] = {
+    0.0,       1.0,       0.707107,  0.577350,
+    0.500000,  0.447214,  0.408248,  0.377964,
+    0.353553
+};
 
 void mixer(
     hls::stream<audio_stream>& stream_in,
@@ -15,18 +28,18 @@ void mixer(
     #pragma HLS INTERFACE ap_none port=switches
     #pragma HLS INTERFACE axis port=mix_out
     #pragma HLS INTERFACE s_axilite port=return
+    #pragma HLS ARRAY_PARTITION variable=recip_sqrt_lut_fx complete
 
-    static int current_gain_q16 = 65536;   // Q16, unity gain
-    static const int T_LIM = 32767;        // brick-wall limiter threshold (0dBFS)
+    static gain_t         current_gain = 1.0;
+    static const sample_t T_LIM        = 32767;
 
     audio_stream sample;
-    int mix_int = 0;
+    sample_t mix_int = 0;
     int active = 0;
 
     while(1)
     {
         #pragma HLS LOOP_TRIPCOUNT min=44100 max=26460000 avg=7938000
-
         mix_int = 0;
         active = 0;
         sample = stream_in.read();
@@ -48,31 +61,29 @@ void mixer(
         if (switches[6]) { mix_int += s6; active++; }
         if (switches[7]) { mix_int += s7; active++; }
 
-        // attenuate by 1/sqrt(active) to keep perceived loudness consistent
+        // attenuate by 1/sqrt(active)
         if (active > 0)
         {
-            mix_int = (mix_int * (int)recip_sqrt_lut[active]) >> 8;
+            mix_int = (sample_t)(mix_int * recip_sqrt_lut_fx[active]);
         }
 
         // compressor: soft-knee gain LUT + attack/release smoothing
-        int mag = (mix_int < 0) ? -mix_int : mix_int;
-        int idx = mag >> COMP_MAG_SHIFT;
+        sample_t mag = (mix_int < 0) ? (sample_t)-mix_int : mix_int;
+        int idx = (int)(mag >> COMP_MAG_SHIFT);
         if (idx >= COMP_LUT_SIZE) idx = COMP_LUT_SIZE - 1;
-        int target_q16 = (int)comp_gain_lut[idx] << 8;    // promote Q8 LUT to Q16
+        gain_t target = comp_gain_lut[idx];   // direct read, no conversion
 
-        // one-pole smoothing: fast toward lower gain (attack), slow toward higher (release)
-        int diff  = target_q16 - current_gain_q16;
-        int coeff = (diff < 0) ? ATTACK_COEFF : RELEASE_COEFF;
-        current_gain_q16 += (diff * coeff) >> 15;
+        // one-pole smoothing
+        gain_t  diff  = target - current_gain;
+        coeff_t coeff = (diff < 0) ? ATTACK_COEFF : RELEASE_COEFF;
+        current_gain += diff * coeff;
 
-        int gain_q8 = current_gain_q16 >> 8;              // back to Q8 for the apply
-        mix_int = (mix_int * gain_q8) >> 8;
+        mix_int = (sample_t)(mix_int * current_gain);
 
         // brick-wall limiter at 0dBFS
         if (mix_int >  T_LIM) mix_int =  T_LIM;
         if (mix_int < -T_LIM) mix_int = -T_LIM;
 
-        // build and send output packet
         audio_out out_pkt;
         out_pkt.data(15, 0)  = (ap_int<16>)mix_int;
         out_pkt.data(31, 16) = 0;
