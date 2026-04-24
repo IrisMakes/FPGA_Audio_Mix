@@ -2,7 +2,7 @@
   "workspaceRoot": "/home/MakerIris/Documents/FPGA_Audio_Mix",
   "mapping": {
     "FPGA_Mix_Hardware/mixer_tb.cpp": "FPGA_Mix_Hardware",
-    "hw_mixer_tb.cpp": "FPGA_Mix_Hardware",
+    "FPGA_Mix_Hardware/comp_lut.h": "FPGA_Mix_Hardware",
     "FPGA_Mix_Hardware/hw_mixer.h": "FPGA_Mix_Hardware",
     "FPGA_Mix_Hardware/hw_mixer.cpp": "FPGA_Mix_Hardware"
   }

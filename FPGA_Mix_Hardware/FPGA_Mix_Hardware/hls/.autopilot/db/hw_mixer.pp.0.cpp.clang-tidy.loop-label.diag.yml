@@ -51,14 +51,14 @@ Diagnostics:
     BuildDirectory:  '/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware'
   - DiagnosticName:  xilinx-label-all-loops
     DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_30_1:  '
+      Message:         'Added loop label VITIS_LOOP_27_1:  '
       FilePath:        hw_mixer.cpp
-      FileOffset:      30
+      FileOffset:      27
       Replacements:
         - FilePath:        '/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/hw_mixer.pp.0.cpp'
-          Offset:          2460939
+          Offset:          2462989
           Length:          0
-          ReplacementText: 'VITIS_LOOP_30_1: '
+          ReplacementText: 'VITIS_LOOP_27_1: '
     Level:           Remark
     BuildDirectory:  '/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware'
 ...

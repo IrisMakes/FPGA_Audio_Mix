@@ -9,10 +9,10 @@
 <ENTRY>
 {
  "type": "ET_CmdStep",
- "dateTimestamp": "Fri Mar 27 17:30:16 2026",
- "timestampMillis": "1774647016208",
+ "dateTimestamp": "Wed Apr 22 15:12:35 2026",
+ "timestampMillis": "1776885155214",
  "buildStep": {
-  "cmdId": "103fff5b-9725-4a64-a142-c62dfec52435",
+  "cmdId": "ca2ca52a-ab79-4ee8-a1b4-4f8f891140aa",
   "name": "vitis-run",
   "logFile": "/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/logs/FPGA_Mix_Hardware.steps.log",
   "commandLine": "/home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/bin/unwrapped/lnx64.o/vitis-run  --mode hls --csim --config /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/hls_config.cfg --work_dir FPGA_Mix_Hardware ",
@@ -33,10 +33,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Fri Mar 27 17:30:16 2026",
- "timestampMillis": "1774647016208",
+ "dateTimestamp": "Wed Apr 22 15:12:35 2026",
+ "timestampMillis": "1776885155214",
  "status": {
-  "cmdId": "103fff5b-9725-4a64-a142-c62dfec52435",
+  "cmdId": "ca2ca52a-ab79-4ee8-a1b4-4f8f891140aa",
   "state": "CS_RUNNING"
  }
 }
@@ -44,8 +44,8 @@
 <ENTRY>
 {
  "type": "ET_FlowMetaData",
- "dateTimestamp": "Fri Mar 27 17:30:18 2026",
- "timestampMillis": "1774647018964",
+ "dateTimestamp": "Wed Apr 22 15:12:38 2026",
+ "timestampMillis": "1776885158052",
  "buildSummary": {
   "hardwarePlatform": "",
   "hardwareDsa": "",
@@ -65,7 +65,8 @@
     },
     "sources": [
      "/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/hw_mixer.cpp",
-     "/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/hw_mixer.h"
+     "/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/hw_mixer.h",
+     "/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/comp_lut.h"
     ],
     "psSources": [],
     "cuNames": [],
@@ -81,10 +82,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Fri Mar 27 17:30:18 2026",
- "timestampMillis": "1774647018965",
+ "dateTimestamp": "Wed Apr 22 15:12:38 2026",
+ "timestampMillis": "1776885158053",
  "buildStep": {
-  "cmdId": "d33887b0-ec54-4e5c-8211-d9b4d17c91e9",
+  "cmdId": "643d56b4-4736-4877-81c0-78574581f942",
   "name": "",
   "logFile": "/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/hls.log",
   "commandLine": "",
@@ -97,10 +98,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Fri Mar 27 17:30:18 2026",
- "timestampMillis": "1774647018965",
+ "dateTimestamp": "Wed Apr 22 15:12:38 2026",
+ "timestampMillis": "1776885158053",
  "status": {
-  "cmdId": "d33887b0-ec54-4e5c-8211-d9b4d17c91e9",
+  "cmdId": "643d56b4-4736-4877-81c0-78574581f942",
   "state": "CS_RUNNING"
  }
 }
@@ -108,10 +109,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Fri Mar 27 17:30:20 2026",
- "timestampMillis": "1774647020155",
+ "dateTimestamp": "Wed Apr 22 15:12:40 2026",
+ "timestampMillis": "1776885160854",
  "status": {
-  "cmdId": "d33887b0-ec54-4e5c-8211-d9b4d17c91e9",
+  "cmdId": "643d56b4-4736-4877-81c0-78574581f942",
   "state": "CS_PASSED"
  }
 }
@@ -119,10 +120,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Fri Mar 27 17:30:20 2026",
- "timestampMillis": "1774647020263",
+ "dateTimestamp": "Wed Apr 22 15:12:40 2026",
+ "timestampMillis": "1776885160980",
  "status": {
-  "cmdId": "103fff5b-9725-4a64-a142-c62dfec52435",
+  "cmdId": "ca2ca52a-ab79-4ee8-a1b4-4f8f891140aa",
   "state": "CS_PASSED"
  }
 }
@@ -130,8 +131,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Fri Mar 27 17:30:20 2026",
- "timestampMillis": "1774647020263",
+ "dateTimestamp": "Wed Apr 22 15:12:40 2026",
+ "timestampMillis": "1776885160981",
  "report": {
   "path": "",
   "name": "",
@@ -144,8 +145,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Fri Mar 27 17:30:20 2026",
- "timestampMillis": "1774647020264",
+ "dateTimestamp": "Wed Apr 22 15:12:40 2026",
+ "timestampMillis": "1776885160981",
  "report": {
   "path": "",
   "name": "",

@@ -1,52 +1,17 @@
 <root versionMajor = "1" versionMinor = "5">
   <kernel src_name="mixer" language="c" hwCtrl="ap_ctrl_hs" mem_layout="fpga64-xilinx-none">
     <args>
-      <arg id="0" access_type="r" src_name="stream_in_0" src_type="stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 2UL, 5UL, 6UL, (unsigned char)&apos;8&apos;, false&gt;, 0&gt;&amp;" src_isptr="1" src_bitwidth="96" src_size_or_depth="1">
-        <hw hw_usage="data" hw_interface="AXI-Stream" hw_name="stream_in_0" hw_bitwidth="32" hw_size_or_depth="1" hw_kernel_support="true">
+      <arg id="0" access_type="r" src_name="stream_in" src_type="stream&lt;hls::axis&lt;ap_int&lt;128&gt;, 0UL, 0UL, 0UL, (unsigned char)&apos;8&apos;, false&gt;, 0&gt;&amp;" src_isptr="1" src_bitwidth="256" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="AXI-Stream" hw_name="stream_in" hw_bitwidth="128" hw_size_or_depth="1" hw_kernel_support="true">
           <constraint constraint_type="pragma interface" mode="axis" register_option="1" register_mode="both"/>
         </hw>
       </arg>
-      <arg id="1" access_type="r" src_name="stream_in_1" src_type="stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 2UL, 5UL, 6UL, (unsigned char)&apos;8&apos;, false&gt;, 0&gt;&amp;" src_isptr="1" src_bitwidth="96" src_size_or_depth="1">
-        <hw hw_usage="data" hw_interface="AXI-Stream" hw_name="stream_in_1" hw_bitwidth="32" hw_size_or_depth="1" hw_kernel_support="true">
-          <constraint constraint_type="pragma interface" mode="axis" register_option="1" register_mode="both"/>
-        </hw>
-      </arg>
-      <arg id="2" access_type="r" src_name="stream_in_2" src_type="stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 2UL, 5UL, 6UL, (unsigned char)&apos;8&apos;, false&gt;, 0&gt;&amp;" src_isptr="1" src_bitwidth="96" src_size_or_depth="1">
-        <hw hw_usage="data" hw_interface="AXI-Stream" hw_name="stream_in_2" hw_bitwidth="32" hw_size_or_depth="1" hw_kernel_support="true">
-          <constraint constraint_type="pragma interface" mode="axis" register_option="1" register_mode="both"/>
-        </hw>
-      </arg>
-      <arg id="3" access_type="r" src_name="stream_in_3" src_type="stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 2UL, 5UL, 6UL, (unsigned char)&apos;8&apos;, false&gt;, 0&gt;&amp;" src_isptr="1" src_bitwidth="96" src_size_or_depth="1">
-        <hw hw_usage="data" hw_interface="AXI-Stream" hw_name="stream_in_3" hw_bitwidth="32" hw_size_or_depth="1" hw_kernel_support="true">
-          <constraint constraint_type="pragma interface" mode="axis" register_option="1" register_mode="both"/>
-        </hw>
-      </arg>
-      <arg id="4" access_type="r" src_name="stream_in_4" src_type="stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 2UL, 5UL, 6UL, (unsigned char)&apos;8&apos;, false&gt;, 0&gt;&amp;" src_isptr="1" src_bitwidth="96" src_size_or_depth="1">
-        <hw hw_usage="data" hw_interface="AXI-Stream" hw_name="stream_in_4" hw_bitwidth="32" hw_size_or_depth="1" hw_kernel_support="true">
-          <constraint constraint_type="pragma interface" mode="axis" register_option="1" register_mode="both"/>
-        </hw>
-      </arg>
-      <arg id="5" access_type="r" src_name="stream_in_5" src_type="stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 2UL, 5UL, 6UL, (unsigned char)&apos;8&apos;, false&gt;, 0&gt;&amp;" src_isptr="1" src_bitwidth="96" src_size_or_depth="1">
-        <hw hw_usage="data" hw_interface="AXI-Stream" hw_name="stream_in_5" hw_bitwidth="32" hw_size_or_depth="1" hw_kernel_support="true">
-          <constraint constraint_type="pragma interface" mode="axis" register_option="1" register_mode="both"/>
-        </hw>
-      </arg>
-      <arg id="6" access_type="r" src_name="stream_in_6" src_type="stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 2UL, 5UL, 6UL, (unsigned char)&apos;8&apos;, false&gt;, 0&gt;&amp;" src_isptr="1" src_bitwidth="96" src_size_or_depth="1">
-        <hw hw_usage="data" hw_interface="AXI-Stream" hw_name="stream_in_6" hw_bitwidth="32" hw_size_or_depth="1" hw_kernel_support="true">
-          <constraint constraint_type="pragma interface" mode="axis" register_option="1" register_mode="both"/>
-        </hw>
-      </arg>
-      <arg id="7" access_type="r" src_name="stream_in_7" src_type="stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 2UL, 5UL, 6UL, (unsigned char)&apos;8&apos;, false&gt;, 0&gt;&amp;" src_isptr="1" src_bitwidth="96" src_size_or_depth="1">
-        <hw hw_usage="data" hw_interface="AXI-Stream" hw_name="stream_in_7" hw_bitwidth="32" hw_size_or_depth="1" hw_kernel_support="true">
-          <constraint constraint_type="pragma interface" mode="axis" register_option="1" register_mode="both"/>
-        </hw>
-      </arg>
-      <arg id="8" access_type="r" src_name="switches" src_type="ap_uint&lt;8&gt;" src_isptr="1" src_bitwidth="8" src_size_or_depth="1">
+      <arg id="1" access_type="r" src_name="switches" src_type="ap_uint&lt;8&gt;" src_isptr="1" src_bitwidth="8" src_size_or_depth="1">
         <hw hw_usage="data" hw_interface="Register" hw_name="switches" hw_bitwidth="8" hw_size_or_depth="1" hw_kernel_support="false">
           <constraint constraint_type="pragma interface" mode="ap_none" register_option="0"/>
         </hw>
       </arg>
-      <arg id="9" access_type="w" src_name="mix_out" src_type="stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 2UL, 5UL, 6UL, (unsigned char)&apos;8&apos;, false&gt;, 0&gt;&amp;" src_isptr="1" src_bitwidth="96" src_size_or_depth="1">
+      <arg id="2" access_type="w" src_name="mix_out" src_type="stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0UL, 0UL, 0UL, (unsigned char)&apos;8&apos;, false&gt;, 0&gt;&amp;" src_isptr="1" src_bitwidth="96" src_size_or_depth="1">
         <hw hw_usage="data" hw_interface="AXI-Stream" hw_name="mix_out" hw_bitwidth="32" hw_size_or_depth="1" hw_kernel_support="true">
           <constraint constraint_type="pragma interface" mode="axis" register_option="1" register_mode="both"/>
         </hw>

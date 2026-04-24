@@ -56310,100 +56310,144 @@ private:
 
 
 
-typedef ap_axiu<32, 2, 5, 6> audio_stream;
+
+typedef ap_axis<128, 0, 0, 0> audio_stream;
+typedef ap_axis<32, 0, 0, 0> audio_out;
 
 
-static const int recip_sqrt_lut[9] = {
+static const short recip_sqrt_lut[9] = {
     0, 256, 181, 148, 128, 114, 105, 97, 91
 };
 
 __attribute__((sdx_kernel("mixer", 0))) void mixer(
-    hls::stream<audio_stream>& stream_in_0,
-    hls::stream<audio_stream>& stream_in_1,
-    hls::stream<audio_stream>& stream_in_2,
-    hls::stream<audio_stream>& stream_in_3,
-    hls::stream<audio_stream>& stream_in_4,
-    hls::stream<audio_stream>& stream_in_5,
-    hls::stream<audio_stream>& stream_in_6,
-    hls::stream<audio_stream>& stream_in_7,
+    hls::stream<audio_stream>& stream_in,
     ap_uint<8> switches,
-    hls::stream<audio_stream>& mix_out
+    hls::stream<audio_out>& mix_out
 );
 # 4 "hw_mixer.cpp" 2
+# 1 "./comp_lut.h" 1
+# 11 "./comp_lut.h"
+static const short comp_gain_lut[512] = {
+    256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256,
+    256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256,
+    256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256,
+    256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256,
+    256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256,
+    256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256,
+    256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256,
+    256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256,
+    256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256,
+    256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256,
+    256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256,
+    256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256,
+    256, 255, 255, 255, 255, 255, 255, 255, 255, 255, 254, 254, 254, 254, 254, 254,
+    253, 253, 253, 253, 253, 252, 252, 252, 252, 252, 251, 251, 251, 251, 250, 250,
+    250, 250, 249, 249, 249, 249, 248, 248, 248, 247, 247, 247, 247, 246, 246, 246,
+    245, 245, 245, 244, 244, 244, 243, 243, 243, 242, 242, 242, 241, 241, 241, 240,
+    240, 240, 239, 239, 239, 238, 238, 237, 237, 237, 236, 236, 236, 235, 235, 235,
+    234, 234, 233, 233, 233, 232, 232, 231, 231, 231, 230, 230, 230, 229, 229, 228,
+    228, 228, 227, 227, 226, 226, 226, 225, 225, 224, 224, 224, 223, 223, 222, 222,
+    221, 221, 221, 220, 220, 219, 219, 219, 218, 218, 217, 217, 217, 216, 216, 215,
+    215, 214, 214, 214, 213, 213, 212, 212, 212, 211, 211, 210, 210, 210, 209, 209,
+    208, 208, 207, 207, 207, 206, 206, 205, 205, 205, 204, 204, 203, 203, 202, 202,
+    202, 201, 201, 200, 200, 200, 199, 199, 198, 198, 198, 197, 197, 196, 196, 196,
+    195, 195, 194, 194, 194, 193, 193, 192, 192, 192, 191, 191, 191, 190, 190, 189,
+    189, 189, 188, 188, 188, 187, 187, 186, 186, 186, 185, 185, 185, 184, 184, 184,
+    183, 183, 183, 182, 182, 182, 181, 181, 181, 180, 180, 180, 179, 179, 179, 178,
+    178, 178, 177, 177, 177, 176, 176, 176, 175, 175, 175, 175, 174, 174, 174, 173,
+    173, 173, 172, 172, 172, 172, 171, 171, 171, 170, 170, 170, 170, 169, 169, 169,
+    168, 168, 168, 168, 167, 167, 167, 166, 166, 166, 166, 165, 165, 165, 165, 164,
+    164, 164, 164, 163, 163, 163, 162, 162, 162, 162, 161, 161, 161, 161, 160, 160,
+    160, 160, 159, 159, 159, 159, 158, 158, 158, 158, 157, 157, 157, 157, 157, 156,
+    156, 156, 156, 155, 155, 155, 155, 154, 154, 154, 154, 153, 153, 153, 153, 153
+};
+# 5 "hw_mixer.cpp" 2
+
+
+
 
 __attribute__((sdx_kernel("mixer", 0))) void mixer(
-    hls::stream<audio_stream>& stream_in_0,
-    hls::stream<audio_stream>& stream_in_1,
-    hls::stream<audio_stream>& stream_in_2,
-    hls::stream<audio_stream>& stream_in_3,
-    hls::stream<audio_stream>& stream_in_4,
-    hls::stream<audio_stream>& stream_in_5,
-    hls::stream<audio_stream>& stream_in_6,
-    hls::stream<audio_stream>& stream_in_7,
+    hls::stream<audio_stream>& stream_in,
     ap_uint<8> switches,
-    hls::stream<audio_stream>& mix_out
+    hls::stream<audio_out>& mix_out
 ) {
 #line 1 "directive"
 #pragma HLSDIRECTIVE TOP name=mixer
-# 16 "hw_mixer.cpp"
+# 13 "hw_mixer.cpp"
 
-#pragma HLS INTERFACE axis port=stream_in_0
-#pragma HLS INTERFACE axis port=stream_in_1
-#pragma HLS INTERFACE axis port=stream_in_2
-#pragma HLS INTERFACE axis port=stream_in_3
-#pragma HLS INTERFACE axis port=stream_in_4
-#pragma HLS INTERFACE axis port=stream_in_5
-#pragma HLS INTERFACE axis port=stream_in_6
-#pragma HLS INTERFACE axis port=stream_in_7
+#pragma HLS INTERFACE axis port=stream_in
 #pragma HLS INTERFACE ap_none port=switches
 #pragma HLS INTERFACE axis port=mix_out
 #pragma HLS INTERFACE s_axilite port=return
 #pragma HLS ARRAY_PARTITION variable=recip_sqrt_lut complete
 
-    VITIS_LOOP_30_1: while(1) {
-#pragma HLS LOOP_TRIPCOUNT min=200 max=20000 avg=10000
+    static int current_gain_q16 = 65536;
+    static const int T_LIM = 32767;
 
-    audio_stream s0;
-    audio_stream s1;
-    audio_stream s2;
-    audio_stream s3;
-    audio_stream s4;
-    audio_stream s5;
-    audio_stream s6;
-    audio_stream s7;
-    stream_in_0.read(s0);
-    stream_in_1.read(s1);
-    stream_in_2.read(s2);
-    stream_in_3.read(s3);
-    stream_in_4.read(s4);
-    stream_in_5.read(s5);
-    stream_in_6.read(s6);
-    stream_in_7.read(s7);
-
-
+    audio_stream sample;
     int mix_int = 0;
     int active = 0;
 
-    if (switches[0]) { mix_int += s0.data.to_int(); active++; }
-    if (switches[1]) { mix_int += s1.data.to_int(); active++; }
-    if (switches[2]) { mix_int += s2.data.to_int(); active++; }
-    if (switches[3]) { mix_int += s3.data.to_int(); active++; }
-    if (switches[4]) { mix_int += s4.data.to_int(); active++; }
-    if (switches[5]) { mix_int += s5.data.to_int(); active++; }
-    if (switches[6]) { mix_int += s6.data.to_int(); active++; }
-    if (switches[7]) { mix_int += s7.data.to_int(); active++; }
+    VITIS_LOOP_27_1: while(1)
+    {
+
+        mix_int = 0;
+        active = 0;
+        sample = stream_in.read();
+        ap_int<16> s0 = sample.data(15,0);
+        ap_int<16> s1 = sample.data(31,16);
+        ap_int<16> s2 = sample.data(47,32);
+        ap_int<16> s3 = sample.data(63,48);
+        ap_int<16> s4 = sample.data(79,64);
+        ap_int<16> s5 = sample.data(95,80);
+        ap_int<16> s6 = sample.data(111,96);
+        ap_int<16> s7 = sample.data(127,112);
+
+        if (switches[0]) { mix_int += s0; active++; }
+        if (switches[1]) { mix_int += s1; active++; }
+        if (switches[2]) { mix_int += s2; active++; }
+        if (switches[3]) { mix_int += s3; active++; }
+        if (switches[4]) { mix_int += s4; active++; }
+        if (switches[5]) { mix_int += s5; active++; }
+        if (switches[6]) { mix_int += s6; active++; }
+        if (switches[7]) { mix_int += s7; active++; }
 
 
-    audio_stream out_pkt;
-    out_pkt.data = (active > 0) ? (int64_t)mix_int * recip_sqrt_lut[active] >> 8 : 0;
-    out_pkt.keep = -1;
-    out_pkt.strb = -1;
-    out_pkt.last = 0;
-    if (s0.last == 1 || s1.last == 1 || s2.last == 1 || s3.last == 1 || s4.last == 1 || s5.last == 1 || s6.last == 1 || s7.last == 1) {
-            out_pkt.last = 1;
-            mix_out.write(out_pkt);
+        if (active > 0)
+        {
+            mix_int = (mix_int * (int)recip_sqrt_lut[active]) >> 8;
+        }
+
+
+
+
+        int mag = (mix_int < 0) ? -mix_int : mix_int;
+        int idx = mag >> 6;
+        if (idx >= 512) idx = 512 - 1;
+        int target_q16 = (int)comp_gain_lut[idx] << 8;
+
+
+        int diff = target_q16 - current_gain_q16;
+        int coeff = (diff < 0) ? 74 : 5;
+        current_gain_q16 += (diff * coeff) >> 15;
+
+        int gain_q8 = current_gain_q16 >> 8;
+        mix_int = (mix_int * gain_q8) >> 8;
+
+
+        if (mix_int > T_LIM) mix_int = T_LIM;
+        if (mix_int < -T_LIM) mix_int = -T_LIM;
+
+
+        audio_out out_pkt;
+        out_pkt.data(15, 0) = (ap_int<16>)mix_int;
+        out_pkt.data(31, 16) = 0;
+        out_pkt.last = sample.last;
+        mix_out.write(out_pkt);
+
+        if(out_pkt.last)
+        {
             break;
         }
-    mix_out.write(out_pkt);
     }
 }

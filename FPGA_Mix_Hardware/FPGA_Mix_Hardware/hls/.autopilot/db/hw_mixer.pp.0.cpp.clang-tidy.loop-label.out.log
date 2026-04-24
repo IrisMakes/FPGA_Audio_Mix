@@ -18,8 +18,8 @@
       ^
       VITIS_LOOP_1251_1: 
 /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/hw_mixer.pp.0.cpp:5835:7: note: FIX-IT applied suggested code changes
-/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/hw_mixer.pp.0.cpp:56363:5: remark: Added loop label VITIS_LOOP_30_1:   [xilinx-label-all-loops]
-    while(1) {
+/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/hw_mixer.pp.0.cpp:56391:5: remark: Added loop label VITIS_LOOP_27_1:   [xilinx-label-all-loops]
+    while(1)
     ^
-    VITIS_LOOP_30_1: 
-/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/hw_mixer.pp.0.cpp:56363:5: note: FIX-IT applied suggested code changes
+    VITIS_LOOP_27_1: 
+/home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/FPGA_Mix_Hardware/hls/.autopilot/db/hw_mixer.pp.0.cpp:56391:5: note: FIX-IT applied suggested code changes

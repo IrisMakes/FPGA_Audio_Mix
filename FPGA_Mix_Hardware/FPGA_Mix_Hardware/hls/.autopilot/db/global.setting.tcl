@@ -43,15 +43,15 @@ set TargetInfo xczu3eg:-sfvc784:-2-e
 set SourceFiles {sc {} c ../../hw_mixer.cpp}
 set SourceFlags {sc {} c {{}}}
 set DirectiveFile {}
-set TBFiles {verilog /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/mixer_tb.cpp bc /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/mixer_tb.cpp sc /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/mixer_tb.cpp vhdl /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/mixer_tb.cpp c {} cas /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/mixer_tb.cpp}
+set TBFiles {verilog /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/mixer_tb.cpp bc /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/mixer_tb.cpp vhdl /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/mixer_tb.cpp sc /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/mixer_tb.cpp cas /home/MakerIris/Documents/FPGA_Audio_Mix/FPGA_Mix_Hardware/mixer_tb.cpp c {}}
 set SpecLanguage C
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
 set TVOutFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
-set TBTops {verilog {} bc {} sc {} vhdl {} c {} cas {}}
-set TBInstNames {verilog {} bc {} sc {} vhdl {} c {} cas {}}
+set TBTops {verilog {} bc {} vhdl {} sc {} cas {} c {}}
+set TBInstNames {verilog {} bc {} vhdl {} sc {} cas {} c {}}
 set XDCFiles {}
 set ExtraGlobalOptions {"area_timing" 1 "clock_gate" 1 "impl_flow" map "power_gate" 0}
-set TBTVFileNotFound ../../hw_mixer_tb.cpp
+set TBTVFileNotFound {}
 set AppFile {}
 set ApsFile hls.aps
 set AvePath ../../.

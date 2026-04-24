@@ -60,3 +60,123 @@
 16:52:02 INFO  : Embedded Template List generated successfully
 16:59:37 ERROR : Invalid project location 'null'.
 17:02:52 ERROR : Invalid project location 'null'.
+16:27:16 INFO  : updated workspace path: /home/MakerIris/Documents/FPGA_Audio_Mix
+16:27:16 INFO  : created .gitignore file for the project /home/MakerIris/Documents/FPGA_Audio_Mix
+16:27:16 INFO  : [INFO]: Initializing repositories
+16:27:16 INFO  : [INFO]: Successfully set the EmbeddedSW path, refer .repo.yaml for more details.
+16:27:16 INFO  : Successfully created repository data at /tmp/rigel_lopper_MakerIris14989992973488331124
+16:27:16 INFO  : bash, -c, empyro get_template_data -d /tmp/rigel_lopper_MakerIris11013960820304649635 -r /tmp/rigel_lopper_MakerIris14989992973488331124/.repo.yaml
+16:27:17 INFO  : Embedded Template List generated successfully
+16:27:17 INFO  : bash, -c, empyro get_template_data -d /tmp/rigel_lopper_MakerIris14997713645806419444 -r /home/MakerIris/Documents/FPGA_Audio_Mix/_ide/.wsdata/.repo.yaml
+16:27:17 INFO  : Embedded Template List generated successfully
+16:39:59 INFO  : updated workspace path: /home/MakerIris/Documents/FPGA_Audio_Mix
+16:39:59 INFO  : bash, -c, empyro get_template_data -d /tmp/rigel_lopper_MakerIris18192289022721166781 -r /home/MakerIris/Documents/FPGA_Audio_Mix/_ide/.wsdata/.repo.yaml
+16:39:59 INFO  : created .gitignore file for the project /home/MakerIris/Documents/FPGA_Audio_Mix
+16:40:00 INFO  : Embedded Template List generated successfully
+16:40:00 INFO  : bash, -c, empyro get_template_data -d /tmp/rigel_lopper_MakerIris819143902470699388 -r /home/MakerIris/Documents/FPGA_Audio_Mix/_ide/.wsdata/.repo.yaml
+16:40:01 INFO  : Embedded Template List generated successfully
+16:50:16 INFO  : updated workspace path: /home/MakerIris/Documents/FPGA_Audio_Mix
+16:50:16 INFO  : created .gitignore file for the project /home/MakerIris/Documents/FPGA_Audio_Mix
+16:50:16 INFO  : bash, -c, empyro get_template_data -d /tmp/rigel_lopper_MakerIris4058549137379890535 -r /home/MakerIris/Documents/FPGA_Audio_Mix/_ide/.wsdata/.repo.yaml
+16:50:16 INFO  : Embedded Template List generated successfully
+16:50:16 INFO  : bash, -c, empyro get_template_data -d /tmp/rigel_lopper_MakerIris18406363524483366105 -r /home/MakerIris/Documents/FPGA_Audio_Mix/_ide/.wsdata/.repo.yaml
+16:50:17 INFO  : Embedded Template List generated successfully
+16:52:00 INFO  : updated workspace path: /home/MakerIris/Documents/FPGA_Audio_Mix
+16:52:00 INFO  : created .gitignore file for the project /home/MakerIris/Documents/FPGA_Audio_Mix
+16:52:00 INFO  : bash, -c, empyro get_template_data -d /tmp/rigel_lopper_MakerIris14659576857559840480 -r /home/MakerIris/Documents/FPGA_Audio_Mix/_ide/.wsdata/.repo.yaml
+16:52:00 INFO  : Embedded Template List generated successfully
+16:52:00 INFO  : bash, -c, empyro get_template_data -d /tmp/rigel_lopper_MakerIris3869921692521528634 -r /home/MakerIris/Documents/FPGA_Audio_Mix/_ide/.wsdata/.repo.yaml
+16:52:01 INFO  : Embedded Template List generated successfully
+16:53:31 INFO  : updated workspace path: /home/MakerIris/Documents/FPGA_Audio_Mix
+16:53:31 INFO  : created .gitignore file for the project /home/MakerIris/Documents/FPGA_Audio_Mix
+16:53:31 INFO  : Embedded Template List generated successfully
+16:53:31 INFO  : bash, -c, empyro get_template_data -d /tmp/rigel_lopper_MakerIris17963997043809766240 -r /home/MakerIris/Documents/FPGA_Audio_Mix/_ide/.wsdata/.repo.yaml
+16:53:32 INFO  : Embedded Template List generated successfully
+16:55:03 INFO  : updated workspace path: /home/MakerIris/Documents/FPGA_Audio_Mix
+16:55:03 INFO  : created .gitignore file for the project /home/MakerIris/Documents/FPGA_Audio_Mix
+16:55:03 INFO  : bash, -c, empyro get_template_data -d /tmp/rigel_lopper_MakerIris10410468098426818919 -r /home/MakerIris/Documents/FPGA_Audio_Mix/_ide/.wsdata/.repo.yaml
+16:55:04 INFO  : Embedded Template List generated successfully
+16:55:04 INFO  : bash, -c, empyro get_template_data -d /tmp/rigel_lopper_MakerIris18310932723390980298 -r /home/MakerIris/Documents/FPGA_Audio_Mix/_ide/.wsdata/.repo.yaml
+16:55:04 INFO  : Embedded Template List generated successfully
+16:56:35 INFO  : updated workspace path: /home/MakerIris/Documents/FPGA_Audio_Mix
+16:56:35 INFO  : created .gitignore file for the project /home/MakerIris/Documents/FPGA_Audio_Mix
+16:56:35 INFO  : bash, -c, empyro get_template_data -d /tmp/rigel_lopper_MakerIris15882117185982052094 -r /home/MakerIris/Documents/FPGA_Audio_Mix/_ide/.wsdata/.repo.yaml
+16:56:35 INFO  : Embedded Template List generated successfully
+16:56:35 INFO  : bash, -c, empyro get_template_data -d /tmp/rigel_lopper_MakerIris14845505453827644782 -r /home/MakerIris/Documents/FPGA_Audio_Mix/_ide/.wsdata/.repo.yaml
+16:56:36 INFO  : Embedded Template List generated successfully
+16:58:09 INFO  : updated workspace path: /home/MakerIris/Documents/FPGA_Audio_Mix
+16:58:09 INFO  : created .gitignore file for the project /home/MakerIris/Documents/FPGA_Audio_Mix
+16:58:09 INFO  : bash, -c, empyro get_template_data -d /tmp/rigel_lopper_MakerIris8718287710883821520 -r /home/MakerIris/Documents/FPGA_Audio_Mix/_ide/.wsdata/.repo.yaml
+16:58:09 INFO  : Embedded Template List generated successfully
+16:58:09 INFO  : bash, -c, empyro get_template_data -d /tmp/rigel_lopper_MakerIris15756223568738724515 -r /home/MakerIris/Documents/FPGA_Audio_Mix/_ide/.wsdata/.repo.yaml
+16:58:10 INFO  : Embedded Template List generated successfully
+16:59:44 INFO  : updated workspace path: /home/MakerIris/Documents/FPGA_Audio_Mix
+16:59:44 INFO  : created .gitignore file for the project /home/MakerIris/Documents/FPGA_Audio_Mix
+16:59:44 INFO  : bash, -c, empyro get_template_data -d /tmp/rigel_lopper_MakerIris76061574075321360 -r /home/MakerIris/Documents/FPGA_Audio_Mix/_ide/.wsdata/.repo.yaml
+16:59:45 INFO  : Embedded Template List generated successfully
+16:59:45 INFO  : bash, -c, empyro get_template_data -d /tmp/rigel_lopper_MakerIris17922725251940279093 -r /home/MakerIris/Documents/FPGA_Audio_Mix/_ide/.wsdata/.repo.yaml
+16:59:45 INFO  : Embedded Template List generated successfully
+17:01:33 INFO  : updated workspace path: /home/MakerIris/Documents/FPGA_Audio_Mix
+17:01:33 INFO  : created .gitignore file for the project /home/MakerIris/Documents/FPGA_Audio_Mix
+17:01:33 INFO  : bash, -c, empyro get_template_data -d /tmp/rigel_lopper_MakerIris15007399570299805147 -r /home/MakerIris/Documents/FPGA_Audio_Mix/_ide/.wsdata/.repo.yaml
+17:01:34 INFO  : Embedded Template List generated successfully
+17:01:34 INFO  : bash, -c, empyro get_template_data -d /tmp/rigel_lopper_MakerIris5879738770700332698 -r /home/MakerIris/Documents/FPGA_Audio_Mix/_ide/.wsdata/.repo.yaml
+17:01:34 INFO  : Embedded Template List generated successfully
+17:03:07 INFO  : updated workspace path: /home/MakerIris/Documents/FPGA_Audio_Mix
+17:03:07 INFO  : created .gitignore file for the project /home/MakerIris/Documents/FPGA_Audio_Mix
+17:03:07 INFO  : bash, -c, empyro get_template_data -d /tmp/rigel_lopper_MakerIris9624267379405864302 -r /home/MakerIris/Documents/FPGA_Audio_Mix/_ide/.wsdata/.repo.yaml
+17:03:07 INFO  : Embedded Template List generated successfully
+17:03:07 INFO  : bash, -c, empyro get_template_data -d /tmp/rigel_lopper_MakerIris13525816542226300488 -r /home/MakerIris/Documents/FPGA_Audio_Mix/_ide/.wsdata/.repo.yaml
+17:03:08 INFO  : Embedded Template List generated successfully
+17:04:39 INFO  : updated workspace path: /home/MakerIris/Documents/FPGA_Audio_Mix
+17:04:39 INFO  : created .gitignore file for the project /home/MakerIris/Documents/FPGA_Audio_Mix
+17:04:39 INFO  : bash, -c, empyro get_template_data -d /tmp/rigel_lopper_MakerIris4139449666505691574 -r /home/MakerIris/Documents/FPGA_Audio_Mix/_ide/.wsdata/.repo.yaml
+17:04:39 INFO  : Embedded Template List generated successfully
+17:04:39 INFO  : bash, -c, empyro get_template_data -d /tmp/rigel_lopper_MakerIris4900080603359106705 -r /home/MakerIris/Documents/FPGA_Audio_Mix/_ide/.wsdata/.repo.yaml
+17:04:40 INFO  : Embedded Template List generated successfully
+17:06:16 INFO  : updated workspace path: /home/MakerIris/Documents/FPGA_Audio_Mix
+17:06:16 INFO  : bash, -c, empyro get_template_data -d /tmp/rigel_lopper_MakerIris15149888745767969300 -r /home/MakerIris/Documents/FPGA_Audio_Mix/_ide/.wsdata/.repo.yaml
+17:06:16 INFO  : created .gitignore file for the project /home/MakerIris/Documents/FPGA_Audio_Mix
+17:06:16 INFO  : Embedded Template List generated successfully
+17:06:16 INFO  : bash, -c, empyro get_template_data -d /tmp/rigel_lopper_MakerIris12645219992461456816 -r /home/MakerIris/Documents/FPGA_Audio_Mix/_ide/.wsdata/.repo.yaml
+17:06:17 INFO  : Embedded Template List generated successfully
+17:07:47 INFO  : updated workspace path: /home/MakerIris/Documents/FPGA_Audio_Mix
+17:07:47 INFO  : created .gitignore file for the project /home/MakerIris/Documents/FPGA_Audio_Mix
+17:07:47 INFO  : bash, -c, empyro get_template_data -d /tmp/rigel_lopper_MakerIris13066543858620783690 -r /home/MakerIris/Documents/FPGA_Audio_Mix/_ide/.wsdata/.repo.yaml
+17:07:48 INFO  : Embedded Template List generated successfully
+17:07:48 INFO  : bash, -c, empyro get_template_data -d /tmp/rigel_lopper_MakerIris7091269020226739492 -r /home/MakerIris/Documents/FPGA_Audio_Mix/_ide/.wsdata/.repo.yaml
+17:07:48 INFO  : Embedded Template List generated successfully
+17:09:26 INFO  : updated workspace path: /home/MakerIris/Documents/FPGA_Audio_Mix
+17:09:26 INFO  : created .gitignore file for the project /home/MakerIris/Documents/FPGA_Audio_Mix
+17:09:26 INFO  : bash, -c, empyro get_template_data -d /tmp/rigel_lopper_MakerIris893565844043656023 -r /home/MakerIris/Documents/FPGA_Audio_Mix/_ide/.wsdata/.repo.yaml
+17:09:27 INFO  : Embedded Template List generated successfully
+17:09:27 INFO  : bash, -c, empyro get_template_data -d /tmp/rigel_lopper_MakerIris3778472021722689747 -r /home/MakerIris/Documents/FPGA_Audio_Mix/_ide/.wsdata/.repo.yaml
+17:09:27 INFO  : Embedded Template List generated successfully
+17:11:29 INFO  : updated workspace path: /home/MakerIris/Documents/FPGA_Audio_Mix
+17:11:29 INFO  : created .gitignore file for the project /home/MakerIris/Documents/FPGA_Audio_Mix
+17:11:30 INFO  : bash, -c, empyro get_template_data -d /tmp/rigel_lopper_MakerIris10998475669610851834 -r /home/MakerIris/Documents/FPGA_Audio_Mix/_ide/.wsdata/.repo.yaml
+17:11:30 INFO  : Embedded Template List generated successfully
+17:11:30 INFO  : bash, -c, empyro get_template_data -d /tmp/rigel_lopper_MakerIris1116086287949150668 -r /home/MakerIris/Documents/FPGA_Audio_Mix/_ide/.wsdata/.repo.yaml
+17:11:31 INFO  : Embedded Template List generated successfully
+17:12:57 INFO  : Terminating Vitis C++ Server
+17:12:57 INFO  : Vitis C++ Server terminated
+14:41:23 INFO  : updated workspace path: /home/MakerIris/Documents/FPGA_Audio_Mix
+14:41:23 INFO  : created .gitignore file for the project /home/MakerIris/Documents/FPGA_Audio_Mix
+14:41:24 INFO  : [INFO]: Initializing repositories
+14:41:24 INFO  : [INFO]: Successfully set the EmbeddedSW path, refer .repo.yaml for more details.
+14:41:24 INFO  : Successfully created repository data at /tmp/rigel_lopper_MakerIris5868164140429451123
+14:41:24 INFO  : bash, -c, empyro get_template_data -d /tmp/rigel_lopper_MakerIris4692057016136449605 -r /tmp/rigel_lopper_MakerIris5868164140429451123/.repo.yaml
+14:41:24 INFO  : Embedded Template List generated successfully
+14:41:24 INFO  : bash, -c, empyro get_template_data -d /tmp/rigel_lopper_MakerIris6465834287351440245 -r /home/MakerIris/Documents/FPGA_Audio_Mix/_ide/.wsdata/.repo.yaml
+14:41:25 INFO  : Embedded Template List generated successfully
+14:48:29 INFO  : Terminating Vitis C++ Server
+15:02:20 INFO  : updated workspace path: /home/MakerIris/Documents/FPGA_Audio_Mix
+15:02:20 INFO  : created .gitignore file for the project /home/MakerIris/Documents/FPGA_Audio_Mix
+15:02:22 INFO  : [INFO]: Initializing repositories
+15:02:22 INFO  : [INFO]: Successfully set the EmbeddedSW path, refer .repo.yaml for more details.
+15:02:22 INFO  : Successfully created repository data at /tmp/rigel_lopper_MakerIris15400124899245154518
+15:02:22 INFO  : bash, -c, empyro get_template_data -d /tmp/rigel_lopper_MakerIris13033047054733400455 -r /tmp/rigel_lopper_MakerIris15400124899245154518/.repo.yaml
+15:02:23 INFO  : Embedded Template List generated successfully
+15:02:23 INFO  : bash, -c, empyro get_template_data -d /tmp/rigel_lopper_MakerIris9722662685088642211 -r /home/MakerIris/Documents/FPGA_Audio_Mix/_ide/.wsdata/.repo.yaml
+15:02:23 INFO  : Embedded Template List generated successfully
+16:28:29 INFO  : Terminating Vitis C++ Server

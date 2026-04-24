@@ -15,88 +15,19 @@ generic (
 port (
     ap_clk : IN STD_LOGIC;
     ap_rst_n : IN STD_LOGIC;
-    stream_in_0_TDATA : IN STD_LOGIC_VECTOR (31 downto 0);
-    stream_in_0_TVALID : IN STD_LOGIC;
-    stream_in_0_TREADY : OUT STD_LOGIC;
-    stream_in_0_TKEEP : IN STD_LOGIC_VECTOR (3 downto 0);
-    stream_in_0_TSTRB : IN STD_LOGIC_VECTOR (3 downto 0);
-    stream_in_0_TUSER : IN STD_LOGIC_VECTOR (1 downto 0);
-    stream_in_0_TLAST : IN STD_LOGIC_VECTOR (0 downto 0);
-    stream_in_0_TID : IN STD_LOGIC_VECTOR (4 downto 0);
-    stream_in_0_TDEST : IN STD_LOGIC_VECTOR (5 downto 0);
-    stream_in_1_TDATA : IN STD_LOGIC_VECTOR (31 downto 0);
-    stream_in_1_TVALID : IN STD_LOGIC;
-    stream_in_1_TREADY : OUT STD_LOGIC;
-    stream_in_1_TKEEP : IN STD_LOGIC_VECTOR (3 downto 0);
-    stream_in_1_TSTRB : IN STD_LOGIC_VECTOR (3 downto 0);
-    stream_in_1_TUSER : IN STD_LOGIC_VECTOR (1 downto 0);
-    stream_in_1_TLAST : IN STD_LOGIC_VECTOR (0 downto 0);
-    stream_in_1_TID : IN STD_LOGIC_VECTOR (4 downto 0);
-    stream_in_1_TDEST : IN STD_LOGIC_VECTOR (5 downto 0);
-    stream_in_2_TDATA : IN STD_LOGIC_VECTOR (31 downto 0);
-    stream_in_2_TVALID : IN STD_LOGIC;
-    stream_in_2_TREADY : OUT STD_LOGIC;
-    stream_in_2_TKEEP : IN STD_LOGIC_VECTOR (3 downto 0);
-    stream_in_2_TSTRB : IN STD_LOGIC_VECTOR (3 downto 0);
-    stream_in_2_TUSER : IN STD_LOGIC_VECTOR (1 downto 0);
-    stream_in_2_TLAST : IN STD_LOGIC_VECTOR (0 downto 0);
-    stream_in_2_TID : IN STD_LOGIC_VECTOR (4 downto 0);
-    stream_in_2_TDEST : IN STD_LOGIC_VECTOR (5 downto 0);
-    stream_in_3_TDATA : IN STD_LOGIC_VECTOR (31 downto 0);
-    stream_in_3_TVALID : IN STD_LOGIC;
-    stream_in_3_TREADY : OUT STD_LOGIC;
-    stream_in_3_TKEEP : IN STD_LOGIC_VECTOR (3 downto 0);
-    stream_in_3_TSTRB : IN STD_LOGIC_VECTOR (3 downto 0);
-    stream_in_3_TUSER : IN STD_LOGIC_VECTOR (1 downto 0);
-    stream_in_3_TLAST : IN STD_LOGIC_VECTOR (0 downto 0);
-    stream_in_3_TID : IN STD_LOGIC_VECTOR (4 downto 0);
-    stream_in_3_TDEST : IN STD_LOGIC_VECTOR (5 downto 0);
-    stream_in_4_TDATA : IN STD_LOGIC_VECTOR (31 downto 0);
-    stream_in_4_TVALID : IN STD_LOGIC;
-    stream_in_4_TREADY : OUT STD_LOGIC;
-    stream_in_4_TKEEP : IN STD_LOGIC_VECTOR (3 downto 0);
-    stream_in_4_TSTRB : IN STD_LOGIC_VECTOR (3 downto 0);
-    stream_in_4_TUSER : IN STD_LOGIC_VECTOR (1 downto 0);
-    stream_in_4_TLAST : IN STD_LOGIC_VECTOR (0 downto 0);
-    stream_in_4_TID : IN STD_LOGIC_VECTOR (4 downto 0);
-    stream_in_4_TDEST : IN STD_LOGIC_VECTOR (5 downto 0);
-    stream_in_5_TDATA : IN STD_LOGIC_VECTOR (31 downto 0);
-    stream_in_5_TVALID : IN STD_LOGIC;
-    stream_in_5_TREADY : OUT STD_LOGIC;
-    stream_in_5_TKEEP : IN STD_LOGIC_VECTOR (3 downto 0);
-    stream_in_5_TSTRB : IN STD_LOGIC_VECTOR (3 downto 0);
-    stream_in_5_TUSER : IN STD_LOGIC_VECTOR (1 downto 0);
-    stream_in_5_TLAST : IN STD_LOGIC_VECTOR (0 downto 0);
-    stream_in_5_TID : IN STD_LOGIC_VECTOR (4 downto 0);
-    stream_in_5_TDEST : IN STD_LOGIC_VECTOR (5 downto 0);
-    stream_in_6_TDATA : IN STD_LOGIC_VECTOR (31 downto 0);
-    stream_in_6_TVALID : IN STD_LOGIC;
-    stream_in_6_TREADY : OUT STD_LOGIC;
-    stream_in_6_TKEEP : IN STD_LOGIC_VECTOR (3 downto 0);
-    stream_in_6_TSTRB : IN STD_LOGIC_VECTOR (3 downto 0);
-    stream_in_6_TUSER : IN STD_LOGIC_VECTOR (1 downto 0);
-    stream_in_6_TLAST : IN STD_LOGIC_VECTOR (0 downto 0);
-    stream_in_6_TID : IN STD_LOGIC_VECTOR (4 downto 0);
-    stream_in_6_TDEST : IN STD_LOGIC_VECTOR (5 downto 0);
-    stream_in_7_TDATA : IN STD_LOGIC_VECTOR (31 downto 0);
-    stream_in_7_TVALID : IN STD_LOGIC;
-    stream_in_7_TREADY : OUT STD_LOGIC;
-    stream_in_7_TKEEP : IN STD_LOGIC_VECTOR (3 downto 0);
-    stream_in_7_TSTRB : IN STD_LOGIC_VECTOR (3 downto 0);
-    stream_in_7_TUSER : IN STD_LOGIC_VECTOR (1 downto 0);
-    stream_in_7_TLAST : IN STD_LOGIC_VECTOR (0 downto 0);
-    stream_in_7_TID : IN STD_LOGIC_VECTOR (4 downto 0);
-    stream_in_7_TDEST : IN STD_LOGIC_VECTOR (5 downto 0);
+    stream_in_TDATA : IN STD_LOGIC_VECTOR (127 downto 0);
+    stream_in_TVALID : IN STD_LOGIC;
+    stream_in_TREADY : OUT STD_LOGIC;
+    stream_in_TKEEP : IN STD_LOGIC_VECTOR (15 downto 0);
+    stream_in_TSTRB : IN STD_LOGIC_VECTOR (15 downto 0);
+    stream_in_TLAST : IN STD_LOGIC_VECTOR (0 downto 0);
     switches : IN STD_LOGIC_VECTOR (7 downto 0);
     mix_out_TDATA : OUT STD_LOGIC_VECTOR (31 downto 0);
     mix_out_TVALID : OUT STD_LOGIC;
     mix_out_TREADY : IN STD_LOGIC;
     mix_out_TKEEP : OUT STD_LOGIC_VECTOR (3 downto 0);
     mix_out_TSTRB : OUT STD_LOGIC_VECTOR (3 downto 0);
-    mix_out_TUSER : OUT STD_LOGIC_VECTOR (1 downto 0);
     mix_out_TLAST : OUT STD_LOGIC_VECTOR (0 downto 0);
-    mix_out_TID : OUT STD_LOGIC_VECTOR (4 downto 0);
-    mix_out_TDEST : OUT STD_LOGIC_VECTOR (5 downto 0);
     s_axi_control_AWVALID : IN STD_LOGIC;
     s_axi_control_AWREADY : OUT STD_LOGIC;
     s_axi_control_AWADDR : IN STD_LOGIC_VECTOR (C_S_AXI_CONTROL_ADDR_WIDTH-1 downto 0);
@@ -123,26 +54,20 @@ architecture behav of mixer is
     attribute DowngradeIPIdentifiedWarnings of behav : architecture is "yes";
     attribute CORE_GENERATION_INFO : STRING;
     attribute CORE_GENERATION_INFO of behav : architecture is
-    "mixer_mixer,hls_ip_2025_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xczu3eg-sfvc784-2-e,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=6.388000,HLS_SYN_LAT=10008,HLS_SYN_TPT=none,HLS_SYN_MEM=0,HLS_SYN_DSP=0,HLS_SYN_FF=374,HLS_SYN_LUT=1106,HLS_VERSION=2025_2}";
+    "mixer_mixer,hls_ip_2025_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xczu3eg-sfvc784-2-e,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=7.255500,HLS_SYN_LAT=-1,HLS_SYN_TPT=none,HLS_SYN_MEM=1,HLS_SYN_DSP=0,HLS_SYN_FF=467,HLS_SYN_LUT=1014,HLS_VERSION=2025_2}";
     constant ap_const_logic_1 : STD_LOGIC := '1';
     constant ap_const_logic_0 : STD_LOGIC := '0';
-    constant ap_ST_fsm_state1 : STD_LOGIC_VECTOR (4 downto 0) := "00001";
-    constant ap_ST_fsm_state2 : STD_LOGIC_VECTOR (4 downto 0) := "00010";
-    constant ap_ST_fsm_state3 : STD_LOGIC_VECTOR (4 downto 0) := "00100";
-    constant ap_ST_fsm_state4 : STD_LOGIC_VECTOR (4 downto 0) := "01000";
-    constant ap_ST_fsm_state5 : STD_LOGIC_VECTOR (4 downto 0) := "10000";
+    constant ap_ST_fsm_state1 : STD_LOGIC_VECTOR (3 downto 0) := "0001";
+    constant ap_ST_fsm_state2 : STD_LOGIC_VECTOR (3 downto 0) := "0010";
+    constant ap_ST_fsm_state3 : STD_LOGIC_VECTOR (3 downto 0) := "0100";
+    constant ap_ST_fsm_state4 : STD_LOGIC_VECTOR (3 downto 0) := "1000";
     constant ap_const_lv32_0 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000000";
     constant ap_const_boolean_1 : BOOLEAN := true;
+    constant ap_const_lv32_1 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000001";
+    constant C_S_AXI_DATA_WIDTH : INTEGER := 32;
+    constant ap_const_lv32_2 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000010";
     constant ap_const_lv32_3 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000011";
     constant ap_const_lv32_4 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000100";
-    constant C_S_AXI_DATA_WIDTH : INTEGER := 32;
-    constant ap_const_lv32_1 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000001";
-    constant ap_const_lv32_2 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000010";
-    constant ap_const_lv4_F : STD_LOGIC_VECTOR (3 downto 0) := "1111";
-    constant ap_const_lv2_0 : STD_LOGIC_VECTOR (1 downto 0) := "00";
-    constant ap_const_lv1_1 : STD_LOGIC_VECTOR (0 downto 0) := "1";
-    constant ap_const_lv5_0 : STD_LOGIC_VECTOR (4 downto 0) := "00000";
-    constant ap_const_lv6_0 : STD_LOGIC_VECTOR (5 downto 0) := "000000";
     constant ap_const_lv32_5 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000101";
     constant ap_const_lv32_6 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000110";
     constant ap_const_lv32_7 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000111";
@@ -150,332 +75,98 @@ architecture behav of mixer is
     constant ap_const_lv2_1 : STD_LOGIC_VECTOR (1 downto 0) := "01";
     constant ap_const_lv3_1 : STD_LOGIC_VECTOR (2 downto 0) := "001";
     constant ap_const_lv4_1 : STD_LOGIC_VECTOR (3 downto 0) := "0001";
-    constant ap_const_boolean_0 : BOOLEAN := false;
 
     signal ap_rst_n_inv : STD_LOGIC;
     signal ap_start : STD_LOGIC;
     signal ap_done : STD_LOGIC;
     signal ap_idle : STD_LOGIC;
-    signal ap_CS_fsm : STD_LOGIC_VECTOR (4 downto 0) := "00001";
+    signal ap_CS_fsm : STD_LOGIC_VECTOR (3 downto 0) := "0001";
     attribute fsm_encoding : string;
     attribute fsm_encoding of ap_CS_fsm : signal is "none";
     signal ap_CS_fsm_state1 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state1 : signal is "none";
     signal ap_ready : STD_LOGIC;
-    signal mix_out_TDATA_blk_n : STD_LOGIC;
-    signal ap_CS_fsm_state4 : STD_LOGIC;
-    attribute fsm_encoding of ap_CS_fsm_state4 : signal is "none";
-    signal ap_CS_fsm_state5 : STD_LOGIC;
-    attribute fsm_encoding of ap_CS_fsm_state5 : signal is "none";
-    signal trunc_ln54_fu_395_p1 : STD_LOGIC_VECTOR (0 downto 0);
-    signal trunc_ln54_reg_577 : STD_LOGIC_VECTOR (0 downto 0);
-    signal tmp_fu_399_p3 : STD_LOGIC_VECTOR (0 downto 0);
-    signal tmp_reg_582 : STD_LOGIC_VECTOR (0 downto 0);
-    signal tmp_8_fu_407_p3 : STD_LOGIC_VECTOR (0 downto 0);
-    signal tmp_8_reg_587 : STD_LOGIC_VECTOR (0 downto 0);
-    signal tmp_9_fu_415_p3 : STD_LOGIC_VECTOR (0 downto 0);
-    signal tmp_9_reg_592 : STD_LOGIC_VECTOR (0 downto 0);
-    signal tmp_10_fu_423_p3 : STD_LOGIC_VECTOR (0 downto 0);
-    signal tmp_10_reg_597 : STD_LOGIC_VECTOR (0 downto 0);
-    signal tmp_11_fu_431_p3 : STD_LOGIC_VECTOR (0 downto 0);
-    signal tmp_11_reg_602 : STD_LOGIC_VECTOR (0 downto 0);
-    signal tmp_12_fu_439_p3 : STD_LOGIC_VECTOR (0 downto 0);
-    signal tmp_12_reg_607 : STD_LOGIC_VECTOR (0 downto 0);
-    signal tmp_13_fu_447_p3 : STD_LOGIC_VECTOR (0 downto 0);
-    signal tmp_13_reg_612 : STD_LOGIC_VECTOR (0 downto 0);
-    signal select_ln61_fu_559_p3 : STD_LOGIC_VECTOR (3 downto 0);
-    signal select_ln61_reg_617 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_ap_start : STD_LOGIC;
-    signal grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_ap_done : STD_LOGIC;
-    signal grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_ap_idle : STD_LOGIC;
-    signal grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_ap_ready : STD_LOGIC;
-    signal grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_mix_out_TREADY : STD_LOGIC;
-    signal grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_mix_out_TDATA : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_mix_out_TVALID : STD_LOGIC;
-    signal grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_mix_out_TKEEP : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_mix_out_TSTRB : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_mix_out_TUSER : STD_LOGIC_VECTOR (1 downto 0);
-    signal grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_mix_out_TLAST : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_mix_out_TID : STD_LOGIC_VECTOR (4 downto 0);
-    signal grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_mix_out_TDEST : STD_LOGIC_VECTOR (5 downto 0);
-    signal grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_stream_in_0_TREADY : STD_LOGIC;
-    signal grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_stream_in_1_TREADY : STD_LOGIC;
-    signal grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_stream_in_2_TREADY : STD_LOGIC;
-    signal grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_stream_in_3_TREADY : STD_LOGIC;
-    signal grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_stream_in_4_TREADY : STD_LOGIC;
-    signal grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_stream_in_5_TREADY : STD_LOGIC;
-    signal grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_stream_in_6_TREADY : STD_LOGIC;
-    signal grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_stream_in_7_TREADY : STD_LOGIC;
-    signal grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_out_pkt_data_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_out_pkt_data_out_ap_vld : STD_LOGIC;
-    signal grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_ap_start_reg : STD_LOGIC := '0';
+    signal current_gain_q16 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000010000000000000000";
+    signal trunc_ln42_fu_128_p1 : STD_LOGIC_VECTOR (0 downto 0);
+    signal trunc_ln42_reg_312 : STD_LOGIC_VECTOR (0 downto 0);
+    signal tmp_fu_132_p3 : STD_LOGIC_VECTOR (0 downto 0);
+    signal tmp_reg_317 : STD_LOGIC_VECTOR (0 downto 0);
+    signal tmp_12_fu_140_p3 : STD_LOGIC_VECTOR (0 downto 0);
+    signal tmp_12_reg_322 : STD_LOGIC_VECTOR (0 downto 0);
+    signal tmp_13_fu_148_p3 : STD_LOGIC_VECTOR (0 downto 0);
+    signal tmp_13_reg_327 : STD_LOGIC_VECTOR (0 downto 0);
+    signal tmp_14_fu_156_p3 : STD_LOGIC_VECTOR (0 downto 0);
+    signal tmp_14_reg_332 : STD_LOGIC_VECTOR (0 downto 0);
+    signal tmp_15_fu_164_p3 : STD_LOGIC_VECTOR (0 downto 0);
+    signal tmp_15_reg_337 : STD_LOGIC_VECTOR (0 downto 0);
+    signal tmp_16_fu_172_p3 : STD_LOGIC_VECTOR (0 downto 0);
+    signal tmp_16_reg_342 : STD_LOGIC_VECTOR (0 downto 0);
+    signal tmp_17_reg_347 : STD_LOGIC_VECTOR (0 downto 0);
+    signal select_ln48_fu_274_p3 : STD_LOGIC_VECTOR (2 downto 0);
+    signal select_ln48_reg_352 : STD_LOGIC_VECTOR (2 downto 0);
+    signal add_ln49_fu_290_p2 : STD_LOGIC_VECTOR (3 downto 0);
+    signal add_ln49_reg_361 : STD_LOGIC_VECTOR (3 downto 0);
     signal ap_CS_fsm_state2 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state2 : signal is "none";
+    signal grp_mixer_Pipeline_VITIS_LOOP_27_1_fu_94_ap_start : STD_LOGIC;
+    signal grp_mixer_Pipeline_VITIS_LOOP_27_1_fu_94_ap_done : STD_LOGIC;
+    signal grp_mixer_Pipeline_VITIS_LOOP_27_1_fu_94_ap_idle : STD_LOGIC;
+    signal grp_mixer_Pipeline_VITIS_LOOP_27_1_fu_94_ap_ready : STD_LOGIC;
+    signal grp_mixer_Pipeline_VITIS_LOOP_27_1_fu_94_mix_out_TREADY : STD_LOGIC;
+    signal grp_mixer_Pipeline_VITIS_LOOP_27_1_fu_94_mix_out_TDATA : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_mixer_Pipeline_VITIS_LOOP_27_1_fu_94_mix_out_TVALID : STD_LOGIC;
+    signal grp_mixer_Pipeline_VITIS_LOOP_27_1_fu_94_mix_out_TKEEP : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_mixer_Pipeline_VITIS_LOOP_27_1_fu_94_mix_out_TSTRB : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_mixer_Pipeline_VITIS_LOOP_27_1_fu_94_mix_out_TLAST : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_mixer_Pipeline_VITIS_LOOP_27_1_fu_94_stream_in_TREADY : STD_LOGIC;
+    signal grp_mixer_Pipeline_VITIS_LOOP_27_1_fu_94_add_ln68_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_mixer_Pipeline_VITIS_LOOP_27_1_fu_94_add_ln68_out_ap_vld : STD_LOGIC;
+    signal grp_mixer_Pipeline_VITIS_LOOP_27_1_fu_94_ap_start_reg : STD_LOGIC := '0';
     signal ap_CS_fsm_state3 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state3 : signal is "none";
     signal mix_out_TDATA_reg : STD_LOGIC_VECTOR (31 downto 0);
     signal mix_out_TKEEP_reg : STD_LOGIC_VECTOR (3 downto 0);
     signal mix_out_TSTRB_reg : STD_LOGIC_VECTOR (3 downto 0);
-    signal mix_out_TUSER_reg : STD_LOGIC_VECTOR (1 downto 0);
     signal mix_out_TLAST_reg : STD_LOGIC_VECTOR (0 downto 0);
-    signal mix_out_TID_reg : STD_LOGIC_VECTOR (4 downto 0);
-    signal mix_out_TDEST_reg : STD_LOGIC_VECTOR (5 downto 0);
-    signal select_ln55_fu_459_p3 : STD_LOGIC_VECTOR (1 downto 0);
-    signal zext_ln55_fu_455_p1 : STD_LOGIC_VECTOR (1 downto 0);
-    signal select_ln55_1_fu_467_p3 : STD_LOGIC_VECTOR (1 downto 0);
-    signal add_ln56_fu_475_p2 : STD_LOGIC_VECTOR (1 downto 0);
-    signal select_ln56_fu_481_p3 : STD_LOGIC_VECTOR (1 downto 0);
-    signal zext_ln57_fu_489_p1 : STD_LOGIC_VECTOR (2 downto 0);
-    signal add_ln57_fu_493_p2 : STD_LOGIC_VECTOR (2 downto 0);
-    signal select_ln57_fu_499_p3 : STD_LOGIC_VECTOR (2 downto 0);
-    signal add_ln58_fu_507_p2 : STD_LOGIC_VECTOR (2 downto 0);
-    signal select_ln58_fu_513_p3 : STD_LOGIC_VECTOR (2 downto 0);
-    signal add_ln59_fu_521_p2 : STD_LOGIC_VECTOR (2 downto 0);
-    signal select_ln59_fu_527_p3 : STD_LOGIC_VECTOR (2 downto 0);
-    signal add_ln60_fu_535_p2 : STD_LOGIC_VECTOR (2 downto 0);
-    signal select_ln60_fu_541_p3 : STD_LOGIC_VECTOR (2 downto 0);
-    signal zext_ln61_fu_549_p1 : STD_LOGIC_VECTOR (3 downto 0);
-    signal add_ln61_fu_553_p2 : STD_LOGIC_VECTOR (3 downto 0);
+    signal ap_CS_fsm_state4 : STD_LOGIC;
+    attribute fsm_encoding of ap_CS_fsm_state4 : signal is "none";
     signal regslice_both_mix_out_V_data_V_U_apdone_blk : STD_LOGIC;
-    signal ap_block_state5 : BOOLEAN;
-    signal ap_NS_fsm : STD_LOGIC_VECTOR (4 downto 0);
+    signal select_ln43_fu_192_p3 : STD_LOGIC_VECTOR (1 downto 0);
+    signal zext_ln43_fu_188_p1 : STD_LOGIC_VECTOR (1 downto 0);
+    signal select_ln43_1_fu_200_p3 : STD_LOGIC_VECTOR (1 downto 0);
+    signal add_ln44_fu_208_p2 : STD_LOGIC_VECTOR (1 downto 0);
+    signal select_ln44_fu_214_p3 : STD_LOGIC_VECTOR (1 downto 0);
+    signal zext_ln45_fu_222_p1 : STD_LOGIC_VECTOR (2 downto 0);
+    signal add_ln45_fu_226_p2 : STD_LOGIC_VECTOR (2 downto 0);
+    signal select_ln45_fu_232_p3 : STD_LOGIC_VECTOR (2 downto 0);
+    signal add_ln46_fu_240_p2 : STD_LOGIC_VECTOR (2 downto 0);
+    signal select_ln46_fu_246_p3 : STD_LOGIC_VECTOR (2 downto 0);
+    signal add_ln47_fu_254_p2 : STD_LOGIC_VECTOR (2 downto 0);
+    signal select_ln47_fu_260_p3 : STD_LOGIC_VECTOR (2 downto 0);
+    signal add_ln48_fu_268_p2 : STD_LOGIC_VECTOR (2 downto 0);
+    signal zext_ln49_fu_287_p1 : STD_LOGIC_VECTOR (3 downto 0);
+    signal ap_NS_fsm : STD_LOGIC_VECTOR (3 downto 0);
     signal ap_ST_fsm_state1_blk : STD_LOGIC;
     signal ap_ST_fsm_state2_blk : STD_LOGIC;
     signal ap_ST_fsm_state3_blk : STD_LOGIC;
     signal ap_ST_fsm_state4_blk : STD_LOGIC;
-    signal ap_ST_fsm_state5_blk : STD_LOGIC;
-    signal regslice_both_stream_in_0_V_data_V_U_apdone_blk : STD_LOGIC;
-    signal stream_in_0_TDATA_int_regslice : STD_LOGIC_VECTOR (31 downto 0);
-    signal stream_in_0_TVALID_int_regslice : STD_LOGIC;
-    signal stream_in_0_TREADY_int_regslice : STD_LOGIC;
-    signal regslice_both_stream_in_0_V_data_V_U_ack_in : STD_LOGIC;
-    signal regslice_both_stream_in_0_V_keep_V_U_apdone_blk : STD_LOGIC;
-    signal stream_in_0_TKEEP_int_regslice : STD_LOGIC_VECTOR (3 downto 0);
-    signal regslice_both_stream_in_0_V_keep_V_U_vld_out : STD_LOGIC;
-    signal regslice_both_stream_in_0_V_keep_V_U_ack_in : STD_LOGIC;
-    signal regslice_both_stream_in_0_V_strb_V_U_apdone_blk : STD_LOGIC;
-    signal stream_in_0_TSTRB_int_regslice : STD_LOGIC_VECTOR (3 downto 0);
-    signal regslice_both_stream_in_0_V_strb_V_U_vld_out : STD_LOGIC;
-    signal regslice_both_stream_in_0_V_strb_V_U_ack_in : STD_LOGIC;
-    signal regslice_both_stream_in_0_V_user_V_U_apdone_blk : STD_LOGIC;
-    signal stream_in_0_TUSER_int_regslice : STD_LOGIC_VECTOR (1 downto 0);
-    signal regslice_both_stream_in_0_V_user_V_U_vld_out : STD_LOGIC;
-    signal regslice_both_stream_in_0_V_user_V_U_ack_in : STD_LOGIC;
-    signal regslice_both_stream_in_0_V_last_V_U_apdone_blk : STD_LOGIC;
-    signal stream_in_0_TLAST_int_regslice : STD_LOGIC_VECTOR (0 downto 0);
-    signal regslice_both_stream_in_0_V_last_V_U_vld_out : STD_LOGIC;
-    signal regslice_both_stream_in_0_V_last_V_U_ack_in : STD_LOGIC;
-    signal regslice_both_stream_in_0_V_id_V_U_apdone_blk : STD_LOGIC;
-    signal stream_in_0_TID_int_regslice : STD_LOGIC_VECTOR (4 downto 0);
-    signal regslice_both_stream_in_0_V_id_V_U_vld_out : STD_LOGIC;
-    signal regslice_both_stream_in_0_V_id_V_U_ack_in : STD_LOGIC;
-    signal regslice_both_stream_in_0_V_dest_V_U_apdone_blk : STD_LOGIC;
-    signal stream_in_0_TDEST_int_regslice : STD_LOGIC_VECTOR (5 downto 0);
-    signal regslice_both_stream_in_0_V_dest_V_U_vld_out : STD_LOGIC;
-    signal regslice_both_stream_in_0_V_dest_V_U_ack_in : STD_LOGIC;
-    signal regslice_both_stream_in_1_V_data_V_U_apdone_blk : STD_LOGIC;
-    signal stream_in_1_TDATA_int_regslice : STD_LOGIC_VECTOR (31 downto 0);
-    signal stream_in_1_TVALID_int_regslice : STD_LOGIC;
-    signal stream_in_1_TREADY_int_regslice : STD_LOGIC;
-    signal regslice_both_stream_in_1_V_data_V_U_ack_in : STD_LOGIC;
-    signal regslice_both_stream_in_1_V_keep_V_U_apdone_blk : STD_LOGIC;
-    signal stream_in_1_TKEEP_int_regslice : STD_LOGIC_VECTOR (3 downto 0);
-    signal regslice_both_stream_in_1_V_keep_V_U_vld_out : STD_LOGIC;
-    signal regslice_both_stream_in_1_V_keep_V_U_ack_in : STD_LOGIC;
-    signal regslice_both_stream_in_1_V_strb_V_U_apdone_blk : STD_LOGIC;
-    signal stream_in_1_TSTRB_int_regslice : STD_LOGIC_VECTOR (3 downto 0);
-    signal regslice_both_stream_in_1_V_strb_V_U_vld_out : STD_LOGIC;
-    signal regslice_both_stream_in_1_V_strb_V_U_ack_in : STD_LOGIC;
-    signal regslice_both_stream_in_1_V_user_V_U_apdone_blk : STD_LOGIC;
-    signal stream_in_1_TUSER_int_regslice : STD_LOGIC_VECTOR (1 downto 0);
-    signal regslice_both_stream_in_1_V_user_V_U_vld_out : STD_LOGIC;
-    signal regslice_both_stream_in_1_V_user_V_U_ack_in : STD_LOGIC;
-    signal regslice_both_stream_in_1_V_last_V_U_apdone_blk : STD_LOGIC;
-    signal stream_in_1_TLAST_int_regslice : STD_LOGIC_VECTOR (0 downto 0);
-    signal regslice_both_stream_in_1_V_last_V_U_vld_out : STD_LOGIC;
-    signal regslice_both_stream_in_1_V_last_V_U_ack_in : STD_LOGIC;
-    signal regslice_both_stream_in_1_V_id_V_U_apdone_blk : STD_LOGIC;
-    signal stream_in_1_TID_int_regslice : STD_LOGIC_VECTOR (4 downto 0);
-    signal regslice_both_stream_in_1_V_id_V_U_vld_out : STD_LOGIC;
-    signal regslice_both_stream_in_1_V_id_V_U_ack_in : STD_LOGIC;
-    signal regslice_both_stream_in_1_V_dest_V_U_apdone_blk : STD_LOGIC;
-    signal stream_in_1_TDEST_int_regslice : STD_LOGIC_VECTOR (5 downto 0);
-    signal regslice_both_stream_in_1_V_dest_V_U_vld_out : STD_LOGIC;
-    signal regslice_both_stream_in_1_V_dest_V_U_ack_in : STD_LOGIC;
-    signal regslice_both_stream_in_2_V_data_V_U_apdone_blk : STD_LOGIC;
-    signal stream_in_2_TDATA_int_regslice : STD_LOGIC_VECTOR (31 downto 0);
-    signal stream_in_2_TVALID_int_regslice : STD_LOGIC;
-    signal stream_in_2_TREADY_int_regslice : STD_LOGIC;
-    signal regslice_both_stream_in_2_V_data_V_U_ack_in : STD_LOGIC;
-    signal regslice_both_stream_in_2_V_keep_V_U_apdone_blk : STD_LOGIC;
-    signal stream_in_2_TKEEP_int_regslice : STD_LOGIC_VECTOR (3 downto 0);
-    signal regslice_both_stream_in_2_V_keep_V_U_vld_out : STD_LOGIC;
-    signal regslice_both_stream_in_2_V_keep_V_U_ack_in : STD_LOGIC;
-    signal regslice_both_stream_in_2_V_strb_V_U_apdone_blk : STD_LOGIC;
-    signal stream_in_2_TSTRB_int_regslice : STD_LOGIC_VECTOR (3 downto 0);
-    signal regslice_both_stream_in_2_V_strb_V_U_vld_out : STD_LOGIC;
-    signal regslice_both_stream_in_2_V_strb_V_U_ack_in : STD_LOGIC;
-    signal regslice_both_stream_in_2_V_user_V_U_apdone_blk : STD_LOGIC;
-    signal stream_in_2_TUSER_int_regslice : STD_LOGIC_VECTOR (1 downto 0);
-    signal regslice_both_stream_in_2_V_user_V_U_vld_out : STD_LOGIC;
-    signal regslice_both_stream_in_2_V_user_V_U_ack_in : STD_LOGIC;
-    signal regslice_both_stream_in_2_V_last_V_U_apdone_blk : STD_LOGIC;
-    signal stream_in_2_TLAST_int_regslice : STD_LOGIC_VECTOR (0 downto 0);
-    signal regslice_both_stream_in_2_V_last_V_U_vld_out : STD_LOGIC;
-    signal regslice_both_stream_in_2_V_last_V_U_ack_in : STD_LOGIC;
-    signal regslice_both_stream_in_2_V_id_V_U_apdone_blk : STD_LOGIC;
-    signal stream_in_2_TID_int_regslice : STD_LOGIC_VECTOR (4 downto 0);
-    signal regslice_both_stream_in_2_V_id_V_U_vld_out : STD_LOGIC;
-    signal regslice_both_stream_in_2_V_id_V_U_ack_in : STD_LOGIC;
-    signal regslice_both_stream_in_2_V_dest_V_U_apdone_blk : STD_LOGIC;
-    signal stream_in_2_TDEST_int_regslice : STD_LOGIC_VECTOR (5 downto 0);
-    signal regslice_both_stream_in_2_V_dest_V_U_vld_out : STD_LOGIC;
-    signal regslice_both_stream_in_2_V_dest_V_U_ack_in : STD_LOGIC;
-    signal regslice_both_stream_in_3_V_data_V_U_apdone_blk : STD_LOGIC;
-    signal stream_in_3_TDATA_int_regslice : STD_LOGIC_VECTOR (31 downto 0);
-    signal stream_in_3_TVALID_int_regslice : STD_LOGIC;
-    signal stream_in_3_TREADY_int_regslice : STD_LOGIC;
-    signal regslice_both_stream_in_3_V_data_V_U_ack_in : STD_LOGIC;
-    signal regslice_both_stream_in_3_V_keep_V_U_apdone_blk : STD_LOGIC;
-    signal stream_in_3_TKEEP_int_regslice : STD_LOGIC_VECTOR (3 downto 0);
-    signal regslice_both_stream_in_3_V_keep_V_U_vld_out : STD_LOGIC;
-    signal regslice_both_stream_in_3_V_keep_V_U_ack_in : STD_LOGIC;
-    signal regslice_both_stream_in_3_V_strb_V_U_apdone_blk : STD_LOGIC;
-    signal stream_in_3_TSTRB_int_regslice : STD_LOGIC_VECTOR (3 downto 0);
-    signal regslice_both_stream_in_3_V_strb_V_U_vld_out : STD_LOGIC;
-    signal regslice_both_stream_in_3_V_strb_V_U_ack_in : STD_LOGIC;
-    signal regslice_both_stream_in_3_V_user_V_U_apdone_blk : STD_LOGIC;
-    signal stream_in_3_TUSER_int_regslice : STD_LOGIC_VECTOR (1 downto 0);
-    signal regslice_both_stream_in_3_V_user_V_U_vld_out : STD_LOGIC;
-    signal regslice_both_stream_in_3_V_user_V_U_ack_in : STD_LOGIC;
-    signal regslice_both_stream_in_3_V_last_V_U_apdone_blk : STD_LOGIC;
-    signal stream_in_3_TLAST_int_regslice : STD_LOGIC_VECTOR (0 downto 0);
-    signal regslice_both_stream_in_3_V_last_V_U_vld_out : STD_LOGIC;
-    signal regslice_both_stream_in_3_V_last_V_U_ack_in : STD_LOGIC;
-    signal regslice_both_stream_in_3_V_id_V_U_apdone_blk : STD_LOGIC;
-    signal stream_in_3_TID_int_regslice : STD_LOGIC_VECTOR (4 downto 0);
-    signal regslice_both_stream_in_3_V_id_V_U_vld_out : STD_LOGIC;
-    signal regslice_both_stream_in_3_V_id_V_U_ack_in : STD_LOGIC;
-    signal regslice_both_stream_in_3_V_dest_V_U_apdone_blk : STD_LOGIC;
-    signal stream_in_3_TDEST_int_regslice : STD_LOGIC_VECTOR (5 downto 0);
-    signal regslice_both_stream_in_3_V_dest_V_U_vld_out : STD_LOGIC;
-    signal regslice_both_stream_in_3_V_dest_V_U_ack_in : STD_LOGIC;
-    signal regslice_both_stream_in_4_V_data_V_U_apdone_blk : STD_LOGIC;
-    signal stream_in_4_TDATA_int_regslice : STD_LOGIC_VECTOR (31 downto 0);
-    signal stream_in_4_TVALID_int_regslice : STD_LOGIC;
-    signal stream_in_4_TREADY_int_regslice : STD_LOGIC;
-    signal regslice_both_stream_in_4_V_data_V_U_ack_in : STD_LOGIC;
-    signal regslice_both_stream_in_4_V_keep_V_U_apdone_blk : STD_LOGIC;
-    signal stream_in_4_TKEEP_int_regslice : STD_LOGIC_VECTOR (3 downto 0);
-    signal regslice_both_stream_in_4_V_keep_V_U_vld_out : STD_LOGIC;
-    signal regslice_both_stream_in_4_V_keep_V_U_ack_in : STD_LOGIC;
-    signal regslice_both_stream_in_4_V_strb_V_U_apdone_blk : STD_LOGIC;
-    signal stream_in_4_TSTRB_int_regslice : STD_LOGIC_VECTOR (3 downto 0);
-    signal regslice_both_stream_in_4_V_strb_V_U_vld_out : STD_LOGIC;
-    signal regslice_both_stream_in_4_V_strb_V_U_ack_in : STD_LOGIC;
-    signal regslice_both_stream_in_4_V_user_V_U_apdone_blk : STD_LOGIC;
-    signal stream_in_4_TUSER_int_regslice : STD_LOGIC_VECTOR (1 downto 0);
-    signal regslice_both_stream_in_4_V_user_V_U_vld_out : STD_LOGIC;
-    signal regslice_both_stream_in_4_V_user_V_U_ack_in : STD_LOGIC;
-    signal regslice_both_stream_in_4_V_last_V_U_apdone_blk : STD_LOGIC;
-    signal stream_in_4_TLAST_int_regslice : STD_LOGIC_VECTOR (0 downto 0);
-    signal regslice_both_stream_in_4_V_last_V_U_vld_out : STD_LOGIC;
-    signal regslice_both_stream_in_4_V_last_V_U_ack_in : STD_LOGIC;
-    signal regslice_both_stream_in_4_V_id_V_U_apdone_blk : STD_LOGIC;
-    signal stream_in_4_TID_int_regslice : STD_LOGIC_VECTOR (4 downto 0);
-    signal regslice_both_stream_in_4_V_id_V_U_vld_out : STD_LOGIC;
-    signal regslice_both_stream_in_4_V_id_V_U_ack_in : STD_LOGIC;
-    signal regslice_both_stream_in_4_V_dest_V_U_apdone_blk : STD_LOGIC;
-    signal stream_in_4_TDEST_int_regslice : STD_LOGIC_VECTOR (5 downto 0);
-    signal regslice_both_stream_in_4_V_dest_V_U_vld_out : STD_LOGIC;
-    signal regslice_both_stream_in_4_V_dest_V_U_ack_in : STD_LOGIC;
-    signal regslice_both_stream_in_5_V_data_V_U_apdone_blk : STD_LOGIC;
-    signal stream_in_5_TDATA_int_regslice : STD_LOGIC_VECTOR (31 downto 0);
-    signal stream_in_5_TVALID_int_regslice : STD_LOGIC;
-    signal stream_in_5_TREADY_int_regslice : STD_LOGIC;
-    signal regslice_both_stream_in_5_V_data_V_U_ack_in : STD_LOGIC;
-    signal regslice_both_stream_in_5_V_keep_V_U_apdone_blk : STD_LOGIC;
-    signal stream_in_5_TKEEP_int_regslice : STD_LOGIC_VECTOR (3 downto 0);
-    signal regslice_both_stream_in_5_V_keep_V_U_vld_out : STD_LOGIC;
-    signal regslice_both_stream_in_5_V_keep_V_U_ack_in : STD_LOGIC;
-    signal regslice_both_stream_in_5_V_strb_V_U_apdone_blk : STD_LOGIC;
-    signal stream_in_5_TSTRB_int_regslice : STD_LOGIC_VECTOR (3 downto 0);
-    signal regslice_both_stream_in_5_V_strb_V_U_vld_out : STD_LOGIC;
-    signal regslice_both_stream_in_5_V_strb_V_U_ack_in : STD_LOGIC;
-    signal regslice_both_stream_in_5_V_user_V_U_apdone_blk : STD_LOGIC;
-    signal stream_in_5_TUSER_int_regslice : STD_LOGIC_VECTOR (1 downto 0);
-    signal regslice_both_stream_in_5_V_user_V_U_vld_out : STD_LOGIC;
-    signal regslice_both_stream_in_5_V_user_V_U_ack_in : STD_LOGIC;
-    signal regslice_both_stream_in_5_V_last_V_U_apdone_blk : STD_LOGIC;
-    signal stream_in_5_TLAST_int_regslice : STD_LOGIC_VECTOR (0 downto 0);
-    signal regslice_both_stream_in_5_V_last_V_U_vld_out : STD_LOGIC;
-    signal regslice_both_stream_in_5_V_last_V_U_ack_in : STD_LOGIC;
-    signal regslice_both_stream_in_5_V_id_V_U_apdone_blk : STD_LOGIC;
-    signal stream_in_5_TID_int_regslice : STD_LOGIC_VECTOR (4 downto 0);
-    signal regslice_both_stream_in_5_V_id_V_U_vld_out : STD_LOGIC;
-    signal regslice_both_stream_in_5_V_id_V_U_ack_in : STD_LOGIC;
-    signal regslice_both_stream_in_5_V_dest_V_U_apdone_blk : STD_LOGIC;
-    signal stream_in_5_TDEST_int_regslice : STD_LOGIC_VECTOR (5 downto 0);
-    signal regslice_both_stream_in_5_V_dest_V_U_vld_out : STD_LOGIC;
-    signal regslice_both_stream_in_5_V_dest_V_U_ack_in : STD_LOGIC;
-    signal regslice_both_stream_in_6_V_data_V_U_apdone_blk : STD_LOGIC;
-    signal stream_in_6_TDATA_int_regslice : STD_LOGIC_VECTOR (31 downto 0);
-    signal stream_in_6_TVALID_int_regslice : STD_LOGIC;
-    signal stream_in_6_TREADY_int_regslice : STD_LOGIC;
-    signal regslice_both_stream_in_6_V_data_V_U_ack_in : STD_LOGIC;
-    signal regslice_both_stream_in_6_V_keep_V_U_apdone_blk : STD_LOGIC;
-    signal stream_in_6_TKEEP_int_regslice : STD_LOGIC_VECTOR (3 downto 0);
-    signal regslice_both_stream_in_6_V_keep_V_U_vld_out : STD_LOGIC;
-    signal regslice_both_stream_in_6_V_keep_V_U_ack_in : STD_LOGIC;
-    signal regslice_both_stream_in_6_V_strb_V_U_apdone_blk : STD_LOGIC;
-    signal stream_in_6_TSTRB_int_regslice : STD_LOGIC_VECTOR (3 downto 0);
-    signal regslice_both_stream_in_6_V_strb_V_U_vld_out : STD_LOGIC;
-    signal regslice_both_stream_in_6_V_strb_V_U_ack_in : STD_LOGIC;
-    signal regslice_both_stream_in_6_V_user_V_U_apdone_blk : STD_LOGIC;
-    signal stream_in_6_TUSER_int_regslice : STD_LOGIC_VECTOR (1 downto 0);
-    signal regslice_both_stream_in_6_V_user_V_U_vld_out : STD_LOGIC;
-    signal regslice_both_stream_in_6_V_user_V_U_ack_in : STD_LOGIC;
-    signal regslice_both_stream_in_6_V_last_V_U_apdone_blk : STD_LOGIC;
-    signal stream_in_6_TLAST_int_regslice : STD_LOGIC_VECTOR (0 downto 0);
-    signal regslice_both_stream_in_6_V_last_V_U_vld_out : STD_LOGIC;
-    signal regslice_both_stream_in_6_V_last_V_U_ack_in : STD_LOGIC;
-    signal regslice_both_stream_in_6_V_id_V_U_apdone_blk : STD_LOGIC;
-    signal stream_in_6_TID_int_regslice : STD_LOGIC_VECTOR (4 downto 0);
-    signal regslice_both_stream_in_6_V_id_V_U_vld_out : STD_LOGIC;
-    signal regslice_both_stream_in_6_V_id_V_U_ack_in : STD_LOGIC;
-    signal regslice_both_stream_in_6_V_dest_V_U_apdone_blk : STD_LOGIC;
-    signal stream_in_6_TDEST_int_regslice : STD_LOGIC_VECTOR (5 downto 0);
-    signal regslice_both_stream_in_6_V_dest_V_U_vld_out : STD_LOGIC;
-    signal regslice_both_stream_in_6_V_dest_V_U_ack_in : STD_LOGIC;
-    signal regslice_both_stream_in_7_V_data_V_U_apdone_blk : STD_LOGIC;
-    signal stream_in_7_TDATA_int_regslice : STD_LOGIC_VECTOR (31 downto 0);
-    signal stream_in_7_TVALID_int_regslice : STD_LOGIC;
-    signal stream_in_7_TREADY_int_regslice : STD_LOGIC;
-    signal regslice_both_stream_in_7_V_data_V_U_ack_in : STD_LOGIC;
-    signal regslice_both_stream_in_7_V_keep_V_U_apdone_blk : STD_LOGIC;
-    signal stream_in_7_TKEEP_int_regslice : STD_LOGIC_VECTOR (3 downto 0);
-    signal regslice_both_stream_in_7_V_keep_V_U_vld_out : STD_LOGIC;
-    signal regslice_both_stream_in_7_V_keep_V_U_ack_in : STD_LOGIC;
-    signal regslice_both_stream_in_7_V_strb_V_U_apdone_blk : STD_LOGIC;
-    signal stream_in_7_TSTRB_int_regslice : STD_LOGIC_VECTOR (3 downto 0);
-    signal regslice_both_stream_in_7_V_strb_V_U_vld_out : STD_LOGIC;
-    signal regslice_both_stream_in_7_V_strb_V_U_ack_in : STD_LOGIC;
-    signal regslice_both_stream_in_7_V_user_V_U_apdone_blk : STD_LOGIC;
-    signal stream_in_7_TUSER_int_regslice : STD_LOGIC_VECTOR (1 downto 0);
-    signal regslice_both_stream_in_7_V_user_V_U_vld_out : STD_LOGIC;
-    signal regslice_both_stream_in_7_V_user_V_U_ack_in : STD_LOGIC;
-    signal regslice_both_stream_in_7_V_last_V_U_apdone_blk : STD_LOGIC;
-    signal stream_in_7_TLAST_int_regslice : STD_LOGIC_VECTOR (0 downto 0);
-    signal regslice_both_stream_in_7_V_last_V_U_vld_out : STD_LOGIC;
-    signal regslice_both_stream_in_7_V_last_V_U_ack_in : STD_LOGIC;
-    signal regslice_both_stream_in_7_V_id_V_U_apdone_blk : STD_LOGIC;
-    signal stream_in_7_TID_int_regslice : STD_LOGIC_VECTOR (4 downto 0);
-    signal regslice_both_stream_in_7_V_id_V_U_vld_out : STD_LOGIC;
-    signal regslice_both_stream_in_7_V_id_V_U_ack_in : STD_LOGIC;
-    signal regslice_both_stream_in_7_V_dest_V_U_apdone_blk : STD_LOGIC;
-    signal stream_in_7_TDEST_int_regslice : STD_LOGIC_VECTOR (5 downto 0);
-    signal regslice_both_stream_in_7_V_dest_V_U_vld_out : STD_LOGIC;
-    signal regslice_both_stream_in_7_V_dest_V_U_ack_in : STD_LOGIC;
+    signal regslice_both_stream_in_V_data_V_U_apdone_blk : STD_LOGIC;
+    signal stream_in_TDATA_int_regslice : STD_LOGIC_VECTOR (127 downto 0);
+    signal stream_in_TVALID_int_regslice : STD_LOGIC;
+    signal stream_in_TREADY_int_regslice : STD_LOGIC;
+    signal regslice_both_stream_in_V_data_V_U_ack_in : STD_LOGIC;
+    signal regslice_both_stream_in_V_keep_V_U_apdone_blk : STD_LOGIC;
+    signal stream_in_TKEEP_int_regslice : STD_LOGIC_VECTOR (15 downto 0);
+    signal regslice_both_stream_in_V_keep_V_U_vld_out : STD_LOGIC;
+    signal regslice_both_stream_in_V_keep_V_U_ack_in : STD_LOGIC;
+    signal regslice_both_stream_in_V_strb_V_U_apdone_blk : STD_LOGIC;
+    signal stream_in_TSTRB_int_regslice : STD_LOGIC_VECTOR (15 downto 0);
+    signal regslice_both_stream_in_V_strb_V_U_vld_out : STD_LOGIC;
+    signal regslice_both_stream_in_V_strb_V_U_ack_in : STD_LOGIC;
+    signal regslice_both_stream_in_V_last_V_U_apdone_blk : STD_LOGIC;
+    signal stream_in_TLAST_int_regslice : STD_LOGIC_VECTOR (0 downto 0);
+    signal regslice_both_stream_in_V_last_V_U_vld_out : STD_LOGIC;
+    signal regslice_both_stream_in_V_last_V_U_ack_in : STD_LOGIC;
     signal mix_out_TDATA_int_regslice : STD_LOGIC_VECTOR (31 downto 0);
     signal mix_out_TVALID_int_regslice : STD_LOGIC;
     signal mix_out_TREADY_int_regslice : STD_LOGIC;
@@ -488,25 +179,13 @@ architecture behav of mixer is
     signal mix_out_TSTRB_int_regslice : STD_LOGIC_VECTOR (3 downto 0);
     signal regslice_both_mix_out_V_strb_V_U_ack_in_dummy : STD_LOGIC;
     signal regslice_both_mix_out_V_strb_V_U_vld_out : STD_LOGIC;
-    signal regslice_both_mix_out_V_user_V_U_apdone_blk : STD_LOGIC;
-    signal mix_out_TUSER_int_regslice : STD_LOGIC_VECTOR (1 downto 0);
-    signal regslice_both_mix_out_V_user_V_U_ack_in_dummy : STD_LOGIC;
-    signal regslice_both_mix_out_V_user_V_U_vld_out : STD_LOGIC;
     signal regslice_both_mix_out_V_last_V_U_apdone_blk : STD_LOGIC;
     signal mix_out_TLAST_int_regslice : STD_LOGIC_VECTOR (0 downto 0);
     signal regslice_both_mix_out_V_last_V_U_ack_in_dummy : STD_LOGIC;
     signal regslice_both_mix_out_V_last_V_U_vld_out : STD_LOGIC;
-    signal regslice_both_mix_out_V_id_V_U_apdone_blk : STD_LOGIC;
-    signal mix_out_TID_int_regslice : STD_LOGIC_VECTOR (4 downto 0);
-    signal regslice_both_mix_out_V_id_V_U_ack_in_dummy : STD_LOGIC;
-    signal regslice_both_mix_out_V_id_V_U_vld_out : STD_LOGIC;
-    signal regslice_both_mix_out_V_dest_V_U_apdone_blk : STD_LOGIC;
-    signal mix_out_TDEST_int_regslice : STD_LOGIC_VECTOR (5 downto 0);
-    signal regslice_both_mix_out_V_dest_V_U_ack_in_dummy : STD_LOGIC;
-    signal regslice_both_mix_out_V_dest_V_U_vld_out : STD_LOGIC;
     signal ap_ce_reg : STD_LOGIC;
 
-    component mixer_mixer_Pipeline_VITIS_LOOP_30_1 IS
+    component mixer_mixer_Pipeline_VITIS_LOOP_27_1 IS
     port (
         ap_clk : IN STD_LOGIC;
         ap_rst : IN STD_LOGIC;
@@ -514,98 +193,31 @@ architecture behav of mixer is
         ap_done : OUT STD_LOGIC;
         ap_idle : OUT STD_LOGIC;
         ap_ready : OUT STD_LOGIC;
-        stream_in_0_TVALID : IN STD_LOGIC;
-        stream_in_1_TVALID : IN STD_LOGIC;
-        stream_in_2_TVALID : IN STD_LOGIC;
-        stream_in_3_TVALID : IN STD_LOGIC;
-        stream_in_4_TVALID : IN STD_LOGIC;
-        stream_in_5_TVALID : IN STD_LOGIC;
-        stream_in_6_TVALID : IN STD_LOGIC;
-        stream_in_7_TVALID : IN STD_LOGIC;
+        stream_in_TVALID : IN STD_LOGIC;
         mix_out_TREADY : IN STD_LOGIC;
-        active_14 : IN STD_LOGIC_VECTOR (3 downto 0);
+        current_gain_q16_load : IN STD_LOGIC_VECTOR (31 downto 0);
         mix_out_TDATA : OUT STD_LOGIC_VECTOR (31 downto 0);
         mix_out_TVALID : OUT STD_LOGIC;
         mix_out_TKEEP : OUT STD_LOGIC_VECTOR (3 downto 0);
         mix_out_TSTRB : OUT STD_LOGIC_VECTOR (3 downto 0);
-        mix_out_TUSER : OUT STD_LOGIC_VECTOR (1 downto 0);
         mix_out_TLAST : OUT STD_LOGIC_VECTOR (0 downto 0);
-        mix_out_TID : OUT STD_LOGIC_VECTOR (4 downto 0);
-        mix_out_TDEST : OUT STD_LOGIC_VECTOR (5 downto 0);
-        stream_in_0_TDATA : IN STD_LOGIC_VECTOR (31 downto 0);
-        stream_in_0_TREADY : OUT STD_LOGIC;
-        stream_in_0_TKEEP : IN STD_LOGIC_VECTOR (3 downto 0);
-        stream_in_0_TSTRB : IN STD_LOGIC_VECTOR (3 downto 0);
-        stream_in_0_TUSER : IN STD_LOGIC_VECTOR (1 downto 0);
-        stream_in_0_TLAST : IN STD_LOGIC_VECTOR (0 downto 0);
-        stream_in_0_TID : IN STD_LOGIC_VECTOR (4 downto 0);
-        stream_in_0_TDEST : IN STD_LOGIC_VECTOR (5 downto 0);
-        stream_in_1_TDATA : IN STD_LOGIC_VECTOR (31 downto 0);
-        stream_in_1_TREADY : OUT STD_LOGIC;
-        stream_in_1_TKEEP : IN STD_LOGIC_VECTOR (3 downto 0);
-        stream_in_1_TSTRB : IN STD_LOGIC_VECTOR (3 downto 0);
-        stream_in_1_TUSER : IN STD_LOGIC_VECTOR (1 downto 0);
-        stream_in_1_TLAST : IN STD_LOGIC_VECTOR (0 downto 0);
-        stream_in_1_TID : IN STD_LOGIC_VECTOR (4 downto 0);
-        stream_in_1_TDEST : IN STD_LOGIC_VECTOR (5 downto 0);
-        stream_in_2_TDATA : IN STD_LOGIC_VECTOR (31 downto 0);
-        stream_in_2_TREADY : OUT STD_LOGIC;
-        stream_in_2_TKEEP : IN STD_LOGIC_VECTOR (3 downto 0);
-        stream_in_2_TSTRB : IN STD_LOGIC_VECTOR (3 downto 0);
-        stream_in_2_TUSER : IN STD_LOGIC_VECTOR (1 downto 0);
-        stream_in_2_TLAST : IN STD_LOGIC_VECTOR (0 downto 0);
-        stream_in_2_TID : IN STD_LOGIC_VECTOR (4 downto 0);
-        stream_in_2_TDEST : IN STD_LOGIC_VECTOR (5 downto 0);
-        stream_in_3_TDATA : IN STD_LOGIC_VECTOR (31 downto 0);
-        stream_in_3_TREADY : OUT STD_LOGIC;
-        stream_in_3_TKEEP : IN STD_LOGIC_VECTOR (3 downto 0);
-        stream_in_3_TSTRB : IN STD_LOGIC_VECTOR (3 downto 0);
-        stream_in_3_TUSER : IN STD_LOGIC_VECTOR (1 downto 0);
-        stream_in_3_TLAST : IN STD_LOGIC_VECTOR (0 downto 0);
-        stream_in_3_TID : IN STD_LOGIC_VECTOR (4 downto 0);
-        stream_in_3_TDEST : IN STD_LOGIC_VECTOR (5 downto 0);
-        stream_in_4_TDATA : IN STD_LOGIC_VECTOR (31 downto 0);
-        stream_in_4_TREADY : OUT STD_LOGIC;
-        stream_in_4_TKEEP : IN STD_LOGIC_VECTOR (3 downto 0);
-        stream_in_4_TSTRB : IN STD_LOGIC_VECTOR (3 downto 0);
-        stream_in_4_TUSER : IN STD_LOGIC_VECTOR (1 downto 0);
-        stream_in_4_TLAST : IN STD_LOGIC_VECTOR (0 downto 0);
-        stream_in_4_TID : IN STD_LOGIC_VECTOR (4 downto 0);
-        stream_in_4_TDEST : IN STD_LOGIC_VECTOR (5 downto 0);
-        stream_in_5_TDATA : IN STD_LOGIC_VECTOR (31 downto 0);
-        stream_in_5_TREADY : OUT STD_LOGIC;
-        stream_in_5_TKEEP : IN STD_LOGIC_VECTOR (3 downto 0);
-        stream_in_5_TSTRB : IN STD_LOGIC_VECTOR (3 downto 0);
-        stream_in_5_TUSER : IN STD_LOGIC_VECTOR (1 downto 0);
-        stream_in_5_TLAST : IN STD_LOGIC_VECTOR (0 downto 0);
-        stream_in_5_TID : IN STD_LOGIC_VECTOR (4 downto 0);
-        stream_in_5_TDEST : IN STD_LOGIC_VECTOR (5 downto 0);
-        stream_in_6_TDATA : IN STD_LOGIC_VECTOR (31 downto 0);
-        stream_in_6_TREADY : OUT STD_LOGIC;
-        stream_in_6_TKEEP : IN STD_LOGIC_VECTOR (3 downto 0);
-        stream_in_6_TSTRB : IN STD_LOGIC_VECTOR (3 downto 0);
-        stream_in_6_TUSER : IN STD_LOGIC_VECTOR (1 downto 0);
-        stream_in_6_TLAST : IN STD_LOGIC_VECTOR (0 downto 0);
-        stream_in_6_TID : IN STD_LOGIC_VECTOR (4 downto 0);
-        stream_in_6_TDEST : IN STD_LOGIC_VECTOR (5 downto 0);
-        stream_in_7_TDATA : IN STD_LOGIC_VECTOR (31 downto 0);
-        stream_in_7_TREADY : OUT STD_LOGIC;
-        stream_in_7_TKEEP : IN STD_LOGIC_VECTOR (3 downto 0);
-        stream_in_7_TSTRB : IN STD_LOGIC_VECTOR (3 downto 0);
-        stream_in_7_TUSER : IN STD_LOGIC_VECTOR (1 downto 0);
-        stream_in_7_TLAST : IN STD_LOGIC_VECTOR (0 downto 0);
-        stream_in_7_TID : IN STD_LOGIC_VECTOR (4 downto 0);
-        stream_in_7_TDEST : IN STD_LOGIC_VECTOR (5 downto 0);
-        empty_16 : IN STD_LOGIC_VECTOR (0 downto 0);
-        empty_17 : IN STD_LOGIC_VECTOR (0 downto 0);
-        empty_18 : IN STD_LOGIC_VECTOR (0 downto 0);
-        empty_19 : IN STD_LOGIC_VECTOR (0 downto 0);
-        empty_20 : IN STD_LOGIC_VECTOR (0 downto 0);
-        empty_21 : IN STD_LOGIC_VECTOR (0 downto 0);
-        empty_22 : IN STD_LOGIC_VECTOR (0 downto 0);
+        stream_in_TDATA : IN STD_LOGIC_VECTOR (127 downto 0);
+        stream_in_TREADY : OUT STD_LOGIC;
+        stream_in_TKEEP : IN STD_LOGIC_VECTOR (15 downto 0);
+        stream_in_TSTRB : IN STD_LOGIC_VECTOR (15 downto 0);
+        stream_in_TLAST : IN STD_LOGIC_VECTOR (0 downto 0);
+        empty_9 : IN STD_LOGIC_VECTOR (0 downto 0);
+        empty_10 : IN STD_LOGIC_VECTOR (0 downto 0);
+        empty_11 : IN STD_LOGIC_VECTOR (0 downto 0);
+        empty_12 : IN STD_LOGIC_VECTOR (0 downto 0);
+        empty_13 : IN STD_LOGIC_VECTOR (0 downto 0);
+        empty_14 : IN STD_LOGIC_VECTOR (0 downto 0);
+        empty_15 : IN STD_LOGIC_VECTOR (0 downto 0);
         empty : IN STD_LOGIC_VECTOR (0 downto 0);
-        out_pkt_data_out : OUT STD_LOGIC_VECTOR (31 downto 0);
-        out_pkt_data_out_ap_vld : OUT STD_LOGIC );
+        active_13 : IN STD_LOGIC_VECTOR (3 downto 0);
+        zext_ln49 : IN STD_LOGIC_VECTOR (2 downto 0);
+        add_ln68_out : OUT STD_LOGIC_VECTOR (31 downto 0);
+        add_ln68_out_ap_vld : OUT STD_LOGIC );
     end component;
 
 
@@ -660,106 +272,39 @@ architecture behav of mixer is
 
 
 begin
-    grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255 : component mixer_mixer_Pipeline_VITIS_LOOP_30_1
+    grp_mixer_Pipeline_VITIS_LOOP_27_1_fu_94 : component mixer_mixer_Pipeline_VITIS_LOOP_27_1
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst_n_inv,
-        ap_start => grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_ap_start,
-        ap_done => grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_ap_done,
-        ap_idle => grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_ap_idle,
-        ap_ready => grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_ap_ready,
-        stream_in_0_TVALID => stream_in_0_TVALID_int_regslice,
-        stream_in_1_TVALID => stream_in_1_TVALID_int_regslice,
-        stream_in_2_TVALID => stream_in_2_TVALID_int_regslice,
-        stream_in_3_TVALID => stream_in_3_TVALID_int_regslice,
-        stream_in_4_TVALID => stream_in_4_TVALID_int_regslice,
-        stream_in_5_TVALID => stream_in_5_TVALID_int_regslice,
-        stream_in_6_TVALID => stream_in_6_TVALID_int_regslice,
-        stream_in_7_TVALID => stream_in_7_TVALID_int_regslice,
-        mix_out_TREADY => grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_mix_out_TREADY,
-        active_14 => select_ln61_reg_617,
-        mix_out_TDATA => grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_mix_out_TDATA,
-        mix_out_TVALID => grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_mix_out_TVALID,
-        mix_out_TKEEP => grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_mix_out_TKEEP,
-        mix_out_TSTRB => grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_mix_out_TSTRB,
-        mix_out_TUSER => grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_mix_out_TUSER,
-        mix_out_TLAST => grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_mix_out_TLAST,
-        mix_out_TID => grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_mix_out_TID,
-        mix_out_TDEST => grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_mix_out_TDEST,
-        stream_in_0_TDATA => stream_in_0_TDATA_int_regslice,
-        stream_in_0_TREADY => grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_stream_in_0_TREADY,
-        stream_in_0_TKEEP => stream_in_0_TKEEP_int_regslice,
-        stream_in_0_TSTRB => stream_in_0_TSTRB_int_regslice,
-        stream_in_0_TUSER => stream_in_0_TUSER_int_regslice,
-        stream_in_0_TLAST => stream_in_0_TLAST_int_regslice,
-        stream_in_0_TID => stream_in_0_TID_int_regslice,
-        stream_in_0_TDEST => stream_in_0_TDEST_int_regslice,
-        stream_in_1_TDATA => stream_in_1_TDATA_int_regslice,
-        stream_in_1_TREADY => grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_stream_in_1_TREADY,
-        stream_in_1_TKEEP => stream_in_1_TKEEP_int_regslice,
-        stream_in_1_TSTRB => stream_in_1_TSTRB_int_regslice,
-        stream_in_1_TUSER => stream_in_1_TUSER_int_regslice,
-        stream_in_1_TLAST => stream_in_1_TLAST_int_regslice,
-        stream_in_1_TID => stream_in_1_TID_int_regslice,
-        stream_in_1_TDEST => stream_in_1_TDEST_int_regslice,
-        stream_in_2_TDATA => stream_in_2_TDATA_int_regslice,
-        stream_in_2_TREADY => grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_stream_in_2_TREADY,
-        stream_in_2_TKEEP => stream_in_2_TKEEP_int_regslice,
-        stream_in_2_TSTRB => stream_in_2_TSTRB_int_regslice,
-        stream_in_2_TUSER => stream_in_2_TUSER_int_regslice,
-        stream_in_2_TLAST => stream_in_2_TLAST_int_regslice,
-        stream_in_2_TID => stream_in_2_TID_int_regslice,
-        stream_in_2_TDEST => stream_in_2_TDEST_int_regslice,
-        stream_in_3_TDATA => stream_in_3_TDATA_int_regslice,
-        stream_in_3_TREADY => grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_stream_in_3_TREADY,
-        stream_in_3_TKEEP => stream_in_3_TKEEP_int_regslice,
-        stream_in_3_TSTRB => stream_in_3_TSTRB_int_regslice,
-        stream_in_3_TUSER => stream_in_3_TUSER_int_regslice,
-        stream_in_3_TLAST => stream_in_3_TLAST_int_regslice,
-        stream_in_3_TID => stream_in_3_TID_int_regslice,
-        stream_in_3_TDEST => stream_in_3_TDEST_int_regslice,
-        stream_in_4_TDATA => stream_in_4_TDATA_int_regslice,
-        stream_in_4_TREADY => grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_stream_in_4_TREADY,
-        stream_in_4_TKEEP => stream_in_4_TKEEP_int_regslice,
-        stream_in_4_TSTRB => stream_in_4_TSTRB_int_regslice,
-        stream_in_4_TUSER => stream_in_4_TUSER_int_regslice,
-        stream_in_4_TLAST => stream_in_4_TLAST_int_regslice,
-        stream_in_4_TID => stream_in_4_TID_int_regslice,
-        stream_in_4_TDEST => stream_in_4_TDEST_int_regslice,
-        stream_in_5_TDATA => stream_in_5_TDATA_int_regslice,
-        stream_in_5_TREADY => grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_stream_in_5_TREADY,
-        stream_in_5_TKEEP => stream_in_5_TKEEP_int_regslice,
-        stream_in_5_TSTRB => stream_in_5_TSTRB_int_regslice,
-        stream_in_5_TUSER => stream_in_5_TUSER_int_regslice,
-        stream_in_5_TLAST => stream_in_5_TLAST_int_regslice,
-        stream_in_5_TID => stream_in_5_TID_int_regslice,
-        stream_in_5_TDEST => stream_in_5_TDEST_int_regslice,
-        stream_in_6_TDATA => stream_in_6_TDATA_int_regslice,
-        stream_in_6_TREADY => grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_stream_in_6_TREADY,
-        stream_in_6_TKEEP => stream_in_6_TKEEP_int_regslice,
-        stream_in_6_TSTRB => stream_in_6_TSTRB_int_regslice,
-        stream_in_6_TUSER => stream_in_6_TUSER_int_regslice,
-        stream_in_6_TLAST => stream_in_6_TLAST_int_regslice,
-        stream_in_6_TID => stream_in_6_TID_int_regslice,
-        stream_in_6_TDEST => stream_in_6_TDEST_int_regslice,
-        stream_in_7_TDATA => stream_in_7_TDATA_int_regslice,
-        stream_in_7_TREADY => grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_stream_in_7_TREADY,
-        stream_in_7_TKEEP => stream_in_7_TKEEP_int_regslice,
-        stream_in_7_TSTRB => stream_in_7_TSTRB_int_regslice,
-        stream_in_7_TUSER => stream_in_7_TUSER_int_regslice,
-        stream_in_7_TLAST => stream_in_7_TLAST_int_regslice,
-        stream_in_7_TID => stream_in_7_TID_int_regslice,
-        stream_in_7_TDEST => stream_in_7_TDEST_int_regslice,
-        empty_16 => trunc_ln54_reg_577,
-        empty_17 => tmp_reg_582,
-        empty_18 => tmp_8_reg_587,
-        empty_19 => tmp_9_reg_592,
-        empty_20 => tmp_10_reg_597,
-        empty_21 => tmp_11_reg_602,
-        empty_22 => tmp_12_reg_607,
-        empty => tmp_13_reg_612,
-        out_pkt_data_out => grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_out_pkt_data_out,
-        out_pkt_data_out_ap_vld => grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_out_pkt_data_out_ap_vld);
+        ap_start => grp_mixer_Pipeline_VITIS_LOOP_27_1_fu_94_ap_start,
+        ap_done => grp_mixer_Pipeline_VITIS_LOOP_27_1_fu_94_ap_done,
+        ap_idle => grp_mixer_Pipeline_VITIS_LOOP_27_1_fu_94_ap_idle,
+        ap_ready => grp_mixer_Pipeline_VITIS_LOOP_27_1_fu_94_ap_ready,
+        stream_in_TVALID => stream_in_TVALID_int_regslice,
+        mix_out_TREADY => grp_mixer_Pipeline_VITIS_LOOP_27_1_fu_94_mix_out_TREADY,
+        current_gain_q16_load => current_gain_q16,
+        mix_out_TDATA => grp_mixer_Pipeline_VITIS_LOOP_27_1_fu_94_mix_out_TDATA,
+        mix_out_TVALID => grp_mixer_Pipeline_VITIS_LOOP_27_1_fu_94_mix_out_TVALID,
+        mix_out_TKEEP => grp_mixer_Pipeline_VITIS_LOOP_27_1_fu_94_mix_out_TKEEP,
+        mix_out_TSTRB => grp_mixer_Pipeline_VITIS_LOOP_27_1_fu_94_mix_out_TSTRB,
+        mix_out_TLAST => grp_mixer_Pipeline_VITIS_LOOP_27_1_fu_94_mix_out_TLAST,
+        stream_in_TDATA => stream_in_TDATA_int_regslice,
+        stream_in_TREADY => grp_mixer_Pipeline_VITIS_LOOP_27_1_fu_94_stream_in_TREADY,
+        stream_in_TKEEP => stream_in_TKEEP_int_regslice,
+        stream_in_TSTRB => stream_in_TSTRB_int_regslice,
+        stream_in_TLAST => stream_in_TLAST_int_regslice,
+        empty_9 => trunc_ln42_reg_312,
+        empty_10 => tmp_reg_317,
+        empty_11 => tmp_12_reg_322,
+        empty_12 => tmp_13_reg_327,
+        empty_13 => tmp_14_reg_332,
+        empty_14 => tmp_15_reg_337,
+        empty_15 => tmp_16_reg_342,
+        empty => tmp_17_reg_347,
+        active_13 => add_ln49_reg_361,
+        zext_ln49 => select_ln48_reg_352,
+        add_ln68_out => grp_mixer_Pipeline_VITIS_LOOP_27_1_fu_94_add_ln68_out,
+        add_ln68_out_ap_vld => grp_mixer_Pipeline_VITIS_LOOP_27_1_fu_94_add_ln68_out_ap_vld);
 
     control_s_axi_U : component mixer_control_s_axi
     generic map (
@@ -792,789 +337,61 @@ begin
         ap_done => ap_done,
         ap_idle => ap_idle);
 
-    regslice_both_stream_in_0_V_data_V_U : component mixer_regslice_both
+    regslice_both_stream_in_V_data_V_U : component mixer_regslice_both
     generic map (
-        DataWidth => 32)
+        DataWidth => 128)
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst_n_inv,
-        data_in => stream_in_0_TDATA,
-        vld_in => stream_in_0_TVALID,
-        ack_in => regslice_both_stream_in_0_V_data_V_U_ack_in,
-        data_out => stream_in_0_TDATA_int_regslice,
-        vld_out => stream_in_0_TVALID_int_regslice,
-        ack_out => stream_in_0_TREADY_int_regslice,
-        apdone_blk => regslice_both_stream_in_0_V_data_V_U_apdone_blk);
+        data_in => stream_in_TDATA,
+        vld_in => stream_in_TVALID,
+        ack_in => regslice_both_stream_in_V_data_V_U_ack_in,
+        data_out => stream_in_TDATA_int_regslice,
+        vld_out => stream_in_TVALID_int_regslice,
+        ack_out => stream_in_TREADY_int_regslice,
+        apdone_blk => regslice_both_stream_in_V_data_V_U_apdone_blk);
 
-    regslice_both_stream_in_0_V_keep_V_U : component mixer_regslice_both
+    regslice_both_stream_in_V_keep_V_U : component mixer_regslice_both
     generic map (
-        DataWidth => 4)
+        DataWidth => 16)
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst_n_inv,
-        data_in => stream_in_0_TKEEP,
-        vld_in => stream_in_0_TVALID,
-        ack_in => regslice_both_stream_in_0_V_keep_V_U_ack_in,
-        data_out => stream_in_0_TKEEP_int_regslice,
-        vld_out => regslice_both_stream_in_0_V_keep_V_U_vld_out,
-        ack_out => stream_in_0_TREADY_int_regslice,
-        apdone_blk => regslice_both_stream_in_0_V_keep_V_U_apdone_blk);
+        data_in => stream_in_TKEEP,
+        vld_in => stream_in_TVALID,
+        ack_in => regslice_both_stream_in_V_keep_V_U_ack_in,
+        data_out => stream_in_TKEEP_int_regslice,
+        vld_out => regslice_both_stream_in_V_keep_V_U_vld_out,
+        ack_out => stream_in_TREADY_int_regslice,
+        apdone_blk => regslice_both_stream_in_V_keep_V_U_apdone_blk);
 
-    regslice_both_stream_in_0_V_strb_V_U : component mixer_regslice_both
+    regslice_both_stream_in_V_strb_V_U : component mixer_regslice_both
     generic map (
-        DataWidth => 4)
+        DataWidth => 16)
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst_n_inv,
-        data_in => stream_in_0_TSTRB,
-        vld_in => stream_in_0_TVALID,
-        ack_in => regslice_both_stream_in_0_V_strb_V_U_ack_in,
-        data_out => stream_in_0_TSTRB_int_regslice,
-        vld_out => regslice_both_stream_in_0_V_strb_V_U_vld_out,
-        ack_out => stream_in_0_TREADY_int_regslice,
-        apdone_blk => regslice_both_stream_in_0_V_strb_V_U_apdone_blk);
+        data_in => stream_in_TSTRB,
+        vld_in => stream_in_TVALID,
+        ack_in => regslice_both_stream_in_V_strb_V_U_ack_in,
+        data_out => stream_in_TSTRB_int_regslice,
+        vld_out => regslice_both_stream_in_V_strb_V_U_vld_out,
+        ack_out => stream_in_TREADY_int_regslice,
+        apdone_blk => regslice_both_stream_in_V_strb_V_U_apdone_blk);
 
-    regslice_both_stream_in_0_V_user_V_U : component mixer_regslice_both
-    generic map (
-        DataWidth => 2)
-    port map (
-        ap_clk => ap_clk,
-        ap_rst => ap_rst_n_inv,
-        data_in => stream_in_0_TUSER,
-        vld_in => stream_in_0_TVALID,
-        ack_in => regslice_both_stream_in_0_V_user_V_U_ack_in,
-        data_out => stream_in_0_TUSER_int_regslice,
-        vld_out => regslice_both_stream_in_0_V_user_V_U_vld_out,
-        ack_out => stream_in_0_TREADY_int_regslice,
-        apdone_blk => regslice_both_stream_in_0_V_user_V_U_apdone_blk);
-
-    regslice_both_stream_in_0_V_last_V_U : component mixer_regslice_both
+    regslice_both_stream_in_V_last_V_U : component mixer_regslice_both
     generic map (
         DataWidth => 1)
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst_n_inv,
-        data_in => stream_in_0_TLAST,
-        vld_in => stream_in_0_TVALID,
-        ack_in => regslice_both_stream_in_0_V_last_V_U_ack_in,
-        data_out => stream_in_0_TLAST_int_regslice,
-        vld_out => regslice_both_stream_in_0_V_last_V_U_vld_out,
-        ack_out => stream_in_0_TREADY_int_regslice,
-        apdone_blk => regslice_both_stream_in_0_V_last_V_U_apdone_blk);
-
-    regslice_both_stream_in_0_V_id_V_U : component mixer_regslice_both
-    generic map (
-        DataWidth => 5)
-    port map (
-        ap_clk => ap_clk,
-        ap_rst => ap_rst_n_inv,
-        data_in => stream_in_0_TID,
-        vld_in => stream_in_0_TVALID,
-        ack_in => regslice_both_stream_in_0_V_id_V_U_ack_in,
-        data_out => stream_in_0_TID_int_regslice,
-        vld_out => regslice_both_stream_in_0_V_id_V_U_vld_out,
-        ack_out => stream_in_0_TREADY_int_regslice,
-        apdone_blk => regslice_both_stream_in_0_V_id_V_U_apdone_blk);
-
-    regslice_both_stream_in_0_V_dest_V_U : component mixer_regslice_both
-    generic map (
-        DataWidth => 6)
-    port map (
-        ap_clk => ap_clk,
-        ap_rst => ap_rst_n_inv,
-        data_in => stream_in_0_TDEST,
-        vld_in => stream_in_0_TVALID,
-        ack_in => regslice_both_stream_in_0_V_dest_V_U_ack_in,
-        data_out => stream_in_0_TDEST_int_regslice,
-        vld_out => regslice_both_stream_in_0_V_dest_V_U_vld_out,
-        ack_out => stream_in_0_TREADY_int_regslice,
-        apdone_blk => regslice_both_stream_in_0_V_dest_V_U_apdone_blk);
-
-    regslice_both_stream_in_1_V_data_V_U : component mixer_regslice_both
-    generic map (
-        DataWidth => 32)
-    port map (
-        ap_clk => ap_clk,
-        ap_rst => ap_rst_n_inv,
-        data_in => stream_in_1_TDATA,
-        vld_in => stream_in_1_TVALID,
-        ack_in => regslice_both_stream_in_1_V_data_V_U_ack_in,
-        data_out => stream_in_1_TDATA_int_regslice,
-        vld_out => stream_in_1_TVALID_int_regslice,
-        ack_out => stream_in_1_TREADY_int_regslice,
-        apdone_blk => regslice_both_stream_in_1_V_data_V_U_apdone_blk);
-
-    regslice_both_stream_in_1_V_keep_V_U : component mixer_regslice_both
-    generic map (
-        DataWidth => 4)
-    port map (
-        ap_clk => ap_clk,
-        ap_rst => ap_rst_n_inv,
-        data_in => stream_in_1_TKEEP,
-        vld_in => stream_in_1_TVALID,
-        ack_in => regslice_both_stream_in_1_V_keep_V_U_ack_in,
-        data_out => stream_in_1_TKEEP_int_regslice,
-        vld_out => regslice_both_stream_in_1_V_keep_V_U_vld_out,
-        ack_out => stream_in_1_TREADY_int_regslice,
-        apdone_blk => regslice_both_stream_in_1_V_keep_V_U_apdone_blk);
-
-    regslice_both_stream_in_1_V_strb_V_U : component mixer_regslice_both
-    generic map (
-        DataWidth => 4)
-    port map (
-        ap_clk => ap_clk,
-        ap_rst => ap_rst_n_inv,
-        data_in => stream_in_1_TSTRB,
-        vld_in => stream_in_1_TVALID,
-        ack_in => regslice_both_stream_in_1_V_strb_V_U_ack_in,
-        data_out => stream_in_1_TSTRB_int_regslice,
-        vld_out => regslice_both_stream_in_1_V_strb_V_U_vld_out,
-        ack_out => stream_in_1_TREADY_int_regslice,
-        apdone_blk => regslice_both_stream_in_1_V_strb_V_U_apdone_blk);
-
-    regslice_both_stream_in_1_V_user_V_U : component mixer_regslice_both
-    generic map (
-        DataWidth => 2)
-    port map (
-        ap_clk => ap_clk,
-        ap_rst => ap_rst_n_inv,
-        data_in => stream_in_1_TUSER,
-        vld_in => stream_in_1_TVALID,
-        ack_in => regslice_both_stream_in_1_V_user_V_U_ack_in,
-        data_out => stream_in_1_TUSER_int_regslice,
-        vld_out => regslice_both_stream_in_1_V_user_V_U_vld_out,
-        ack_out => stream_in_1_TREADY_int_regslice,
-        apdone_blk => regslice_both_stream_in_1_V_user_V_U_apdone_blk);
-
-    regslice_both_stream_in_1_V_last_V_U : component mixer_regslice_both
-    generic map (
-        DataWidth => 1)
-    port map (
-        ap_clk => ap_clk,
-        ap_rst => ap_rst_n_inv,
-        data_in => stream_in_1_TLAST,
-        vld_in => stream_in_1_TVALID,
-        ack_in => regslice_both_stream_in_1_V_last_V_U_ack_in,
-        data_out => stream_in_1_TLAST_int_regslice,
-        vld_out => regslice_both_stream_in_1_V_last_V_U_vld_out,
-        ack_out => stream_in_1_TREADY_int_regslice,
-        apdone_blk => regslice_both_stream_in_1_V_last_V_U_apdone_blk);
-
-    regslice_both_stream_in_1_V_id_V_U : component mixer_regslice_both
-    generic map (
-        DataWidth => 5)
-    port map (
-        ap_clk => ap_clk,
-        ap_rst => ap_rst_n_inv,
-        data_in => stream_in_1_TID,
-        vld_in => stream_in_1_TVALID,
-        ack_in => regslice_both_stream_in_1_V_id_V_U_ack_in,
-        data_out => stream_in_1_TID_int_regslice,
-        vld_out => regslice_both_stream_in_1_V_id_V_U_vld_out,
-        ack_out => stream_in_1_TREADY_int_regslice,
-        apdone_blk => regslice_both_stream_in_1_V_id_V_U_apdone_blk);
-
-    regslice_both_stream_in_1_V_dest_V_U : component mixer_regslice_both
-    generic map (
-        DataWidth => 6)
-    port map (
-        ap_clk => ap_clk,
-        ap_rst => ap_rst_n_inv,
-        data_in => stream_in_1_TDEST,
-        vld_in => stream_in_1_TVALID,
-        ack_in => regslice_both_stream_in_1_V_dest_V_U_ack_in,
-        data_out => stream_in_1_TDEST_int_regslice,
-        vld_out => regslice_both_stream_in_1_V_dest_V_U_vld_out,
-        ack_out => stream_in_1_TREADY_int_regslice,
-        apdone_blk => regslice_both_stream_in_1_V_dest_V_U_apdone_blk);
-
-    regslice_both_stream_in_2_V_data_V_U : component mixer_regslice_both
-    generic map (
-        DataWidth => 32)
-    port map (
-        ap_clk => ap_clk,
-        ap_rst => ap_rst_n_inv,
-        data_in => stream_in_2_TDATA,
-        vld_in => stream_in_2_TVALID,
-        ack_in => regslice_both_stream_in_2_V_data_V_U_ack_in,
-        data_out => stream_in_2_TDATA_int_regslice,
-        vld_out => stream_in_2_TVALID_int_regslice,
-        ack_out => stream_in_2_TREADY_int_regslice,
-        apdone_blk => regslice_both_stream_in_2_V_data_V_U_apdone_blk);
-
-    regslice_both_stream_in_2_V_keep_V_U : component mixer_regslice_both
-    generic map (
-        DataWidth => 4)
-    port map (
-        ap_clk => ap_clk,
-        ap_rst => ap_rst_n_inv,
-        data_in => stream_in_2_TKEEP,
-        vld_in => stream_in_2_TVALID,
-        ack_in => regslice_both_stream_in_2_V_keep_V_U_ack_in,
-        data_out => stream_in_2_TKEEP_int_regslice,
-        vld_out => regslice_both_stream_in_2_V_keep_V_U_vld_out,
-        ack_out => stream_in_2_TREADY_int_regslice,
-        apdone_blk => regslice_both_stream_in_2_V_keep_V_U_apdone_blk);
-
-    regslice_both_stream_in_2_V_strb_V_U : component mixer_regslice_both
-    generic map (
-        DataWidth => 4)
-    port map (
-        ap_clk => ap_clk,
-        ap_rst => ap_rst_n_inv,
-        data_in => stream_in_2_TSTRB,
-        vld_in => stream_in_2_TVALID,
-        ack_in => regslice_both_stream_in_2_V_strb_V_U_ack_in,
-        data_out => stream_in_2_TSTRB_int_regslice,
-        vld_out => regslice_both_stream_in_2_V_strb_V_U_vld_out,
-        ack_out => stream_in_2_TREADY_int_regslice,
-        apdone_blk => regslice_both_stream_in_2_V_strb_V_U_apdone_blk);
-
-    regslice_both_stream_in_2_V_user_V_U : component mixer_regslice_both
-    generic map (
-        DataWidth => 2)
-    port map (
-        ap_clk => ap_clk,
-        ap_rst => ap_rst_n_inv,
-        data_in => stream_in_2_TUSER,
-        vld_in => stream_in_2_TVALID,
-        ack_in => regslice_both_stream_in_2_V_user_V_U_ack_in,
-        data_out => stream_in_2_TUSER_int_regslice,
-        vld_out => regslice_both_stream_in_2_V_user_V_U_vld_out,
-        ack_out => stream_in_2_TREADY_int_regslice,
-        apdone_blk => regslice_both_stream_in_2_V_user_V_U_apdone_blk);
-
-    regslice_both_stream_in_2_V_last_V_U : component mixer_regslice_both
-    generic map (
-        DataWidth => 1)
-    port map (
-        ap_clk => ap_clk,
-        ap_rst => ap_rst_n_inv,
-        data_in => stream_in_2_TLAST,
-        vld_in => stream_in_2_TVALID,
-        ack_in => regslice_both_stream_in_2_V_last_V_U_ack_in,
-        data_out => stream_in_2_TLAST_int_regslice,
-        vld_out => regslice_both_stream_in_2_V_last_V_U_vld_out,
-        ack_out => stream_in_2_TREADY_int_regslice,
-        apdone_blk => regslice_both_stream_in_2_V_last_V_U_apdone_blk);
-
-    regslice_both_stream_in_2_V_id_V_U : component mixer_regslice_both
-    generic map (
-        DataWidth => 5)
-    port map (
-        ap_clk => ap_clk,
-        ap_rst => ap_rst_n_inv,
-        data_in => stream_in_2_TID,
-        vld_in => stream_in_2_TVALID,
-        ack_in => regslice_both_stream_in_2_V_id_V_U_ack_in,
-        data_out => stream_in_2_TID_int_regslice,
-        vld_out => regslice_both_stream_in_2_V_id_V_U_vld_out,
-        ack_out => stream_in_2_TREADY_int_regslice,
-        apdone_blk => regslice_both_stream_in_2_V_id_V_U_apdone_blk);
-
-    regslice_both_stream_in_2_V_dest_V_U : component mixer_regslice_both
-    generic map (
-        DataWidth => 6)
-    port map (
-        ap_clk => ap_clk,
-        ap_rst => ap_rst_n_inv,
-        data_in => stream_in_2_TDEST,
-        vld_in => stream_in_2_TVALID,
-        ack_in => regslice_both_stream_in_2_V_dest_V_U_ack_in,
-        data_out => stream_in_2_TDEST_int_regslice,
-        vld_out => regslice_both_stream_in_2_V_dest_V_U_vld_out,
-        ack_out => stream_in_2_TREADY_int_regslice,
-        apdone_blk => regslice_both_stream_in_2_V_dest_V_U_apdone_blk);
-
-    regslice_both_stream_in_3_V_data_V_U : component mixer_regslice_both
-    generic map (
-        DataWidth => 32)
-    port map (
-        ap_clk => ap_clk,
-        ap_rst => ap_rst_n_inv,
-        data_in => stream_in_3_TDATA,
-        vld_in => stream_in_3_TVALID,
-        ack_in => regslice_both_stream_in_3_V_data_V_U_ack_in,
-        data_out => stream_in_3_TDATA_int_regslice,
-        vld_out => stream_in_3_TVALID_int_regslice,
-        ack_out => stream_in_3_TREADY_int_regslice,
-        apdone_blk => regslice_both_stream_in_3_V_data_V_U_apdone_blk);
-
-    regslice_both_stream_in_3_V_keep_V_U : component mixer_regslice_both
-    generic map (
-        DataWidth => 4)
-    port map (
-        ap_clk => ap_clk,
-        ap_rst => ap_rst_n_inv,
-        data_in => stream_in_3_TKEEP,
-        vld_in => stream_in_3_TVALID,
-        ack_in => regslice_both_stream_in_3_V_keep_V_U_ack_in,
-        data_out => stream_in_3_TKEEP_int_regslice,
-        vld_out => regslice_both_stream_in_3_V_keep_V_U_vld_out,
-        ack_out => stream_in_3_TREADY_int_regslice,
-        apdone_blk => regslice_both_stream_in_3_V_keep_V_U_apdone_blk);
-
-    regslice_both_stream_in_3_V_strb_V_U : component mixer_regslice_both
-    generic map (
-        DataWidth => 4)
-    port map (
-        ap_clk => ap_clk,
-        ap_rst => ap_rst_n_inv,
-        data_in => stream_in_3_TSTRB,
-        vld_in => stream_in_3_TVALID,
-        ack_in => regslice_both_stream_in_3_V_strb_V_U_ack_in,
-        data_out => stream_in_3_TSTRB_int_regslice,
-        vld_out => regslice_both_stream_in_3_V_strb_V_U_vld_out,
-        ack_out => stream_in_3_TREADY_int_regslice,
-        apdone_blk => regslice_both_stream_in_3_V_strb_V_U_apdone_blk);
-
-    regslice_both_stream_in_3_V_user_V_U : component mixer_regslice_both
-    generic map (
-        DataWidth => 2)
-    port map (
-        ap_clk => ap_clk,
-        ap_rst => ap_rst_n_inv,
-        data_in => stream_in_3_TUSER,
-        vld_in => stream_in_3_TVALID,
-        ack_in => regslice_both_stream_in_3_V_user_V_U_ack_in,
-        data_out => stream_in_3_TUSER_int_regslice,
-        vld_out => regslice_both_stream_in_3_V_user_V_U_vld_out,
-        ack_out => stream_in_3_TREADY_int_regslice,
-        apdone_blk => regslice_both_stream_in_3_V_user_V_U_apdone_blk);
-
-    regslice_both_stream_in_3_V_last_V_U : component mixer_regslice_both
-    generic map (
-        DataWidth => 1)
-    port map (
-        ap_clk => ap_clk,
-        ap_rst => ap_rst_n_inv,
-        data_in => stream_in_3_TLAST,
-        vld_in => stream_in_3_TVALID,
-        ack_in => regslice_both_stream_in_3_V_last_V_U_ack_in,
-        data_out => stream_in_3_TLAST_int_regslice,
-        vld_out => regslice_both_stream_in_3_V_last_V_U_vld_out,
-        ack_out => stream_in_3_TREADY_int_regslice,
-        apdone_blk => regslice_both_stream_in_3_V_last_V_U_apdone_blk);
-
-    regslice_both_stream_in_3_V_id_V_U : component mixer_regslice_both
-    generic map (
-        DataWidth => 5)
-    port map (
-        ap_clk => ap_clk,
-        ap_rst => ap_rst_n_inv,
-        data_in => stream_in_3_TID,
-        vld_in => stream_in_3_TVALID,
-        ack_in => regslice_both_stream_in_3_V_id_V_U_ack_in,
-        data_out => stream_in_3_TID_int_regslice,
-        vld_out => regslice_both_stream_in_3_V_id_V_U_vld_out,
-        ack_out => stream_in_3_TREADY_int_regslice,
-        apdone_blk => regslice_both_stream_in_3_V_id_V_U_apdone_blk);
-
-    regslice_both_stream_in_3_V_dest_V_U : component mixer_regslice_both
-    generic map (
-        DataWidth => 6)
-    port map (
-        ap_clk => ap_clk,
-        ap_rst => ap_rst_n_inv,
-        data_in => stream_in_3_TDEST,
-        vld_in => stream_in_3_TVALID,
-        ack_in => regslice_both_stream_in_3_V_dest_V_U_ack_in,
-        data_out => stream_in_3_TDEST_int_regslice,
-        vld_out => regslice_both_stream_in_3_V_dest_V_U_vld_out,
-        ack_out => stream_in_3_TREADY_int_regslice,
-        apdone_blk => regslice_both_stream_in_3_V_dest_V_U_apdone_blk);
-
-    regslice_both_stream_in_4_V_data_V_U : component mixer_regslice_both
-    generic map (
-        DataWidth => 32)
-    port map (
-        ap_clk => ap_clk,
-        ap_rst => ap_rst_n_inv,
-        data_in => stream_in_4_TDATA,
-        vld_in => stream_in_4_TVALID,
-        ack_in => regslice_both_stream_in_4_V_data_V_U_ack_in,
-        data_out => stream_in_4_TDATA_int_regslice,
-        vld_out => stream_in_4_TVALID_int_regslice,
-        ack_out => stream_in_4_TREADY_int_regslice,
-        apdone_blk => regslice_both_stream_in_4_V_data_V_U_apdone_blk);
-
-    regslice_both_stream_in_4_V_keep_V_U : component mixer_regslice_both
-    generic map (
-        DataWidth => 4)
-    port map (
-        ap_clk => ap_clk,
-        ap_rst => ap_rst_n_inv,
-        data_in => stream_in_4_TKEEP,
-        vld_in => stream_in_4_TVALID,
-        ack_in => regslice_both_stream_in_4_V_keep_V_U_ack_in,
-        data_out => stream_in_4_TKEEP_int_regslice,
-        vld_out => regslice_both_stream_in_4_V_keep_V_U_vld_out,
-        ack_out => stream_in_4_TREADY_int_regslice,
-        apdone_blk => regslice_both_stream_in_4_V_keep_V_U_apdone_blk);
-
-    regslice_both_stream_in_4_V_strb_V_U : component mixer_regslice_both
-    generic map (
-        DataWidth => 4)
-    port map (
-        ap_clk => ap_clk,
-        ap_rst => ap_rst_n_inv,
-        data_in => stream_in_4_TSTRB,
-        vld_in => stream_in_4_TVALID,
-        ack_in => regslice_both_stream_in_4_V_strb_V_U_ack_in,
-        data_out => stream_in_4_TSTRB_int_regslice,
-        vld_out => regslice_both_stream_in_4_V_strb_V_U_vld_out,
-        ack_out => stream_in_4_TREADY_int_regslice,
-        apdone_blk => regslice_both_stream_in_4_V_strb_V_U_apdone_blk);
-
-    regslice_both_stream_in_4_V_user_V_U : component mixer_regslice_both
-    generic map (
-        DataWidth => 2)
-    port map (
-        ap_clk => ap_clk,
-        ap_rst => ap_rst_n_inv,
-        data_in => stream_in_4_TUSER,
-        vld_in => stream_in_4_TVALID,
-        ack_in => regslice_both_stream_in_4_V_user_V_U_ack_in,
-        data_out => stream_in_4_TUSER_int_regslice,
-        vld_out => regslice_both_stream_in_4_V_user_V_U_vld_out,
-        ack_out => stream_in_4_TREADY_int_regslice,
-        apdone_blk => regslice_both_stream_in_4_V_user_V_U_apdone_blk);
-
-    regslice_both_stream_in_4_V_last_V_U : component mixer_regslice_both
-    generic map (
-        DataWidth => 1)
-    port map (
-        ap_clk => ap_clk,
-        ap_rst => ap_rst_n_inv,
-        data_in => stream_in_4_TLAST,
-        vld_in => stream_in_4_TVALID,
-        ack_in => regslice_both_stream_in_4_V_last_V_U_ack_in,
-        data_out => stream_in_4_TLAST_int_regslice,
-        vld_out => regslice_both_stream_in_4_V_last_V_U_vld_out,
-        ack_out => stream_in_4_TREADY_int_regslice,
-        apdone_blk => regslice_both_stream_in_4_V_last_V_U_apdone_blk);
-
-    regslice_both_stream_in_4_V_id_V_U : component mixer_regslice_both
-    generic map (
-        DataWidth => 5)
-    port map (
-        ap_clk => ap_clk,
-        ap_rst => ap_rst_n_inv,
-        data_in => stream_in_4_TID,
-        vld_in => stream_in_4_TVALID,
-        ack_in => regslice_both_stream_in_4_V_id_V_U_ack_in,
-        data_out => stream_in_4_TID_int_regslice,
-        vld_out => regslice_both_stream_in_4_V_id_V_U_vld_out,
-        ack_out => stream_in_4_TREADY_int_regslice,
-        apdone_blk => regslice_both_stream_in_4_V_id_V_U_apdone_blk);
-
-    regslice_both_stream_in_4_V_dest_V_U : component mixer_regslice_both
-    generic map (
-        DataWidth => 6)
-    port map (
-        ap_clk => ap_clk,
-        ap_rst => ap_rst_n_inv,
-        data_in => stream_in_4_TDEST,
-        vld_in => stream_in_4_TVALID,
-        ack_in => regslice_both_stream_in_4_V_dest_V_U_ack_in,
-        data_out => stream_in_4_TDEST_int_regslice,
-        vld_out => regslice_both_stream_in_4_V_dest_V_U_vld_out,
-        ack_out => stream_in_4_TREADY_int_regslice,
-        apdone_blk => regslice_both_stream_in_4_V_dest_V_U_apdone_blk);
-
-    regslice_both_stream_in_5_V_data_V_U : component mixer_regslice_both
-    generic map (
-        DataWidth => 32)
-    port map (
-        ap_clk => ap_clk,
-        ap_rst => ap_rst_n_inv,
-        data_in => stream_in_5_TDATA,
-        vld_in => stream_in_5_TVALID,
-        ack_in => regslice_both_stream_in_5_V_data_V_U_ack_in,
-        data_out => stream_in_5_TDATA_int_regslice,
-        vld_out => stream_in_5_TVALID_int_regslice,
-        ack_out => stream_in_5_TREADY_int_regslice,
-        apdone_blk => regslice_both_stream_in_5_V_data_V_U_apdone_blk);
-
-    regslice_both_stream_in_5_V_keep_V_U : component mixer_regslice_both
-    generic map (
-        DataWidth => 4)
-    port map (
-        ap_clk => ap_clk,
-        ap_rst => ap_rst_n_inv,
-        data_in => stream_in_5_TKEEP,
-        vld_in => stream_in_5_TVALID,
-        ack_in => regslice_both_stream_in_5_V_keep_V_U_ack_in,
-        data_out => stream_in_5_TKEEP_int_regslice,
-        vld_out => regslice_both_stream_in_5_V_keep_V_U_vld_out,
-        ack_out => stream_in_5_TREADY_int_regslice,
-        apdone_blk => regslice_both_stream_in_5_V_keep_V_U_apdone_blk);
-
-    regslice_both_stream_in_5_V_strb_V_U : component mixer_regslice_both
-    generic map (
-        DataWidth => 4)
-    port map (
-        ap_clk => ap_clk,
-        ap_rst => ap_rst_n_inv,
-        data_in => stream_in_5_TSTRB,
-        vld_in => stream_in_5_TVALID,
-        ack_in => regslice_both_stream_in_5_V_strb_V_U_ack_in,
-        data_out => stream_in_5_TSTRB_int_regslice,
-        vld_out => regslice_both_stream_in_5_V_strb_V_U_vld_out,
-        ack_out => stream_in_5_TREADY_int_regslice,
-        apdone_blk => regslice_both_stream_in_5_V_strb_V_U_apdone_blk);
-
-    regslice_both_stream_in_5_V_user_V_U : component mixer_regslice_both
-    generic map (
-        DataWidth => 2)
-    port map (
-        ap_clk => ap_clk,
-        ap_rst => ap_rst_n_inv,
-        data_in => stream_in_5_TUSER,
-        vld_in => stream_in_5_TVALID,
-        ack_in => regslice_both_stream_in_5_V_user_V_U_ack_in,
-        data_out => stream_in_5_TUSER_int_regslice,
-        vld_out => regslice_both_stream_in_5_V_user_V_U_vld_out,
-        ack_out => stream_in_5_TREADY_int_regslice,
-        apdone_blk => regslice_both_stream_in_5_V_user_V_U_apdone_blk);
-
-    regslice_both_stream_in_5_V_last_V_U : component mixer_regslice_both
-    generic map (
-        DataWidth => 1)
-    port map (
-        ap_clk => ap_clk,
-        ap_rst => ap_rst_n_inv,
-        data_in => stream_in_5_TLAST,
-        vld_in => stream_in_5_TVALID,
-        ack_in => regslice_both_stream_in_5_V_last_V_U_ack_in,
-        data_out => stream_in_5_TLAST_int_regslice,
-        vld_out => regslice_both_stream_in_5_V_last_V_U_vld_out,
-        ack_out => stream_in_5_TREADY_int_regslice,
-        apdone_blk => regslice_both_stream_in_5_V_last_V_U_apdone_blk);
-
-    regslice_both_stream_in_5_V_id_V_U : component mixer_regslice_both
-    generic map (
-        DataWidth => 5)
-    port map (
-        ap_clk => ap_clk,
-        ap_rst => ap_rst_n_inv,
-        data_in => stream_in_5_TID,
-        vld_in => stream_in_5_TVALID,
-        ack_in => regslice_both_stream_in_5_V_id_V_U_ack_in,
-        data_out => stream_in_5_TID_int_regslice,
-        vld_out => regslice_both_stream_in_5_V_id_V_U_vld_out,
-        ack_out => stream_in_5_TREADY_int_regslice,
-        apdone_blk => regslice_both_stream_in_5_V_id_V_U_apdone_blk);
-
-    regslice_both_stream_in_5_V_dest_V_U : component mixer_regslice_both
-    generic map (
-        DataWidth => 6)
-    port map (
-        ap_clk => ap_clk,
-        ap_rst => ap_rst_n_inv,
-        data_in => stream_in_5_TDEST,
-        vld_in => stream_in_5_TVALID,
-        ack_in => regslice_both_stream_in_5_V_dest_V_U_ack_in,
-        data_out => stream_in_5_TDEST_int_regslice,
-        vld_out => regslice_both_stream_in_5_V_dest_V_U_vld_out,
-        ack_out => stream_in_5_TREADY_int_regslice,
-        apdone_blk => regslice_both_stream_in_5_V_dest_V_U_apdone_blk);
-
-    regslice_both_stream_in_6_V_data_V_U : component mixer_regslice_both
-    generic map (
-        DataWidth => 32)
-    port map (
-        ap_clk => ap_clk,
-        ap_rst => ap_rst_n_inv,
-        data_in => stream_in_6_TDATA,
-        vld_in => stream_in_6_TVALID,
-        ack_in => regslice_both_stream_in_6_V_data_V_U_ack_in,
-        data_out => stream_in_6_TDATA_int_regslice,
-        vld_out => stream_in_6_TVALID_int_regslice,
-        ack_out => stream_in_6_TREADY_int_regslice,
-        apdone_blk => regslice_both_stream_in_6_V_data_V_U_apdone_blk);
-
-    regslice_both_stream_in_6_V_keep_V_U : component mixer_regslice_both
-    generic map (
-        DataWidth => 4)
-    port map (
-        ap_clk => ap_clk,
-        ap_rst => ap_rst_n_inv,
-        data_in => stream_in_6_TKEEP,
-        vld_in => stream_in_6_TVALID,
-        ack_in => regslice_both_stream_in_6_V_keep_V_U_ack_in,
-        data_out => stream_in_6_TKEEP_int_regslice,
-        vld_out => regslice_both_stream_in_6_V_keep_V_U_vld_out,
-        ack_out => stream_in_6_TREADY_int_regslice,
-        apdone_blk => regslice_both_stream_in_6_V_keep_V_U_apdone_blk);
-
-    regslice_both_stream_in_6_V_strb_V_U : component mixer_regslice_both
-    generic map (
-        DataWidth => 4)
-    port map (
-        ap_clk => ap_clk,
-        ap_rst => ap_rst_n_inv,
-        data_in => stream_in_6_TSTRB,
-        vld_in => stream_in_6_TVALID,
-        ack_in => regslice_both_stream_in_6_V_strb_V_U_ack_in,
-        data_out => stream_in_6_TSTRB_int_regslice,
-        vld_out => regslice_both_stream_in_6_V_strb_V_U_vld_out,
-        ack_out => stream_in_6_TREADY_int_regslice,
-        apdone_blk => regslice_both_stream_in_6_V_strb_V_U_apdone_blk);
-
-    regslice_both_stream_in_6_V_user_V_U : component mixer_regslice_both
-    generic map (
-        DataWidth => 2)
-    port map (
-        ap_clk => ap_clk,
-        ap_rst => ap_rst_n_inv,
-        data_in => stream_in_6_TUSER,
-        vld_in => stream_in_6_TVALID,
-        ack_in => regslice_both_stream_in_6_V_user_V_U_ack_in,
-        data_out => stream_in_6_TUSER_int_regslice,
-        vld_out => regslice_both_stream_in_6_V_user_V_U_vld_out,
-        ack_out => stream_in_6_TREADY_int_regslice,
-        apdone_blk => regslice_both_stream_in_6_V_user_V_U_apdone_blk);
-
-    regslice_both_stream_in_6_V_last_V_U : component mixer_regslice_both
-    generic map (
-        DataWidth => 1)
-    port map (
-        ap_clk => ap_clk,
-        ap_rst => ap_rst_n_inv,
-        data_in => stream_in_6_TLAST,
-        vld_in => stream_in_6_TVALID,
-        ack_in => regslice_both_stream_in_6_V_last_V_U_ack_in,
-        data_out => stream_in_6_TLAST_int_regslice,
-        vld_out => regslice_both_stream_in_6_V_last_V_U_vld_out,
-        ack_out => stream_in_6_TREADY_int_regslice,
-        apdone_blk => regslice_both_stream_in_6_V_last_V_U_apdone_blk);
-
-    regslice_both_stream_in_6_V_id_V_U : component mixer_regslice_both
-    generic map (
-        DataWidth => 5)
-    port map (
-        ap_clk => ap_clk,
-        ap_rst => ap_rst_n_inv,
-        data_in => stream_in_6_TID,
-        vld_in => stream_in_6_TVALID,
-        ack_in => regslice_both_stream_in_6_V_id_V_U_ack_in,
-        data_out => stream_in_6_TID_int_regslice,
-        vld_out => regslice_both_stream_in_6_V_id_V_U_vld_out,
-        ack_out => stream_in_6_TREADY_int_regslice,
-        apdone_blk => regslice_both_stream_in_6_V_id_V_U_apdone_blk);
-
-    regslice_both_stream_in_6_V_dest_V_U : component mixer_regslice_both
-    generic map (
-        DataWidth => 6)
-    port map (
-        ap_clk => ap_clk,
-        ap_rst => ap_rst_n_inv,
-        data_in => stream_in_6_TDEST,
-        vld_in => stream_in_6_TVALID,
-        ack_in => regslice_both_stream_in_6_V_dest_V_U_ack_in,
-        data_out => stream_in_6_TDEST_int_regslice,
-        vld_out => regslice_both_stream_in_6_V_dest_V_U_vld_out,
-        ack_out => stream_in_6_TREADY_int_regslice,
-        apdone_blk => regslice_both_stream_in_6_V_dest_V_U_apdone_blk);
-
-    regslice_both_stream_in_7_V_data_V_U : component mixer_regslice_both
-    generic map (
-        DataWidth => 32)
-    port map (
-        ap_clk => ap_clk,
-        ap_rst => ap_rst_n_inv,
-        data_in => stream_in_7_TDATA,
-        vld_in => stream_in_7_TVALID,
-        ack_in => regslice_both_stream_in_7_V_data_V_U_ack_in,
-        data_out => stream_in_7_TDATA_int_regslice,
-        vld_out => stream_in_7_TVALID_int_regslice,
-        ack_out => stream_in_7_TREADY_int_regslice,
-        apdone_blk => regslice_both_stream_in_7_V_data_V_U_apdone_blk);
-
-    regslice_both_stream_in_7_V_keep_V_U : component mixer_regslice_both
-    generic map (
-        DataWidth => 4)
-    port map (
-        ap_clk => ap_clk,
-        ap_rst => ap_rst_n_inv,
-        data_in => stream_in_7_TKEEP,
-        vld_in => stream_in_7_TVALID,
-        ack_in => regslice_both_stream_in_7_V_keep_V_U_ack_in,
-        data_out => stream_in_7_TKEEP_int_regslice,
-        vld_out => regslice_both_stream_in_7_V_keep_V_U_vld_out,
-        ack_out => stream_in_7_TREADY_int_regslice,
-        apdone_blk => regslice_both_stream_in_7_V_keep_V_U_apdone_blk);
-
-    regslice_both_stream_in_7_V_strb_V_U : component mixer_regslice_both
-    generic map (
-        DataWidth => 4)
-    port map (
-        ap_clk => ap_clk,
-        ap_rst => ap_rst_n_inv,
-        data_in => stream_in_7_TSTRB,
-        vld_in => stream_in_7_TVALID,
-        ack_in => regslice_both_stream_in_7_V_strb_V_U_ack_in,
-        data_out => stream_in_7_TSTRB_int_regslice,
-        vld_out => regslice_both_stream_in_7_V_strb_V_U_vld_out,
-        ack_out => stream_in_7_TREADY_int_regslice,
-        apdone_blk => regslice_both_stream_in_7_V_strb_V_U_apdone_blk);
-
-    regslice_both_stream_in_7_V_user_V_U : component mixer_regslice_both
-    generic map (
-        DataWidth => 2)
-    port map (
-        ap_clk => ap_clk,
-        ap_rst => ap_rst_n_inv,
-        data_in => stream_in_7_TUSER,
-        vld_in => stream_in_7_TVALID,
-        ack_in => regslice_both_stream_in_7_V_user_V_U_ack_in,
-        data_out => stream_in_7_TUSER_int_regslice,
-        vld_out => regslice_both_stream_in_7_V_user_V_U_vld_out,
-        ack_out => stream_in_7_TREADY_int_regslice,
-        apdone_blk => regslice_both_stream_in_7_V_user_V_U_apdone_blk);
-
-    regslice_both_stream_in_7_V_last_V_U : component mixer_regslice_both
-    generic map (
-        DataWidth => 1)
-    port map (
-        ap_clk => ap_clk,
-        ap_rst => ap_rst_n_inv,
-        data_in => stream_in_7_TLAST,
-        vld_in => stream_in_7_TVALID,
-        ack_in => regslice_both_stream_in_7_V_last_V_U_ack_in,
-        data_out => stream_in_7_TLAST_int_regslice,
-        vld_out => regslice_both_stream_in_7_V_last_V_U_vld_out,
-        ack_out => stream_in_7_TREADY_int_regslice,
-        apdone_blk => regslice_both_stream_in_7_V_last_V_U_apdone_blk);
-
-    regslice_both_stream_in_7_V_id_V_U : component mixer_regslice_both
-    generic map (
-        DataWidth => 5)
-    port map (
-        ap_clk => ap_clk,
-        ap_rst => ap_rst_n_inv,
-        data_in => stream_in_7_TID,
-        vld_in => stream_in_7_TVALID,
-        ack_in => regslice_both_stream_in_7_V_id_V_U_ack_in,
-        data_out => stream_in_7_TID_int_regslice,
-        vld_out => regslice_both_stream_in_7_V_id_V_U_vld_out,
-        ack_out => stream_in_7_TREADY_int_regslice,
-        apdone_blk => regslice_both_stream_in_7_V_id_V_U_apdone_blk);
-
-    regslice_both_stream_in_7_V_dest_V_U : component mixer_regslice_both
-    generic map (
-        DataWidth => 6)
-    port map (
-        ap_clk => ap_clk,
-        ap_rst => ap_rst_n_inv,
-        data_in => stream_in_7_TDEST,
-        vld_in => stream_in_7_TVALID,
-        ack_in => regslice_both_stream_in_7_V_dest_V_U_ack_in,
-        data_out => stream_in_7_TDEST_int_regslice,
-        vld_out => regslice_both_stream_in_7_V_dest_V_U_vld_out,
-        ack_out => stream_in_7_TREADY_int_regslice,
-        apdone_blk => regslice_both_stream_in_7_V_dest_V_U_apdone_blk);
+        data_in => stream_in_TLAST,
+        vld_in => stream_in_TVALID,
+        ack_in => regslice_both_stream_in_V_last_V_U_ack_in,
+        data_out => stream_in_TLAST_int_regslice,
+        vld_out => regslice_both_stream_in_V_last_V_U_vld_out,
+        ack_out => stream_in_TREADY_int_regslice,
+        apdone_blk => regslice_both_stream_in_V_last_V_U_apdone_blk);
 
     regslice_both_mix_out_V_data_V_U : component mixer_regslice_both
     generic map (
@@ -1583,7 +400,7 @@ begin
         ap_clk => ap_clk,
         ap_rst => ap_rst_n_inv,
         data_in => mix_out_TDATA_int_regslice,
-        vld_in => mix_out_TVALID_int_regslice,
+        vld_in => grp_mixer_Pipeline_VITIS_LOOP_27_1_fu_94_mix_out_TVALID,
         ack_in => mix_out_TREADY_int_regslice,
         data_out => mix_out_TDATA,
         vld_out => regslice_both_mix_out_V_data_V_U_vld_out,
@@ -1597,7 +414,7 @@ begin
         ap_clk => ap_clk,
         ap_rst => ap_rst_n_inv,
         data_in => mix_out_TKEEP_int_regslice,
-        vld_in => mix_out_TVALID_int_regslice,
+        vld_in => grp_mixer_Pipeline_VITIS_LOOP_27_1_fu_94_mix_out_TVALID,
         ack_in => regslice_both_mix_out_V_keep_V_U_ack_in_dummy,
         data_out => mix_out_TKEEP,
         vld_out => regslice_both_mix_out_V_keep_V_U_vld_out,
@@ -1611,26 +428,12 @@ begin
         ap_clk => ap_clk,
         ap_rst => ap_rst_n_inv,
         data_in => mix_out_TSTRB_int_regslice,
-        vld_in => mix_out_TVALID_int_regslice,
+        vld_in => grp_mixer_Pipeline_VITIS_LOOP_27_1_fu_94_mix_out_TVALID,
         ack_in => regslice_both_mix_out_V_strb_V_U_ack_in_dummy,
         data_out => mix_out_TSTRB,
         vld_out => regslice_both_mix_out_V_strb_V_U_vld_out,
         ack_out => mix_out_TREADY,
         apdone_blk => regslice_both_mix_out_V_strb_V_U_apdone_blk);
-
-    regslice_both_mix_out_V_user_V_U : component mixer_regslice_both
-    generic map (
-        DataWidth => 2)
-    port map (
-        ap_clk => ap_clk,
-        ap_rst => ap_rst_n_inv,
-        data_in => mix_out_TUSER_int_regslice,
-        vld_in => mix_out_TVALID_int_regslice,
-        ack_in => regslice_both_mix_out_V_user_V_U_ack_in_dummy,
-        data_out => mix_out_TUSER,
-        vld_out => regslice_both_mix_out_V_user_V_U_vld_out,
-        ack_out => mix_out_TREADY,
-        apdone_blk => regslice_both_mix_out_V_user_V_U_apdone_blk);
 
     regslice_both_mix_out_V_last_V_U : component mixer_regslice_both
     generic map (
@@ -1639,40 +442,12 @@ begin
         ap_clk => ap_clk,
         ap_rst => ap_rst_n_inv,
         data_in => mix_out_TLAST_int_regslice,
-        vld_in => mix_out_TVALID_int_regslice,
+        vld_in => grp_mixer_Pipeline_VITIS_LOOP_27_1_fu_94_mix_out_TVALID,
         ack_in => regslice_both_mix_out_V_last_V_U_ack_in_dummy,
         data_out => mix_out_TLAST,
         vld_out => regslice_both_mix_out_V_last_V_U_vld_out,
         ack_out => mix_out_TREADY,
         apdone_blk => regslice_both_mix_out_V_last_V_U_apdone_blk);
-
-    regslice_both_mix_out_V_id_V_U : component mixer_regslice_both
-    generic map (
-        DataWidth => 5)
-    port map (
-        ap_clk => ap_clk,
-        ap_rst => ap_rst_n_inv,
-        data_in => mix_out_TID_int_regslice,
-        vld_in => mix_out_TVALID_int_regslice,
-        ack_in => regslice_both_mix_out_V_id_V_U_ack_in_dummy,
-        data_out => mix_out_TID,
-        vld_out => regslice_both_mix_out_V_id_V_U_vld_out,
-        ack_out => mix_out_TREADY,
-        apdone_blk => regslice_both_mix_out_V_id_V_U_apdone_blk);
-
-    regslice_both_mix_out_V_dest_V_U : component mixer_regslice_both
-    generic map (
-        DataWidth => 6)
-    port map (
-        ap_clk => ap_clk,
-        ap_rst => ap_rst_n_inv,
-        data_in => mix_out_TDEST_int_regslice,
-        vld_in => mix_out_TVALID_int_regslice,
-        ack_in => regslice_both_mix_out_V_dest_V_U_ack_in_dummy,
-        data_out => mix_out_TDEST,
-        vld_out => regslice_both_mix_out_V_dest_V_U_vld_out,
-        ack_out => mix_out_TREADY,
-        apdone_blk => regslice_both_mix_out_V_dest_V_U_apdone_blk);
 
 
 
@@ -1690,16 +465,16 @@ begin
     end process;
 
 
-    grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_ap_start_reg_assign_proc : process(ap_clk)
+    grp_mixer_Pipeline_VITIS_LOOP_27_1_fu_94_ap_start_reg_assign_proc : process(ap_clk)
     begin
         if (ap_clk'event and ap_clk =  '1') then
             if (ap_rst_n_inv = '1') then
-                grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_ap_start_reg <= ap_const_logic_0;
+                grp_mixer_Pipeline_VITIS_LOOP_27_1_fu_94_ap_start_reg <= ap_const_logic_0;
             else
                 if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-                    grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_ap_start_reg <= ap_const_logic_1;
-                elsif ((grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_ap_ready = ap_const_logic_1)) then 
-                    grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_ap_start_reg <= ap_const_logic_0;
+                    grp_mixer_Pipeline_VITIS_LOOP_27_1_fu_94_ap_start_reg <= ap_const_logic_1;
+                elsif ((grp_mixer_Pipeline_VITIS_LOOP_27_1_fu_94_ap_ready = ap_const_logic_1)) then 
+                    grp_mixer_Pipeline_VITIS_LOOP_27_1_fu_94_ap_start_reg <= ap_const_logic_0;
                 end if; 
             end if;
         end if;
@@ -1708,14 +483,27 @@ begin
     process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if (((ap_const_logic_1 = ap_CS_fsm_state3) and (grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_mix_out_TVALID = ap_const_logic_1))) then
-                mix_out_TDATA_reg <= grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_mix_out_TDATA;
-                mix_out_TDEST_reg <= grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_mix_out_TDEST;
-                mix_out_TID_reg <= grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_mix_out_TID;
-                mix_out_TKEEP_reg <= grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_mix_out_TKEEP;
-                mix_out_TLAST_reg <= grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_mix_out_TLAST;
-                mix_out_TSTRB_reg <= grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_mix_out_TSTRB;
-                mix_out_TUSER_reg <= grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_mix_out_TUSER;
+            if ((ap_const_logic_1 = ap_CS_fsm_state2)) then
+                add_ln49_reg_361 <= add_ln49_fu_290_p2;
+            end if;
+        end if;
+    end process;
+    process (ap_clk)
+    begin
+        if (ap_clk'event and ap_clk = '1') then
+            if (((ap_const_logic_1 = ap_CS_fsm_state4) and (regslice_both_mix_out_V_data_V_U_apdone_blk = ap_const_logic_0))) then
+                current_gain_q16 <= grp_mixer_Pipeline_VITIS_LOOP_27_1_fu_94_add_ln68_out;
+            end if;
+        end if;
+    end process;
+    process (ap_clk)
+    begin
+        if (ap_clk'event and ap_clk = '1') then
+            if (((grp_mixer_Pipeline_VITIS_LOOP_27_1_fu_94_mix_out_TVALID = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state3))) then
+                mix_out_TDATA_reg <= grp_mixer_Pipeline_VITIS_LOOP_27_1_fu_94_mix_out_TDATA;
+                mix_out_TKEEP_reg <= grp_mixer_Pipeline_VITIS_LOOP_27_1_fu_94_mix_out_TKEEP;
+                mix_out_TLAST_reg <= grp_mixer_Pipeline_VITIS_LOOP_27_1_fu_94_mix_out_TLAST;
+                mix_out_TSTRB_reg <= grp_mixer_Pipeline_VITIS_LOOP_27_1_fu_94_mix_out_TSTRB;
             end if;
         end if;
     end process;
@@ -1723,20 +511,20 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state1)) then
-                select_ln61_reg_617 <= select_ln61_fu_559_p3;
-                tmp_10_reg_597 <= switches(4 downto 4);
-                tmp_11_reg_602 <= switches(5 downto 5);
-                tmp_12_reg_607 <= switches(6 downto 6);
-                tmp_13_reg_612 <= switches(7 downto 7);
-                tmp_8_reg_587 <= switches(2 downto 2);
-                tmp_9_reg_592 <= switches(3 downto 3);
-                tmp_reg_582 <= switches(1 downto 1);
-                trunc_ln54_reg_577 <= trunc_ln54_fu_395_p1;
+                select_ln48_reg_352 <= select_ln48_fu_274_p3;
+                tmp_12_reg_322 <= switches(2 downto 2);
+                tmp_13_reg_327 <= switches(3 downto 3);
+                tmp_14_reg_332 <= switches(4 downto 4);
+                tmp_15_reg_337 <= switches(5 downto 5);
+                tmp_16_reg_342 <= switches(6 downto 6);
+                tmp_17_reg_347 <= switches(7 downto 7);
+                tmp_reg_317 <= switches(1 downto 1);
+                trunc_ln42_reg_312 <= trunc_ln42_fu_128_p1;
             end if;
         end if;
     end process;
 
-    ap_NS_fsm_assign_proc : process (ap_start, ap_CS_fsm, ap_CS_fsm_state1, ap_CS_fsm_state4, ap_CS_fsm_state5, grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_ap_done, ap_CS_fsm_state3, ap_block_state5, mix_out_TREADY_int_regslice)
+    ap_NS_fsm_assign_proc : process (ap_start, ap_CS_fsm, ap_CS_fsm_state1, grp_mixer_Pipeline_VITIS_LOOP_27_1_fu_94_ap_done, ap_CS_fsm_state3, ap_CS_fsm_state4, regslice_both_mix_out_V_data_V_U_apdone_blk)
     begin
         case ap_CS_fsm is
             when ap_ST_fsm_state1 => 
@@ -1748,38 +536,31 @@ begin
             when ap_ST_fsm_state2 => 
                 ap_NS_fsm <= ap_ST_fsm_state3;
             when ap_ST_fsm_state3 => 
-                if (((ap_const_logic_1 = ap_CS_fsm_state3) and (grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_ap_done = ap_const_logic_1))) then
+                if (((grp_mixer_Pipeline_VITIS_LOOP_27_1_fu_94_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state3))) then
                     ap_NS_fsm <= ap_ST_fsm_state4;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state3;
                 end if;
             when ap_ST_fsm_state4 => 
-                if (((mix_out_TREADY_int_regslice = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state4))) then
-                    ap_NS_fsm <= ap_ST_fsm_state5;
+                if (((ap_const_logic_1 = ap_CS_fsm_state4) and (regslice_both_mix_out_V_data_V_U_apdone_blk = ap_const_logic_0))) then
+                    ap_NS_fsm <= ap_ST_fsm_state1;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state4;
                 end if;
-            when ap_ST_fsm_state5 => 
-                if (((ap_const_boolean_0 = ap_block_state5) and (ap_const_logic_1 = ap_CS_fsm_state5))) then
-                    ap_NS_fsm <= ap_ST_fsm_state1;
-                else
-                    ap_NS_fsm <= ap_ST_fsm_state5;
-                end if;
             when others =>  
-                ap_NS_fsm <= "XXXXX";
+                ap_NS_fsm <= "XXXX";
         end case;
     end process;
-    add_ln56_fu_475_p2 <= std_logic_vector(unsigned(select_ln55_1_fu_467_p3) + unsigned(ap_const_lv2_1));
-    add_ln57_fu_493_p2 <= std_logic_vector(unsigned(zext_ln57_fu_489_p1) + unsigned(ap_const_lv3_1));
-    add_ln58_fu_507_p2 <= std_logic_vector(unsigned(select_ln57_fu_499_p3) + unsigned(ap_const_lv3_1));
-    add_ln59_fu_521_p2 <= std_logic_vector(unsigned(select_ln58_fu_513_p3) + unsigned(ap_const_lv3_1));
-    add_ln60_fu_535_p2 <= std_logic_vector(unsigned(select_ln59_fu_527_p3) + unsigned(ap_const_lv3_1));
-    add_ln61_fu_553_p2 <= std_logic_vector(unsigned(zext_ln61_fu_549_p1) + unsigned(ap_const_lv4_1));
+    add_ln44_fu_208_p2 <= std_logic_vector(unsigned(select_ln43_1_fu_200_p3) + unsigned(ap_const_lv2_1));
+    add_ln45_fu_226_p2 <= std_logic_vector(unsigned(zext_ln45_fu_222_p1) + unsigned(ap_const_lv3_1));
+    add_ln46_fu_240_p2 <= std_logic_vector(unsigned(select_ln45_fu_232_p3) + unsigned(ap_const_lv3_1));
+    add_ln47_fu_254_p2 <= std_logic_vector(unsigned(select_ln46_fu_246_p3) + unsigned(ap_const_lv3_1));
+    add_ln48_fu_268_p2 <= std_logic_vector(unsigned(select_ln47_fu_260_p3) + unsigned(ap_const_lv3_1));
+    add_ln49_fu_290_p2 <= std_logic_vector(unsigned(zext_ln49_fu_287_p1) + unsigned(ap_const_lv4_1));
     ap_CS_fsm_state1 <= ap_CS_fsm(0);
     ap_CS_fsm_state2 <= ap_CS_fsm(1);
     ap_CS_fsm_state3 <= ap_CS_fsm(2);
     ap_CS_fsm_state4 <= ap_CS_fsm(3);
-    ap_CS_fsm_state5 <= ap_CS_fsm(4);
 
     ap_ST_fsm_state1_blk_assign_proc : process(ap_start)
     begin
@@ -1792,9 +573,9 @@ begin
 
     ap_ST_fsm_state2_blk <= ap_const_logic_0;
 
-    ap_ST_fsm_state3_blk_assign_proc : process(grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_ap_done)
+    ap_ST_fsm_state3_blk_assign_proc : process(grp_mixer_Pipeline_VITIS_LOOP_27_1_fu_94_ap_done)
     begin
-        if ((grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_ap_done = ap_const_logic_0)) then 
+        if ((grp_mixer_Pipeline_VITIS_LOOP_27_1_fu_94_ap_done = ap_const_logic_0)) then 
             ap_ST_fsm_state3_blk <= ap_const_logic_1;
         else 
             ap_ST_fsm_state3_blk <= ap_const_logic_0;
@@ -1802,9 +583,9 @@ begin
     end process;
 
 
-    ap_ST_fsm_state4_blk_assign_proc : process(mix_out_TREADY_int_regslice)
+    ap_ST_fsm_state4_blk_assign_proc : process(regslice_both_mix_out_V_data_V_U_apdone_blk)
     begin
-        if ((mix_out_TREADY_int_regslice = ap_const_logic_0)) then 
+        if ((regslice_both_mix_out_V_data_V_U_apdone_blk = ap_const_logic_1)) then 
             ap_ST_fsm_state4_blk <= ap_const_logic_1;
         else 
             ap_ST_fsm_state4_blk <= ap_const_logic_0;
@@ -1812,25 +593,9 @@ begin
     end process;
 
 
-    ap_ST_fsm_state5_blk_assign_proc : process(ap_block_state5)
+    ap_done_assign_proc : process(ap_CS_fsm_state4, regslice_both_mix_out_V_data_V_U_apdone_blk)
     begin
-        if ((ap_const_boolean_1 = ap_block_state5)) then 
-            ap_ST_fsm_state5_blk <= ap_const_logic_1;
-        else 
-            ap_ST_fsm_state5_blk <= ap_const_logic_0;
-        end if; 
-    end process;
-
-
-    ap_block_state5_assign_proc : process(regslice_both_mix_out_V_data_V_U_apdone_blk, mix_out_TREADY_int_regslice)
-    begin
-                ap_block_state5 <= ((mix_out_TREADY_int_regslice = ap_const_logic_0) or (regslice_both_mix_out_V_data_V_U_apdone_blk = ap_const_logic_1));
-    end process;
-
-
-    ap_done_assign_proc : process(ap_CS_fsm_state5, ap_block_state5)
-    begin
-        if (((ap_const_boolean_0 = ap_block_state5) and (ap_const_logic_1 = ap_CS_fsm_state5))) then 
+        if (((ap_const_logic_1 = ap_CS_fsm_state4) and (regslice_both_mix_out_V_data_V_U_apdone_blk = ap_const_logic_0))) then 
             ap_done <= ap_const_logic_1;
         else 
             ap_done <= ap_const_logic_0;
@@ -1848,9 +613,9 @@ begin
     end process;
 
 
-    ap_ready_assign_proc : process(ap_CS_fsm_state5, ap_block_state5)
+    ap_ready_assign_proc : process(ap_CS_fsm_state4, regslice_both_mix_out_V_data_V_U_apdone_blk)
     begin
-        if (((ap_const_boolean_0 = ap_block_state5) and (ap_const_logic_1 = ap_CS_fsm_state5))) then 
+        if (((ap_const_logic_1 = ap_CS_fsm_state4) and (regslice_both_mix_out_V_data_V_U_apdone_blk = ap_const_logic_0))) then 
             ap_ready <= ap_const_logic_1;
         else 
             ap_ready <= ap_const_logic_0;
@@ -1863,236 +628,90 @@ begin
                 ap_rst_n_inv <= not(ap_rst_n);
     end process;
 
-    grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_ap_start <= grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_ap_start_reg;
-    grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_mix_out_TREADY <= (mix_out_TREADY_int_regslice and ap_CS_fsm_state3);
+    grp_mixer_Pipeline_VITIS_LOOP_27_1_fu_94_ap_start <= grp_mixer_Pipeline_VITIS_LOOP_27_1_fu_94_ap_start_reg;
+    grp_mixer_Pipeline_VITIS_LOOP_27_1_fu_94_mix_out_TREADY <= (mix_out_TREADY_int_regslice and ap_CS_fsm_state3);
 
-    mix_out_TDATA_blk_n_assign_proc : process(ap_CS_fsm_state4, ap_CS_fsm_state5, mix_out_TREADY_int_regslice)
+    mix_out_TDATA_int_regslice_assign_proc : process(grp_mixer_Pipeline_VITIS_LOOP_27_1_fu_94_mix_out_TDATA, grp_mixer_Pipeline_VITIS_LOOP_27_1_fu_94_mix_out_TVALID, ap_CS_fsm_state3, mix_out_TDATA_reg)
     begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state5) or (ap_const_logic_1 = ap_CS_fsm_state4))) then 
-            mix_out_TDATA_blk_n <= mix_out_TREADY_int_regslice;
-        else 
-            mix_out_TDATA_blk_n <= ap_const_logic_1;
-        end if; 
-    end process;
-
-
-    mix_out_TDATA_int_regslice_assign_proc : process(ap_CS_fsm_state4, grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_mix_out_TDATA, grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_mix_out_TVALID, grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_out_pkt_data_out, ap_CS_fsm_state3, mix_out_TDATA_reg, mix_out_TREADY_int_regslice)
-    begin
-        if (((mix_out_TREADY_int_regslice = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state4))) then 
-            mix_out_TDATA_int_regslice <= grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_out_pkt_data_out;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state3) and (grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_mix_out_TVALID = ap_const_logic_1))) then 
-            mix_out_TDATA_int_regslice <= grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_mix_out_TDATA;
+        if (((grp_mixer_Pipeline_VITIS_LOOP_27_1_fu_94_mix_out_TVALID = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state3))) then 
+            mix_out_TDATA_int_regslice <= grp_mixer_Pipeline_VITIS_LOOP_27_1_fu_94_mix_out_TDATA;
         else 
             mix_out_TDATA_int_regslice <= mix_out_TDATA_reg;
         end if; 
     end process;
 
 
-    mix_out_TDEST_int_regslice_assign_proc : process(ap_CS_fsm_state4, grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_mix_out_TVALID, grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_mix_out_TDEST, ap_CS_fsm_state3, mix_out_TDEST_reg, mix_out_TREADY_int_regslice)
+    mix_out_TKEEP_int_regslice_assign_proc : process(grp_mixer_Pipeline_VITIS_LOOP_27_1_fu_94_mix_out_TVALID, grp_mixer_Pipeline_VITIS_LOOP_27_1_fu_94_mix_out_TKEEP, ap_CS_fsm_state3, mix_out_TKEEP_reg)
     begin
-        if (((mix_out_TREADY_int_regslice = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state4))) then 
-            mix_out_TDEST_int_regslice <= ap_const_lv6_0;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state3) and (grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_mix_out_TVALID = ap_const_logic_1))) then 
-            mix_out_TDEST_int_regslice <= grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_mix_out_TDEST;
-        else 
-            mix_out_TDEST_int_regslice <= mix_out_TDEST_reg;
-        end if; 
-    end process;
-
-
-    mix_out_TID_int_regslice_assign_proc : process(ap_CS_fsm_state4, grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_mix_out_TVALID, grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_mix_out_TID, ap_CS_fsm_state3, mix_out_TID_reg, mix_out_TREADY_int_regslice)
-    begin
-        if (((mix_out_TREADY_int_regslice = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state4))) then 
-            mix_out_TID_int_regslice <= ap_const_lv5_0;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state3) and (grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_mix_out_TVALID = ap_const_logic_1))) then 
-            mix_out_TID_int_regslice <= grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_mix_out_TID;
-        else 
-            mix_out_TID_int_regslice <= mix_out_TID_reg;
-        end if; 
-    end process;
-
-
-    mix_out_TKEEP_int_regslice_assign_proc : process(ap_CS_fsm_state4, grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_mix_out_TVALID, grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_mix_out_TKEEP, ap_CS_fsm_state3, mix_out_TKEEP_reg, mix_out_TREADY_int_regslice)
-    begin
-        if (((mix_out_TREADY_int_regslice = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state4))) then 
-            mix_out_TKEEP_int_regslice <= ap_const_lv4_F;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state3) and (grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_mix_out_TVALID = ap_const_logic_1))) then 
-            mix_out_TKEEP_int_regslice <= grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_mix_out_TKEEP;
+        if (((grp_mixer_Pipeline_VITIS_LOOP_27_1_fu_94_mix_out_TVALID = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state3))) then 
+            mix_out_TKEEP_int_regslice <= grp_mixer_Pipeline_VITIS_LOOP_27_1_fu_94_mix_out_TKEEP;
         else 
             mix_out_TKEEP_int_regslice <= mix_out_TKEEP_reg;
         end if; 
     end process;
 
 
-    mix_out_TLAST_int_regslice_assign_proc : process(ap_CS_fsm_state4, grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_mix_out_TVALID, grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_mix_out_TLAST, ap_CS_fsm_state3, mix_out_TLAST_reg, mix_out_TREADY_int_regslice)
+    mix_out_TLAST_int_regslice_assign_proc : process(grp_mixer_Pipeline_VITIS_LOOP_27_1_fu_94_mix_out_TVALID, grp_mixer_Pipeline_VITIS_LOOP_27_1_fu_94_mix_out_TLAST, ap_CS_fsm_state3, mix_out_TLAST_reg)
     begin
-        if (((mix_out_TREADY_int_regslice = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state4))) then 
-            mix_out_TLAST_int_regslice <= ap_const_lv1_1;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state3) and (grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_mix_out_TVALID = ap_const_logic_1))) then 
-            mix_out_TLAST_int_regslice <= grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_mix_out_TLAST;
+        if (((grp_mixer_Pipeline_VITIS_LOOP_27_1_fu_94_mix_out_TVALID = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state3))) then 
+            mix_out_TLAST_int_regslice <= grp_mixer_Pipeline_VITIS_LOOP_27_1_fu_94_mix_out_TLAST;
         else 
             mix_out_TLAST_int_regslice <= mix_out_TLAST_reg;
         end if; 
     end process;
 
 
-    mix_out_TSTRB_int_regslice_assign_proc : process(ap_CS_fsm_state4, grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_mix_out_TVALID, grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_mix_out_TSTRB, ap_CS_fsm_state3, mix_out_TSTRB_reg, mix_out_TREADY_int_regslice)
+    mix_out_TSTRB_int_regslice_assign_proc : process(grp_mixer_Pipeline_VITIS_LOOP_27_1_fu_94_mix_out_TVALID, grp_mixer_Pipeline_VITIS_LOOP_27_1_fu_94_mix_out_TSTRB, ap_CS_fsm_state3, mix_out_TSTRB_reg)
     begin
-        if (((mix_out_TREADY_int_regslice = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state4))) then 
-            mix_out_TSTRB_int_regslice <= ap_const_lv4_F;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state3) and (grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_mix_out_TVALID = ap_const_logic_1))) then 
-            mix_out_TSTRB_int_regslice <= grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_mix_out_TSTRB;
+        if (((grp_mixer_Pipeline_VITIS_LOOP_27_1_fu_94_mix_out_TVALID = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state3))) then 
+            mix_out_TSTRB_int_regslice <= grp_mixer_Pipeline_VITIS_LOOP_27_1_fu_94_mix_out_TSTRB;
         else 
             mix_out_TSTRB_int_regslice <= mix_out_TSTRB_reg;
         end if; 
     end process;
 
-
-    mix_out_TUSER_int_regslice_assign_proc : process(ap_CS_fsm_state4, grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_mix_out_TVALID, grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_mix_out_TUSER, ap_CS_fsm_state3, mix_out_TUSER_reg, mix_out_TREADY_int_regslice)
-    begin
-        if (((mix_out_TREADY_int_regslice = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state4))) then 
-            mix_out_TUSER_int_regslice <= ap_const_lv2_0;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state3) and (grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_mix_out_TVALID = ap_const_logic_1))) then 
-            mix_out_TUSER_int_regslice <= grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_mix_out_TUSER;
-        else 
-            mix_out_TUSER_int_regslice <= mix_out_TUSER_reg;
-        end if; 
-    end process;
-
     mix_out_TVALID <= regslice_both_mix_out_V_data_V_U_vld_out;
-
-    mix_out_TVALID_int_regslice_assign_proc : process(ap_CS_fsm_state4, grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_mix_out_TVALID, ap_CS_fsm_state3, mix_out_TREADY_int_regslice)
-    begin
-        if (((mix_out_TREADY_int_regslice = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state4))) then 
-            mix_out_TVALID_int_regslice <= ap_const_logic_1;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state3)) then 
-            mix_out_TVALID_int_regslice <= grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_mix_out_TVALID;
-        else 
-            mix_out_TVALID_int_regslice <= ap_const_logic_0;
-        end if; 
-    end process;
-
-    select_ln55_1_fu_467_p3 <= 
-        select_ln55_fu_459_p3 when (tmp_fu_399_p3(0) = '1') else 
-        zext_ln55_fu_455_p1;
-    select_ln55_fu_459_p3 <= 
-        ap_const_lv2_2 when (trunc_ln54_fu_395_p1(0) = '1') else 
+    mix_out_TVALID_int_regslice <= grp_mixer_Pipeline_VITIS_LOOP_27_1_fu_94_mix_out_TVALID;
+    select_ln43_1_fu_200_p3 <= 
+        select_ln43_fu_192_p3 when (tmp_fu_132_p3(0) = '1') else 
+        zext_ln43_fu_188_p1;
+    select_ln43_fu_192_p3 <= 
+        ap_const_lv2_2 when (trunc_ln42_fu_128_p1(0) = '1') else 
         ap_const_lv2_1;
-    select_ln56_fu_481_p3 <= 
-        add_ln56_fu_475_p2 when (tmp_8_fu_407_p3(0) = '1') else 
-        select_ln55_1_fu_467_p3;
-    select_ln57_fu_499_p3 <= 
-        add_ln57_fu_493_p2 when (tmp_9_fu_415_p3(0) = '1') else 
-        zext_ln57_fu_489_p1;
-    select_ln58_fu_513_p3 <= 
-        add_ln58_fu_507_p2 when (tmp_10_fu_423_p3(0) = '1') else 
-        select_ln57_fu_499_p3;
-    select_ln59_fu_527_p3 <= 
-        add_ln59_fu_521_p2 when (tmp_11_fu_431_p3(0) = '1') else 
-        select_ln58_fu_513_p3;
-    select_ln60_fu_541_p3 <= 
-        add_ln60_fu_535_p2 when (tmp_12_fu_439_p3(0) = '1') else 
-        select_ln59_fu_527_p3;
-    select_ln61_fu_559_p3 <= 
-        add_ln61_fu_553_p2 when (tmp_13_fu_447_p3(0) = '1') else 
-        zext_ln61_fu_549_p1;
-    stream_in_0_TREADY <= regslice_both_stream_in_0_V_data_V_U_ack_in;
+    select_ln44_fu_214_p3 <= 
+        add_ln44_fu_208_p2 when (tmp_12_fu_140_p3(0) = '1') else 
+        select_ln43_1_fu_200_p3;
+    select_ln45_fu_232_p3 <= 
+        add_ln45_fu_226_p2 when (tmp_13_fu_148_p3(0) = '1') else 
+        zext_ln45_fu_222_p1;
+    select_ln46_fu_246_p3 <= 
+        add_ln46_fu_240_p2 when (tmp_14_fu_156_p3(0) = '1') else 
+        select_ln45_fu_232_p3;
+    select_ln47_fu_260_p3 <= 
+        add_ln47_fu_254_p2 when (tmp_15_fu_164_p3(0) = '1') else 
+        select_ln46_fu_246_p3;
+    select_ln48_fu_274_p3 <= 
+        add_ln48_fu_268_p2 when (tmp_16_fu_172_p3(0) = '1') else 
+        select_ln47_fu_260_p3;
+    stream_in_TREADY <= regslice_both_stream_in_V_data_V_U_ack_in;
 
-    stream_in_0_TREADY_int_regslice_assign_proc : process(grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_stream_in_0_TREADY, ap_CS_fsm_state3)
+    stream_in_TREADY_int_regslice_assign_proc : process(grp_mixer_Pipeline_VITIS_LOOP_27_1_fu_94_stream_in_TREADY, ap_CS_fsm_state3)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state3)) then 
-            stream_in_0_TREADY_int_regslice <= grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_stream_in_0_TREADY;
+            stream_in_TREADY_int_regslice <= grp_mixer_Pipeline_VITIS_LOOP_27_1_fu_94_stream_in_TREADY;
         else 
-            stream_in_0_TREADY_int_regslice <= ap_const_logic_0;
+            stream_in_TREADY_int_regslice <= ap_const_logic_0;
         end if; 
     end process;
 
-    stream_in_1_TREADY <= regslice_both_stream_in_1_V_data_V_U_ack_in;
-
-    stream_in_1_TREADY_int_regslice_assign_proc : process(grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_stream_in_1_TREADY, ap_CS_fsm_state3)
-    begin
-        if ((ap_const_logic_1 = ap_CS_fsm_state3)) then 
-            stream_in_1_TREADY_int_regslice <= grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_stream_in_1_TREADY;
-        else 
-            stream_in_1_TREADY_int_regslice <= ap_const_logic_0;
-        end if; 
-    end process;
-
-    stream_in_2_TREADY <= regslice_both_stream_in_2_V_data_V_U_ack_in;
-
-    stream_in_2_TREADY_int_regslice_assign_proc : process(grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_stream_in_2_TREADY, ap_CS_fsm_state3)
-    begin
-        if ((ap_const_logic_1 = ap_CS_fsm_state3)) then 
-            stream_in_2_TREADY_int_regslice <= grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_stream_in_2_TREADY;
-        else 
-            stream_in_2_TREADY_int_regslice <= ap_const_logic_0;
-        end if; 
-    end process;
-
-    stream_in_3_TREADY <= regslice_both_stream_in_3_V_data_V_U_ack_in;
-
-    stream_in_3_TREADY_int_regslice_assign_proc : process(grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_stream_in_3_TREADY, ap_CS_fsm_state3)
-    begin
-        if ((ap_const_logic_1 = ap_CS_fsm_state3)) then 
-            stream_in_3_TREADY_int_regslice <= grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_stream_in_3_TREADY;
-        else 
-            stream_in_3_TREADY_int_regslice <= ap_const_logic_0;
-        end if; 
-    end process;
-
-    stream_in_4_TREADY <= regslice_both_stream_in_4_V_data_V_U_ack_in;
-
-    stream_in_4_TREADY_int_regslice_assign_proc : process(grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_stream_in_4_TREADY, ap_CS_fsm_state3)
-    begin
-        if ((ap_const_logic_1 = ap_CS_fsm_state3)) then 
-            stream_in_4_TREADY_int_regslice <= grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_stream_in_4_TREADY;
-        else 
-            stream_in_4_TREADY_int_regslice <= ap_const_logic_0;
-        end if; 
-    end process;
-
-    stream_in_5_TREADY <= regslice_both_stream_in_5_V_data_V_U_ack_in;
-
-    stream_in_5_TREADY_int_regslice_assign_proc : process(grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_stream_in_5_TREADY, ap_CS_fsm_state3)
-    begin
-        if ((ap_const_logic_1 = ap_CS_fsm_state3)) then 
-            stream_in_5_TREADY_int_regslice <= grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_stream_in_5_TREADY;
-        else 
-            stream_in_5_TREADY_int_regslice <= ap_const_logic_0;
-        end if; 
-    end process;
-
-    stream_in_6_TREADY <= regslice_both_stream_in_6_V_data_V_U_ack_in;
-
-    stream_in_6_TREADY_int_regslice_assign_proc : process(grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_stream_in_6_TREADY, ap_CS_fsm_state3)
-    begin
-        if ((ap_const_logic_1 = ap_CS_fsm_state3)) then 
-            stream_in_6_TREADY_int_regslice <= grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_stream_in_6_TREADY;
-        else 
-            stream_in_6_TREADY_int_regslice <= ap_const_logic_0;
-        end if; 
-    end process;
-
-    stream_in_7_TREADY <= regslice_both_stream_in_7_V_data_V_U_ack_in;
-
-    stream_in_7_TREADY_int_regslice_assign_proc : process(grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_stream_in_7_TREADY, ap_CS_fsm_state3)
-    begin
-        if ((ap_const_logic_1 = ap_CS_fsm_state3)) then 
-            stream_in_7_TREADY_int_regslice <= grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_stream_in_7_TREADY;
-        else 
-            stream_in_7_TREADY_int_regslice <= ap_const_logic_0;
-        end if; 
-    end process;
-
-    tmp_10_fu_423_p3 <= switches(4 downto 4);
-    tmp_11_fu_431_p3 <= switches(5 downto 5);
-    tmp_12_fu_439_p3 <= switches(6 downto 6);
-    tmp_13_fu_447_p3 <= switches(7 downto 7);
-    tmp_8_fu_407_p3 <= switches(2 downto 2);
-    tmp_9_fu_415_p3 <= switches(3 downto 3);
-    tmp_fu_399_p3 <= switches(1 downto 1);
-    trunc_ln54_fu_395_p1 <= switches(1 - 1 downto 0);
-    zext_ln55_fu_455_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(trunc_ln54_fu_395_p1),2));
-    zext_ln57_fu_489_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(select_ln56_fu_481_p3),3));
-    zext_ln61_fu_549_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(select_ln60_fu_541_p3),4));
+    tmp_12_fu_140_p3 <= switches(2 downto 2);
+    tmp_13_fu_148_p3 <= switches(3 downto 3);
+    tmp_14_fu_156_p3 <= switches(4 downto 4);
+    tmp_15_fu_164_p3 <= switches(5 downto 5);
+    tmp_16_fu_172_p3 <= switches(6 downto 6);
+    tmp_fu_132_p3 <= switches(1 downto 1);
+    trunc_ln42_fu_128_p1 <= switches(1 - 1 downto 0);
+    zext_ln43_fu_188_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(trunc_ln42_fu_128_p1),2));
+    zext_ln45_fu_222_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(select_ln44_fu_214_p3),3));
+    zext_ln49_fu_287_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(select_ln48_reg_352),4));
 end behav;

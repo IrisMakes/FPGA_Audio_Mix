@@ -1,43 +1,19 @@
 directive:1:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=mixer_XLX_SEP_ PragmaOptions=name=mixer_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLSDIRECTIVE TOP name=mixer
 ^
-hw_mixer.cpp:17:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=mixer_XLX_SEP_ PragmaOptions=axis port=stream_in_0_XLX_SEP_ [-Wdump-hls-pragmas]
-#pragma HLS INTERFACE axis port=stream_in_0
+hw_mixer.cpp:14:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=mixer_XLX_SEP_ PragmaOptions=axis port=stream_in_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE axis port=stream_in
 ^
-hw_mixer.cpp:18:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=mixer_XLX_SEP_ PragmaOptions=axis port=stream_in_1_XLX_SEP_ [-Wdump-hls-pragmas]
-#pragma HLS INTERFACE axis port=stream_in_1
-^
-hw_mixer.cpp:19:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=mixer_XLX_SEP_ PragmaOptions=axis port=stream_in_2_XLX_SEP_ [-Wdump-hls-pragmas]
-#pragma HLS INTERFACE axis port=stream_in_2
-^
-hw_mixer.cpp:20:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=mixer_XLX_SEP_ PragmaOptions=axis port=stream_in_3_XLX_SEP_ [-Wdump-hls-pragmas]
-#pragma HLS INTERFACE axis port=stream_in_3
-^
-hw_mixer.cpp:21:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=mixer_XLX_SEP_ PragmaOptions=axis port=stream_in_4_XLX_SEP_ [-Wdump-hls-pragmas]
-#pragma HLS INTERFACE axis port=stream_in_4
-^
-hw_mixer.cpp:22:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=mixer_XLX_SEP_ PragmaOptions=axis port=stream_in_5_XLX_SEP_ [-Wdump-hls-pragmas]
-#pragma HLS INTERFACE axis port=stream_in_5
-^
-hw_mixer.cpp:23:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=mixer_XLX_SEP_ PragmaOptions=axis port=stream_in_6_XLX_SEP_ [-Wdump-hls-pragmas]
-#pragma HLS INTERFACE axis port=stream_in_6
-^
-hw_mixer.cpp:24:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=mixer_XLX_SEP_ PragmaOptions=axis port=stream_in_7_XLX_SEP_ [-Wdump-hls-pragmas]
-#pragma HLS INTERFACE axis port=stream_in_7
-^
-hw_mixer.cpp:25:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=mixer_XLX_SEP_ PragmaOptions=ap_none port=switches_XLX_SEP_ [-Wdump-hls-pragmas]
+hw_mixer.cpp:15:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=mixer_XLX_SEP_ PragmaOptions=ap_none port=switches_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS INTERFACE ap_none port=switches
 ^
-hw_mixer.cpp:26:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=mixer_XLX_SEP_ PragmaOptions=axis port=mix_out_XLX_SEP_ [-Wdump-hls-pragmas]
+hw_mixer.cpp:16:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=mixer_XLX_SEP_ PragmaOptions=axis port=mix_out_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS INTERFACE axis port=mix_out
 ^
-hw_mixer.cpp:27:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=mixer_XLX_SEP_ PragmaOptions=s_axilite port=return_XLX_SEP_ [-Wdump-hls-pragmas]
+hw_mixer.cpp:17:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=mixer_XLX_SEP_ PragmaOptions=s_axilite port=return_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS INTERFACE s_axilite port=return
 ^
-hw_mixer.cpp:28:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=mixer_XLX_SEP_ PragmaOptions=variable=recip_sqrt_lut complete_XLX_SEP_ [-Wdump-hls-pragmas]
+hw_mixer.cpp:18:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=mixer_XLX_SEP_ PragmaOptions=variable=recip_sqrt_lut complete_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS ARRAY_PARTITION variable=recip_sqrt_lut complete
 ^
-hw_mixer.cpp:31:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=mixer_XLX_SEP_ PragmaOptions=min=200 max=20000 avg=10000_XLX_SEP_ [-Wdump-hls-pragmas]
-#pragma HLS LOOP_TRIPCOUNT min=200 max=20000 avg=10000
-^
-14 warnings generated.
+6 warnings generated.

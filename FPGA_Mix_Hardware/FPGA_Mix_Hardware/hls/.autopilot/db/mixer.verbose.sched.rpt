@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'mixer'
 ================================================================
-* Date:           Fri Mar 27 17:43:12 2026
+* Date:           Wed Apr 22 16:16:12 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        FPGA_Mix_Hardware
@@ -20,17 +20,17 @@
     +--------+----------+----------+------------+
     |  Clock |  Target  | Estimated| Uncertainty|
     +--------+----------+----------+------------+
-    |ap_clk  |  10.00 ns|  6.388 ns|     2.70 ns|
+    |ap_clk  |  10.00 ns|  7.256 ns|     2.70 ns|
     +--------+----------+----------+------------+
 
 + Latency: 
     * Summary: 
-    +---------+---------+----------+----------+-----+-------+---------+
-    |  Latency (cycles) |  Latency (absolute) |   Interval  | Pipeline|
-    |   min   |   max   |    min   |    max   | min |  max  |   Type  |
-    +---------+---------+----------+----------+-----+-------+---------+
-    |      208|    20008|  2.080 us|  0.200 ms|  209|  20009|       no|
-    +---------+---------+----------+----------+-----+-------+---------+
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
 
     + Detail: 
         * Instance: 
@@ -65,7 +65,7 @@ IsGatedGlobalClock: 0
 ============================================================
 + Verbose Summary: Schedule
 ============================================================
-* Number of FSM states : 5
+* Number of FSM states : 4
 * Pipeline : 0
 * Dataflow Pipeline: 0
 
@@ -73,138 +73,65 @@ IsGatedGlobalClock: 0
 1 --> 2 
 2 --> 3 
 3 --> 4 
-4 --> 5 
-5 --> 
+4 --> 
 
 * FSM state operations: 
 
-State 1 <SV = 0> <Delay = 5.36>
-ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%switches_read = read i8 @_ssdm_op_Read.ap_none.i8, i8 %switches"   --->   Operation 6 'read' 'switches_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%out_pkt_data_loc = alloca i64 1"   --->   Operation 7 'alloca' 'out_pkt_data_loc' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%trunc_ln54 = trunc i8 %switches_read" [hw_mixer.cpp:54]   --->   Operation 8 'trunc' 'trunc_ln54' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%tmp = bitselect i1 @_ssdm_op_BitSelect.i1.i8.i32, i8 %switches_read, i32 1" [hw_mixer.cpp:55]   --->   Operation 9 'bitselect' 'tmp' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%tmp_8 = bitselect i1 @_ssdm_op_BitSelect.i1.i8.i32, i8 %switches_read, i32 2" [hw_mixer.cpp:56]   --->   Operation 10 'bitselect' 'tmp_8' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%tmp_9 = bitselect i1 @_ssdm_op_BitSelect.i1.i8.i32, i8 %switches_read, i32 3" [hw_mixer.cpp:57]   --->   Operation 11 'bitselect' 'tmp_9' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%tmp_10 = bitselect i1 @_ssdm_op_BitSelect.i1.i8.i32, i8 %switches_read, i32 4" [hw_mixer.cpp:58]   --->   Operation 12 'bitselect' 'tmp_10' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%tmp_11 = bitselect i1 @_ssdm_op_BitSelect.i1.i8.i32, i8 %switches_read, i32 5" [hw_mixer.cpp:59]   --->   Operation 13 'bitselect' 'tmp_11' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%tmp_12 = bitselect i1 @_ssdm_op_BitSelect.i1.i8.i32, i8 %switches_read, i32 6" [hw_mixer.cpp:60]   --->   Operation 14 'bitselect' 'tmp_12' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%tmp_13 = bitselect i1 @_ssdm_op_BitSelect.i1.i8.i32, i8 %switches_read, i32 7" [hw_mixer.cpp:61]   --->   Operation 15 'bitselect' 'tmp_13' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 16 [1/1] (0.00ns) (grouped into LUT with out node select_ln55_1)   --->   "%zext_ln55 = zext i1 %trunc_ln54" [hw_mixer.cpp:55]   --->   Operation 16 'zext' 'zext_ln55' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 17 [1/1] (0.00ns) (grouped into LUT with out node select_ln55_1)   --->   "%select_ln55 = select i1 %trunc_ln54, i2 2, i2 1" [hw_mixer.cpp:55]   --->   Operation 17 'select' 'select_ln55' <Predicate = true> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.17> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_1 : Operation 18 [1/1] (0.17ns) (out node of the LUT)   --->   "%select_ln55_1 = select i1 %tmp, i2 %select_ln55, i2 %zext_ln55" [hw_mixer.cpp:55]   --->   Operation 18 'select' 'select_ln55_1' <Predicate = true> <Delay = 0.17> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.17> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_1 : Operation 19 [1/1] (0.54ns)   --->   "%add_ln56 = add i2 %select_ln55_1, i2 1" [hw_mixer.cpp:56]   --->   Operation 19 'add' 'add_ln56' <Predicate = true> <Delay = 0.54> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 20 [1/1] (0.17ns)   --->   "%select_ln56 = select i1 %tmp_8, i2 %add_ln56, i2 %select_ln55_1" [hw_mixer.cpp:56]   --->   Operation 20 'select' 'select_ln56' <Predicate = true> <Delay = 0.17> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.17> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%zext_ln57 = zext i2 %select_ln56" [hw_mixer.cpp:57]   --->   Operation 21 'zext' 'zext_ln57' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 22 [1/1] (0.54ns)   --->   "%add_ln57 = add i3 %zext_ln57, i3 1" [hw_mixer.cpp:57]   --->   Operation 22 'add' 'add_ln57' <Predicate = true> <Delay = 0.54> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 23 [1/1] (0.20ns)   --->   "%select_ln57 = select i1 %tmp_9, i3 %add_ln57, i3 %zext_ln57" [hw_mixer.cpp:57]   --->   Operation 23 'select' 'select_ln57' <Predicate = true> <Delay = 0.20> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.20> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_1 : Operation 24 [1/1] (0.67ns)   --->   "%add_ln58 = add i3 %select_ln57, i3 1" [hw_mixer.cpp:58]   --->   Operation 24 'add' 'add_ln58' <Predicate = true> <Delay = 0.67> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.67> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 25 [1/1] (0.20ns)   --->   "%select_ln58 = select i1 %tmp_10, i3 %add_ln58, i3 %select_ln57" [hw_mixer.cpp:58]   --->   Operation 25 'select' 'select_ln58' <Predicate = true> <Delay = 0.20> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.20> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_1 : Operation 26 [1/1] (0.67ns)   --->   "%add_ln59 = add i3 %select_ln58, i3 1" [hw_mixer.cpp:59]   --->   Operation 26 'add' 'add_ln59' <Predicate = true> <Delay = 0.67> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.67> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 27 [1/1] (0.20ns)   --->   "%select_ln59 = select i1 %tmp_11, i3 %add_ln59, i3 %select_ln58" [hw_mixer.cpp:59]   --->   Operation 27 'select' 'select_ln59' <Predicate = true> <Delay = 0.20> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.20> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_1 : Operation 28 [1/1] (0.67ns)   --->   "%add_ln60 = add i3 %select_ln59, i3 1" [hw_mixer.cpp:60]   --->   Operation 28 'add' 'add_ln60' <Predicate = true> <Delay = 0.67> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.67> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 29 [1/1] (0.20ns)   --->   "%select_ln60 = select i1 %tmp_12, i3 %add_ln60, i3 %select_ln59" [hw_mixer.cpp:60]   --->   Operation 29 'select' 'select_ln60' <Predicate = true> <Delay = 0.20> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.20> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%zext_ln61 = zext i3 %select_ln60" [hw_mixer.cpp:61]   --->   Operation 30 'zext' 'zext_ln61' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 31 [1/1] (0.67ns)   --->   "%add_ln61 = add i4 %zext_ln61, i4 1" [hw_mixer.cpp:61]   --->   Operation 31 'add' 'add_ln61' <Predicate = true> <Delay = 0.67> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.67> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 32 [1/1] (0.39ns)   --->   "%select_ln61 = select i1 %tmp_13, i4 %add_ln61, i4 %zext_ln61" [hw_mixer.cpp:61]   --->   Operation 32 'select' 'select_ln61' <Predicate = true> <Delay = 0.39> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.39> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+State 1 <SV = 0> <Delay = 4.30>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%switches_read = read i8 @_ssdm_op_Read.ap_none.i8, i8 %switches"   --->   Operation 5 'read' 'switches_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%add_ln68_loc = alloca i64 1"   --->   Operation 6 'alloca' 'add_ln68_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%trunc_ln42 = trunc i8 %switches_read" [hw_mixer.cpp:42]   --->   Operation 7 'trunc' 'trunc_ln42' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%tmp = bitselect i1 @_ssdm_op_BitSelect.i1.i8.i32, i8 %switches_read, i32 1" [hw_mixer.cpp:43]   --->   Operation 8 'bitselect' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%tmp_12 = bitselect i1 @_ssdm_op_BitSelect.i1.i8.i32, i8 %switches_read, i32 2" [hw_mixer.cpp:44]   --->   Operation 9 'bitselect' 'tmp_12' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%tmp_13 = bitselect i1 @_ssdm_op_BitSelect.i1.i8.i32, i8 %switches_read, i32 3" [hw_mixer.cpp:45]   --->   Operation 10 'bitselect' 'tmp_13' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%tmp_14 = bitselect i1 @_ssdm_op_BitSelect.i1.i8.i32, i8 %switches_read, i32 4" [hw_mixer.cpp:46]   --->   Operation 11 'bitselect' 'tmp_14' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%tmp_15 = bitselect i1 @_ssdm_op_BitSelect.i1.i8.i32, i8 %switches_read, i32 5" [hw_mixer.cpp:47]   --->   Operation 12 'bitselect' 'tmp_15' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%tmp_16 = bitselect i1 @_ssdm_op_BitSelect.i1.i8.i32, i8 %switches_read, i32 6" [hw_mixer.cpp:48]   --->   Operation 13 'bitselect' 'tmp_16' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%tmp_17 = bitselect i1 @_ssdm_op_BitSelect.i1.i8.i32, i8 %switches_read, i32 7" [hw_mixer.cpp:49]   --->   Operation 14 'bitselect' 'tmp_17' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns) (grouped into LUT with out node select_ln43_1)   --->   "%zext_ln43 = zext i1 %trunc_ln42" [hw_mixer.cpp:43]   --->   Operation 15 'zext' 'zext_ln43' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns) (grouped into LUT with out node select_ln43_1)   --->   "%select_ln43 = select i1 %trunc_ln42, i2 2, i2 1" [hw_mixer.cpp:43]   --->   Operation 16 'select' 'select_ln43' <Predicate = true> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.17> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 17 [1/1] (0.17ns) (out node of the LUT)   --->   "%select_ln43_1 = select i1 %tmp, i2 %select_ln43, i2 %zext_ln43" [hw_mixer.cpp:43]   --->   Operation 17 'select' 'select_ln43_1' <Predicate = true> <Delay = 0.17> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.17> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 18 [1/1] (0.54ns)   --->   "%add_ln44 = add i2 %select_ln43_1, i2 1" [hw_mixer.cpp:44]   --->   Operation 18 'add' 'add_ln44' <Predicate = true> <Delay = 0.54> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 19 [1/1] (0.17ns)   --->   "%select_ln44 = select i1 %tmp_12, i2 %add_ln44, i2 %select_ln43_1" [hw_mixer.cpp:44]   --->   Operation 19 'select' 'select_ln44' <Predicate = true> <Delay = 0.17> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.17> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%zext_ln45 = zext i2 %select_ln44" [hw_mixer.cpp:45]   --->   Operation 20 'zext' 'zext_ln45' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.54ns)   --->   "%add_ln45 = add i3 %zext_ln45, i3 1" [hw_mixer.cpp:45]   --->   Operation 21 'add' 'add_ln45' <Predicate = true> <Delay = 0.54> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 22 [1/1] (0.20ns)   --->   "%select_ln45 = select i1 %tmp_13, i3 %add_ln45, i3 %zext_ln45" [hw_mixer.cpp:45]   --->   Operation 22 'select' 'select_ln45' <Predicate = true> <Delay = 0.20> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.20> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 23 [1/1] (0.67ns)   --->   "%add_ln46 = add i3 %select_ln45, i3 1" [hw_mixer.cpp:46]   --->   Operation 23 'add' 'add_ln46' <Predicate = true> <Delay = 0.67> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.67> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 24 [1/1] (0.20ns)   --->   "%select_ln46 = select i1 %tmp_14, i3 %add_ln46, i3 %select_ln45" [hw_mixer.cpp:46]   --->   Operation 24 'select' 'select_ln46' <Predicate = true> <Delay = 0.20> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.20> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 25 [1/1] (0.67ns)   --->   "%add_ln47 = add i3 %select_ln46, i3 1" [hw_mixer.cpp:47]   --->   Operation 25 'add' 'add_ln47' <Predicate = true> <Delay = 0.67> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.67> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 26 [1/1] (0.20ns)   --->   "%select_ln47 = select i1 %tmp_15, i3 %add_ln47, i3 %select_ln46" [hw_mixer.cpp:47]   --->   Operation 26 'select' 'select_ln47' <Predicate = true> <Delay = 0.20> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.20> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 27 [1/1] (0.67ns)   --->   "%add_ln48 = add i3 %select_ln47, i3 1" [hw_mixer.cpp:48]   --->   Operation 27 'add' 'add_ln48' <Predicate = true> <Delay = 0.67> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.67> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 28 [1/1] (0.20ns)   --->   "%select_ln48 = select i1 %tmp_16, i3 %add_ln48, i3 %select_ln47" [hw_mixer.cpp:48]   --->   Operation 28 'select' 'select_ln48' <Predicate = true> <Delay = 0.20> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.20> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 
-State 2 <SV = 1> <Delay = 6.38>
-ST_2 : Operation 33 [2/2] (6.38ns)   --->   "%call_ln61 = call void @mixer_Pipeline_VITIS_LOOP_30_1, i4 %select_ln61, i32 %mix_out_V_data_V, i4 %mix_out_V_keep_V, i4 %mix_out_V_strb_V, i2 %mix_out_V_user_V, i1 %mix_out_V_last_V, i5 %mix_out_V_id_V, i6 %mix_out_V_dest_V, i32 %stream_in_0_V_data_V, i4 %stream_in_0_V_keep_V, i4 %stream_in_0_V_strb_V, i2 %stream_in_0_V_user_V, i1 %stream_in_0_V_last_V, i5 %stream_in_0_V_id_V, i6 %stream_in_0_V_dest_V, i32 %stream_in_1_V_data_V, i4 %stream_in_1_V_keep_V, i4 %stream_in_1_V_strb_V, i2 %stream_in_1_V_user_V, i1 %stream_in_1_V_last_V, i5 %stream_in_1_V_id_V, i6 %stream_in_1_V_dest_V, i32 %stream_in_2_V_data_V, i4 %stream_in_2_V_keep_V, i4 %stream_in_2_V_strb_V, i2 %stream_in_2_V_user_V, i1 %stream_in_2_V_last_V, i5 %stream_in_2_V_id_V, i6 %stream_in_2_V_dest_V, i32 %stream_in_3_V_data_V, i4 %stream_in_3_V_keep_V, i4 %stream_in_3_V_strb_V, i2 %stream_in_3_V_user_V, i1 %stream_in_3_V_last_V, i5 %stream_in_3_V_id_V, i6 %stream_in_3_V_dest_V, i32 %stream_in_4_V_data_V, i4 %stream_in_4_V_keep_V, i4 %stream_in_4_V_strb_V, i2 %stream_in_4_V_user_V, i1 %stream_in_4_V_last_V, i5 %stream_in_4_V_id_V, i6 %stream_in_4_V_dest_V, i32 %stream_in_5_V_data_V, i4 %stream_in_5_V_keep_V, i4 %stream_in_5_V_strb_V, i2 %stream_in_5_V_user_V, i1 %stream_in_5_V_last_V, i5 %stream_in_5_V_id_V, i6 %stream_in_5_V_dest_V, i32 %stream_in_6_V_data_V, i4 %stream_in_6_V_keep_V, i4 %stream_in_6_V_strb_V, i2 %stream_in_6_V_user_V, i1 %stream_in_6_V_last_V, i5 %stream_in_6_V_id_V, i6 %stream_in_6_V_dest_V, i32 %stream_in_7_V_data_V, i4 %stream_in_7_V_keep_V, i4 %stream_in_7_V_strb_V, i2 %stream_in_7_V_user_V, i1 %stream_in_7_V_last_V, i5 %stream_in_7_V_id_V, i6 %stream_in_7_V_dest_V, i1 %trunc_ln54, i1 %tmp, i1 %tmp_8, i1 %tmp_9, i1 %tmp_10, i1 %tmp_11, i1 %tmp_12, i1 %tmp_13, i32 %out_pkt_data_loc" [hw_mixer.cpp:61]   --->   Operation 33 'call' 'call_ln61' <Predicate = true> <Delay = 6.38> <CoreType = "Generic">   --->   Generic Core
+State 2 <SV = 1> <Delay = 7.25>
+ST_2 : Operation 29 [1/1] (0.00ns)   --->   "%current_gain_q16_load = load i32 %current_gain_q16" [hw_mixer.cpp:68]   --->   Operation 29 'load' 'current_gain_q16_load' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 30 [1/1] (0.00ns)   --->   "%zext_ln49 = zext i3 %select_ln48" [hw_mixer.cpp:49]   --->   Operation 30 'zext' 'zext_ln49' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 31 [1/1] (0.67ns)   --->   "%add_ln49 = add i4 %zext_ln49, i4 1" [hw_mixer.cpp:49]   --->   Operation 31 'add' 'add_ln49' <Predicate = true> <Delay = 0.67> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.67> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 32 [2/2] (6.58ns)   --->   "%call_ln68 = call void @mixer_Pipeline_VITIS_LOOP_27_1, i32 %current_gain_q16_load, i32 %mix_out_V_data_V, i4 %mix_out_V_keep_V, i4 %mix_out_V_strb_V, i1 %mix_out_V_last_V, i128 %stream_in_V_data_V, i16 %stream_in_V_keep_V, i16 %stream_in_V_strb_V, i1 %stream_in_V_last_V, i1 %trunc_ln42, i1 %tmp, i1 %tmp_12, i1 %tmp_13, i1 %tmp_14, i1 %tmp_15, i1 %tmp_16, i1 %tmp_17, i4 %add_ln49, i3 %select_ln48, i32 %add_ln68_loc, i9 %comp_gain_lut" [hw_mixer.cpp:68]   --->   Operation 32 'call' 'call_ln68' <Predicate = true> <Delay = 6.58> <CoreType = "Generic">   --->   Generic Core
 
-State 3 <SV = 2> <Delay = 5.06>
-ST_3 : Operation 34 [1/2] (5.06ns)   --->   "%call_ln61 = call void @mixer_Pipeline_VITIS_LOOP_30_1, i4 %select_ln61, i32 %mix_out_V_data_V, i4 %mix_out_V_keep_V, i4 %mix_out_V_strb_V, i2 %mix_out_V_user_V, i1 %mix_out_V_last_V, i5 %mix_out_V_id_V, i6 %mix_out_V_dest_V, i32 %stream_in_0_V_data_V, i4 %stream_in_0_V_keep_V, i4 %stream_in_0_V_strb_V, i2 %stream_in_0_V_user_V, i1 %stream_in_0_V_last_V, i5 %stream_in_0_V_id_V, i6 %stream_in_0_V_dest_V, i32 %stream_in_1_V_data_V, i4 %stream_in_1_V_keep_V, i4 %stream_in_1_V_strb_V, i2 %stream_in_1_V_user_V, i1 %stream_in_1_V_last_V, i5 %stream_in_1_V_id_V, i6 %stream_in_1_V_dest_V, i32 %stream_in_2_V_data_V, i4 %stream_in_2_V_keep_V, i4 %stream_in_2_V_strb_V, i2 %stream_in_2_V_user_V, i1 %stream_in_2_V_last_V, i5 %stream_in_2_V_id_V, i6 %stream_in_2_V_dest_V, i32 %stream_in_3_V_data_V, i4 %stream_in_3_V_keep_V, i4 %stream_in_3_V_strb_V, i2 %stream_in_3_V_user_V, i1 %stream_in_3_V_last_V, i5 %stream_in_3_V_id_V, i6 %stream_in_3_V_dest_V, i32 %stream_in_4_V_data_V, i4 %stream_in_4_V_keep_V, i4 %stream_in_4_V_strb_V, i2 %stream_in_4_V_user_V, i1 %stream_in_4_V_last_V, i5 %stream_in_4_V_id_V, i6 %stream_in_4_V_dest_V, i32 %stream_in_5_V_data_V, i4 %stream_in_5_V_keep_V, i4 %stream_in_5_V_strb_V, i2 %stream_in_5_V_user_V, i1 %stream_in_5_V_last_V, i5 %stream_in_5_V_id_V, i6 %stream_in_5_V_dest_V, i32 %stream_in_6_V_data_V, i4 %stream_in_6_V_keep_V, i4 %stream_in_6_V_strb_V, i2 %stream_in_6_V_user_V, i1 %stream_in_6_V_last_V, i5 %stream_in_6_V_id_V, i6 %stream_in_6_V_dest_V, i32 %stream_in_7_V_data_V, i4 %stream_in_7_V_keep_V, i4 %stream_in_7_V_strb_V, i2 %stream_in_7_V_user_V, i1 %stream_in_7_V_last_V, i5 %stream_in_7_V_id_V, i6 %stream_in_7_V_dest_V, i1 %trunc_ln54, i1 %tmp, i1 %tmp_8, i1 %tmp_9, i1 %tmp_10, i1 %tmp_11, i1 %tmp_12, i1 %tmp_13, i32 %out_pkt_data_loc" [hw_mixer.cpp:61]   --->   Operation 34 'call' 'call_ln61' <Predicate = true> <Delay = 5.06> <CoreType = "Generic">   --->   Generic Core
+State 3 <SV = 2> <Delay = 5.85>
+ST_3 : Operation 33 [1/2] (5.85ns)   --->   "%call_ln68 = call void @mixer_Pipeline_VITIS_LOOP_27_1, i32 %current_gain_q16_load, i32 %mix_out_V_data_V, i4 %mix_out_V_keep_V, i4 %mix_out_V_strb_V, i1 %mix_out_V_last_V, i128 %stream_in_V_data_V, i16 %stream_in_V_keep_V, i16 %stream_in_V_strb_V, i1 %stream_in_V_last_V, i1 %trunc_ln42, i1 %tmp, i1 %tmp_12, i1 %tmp_13, i1 %tmp_14, i1 %tmp_15, i1 %tmp_16, i1 %tmp_17, i4 %add_ln49, i3 %select_ln48, i32 %add_ln68_loc, i9 %comp_gain_lut" [hw_mixer.cpp:68]   --->   Operation 33 'call' 'call_ln68' <Predicate = true> <Delay = 5.85> <CoreType = "Generic">   --->   Generic Core
 
-State 4 <SV = 3> <Delay = 0.49>
-ST_4 : Operation 35 [1/1] (0.00ns)   --->   "%out_pkt_data_loc_load = load i32 %out_pkt_data_loc"   --->   Operation 35 'load' 'out_pkt_data_loc_load' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 36 [2/2] (0.49ns)   --->   "%write_ln71 = write void @_ssdm_op_Write.axis.volatile.i32P0A.i4P0A.i4P0A.i2P0A.i1P0A.i5P0A.i6P0A, i32 %mix_out_V_data_V, i4 %mix_out_V_keep_V, i4 %mix_out_V_strb_V, i2 %mix_out_V_user_V, i1 %mix_out_V_last_V, i5 %mix_out_V_id_V, i6 %mix_out_V_dest_V, i32 %out_pkt_data_loc_load, i4 15, i4 15, i2 0, i1 1, i5 0, i6 0" [hw_mixer.cpp:71]   --->   Operation 36 'write' 'write_ln71' <Predicate = true> <Delay = 0.49> <CoreInst = "regslice">   --->   Core 147 'regslice' <Latency = 0> <II = 1> <Delay = 0.65> <Adapter> <Opcode : 'read' 'write'>
-
-State 5 <SV = 4> <Delay = 0.49>
-ST_5 : Operation 37 [1/1] (0.00ns)   --->   "%spectopmodule_ln5 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_0" [hw_mixer.cpp:5]   --->   Operation 37 'spectopmodule' 'spectopmodule_ln5' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 38 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %stream_in_0_V_data_V, i4 %stream_in_0_V_keep_V, i4 %stream_in_0_V_strb_V, i2 %stream_in_0_V_user_V, i1 %stream_in_0_V_last_V, i5 %stream_in_0_V_id_V, i6 %stream_in_0_V_dest_V, void @empty_2, i32 1, i32 1, void @empty_3, i32 0, i32 0, void @empty_4, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_4, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 38 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 39 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %stream_in_0_V_data_V"   --->   Operation 39 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 40 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i4 %stream_in_0_V_keep_V"   --->   Operation 40 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 41 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i4 %stream_in_0_V_strb_V"   --->   Operation 41 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 42 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i2 %stream_in_0_V_user_V"   --->   Operation 42 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 43 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %stream_in_0_V_last_V"   --->   Operation 43 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 44 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i5 %stream_in_0_V_id_V"   --->   Operation 44 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 45 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i6 %stream_in_0_V_dest_V"   --->   Operation 45 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 46 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %stream_in_1_V_data_V, i4 %stream_in_1_V_keep_V, i4 %stream_in_1_V_strb_V, i2 %stream_in_1_V_user_V, i1 %stream_in_1_V_last_V, i5 %stream_in_1_V_id_V, i6 %stream_in_1_V_dest_V, void @empty_2, i32 1, i32 1, void @empty_3, i32 0, i32 0, void @empty_4, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_4, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 46 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 47 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %stream_in_1_V_data_V"   --->   Operation 47 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 48 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i4 %stream_in_1_V_keep_V"   --->   Operation 48 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 49 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i4 %stream_in_1_V_strb_V"   --->   Operation 49 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 50 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i2 %stream_in_1_V_user_V"   --->   Operation 50 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 51 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %stream_in_1_V_last_V"   --->   Operation 51 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 52 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i5 %stream_in_1_V_id_V"   --->   Operation 52 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 53 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i6 %stream_in_1_V_dest_V"   --->   Operation 53 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 54 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %stream_in_2_V_data_V, i4 %stream_in_2_V_keep_V, i4 %stream_in_2_V_strb_V, i2 %stream_in_2_V_user_V, i1 %stream_in_2_V_last_V, i5 %stream_in_2_V_id_V, i6 %stream_in_2_V_dest_V, void @empty_2, i32 1, i32 1, void @empty_3, i32 0, i32 0, void @empty_4, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_4, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 54 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 55 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %stream_in_2_V_data_V"   --->   Operation 55 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 56 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i4 %stream_in_2_V_keep_V"   --->   Operation 56 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 57 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i4 %stream_in_2_V_strb_V"   --->   Operation 57 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 58 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i2 %stream_in_2_V_user_V"   --->   Operation 58 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 59 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %stream_in_2_V_last_V"   --->   Operation 59 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 60 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i5 %stream_in_2_V_id_V"   --->   Operation 60 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 61 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i6 %stream_in_2_V_dest_V"   --->   Operation 61 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 62 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %stream_in_3_V_data_V, i4 %stream_in_3_V_keep_V, i4 %stream_in_3_V_strb_V, i2 %stream_in_3_V_user_V, i1 %stream_in_3_V_last_V, i5 %stream_in_3_V_id_V, i6 %stream_in_3_V_dest_V, void @empty_2, i32 1, i32 1, void @empty_3, i32 0, i32 0, void @empty_4, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_4, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 62 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 63 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %stream_in_3_V_data_V"   --->   Operation 63 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 64 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i4 %stream_in_3_V_keep_V"   --->   Operation 64 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 65 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i4 %stream_in_3_V_strb_V"   --->   Operation 65 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 66 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i2 %stream_in_3_V_user_V"   --->   Operation 66 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 67 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %stream_in_3_V_last_V"   --->   Operation 67 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 68 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i5 %stream_in_3_V_id_V"   --->   Operation 68 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 69 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i6 %stream_in_3_V_dest_V"   --->   Operation 69 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 70 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %stream_in_4_V_data_V, i4 %stream_in_4_V_keep_V, i4 %stream_in_4_V_strb_V, i2 %stream_in_4_V_user_V, i1 %stream_in_4_V_last_V, i5 %stream_in_4_V_id_V, i6 %stream_in_4_V_dest_V, void @empty_2, i32 1, i32 1, void @empty_3, i32 0, i32 0, void @empty_4, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_4, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 70 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 71 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %stream_in_4_V_data_V"   --->   Operation 71 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 72 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i4 %stream_in_4_V_keep_V"   --->   Operation 72 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 73 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i4 %stream_in_4_V_strb_V"   --->   Operation 73 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 74 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i2 %stream_in_4_V_user_V"   --->   Operation 74 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 75 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %stream_in_4_V_last_V"   --->   Operation 75 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 76 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i5 %stream_in_4_V_id_V"   --->   Operation 76 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 77 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i6 %stream_in_4_V_dest_V"   --->   Operation 77 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 78 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %stream_in_5_V_data_V, i4 %stream_in_5_V_keep_V, i4 %stream_in_5_V_strb_V, i2 %stream_in_5_V_user_V, i1 %stream_in_5_V_last_V, i5 %stream_in_5_V_id_V, i6 %stream_in_5_V_dest_V, void @empty_2, i32 1, i32 1, void @empty_3, i32 0, i32 0, void @empty_4, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_4, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 78 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 79 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %stream_in_5_V_data_V"   --->   Operation 79 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 80 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i4 %stream_in_5_V_keep_V"   --->   Operation 80 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 81 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i4 %stream_in_5_V_strb_V"   --->   Operation 81 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 82 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i2 %stream_in_5_V_user_V"   --->   Operation 82 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 83 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %stream_in_5_V_last_V"   --->   Operation 83 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 84 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i5 %stream_in_5_V_id_V"   --->   Operation 84 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 85 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i6 %stream_in_5_V_dest_V"   --->   Operation 85 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 86 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %stream_in_6_V_data_V, i4 %stream_in_6_V_keep_V, i4 %stream_in_6_V_strb_V, i2 %stream_in_6_V_user_V, i1 %stream_in_6_V_last_V, i5 %stream_in_6_V_id_V, i6 %stream_in_6_V_dest_V, void @empty_2, i32 1, i32 1, void @empty_3, i32 0, i32 0, void @empty_4, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_4, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 86 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 87 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %stream_in_6_V_data_V"   --->   Operation 87 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 88 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i4 %stream_in_6_V_keep_V"   --->   Operation 88 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 89 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i4 %stream_in_6_V_strb_V"   --->   Operation 89 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 90 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i2 %stream_in_6_V_user_V"   --->   Operation 90 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 91 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %stream_in_6_V_last_V"   --->   Operation 91 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 92 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i5 %stream_in_6_V_id_V"   --->   Operation 92 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 93 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i6 %stream_in_6_V_dest_V"   --->   Operation 93 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 94 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %stream_in_7_V_data_V, i4 %stream_in_7_V_keep_V, i4 %stream_in_7_V_strb_V, i2 %stream_in_7_V_user_V, i1 %stream_in_7_V_last_V, i5 %stream_in_7_V_id_V, i6 %stream_in_7_V_dest_V, void @empty_2, i32 1, i32 1, void @empty_3, i32 0, i32 0, void @empty_4, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_4, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 94 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 95 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %stream_in_7_V_data_V"   --->   Operation 95 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 96 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i4 %stream_in_7_V_keep_V"   --->   Operation 96 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 97 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i4 %stream_in_7_V_strb_V"   --->   Operation 97 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 98 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i2 %stream_in_7_V_user_V"   --->   Operation 98 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 99 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %stream_in_7_V_last_V"   --->   Operation 99 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 100 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i5 %stream_in_7_V_id_V"   --->   Operation 100 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 101 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i6 %stream_in_7_V_dest_V"   --->   Operation 101 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 102 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i8 %switches"   --->   Operation 102 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 103 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %switches, void @empty_5, i32 4294967295, i32 4294967295, void @empty_4, i32 0, i32 0, void @empty_4, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_4, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 103 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 104 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %mix_out_V_data_V, i4 %mix_out_V_keep_V, i4 %mix_out_V_strb_V, i2 %mix_out_V_user_V, i1 %mix_out_V_last_V, i5 %mix_out_V_id_V, i6 %mix_out_V_dest_V, void @empty_2, i32 1, i32 1, void @empty_3, i32 0, i32 0, void @empty_4, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_4, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 104 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 105 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %mix_out_V_data_V"   --->   Operation 105 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 106 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i4 %mix_out_V_keep_V"   --->   Operation 106 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 107 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i4 %mix_out_V_strb_V"   --->   Operation 107 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 108 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i2 %mix_out_V_user_V"   --->   Operation 108 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 109 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %mix_out_V_last_V"   --->   Operation 109 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 110 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i5 %mix_out_V_id_V"   --->   Operation 110 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 111 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i6 %mix_out_V_dest_V"   --->   Operation 111 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 112 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_6, i32 0, i32 0, void @empty_4, i32 0, i32 0, void @empty, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0"   --->   Operation 112 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 113 [1/1] (0.00ns)   --->   "%specaxissidechannel_ln30 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i32 %mix_out_V_data_V, i4 %mix_out_V_keep_V, i4 %mix_out_V_strb_V, i2 %mix_out_V_user_V, i1 %mix_out_V_last_V, i5 %mix_out_V_id_V, i6 %mix_out_V_dest_V, void @empty_1" [hw_mixer.cpp:30]   --->   Operation 113 'specaxissidechannel' 'specaxissidechannel_ln30' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 114 [1/1] (0.00ns)   --->   "%specaxissidechannel_ln30 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i32 %stream_in_7_V_data_V, i4 %stream_in_7_V_keep_V, i4 %stream_in_7_V_strb_V, i2 %stream_in_7_V_user_V, i1 %stream_in_7_V_last_V, i5 %stream_in_7_V_id_V, i6 %stream_in_7_V_dest_V, void @empty_8" [hw_mixer.cpp:30]   --->   Operation 114 'specaxissidechannel' 'specaxissidechannel_ln30' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 115 [1/1] (0.00ns)   --->   "%specaxissidechannel_ln30 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i32 %stream_in_6_V_data_V, i4 %stream_in_6_V_keep_V, i4 %stream_in_6_V_strb_V, i2 %stream_in_6_V_user_V, i1 %stream_in_6_V_last_V, i5 %stream_in_6_V_id_V, i6 %stream_in_6_V_dest_V, void @empty_11" [hw_mixer.cpp:30]   --->   Operation 115 'specaxissidechannel' 'specaxissidechannel_ln30' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 116 [1/1] (0.00ns)   --->   "%specaxissidechannel_ln30 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i32 %stream_in_5_V_data_V, i4 %stream_in_5_V_keep_V, i4 %stream_in_5_V_strb_V, i2 %stream_in_5_V_user_V, i1 %stream_in_5_V_last_V, i5 %stream_in_5_V_id_V, i6 %stream_in_5_V_dest_V, void @empty_12" [hw_mixer.cpp:30]   --->   Operation 116 'specaxissidechannel' 'specaxissidechannel_ln30' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 117 [1/1] (0.00ns)   --->   "%specaxissidechannel_ln30 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i32 %stream_in_4_V_data_V, i4 %stream_in_4_V_keep_V, i4 %stream_in_4_V_strb_V, i2 %stream_in_4_V_user_V, i1 %stream_in_4_V_last_V, i5 %stream_in_4_V_id_V, i6 %stream_in_4_V_dest_V, void @empty_13" [hw_mixer.cpp:30]   --->   Operation 117 'specaxissidechannel' 'specaxissidechannel_ln30' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 118 [1/1] (0.00ns)   --->   "%specaxissidechannel_ln30 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i32 %stream_in_3_V_data_V, i4 %stream_in_3_V_keep_V, i4 %stream_in_3_V_strb_V, i2 %stream_in_3_V_user_V, i1 %stream_in_3_V_last_V, i5 %stream_in_3_V_id_V, i6 %stream_in_3_V_dest_V, void @empty_14" [hw_mixer.cpp:30]   --->   Operation 118 'specaxissidechannel' 'specaxissidechannel_ln30' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 119 [1/1] (0.00ns)   --->   "%specaxissidechannel_ln30 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i32 %stream_in_2_V_data_V, i4 %stream_in_2_V_keep_V, i4 %stream_in_2_V_strb_V, i2 %stream_in_2_V_user_V, i1 %stream_in_2_V_last_V, i5 %stream_in_2_V_id_V, i6 %stream_in_2_V_dest_V, void @empty_15" [hw_mixer.cpp:30]   --->   Operation 119 'specaxissidechannel' 'specaxissidechannel_ln30' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 120 [1/1] (0.00ns)   --->   "%specaxissidechannel_ln30 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i32 %stream_in_1_V_data_V, i4 %stream_in_1_V_keep_V, i4 %stream_in_1_V_strb_V, i2 %stream_in_1_V_user_V, i1 %stream_in_1_V_last_V, i5 %stream_in_1_V_id_V, i6 %stream_in_1_V_dest_V, void @empty_7" [hw_mixer.cpp:30]   --->   Operation 120 'specaxissidechannel' 'specaxissidechannel_ln30' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 121 [1/1] (0.00ns)   --->   "%specaxissidechannel_ln30 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i32 %stream_in_0_V_data_V, i4 %stream_in_0_V_keep_V, i4 %stream_in_0_V_strb_V, i2 %stream_in_0_V_user_V, i1 %stream_in_0_V_last_V, i5 %stream_in_0_V_id_V, i6 %stream_in_0_V_dest_V, void @empty_9" [hw_mixer.cpp:30]   --->   Operation 121 'specaxissidechannel' 'specaxissidechannel_ln30' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 122 [1/2] ( I:0.49ns O:0.49ns )   --->   "%write_ln71 = write void @_ssdm_op_Write.axis.volatile.i32P0A.i4P0A.i4P0A.i2P0A.i1P0A.i5P0A.i6P0A, i32 %mix_out_V_data_V, i4 %mix_out_V_keep_V, i4 %mix_out_V_strb_V, i2 %mix_out_V_user_V, i1 %mix_out_V_last_V, i5 %mix_out_V_id_V, i6 %mix_out_V_dest_V, i32 %out_pkt_data_loc_load, i4 15, i4 15, i2 0, i1 1, i5 0, i6 0" [hw_mixer.cpp:71]   --->   Operation 122 'write' 'write_ln71' <Predicate = true> <Delay = 0.49> <CoreInst = "regslice">   --->   Core 147 'regslice' <Latency = 0> <II = 1> <Delay = 0.65> <Adapter> <Opcode : 'read' 'write'>
-ST_5 : Operation 123 [1/1] (0.00ns)   --->   "%ret_ln76 = ret" [hw_mixer.cpp:76]   --->   Operation 123 'ret' 'ret_ln76' <Predicate = true> <Delay = 0.00>
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 34 [1/1] (0.00ns)   --->   "%spectopmodule_ln9 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_7" [hw_mixer.cpp:9]   --->   Operation 34 'spectopmodule' 'spectopmodule_ln9' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 35 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i128 %stream_in_V_data_V, i16 %stream_in_V_keep_V, i16 %stream_in_V_strb_V, i1 %stream_in_V_last_V, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 35 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 36 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i128 %stream_in_V_data_V"   --->   Operation 36 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 37 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %stream_in_V_keep_V"   --->   Operation 37 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 38 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %stream_in_V_strb_V"   --->   Operation 38 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 39 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %stream_in_V_last_V"   --->   Operation 39 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 40 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i8 %switches"   --->   Operation 40 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 41 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %switches, void @empty_2, i32 4294967295, i32 4294967295, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 41 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 42 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %mix_out_V_data_V, i4 %mix_out_V_keep_V, i4 %mix_out_V_strb_V, i1 %mix_out_V_last_V, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 42 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 43 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %mix_out_V_data_V"   --->   Operation 43 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 44 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i4 %mix_out_V_keep_V"   --->   Operation 44 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 45 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i4 %mix_out_V_strb_V"   --->   Operation 45 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 46 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %mix_out_V_last_V"   --->   Operation 46 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 47 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_3, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_4, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0"   --->   Operation 47 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 48 [1/1] (0.00ns)   --->   "%specaxissidechannel_ln27 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i32 %mix_out_V_data_V, i4 %mix_out_V_keep_V, i4 %mix_out_V_strb_V, i1 0, i1 %mix_out_V_last_V, i1 0, i1 0, void @empty_5" [hw_mixer.cpp:27]   --->   Operation 48 'specaxissidechannel' 'specaxissidechannel_ln27' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 49 [1/1] (0.00ns)   --->   "%specaxissidechannel_ln27 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i128 %stream_in_V_data_V, i16 %stream_in_V_keep_V, i16 %stream_in_V_strb_V, i1 0, i1 %stream_in_V_last_V, i1 0, i1 0, void @empty_6" [hw_mixer.cpp:27]   --->   Operation 49 'specaxissidechannel' 'specaxissidechannel_ln27' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 50 [1/1] (0.00ns)   --->   "%add_ln68_loc_load = load i32 %add_ln68_loc"   --->   Operation 50 'load' 'add_ln68_loc_load' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 51 [1/1] (0.00ns)   --->   "%store_ln68 = store i32 %add_ln68_loc_load, i32 %current_gain_q16" [hw_mixer.cpp:68]   --->   Operation 51 'store' 'store_ln68' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 52 [1/1] (0.00ns)   --->   "%ret_ln89 = ret" [hw_mixer.cpp:89]   --->   Operation 52 'ret' 'ret_ln89' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -212,40 +139,32 @@ ST_5 : Operation 123 [1/1] (0.00ns)   --->   "%ret_ln76 = ret" [hw_mixer.cpp:76]
 ============================================================
 Target clock period: 10.000ns, clock uncertainty: 2.700ns.
 
- <State 1>: 5.367ns
+ <State 1>: 4.304ns
 The critical path consists of the following:
-	wire read operation ('switches_read') on port 'switches' [65]  (0.000 ns)
-	'select' operation 2 bit ('select_ln55_1', hw_mixer.cpp:55) [153]  (0.179 ns)
-	'add' operation 2 bit ('add_ln56', hw_mixer.cpp:56) [154]  (0.548 ns)
-	'select' operation 2 bit ('select_ln56', hw_mixer.cpp:56) [155]  (0.179 ns)
-	'add' operation 3 bit ('add_ln57', hw_mixer.cpp:57) [157]  (0.548 ns)
-	'select' operation 3 bit ('select_ln57', hw_mixer.cpp:57) [158]  (0.208 ns)
-	'add' operation 3 bit ('add_ln58', hw_mixer.cpp:58) [159]  (0.673 ns)
-	'select' operation 3 bit ('select_ln58', hw_mixer.cpp:58) [160]  (0.208 ns)
-	'add' operation 3 bit ('add_ln59', hw_mixer.cpp:59) [161]  (0.673 ns)
-	'select' operation 3 bit ('select_ln59', hw_mixer.cpp:59) [162]  (0.208 ns)
-	'add' operation 3 bit ('add_ln60', hw_mixer.cpp:60) [163]  (0.673 ns)
-	'select' operation 3 bit ('select_ln60', hw_mixer.cpp:60) [164]  (0.208 ns)
-	'add' operation 4 bit ('add_ln61', hw_mixer.cpp:61) [166]  (0.673 ns)
-	'select' operation 4 bit ('select_ln61', hw_mixer.cpp:61) [167]  (0.391 ns)
+	wire read operation ('switches_read') on port 'switches' [12]  (0.000 ns)
+	'select' operation 2 bit ('select_ln43_1', hw_mixer.cpp:43) [39]  (0.179 ns)
+	'add' operation 2 bit ('add_ln44', hw_mixer.cpp:44) [40]  (0.548 ns)
+	'select' operation 2 bit ('select_ln44', hw_mixer.cpp:44) [41]  (0.179 ns)
+	'add' operation 3 bit ('add_ln45', hw_mixer.cpp:45) [43]  (0.548 ns)
+	'select' operation 3 bit ('select_ln45', hw_mixer.cpp:45) [44]  (0.208 ns)
+	'add' operation 3 bit ('add_ln46', hw_mixer.cpp:46) [45]  (0.673 ns)
+	'select' operation 3 bit ('select_ln46', hw_mixer.cpp:46) [48]  (0.208 ns)
+	'add' operation 3 bit ('add_ln47', hw_mixer.cpp:47) [49]  (0.673 ns)
+	'select' operation 3 bit ('select_ln47', hw_mixer.cpp:47) [50]  (0.208 ns)
+	'add' operation 3 bit ('add_ln48', hw_mixer.cpp:48) [51]  (0.673 ns)
+	'select' operation 3 bit ('select_ln48', hw_mixer.cpp:48) [52]  (0.208 ns)
 
- <State 2>: 6.388ns
+ <State 2>: 7.256ns
 The critical path consists of the following:
-	'call' operation ('call_ln61', hw_mixer.cpp:61) to 'mixer_Pipeline_VITIS_LOOP_30_1' [177]  (6.388 ns)
+	'add' operation 4 bit ('add_ln49', hw_mixer.cpp:49) [54]  (0.673 ns)
+	'call' operation ('call_ln68', hw_mixer.cpp:68) to 'mixer_Pipeline_VITIS_LOOP_27_1' [55]  (6.583 ns)
 
- <State 3>: 5.065ns
+ <State 3>: 5.852ns
 The critical path consists of the following:
-	'call' operation ('call_ln61', hw_mixer.cpp:61) to 'mixer_Pipeline_VITIS_LOOP_30_1' [177]  (5.065 ns)
+	'call' operation ('call_ln68', hw_mixer.cpp:68) to 'mixer_Pipeline_VITIS_LOOP_27_1' [55]  (5.852 ns)
 
- <State 4>: 0.497ns
+ <State 4>: 0.000ns
 The critical path consists of the following:
-	'load' operation 32 bit ('out_pkt_data_loc_load') on local variable 'out_pkt_data_loc' [178]  (0.000 ns)
-	axis write operation ('write_ln71', hw_mixer.cpp:71) on port 'mix_out_V_data_V' (hw_mixer.cpp:71) [179]  (0.000 ns)
-	blocking operation 0.497 ns on control path)
-
- <State 5>: 0.497ns
-The critical path consists of the following:
-	axis write operation ('write_ln71', hw_mixer.cpp:71) on port 'mix_out_V_data_V' (hw_mixer.cpp:71) [179]  (0.497 ns)
 
 
 ============================================================
@@ -260,7 +179,6 @@ N/A
 	State 2
 	State 3
 	State 4
-	State 5
 
 
 ============================================================

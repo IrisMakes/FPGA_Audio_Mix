@@ -3,3 +3,9 @@
 2026-03-27 16:59:36 [info] : [Debug Manager] Added breakpoint:main 
 2026-03-27 16:59:37 [info] : [Debug Manager] Launch session has started on the configuration 'FPGA_Mix_Hardware [FPGA_Mix_Hardware]' 
 2026-03-27 17:02:52 [info] : [Debug Manager] Launch session has terminated on the configuration 'FPGA_Mix_Hardware [FPGA_Mix_Hardware]' 
+2026-04-20 16:27:21 [error] : [Config Editor] Error: 3 INVALID_ARGUMENT:  
+2026-04-20 16:27:21 [error] : [Config Editor] Error: 3 INVALID_ARGUMENT:  
+2026-04-22 14:41:29 [error] : [Config Editor] Error: 3 INVALID_ARGUMENT:  
+2026-04-22 14:41:29 [error] : [Config Editor] Error: 3 INVALID_ARGUMENT:  
+2026-04-22 15:02:31 [error] : [Config Editor] Error: 3 INVALID_ARGUMENT:  
+2026-04-22 15:02:31 [error] : [Config Editor] Error: 3 INVALID_ARGUMENT:  

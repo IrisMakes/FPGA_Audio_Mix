@@ -1,56 +1,58 @@
 <pragmas>
-<pragma file=".var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/autopilot/etc/ap_common.h" line="530" pragmaType="inline" parentfunction="_ZN8ssdm_intILi4ELb0EEC2EDU4_" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, false>::ap_int_base(long)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<5, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
 <pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
-<pragma file=".var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/autopilot/etc/ap_common.h" line="530" pragmaType="inline" parentfunction="_ZN8ssdm_intILi5ELb0EEC2EDU5_" off="0" region="0" recursive="0"/>
-<pragma file="hw_mixer.cpp" line="31" pragmaType="loop_tripcount" parentfunction="mixer" min="200" max="20000" avg="10000"/>
-<pragma file="hw_mixer.cpp" line="17" pragmaType="interface" parentfunction="mixer" mode="axis" port="stream_in_0" register="1" register_mode="both" name="" depth="-1"/>
-<pragma file="hw_mixer.cpp" line="18" pragmaType="interface" parentfunction="mixer" mode="axis" port="stream_in_1" register="1" register_mode="both" name="" depth="-1"/>
-<pragma file="hw_mixer.cpp" line="19" pragmaType="interface" parentfunction="mixer" mode="axis" port="stream_in_2" register="1" register_mode="both" name="" depth="-1"/>
-<pragma file="hw_mixer.cpp" line="20" pragmaType="interface" parentfunction="mixer" mode="axis" port="stream_in_3" register="1" register_mode="both" name="" depth="-1"/>
-<pragma file="hw_mixer.cpp" line="21" pragmaType="interface" parentfunction="mixer" mode="axis" port="stream_in_4" register="1" register_mode="both" name="" depth="-1"/>
-<pragma file="hw_mixer.cpp" line="22" pragmaType="interface" parentfunction="mixer" mode="axis" port="stream_in_5" register="1" register_mode="both" name="" depth="-1"/>
-<pragma file="hw_mixer.cpp" line="23" pragmaType="interface" parentfunction="mixer" mode="axis" port="stream_in_6" register="1" register_mode="both" name="" depth="-1"/>
-<pragma file="hw_mixer.cpp" line="24" pragmaType="interface" parentfunction="mixer" mode="axis" port="stream_in_7" register="1" register_mode="both" name="" depth="-1"/>
-<pragma file="hw_mixer.cpp" line="25" pragmaType="interface" parentfunction="mixer" mode="ap_none" port="switches" name="" register="0"/>
-<pragma file="hw_mixer.cpp" line="26" pragmaType="interface" parentfunction="mixer" mode="axis" port="mix_out" register="1" register_mode="both" name="" depth="-1"/>
-<pragma file="hw_mixer.cpp" line="27" pragmaType="interface" parentfunction="mixer" mode="s_axilite" port="" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
-<pragma file="hw_mixer.cpp" line="28" pragmaType="array_partition" parentfunction="mixer" dim="1" factor="0" mode="complete" dynamic="0" variable="_ZL14recip_sqrt_lut"/>
-<pragma file=".var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/autopilot/etc/ap_common.h" line="530" pragmaType="inline" parentfunction="_ZN8ssdm_intILi2ELb0EEC2EDU2_" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<6>::ap_uint(int)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<6, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
-<pragma file=".var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/autopilot/etc/ap_common.h" line="530" pragmaType="inline" parentfunction="_ZN8ssdm_intILi6ELb0EEC2EDU6_" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<5>::ap_uint(int)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<2>::ap_uint(int)" off="0" region="0" recursive="0"/>
-<pragma file=".var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/autopilot/etc/ap_common.h" line="530" pragmaType="inline" parentfunction="ssdm_int<32, false>::ssdm_int(unsigned int)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_bit_ref<8, false>::ap_bit_ref(ap_int_base<8, false>*, int)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<1, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
-<pragma file=".var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/autopilot/etc/ap_common.h" line="530" pragmaType="inline" parentfunction="_ZN8ssdm_intILi1ELb0EEC2EDU1_" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<4, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, true>::ap_int_base(int)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="bool ap_int_base<1, false>::operator==<32, true>(ap_int_base<32, true> const&) const" off="0" region="0" recursive="0"/>
-<pragma file=".var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/autopilot/etc/ap_common.h" line="522" pragmaType="inline" parentfunction="ssdm_int<32, true>::ssdm_int(int)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="get_last_ptr" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="get_id_ptr" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="get_keep_ptr" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="get_strb_ptr" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="get_user_ptr" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="get_dest_ptr" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="bool operator==<1, false>(ap_int_base<1, false> const&, int)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="write" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="get_data_ptr" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<32>::ap_uint(long)" off="0" region="0" recursive="0"/>
 <pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<4>::ap_uint(int)" off="0" region="0" recursive="0"/>
 <pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<1>::ap_uint(int)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_bit_ref<8, false>::operator bool() const" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="to_int" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<8, false>::operator[](int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<1, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_range_ref<32, true>::ap_range_ref(ap_int_base<32, true>*, int, int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<16, true>::ap_int_base(int)" off="0" region="0" recursive="0"/>
 <pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<2, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file=".var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/autopilot/etc/ap_common.h" line="522" pragmaType="inline" parentfunction="ssdm_int<16, true>::ssdm_int(short)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file=".var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/autopilot/etc/ap_common.h" line="530" pragmaType="inline" parentfunction="ssdm_int<32, false>::ssdm_int(unsigned int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="get_last_ptr" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="get_keep_ptr" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<1, false>::operator unsigned long long() const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="get_data_ptr" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_range_ref<32, true>::operator=(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="get_user_ptr" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="write" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="get_keep_ptr" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="get_strb_ptr" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="get_strb_ptr" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<16>::ap_int(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, true>::operator()(int, int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<8, false>::operator[](int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_bit_ref<8, false>::operator bool() const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<16, true>::operator long long() const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<128, true>::operator()(int, int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<16>::ap_int<128, true>(ap_range_ref<128, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="range" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_range_ref<128, true>::ap_range_ref(ap_int_base<128, true>*, int, int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="get_data_ptr" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<16, true>::ap_int_base<128, true>(ap_range_ref<128, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="get" off="0" region="0" recursive="0"/>
+<pragma file=".var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/autopilot/etc/ap_common.h" line="530" pragmaType="inline" parentfunction="_ZN8ssdm_intILi4ELb0EEC2EDU4_" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_bit_ref<8, false>::ap_bit_ref(ap_int_base<8, false>*, int)" off="0" region="0" recursive="0"/>
+<pragma file=".var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/autopilot/etc/ap_common.h" line="530" pragmaType="inline" parentfunction="_ZN8ssdm_intILi1ELb0EEC2EDU1_" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<4, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="get_user_ptr" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<16, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file=".var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/common/technology/autopilot/etc/ap_common.h" line="530" pragmaType="inline" parentfunction="ssdm_int<16, false>::ssdm_int(unsigned short)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<16>::ap_uint(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="get_last_ptr" off="0" region="0" recursive="0"/>
+<pragma file="hw_mixer.cpp" line="14" pragmaType="interface" parentfunction="mixer" mode="axis" port="stream_in" register="1" register_mode="both" name="" depth="-1"/>
+<pragma file="hw_mixer.cpp" line="15" pragmaType="interface" parentfunction="mixer" mode="ap_none" port="switches" name="" register="0"/>
+<pragma file="hw_mixer.cpp" line="16" pragmaType="interface" parentfunction="mixer" mode="axis" port="mix_out" register="1" register_mode="both" name="" depth="-1"/>
+<pragma file="hw_mixer.cpp" line="17" pragmaType="interface" parentfunction="mixer" mode="s_axilite" port="" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="hw_mixer.cpp" line="18" pragmaType="array_partition" parentfunction="mixer" dim="1" factor="0" mode="complete" dynamic="0" variable="_ZL14recip_sqrt_lut"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="get_id_ptr" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="get_dest_ptr" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="get_id_ptr" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="get_dest_ptr" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, false>::ap_int_base<16, true>(ap_int_base<16, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="range" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_range_ref<32, true>& ap_range_ref<32, true>::operator=<16, true>(ap_int_base<16, true> const&)" off="0" region="0" recursive="0"/>
 </pragmas>

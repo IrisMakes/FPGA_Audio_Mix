@@ -20,4 +20,4 @@ obj/hw_mixer.o: ../../../../hw_mixer.cpp \
   /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/include/etc/ap_fixed_special.h \
   /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/include/hls_stream.h \
   /home/MakerIris/.var/app/com.github.corna.Vivado/data/xilinx-install/2025.2/Vitis/include/etc/hls_stream_common.h \
-  ../../../../hw_mixer.h
+  ../../../../hw_mixer.h ../../../../comp_lut.h

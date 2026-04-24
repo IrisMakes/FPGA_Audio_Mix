@@ -13,7 +13,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255/grp_mixer_Pipeline_VITIS_LOOP_30_1_fu_255_activity": {
+				"grp_mixer_Pipeline_VITIS_LOOP_27_1_fu_94/grp_mixer_Pipeline_VITIS_LOOP_27_1_fu_94_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
