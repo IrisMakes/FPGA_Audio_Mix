@@ -1,6 +1,6 @@
 # FPGA_Audio_Mix
 ## Created by Alexi Carlone and Iris Kaucher
-**Description:** This is the final version of the FPGA audio stem mixer. The final report is also in this repo as a pdf\
+**Description:** This is the final version of the FPGA audio stem mixer. The final report is also in this repo as a pdf titled FPGA Audio Mix Final Project Report\
 **Block Diagram:**
 <img width="3215" height="762" alt="image" src="https://github.com/user-attachments/assets/d00f5cfd-e57e-4a35-887a-fc5ac319d93c" />
 **To run:** upload bit files along with hardware handoff, stem files, and jupyter notebook to pynq. Open Jupyter notebook. Run each cell until the last, then flip switches and run the last cell as much as you'd like to see how the mix changes (the first 3 are the most impactful to the song).\
